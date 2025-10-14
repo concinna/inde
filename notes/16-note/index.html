@@ -2635,17 +2635,17 @@
 <li>
 <p><strong>参与约束（IR）</strong>
    每个消费者买了以后至少不亏，否则他们宁愿不买：
-   [
+   $$
    U_i(Q_i) - R_i \ge 0
-   ]</p>
+   $$</p>
 </li>
 <li>
 <p><strong>激励相容约束（IC）</strong>
    每种类型的人要“老老实实地选自己的套餐”，而不去冒充另一种类型：
-   [
+   $$
    U_1(Q_1) - R_1 \ge U_1(Q_2) - R_2 \quad (\text{高类型不伪装}) \
    U_2(Q_2) - R_2 \ge U_2(Q_1) - R_1 \quad (\text{低类型不伪装})
-   ]</p>
+   $$</p>
 </li>
 </ol>
 <p>如果这些约束被打破，筛选机制就会崩溃。</p>
@@ -2656,40 +2656,40 @@
 <ul>
 <li>低类型消费者的参与约束 ( IR_2 )：
   他们被榨干所有剩余 → <strong>消费者剩余 = 0</strong>
-  [
+  $$
   U_2(Q_2) = R_2
-  ]</li>
+  $$</li>
 <li>高类型消费者的激励约束 ( IC_1 )：
   他们必须被“留一点甜头”，否则就会去选低类型套餐。
-  [
+  $$
   U_1(Q_1) - R_1 = U_1(Q_2) - R_2
-  ]
+  $$
   这部分“甜头”叫做<strong>信息租金（information rent）</strong>。</li>
 </ul>
 <hr />
 <h3 id="2"><strong>2️⃣ 用这些约束代入利润函数</strong></h3>
 <p>厂商利润：
-[
+$$
 \Pi = R_1 + R_2 - c(Q_1 + Q_2)
-]</p>
+$$</p>
 <p>利用上面两个约束，可以消去 ( R_1, R_2 )，得到：
-[
+$$
 R_1 = U_1(Q_1) - U_1(Q_2) + U_2(Q_2)
-]
-[
+$$
+$$
 R_2 = U_2(Q_2)
-]</p>
+$$</p>
 <p>代入利润：
-[
-\Pi(Q_1, Q_2) = [U_1(Q_1) - U_1(Q_2) + U_2(Q_2)] + U_2(Q_2) - c(Q_1 + Q_2)
-]</p>
+$$
+\Pi(Q_1, Q_2) = <span class="arithmatex">\(<span class="arithmatex">\(U_1(Q_1) - U_1(Q_2) + U_2(Q_2)\)</span>\)</span> + U_2(Q_2) - c(Q_1 + Q_2)
+$$</p>
 <p>然后分别对 ( Q_1, Q_2 ) 求导。</p>
 <hr />
 <h3 id="3"><strong>3️⃣ 推导结果与经济解释</strong></h3>
 <h4 id="1-q_1">（1）对 ( Q_1 )：</h4>
-<p>[
+<div class="arithmatex">\[
 U_1'(Q_1) = c
-]</p>
+\]</div>
 <p>➡️ <strong>高需求者拿到社会最优数量</strong>（有效率）
 也就是说，他们的边际效用 = 边际成本，效率最高。
 这是著名的结论：</p>
@@ -2698,13 +2698,13 @@ U_1'(Q_1) = c
 </blockquote>
 <hr />
 <h4 id="2-q_2">（2）对 ( Q_2 )：</h4>
-<p>[
+<div class="arithmatex">\[
 2U_2'(Q_2) - U_1'(Q_2) = c
-]
+$$
 因为 ( U_1'(Q) &gt; U_2'(Q) )，可得：
-[
+$$
 U_2'(Q_2) &gt; c
-]</p>
+\]</div>
 <p>➡️ <strong>低需求者拿到的数量偏低（存在扭曲）</strong></p>
 <p>也就是：</p>
 <blockquote>
@@ -2817,17 +2817,17 @@ U_2'(Q_2) &gt; c
 <h1 id="q1">Q1 为什么可以直接用效用减去钱</h1>
 <p>非常好的问题 👍——你问的这个其实触及了<strong>微观经济学效用函数的本质</strong>。
 为什么在模型里我们可以直接写
-[
+$$
 U(Q) - R
-]
+$$
 这样的形式，也就是说——为什么可以直接用“效用减去钱”，甚至让效用和金钱在同一个公式里出现？
 这个问题的答案需要从<strong>效用函数的“可加性与线性假设”</strong>说起。</p>
 <hr />
 <h2 id="quasi-linear-utility">🧩 一、我们在这里使用的效用是“准线性效用”（Quasi-linear utility）</h2>
 <p>在这个二级价格歧视模型中，我们假设消费者的效用函数具有一种特殊形式：</p>
-<p>[
+<p>$$
 u(Q, M) = U(Q) + M
-]
+$$
 其中：</p>
 <ul>
 <li>( Q )：消费者购买的商品数量；</li>
@@ -2839,9 +2839,9 @@ u(Q, M) = U(Q) + M
 <p>这是一个非常标准的<strong>准线性效用函数（quasi-linear utility）</strong>。
 “准线性”意味着效用在金钱（或收入）上是线性的。
 也就是说，如果你少了一块钱，效用就下降 1 个单位（效用对金钱的边际效用是常数）。</p>
-<p>[
+<div class="arithmatex">\[
 \frac{\partial u}{\partial M} = 1
-]</p>
+\]</div>
 <p>这样一来，金钱和效用可以直接“相加”或“相减”，因为它们在单位上已经被“统一”了。
 换句话说，<strong>金钱本身被视为效用的度量单位</strong>。</p>
 <hr />
@@ -2850,33 +2850,33 @@ u(Q, M) = U(Q) + M
 他购买了数量 ( Q )，并支付价格 ( R )。
 他购买后的剩余金钱就是 ( W - R )。</p>
 <p>因此，购买后的效用为：
-[
+$$
 u_{\text{buy}} = U(Q) + (W - R)
-]</p>
+$$</p>
 <p>如果他不买任何东西，效用为：
-[
+$$
 u_{\text{no buy}} = U(0) + W = W
-]
+$$
 （因为通常定义 ( U(0)=0 )）</p>
 <p>两者相比，消费者愿意购买当且仅当：
-[
+$$
 u_{\text{buy}} \ge u_{\text{no buy}} \Rightarrow U(Q) - R \ge 0
-]</p>
+$$</p>
 <p>于是我们就可以直接写出：
-[
+$$
 \text{消费者净效用（剩余）} = U(Q) - R
-]</p>
+$$</p>
 <hr />
 <h2 id="_10">🧠 三、经济学意义：消费者剩余的度量</h2>
 <p>你可以把 ( U(Q) - R ) 理解为消费者购买后获得的“额外幸福感”，也就是<strong>消费者剩余（Consumer Surplus）</strong>：</p>
-<p>[
+<p>$$
 \text{消费者剩余} = \int_0^{Q} p(q) , dq - R
-]
+$$
 在连续情况下，这与 ( U(Q) - R ) 一致。</p>
 <p>因此，在价格歧视模型中，当我们写：
-[
+$$
 U_i(Q_i) - R_i \ge 0
-]
+$$
 我们其实是在说：</p>
 <blockquote>
 <p>“第 i 类消费者购买套餐 ( (Q_i, R_i) ) 后的净剩余必须非负。”</p>
@@ -2969,9 +2969,9 @@ U_i(Q_i) - R_i \ge 0
 <hr />
 <h2 id="_14">🧩 二、厂商的目标与策略核心</h2>
 <p>厂商的目标是：
-[
+$$
 \max_{(Q_1, R_1, Q_2, R_2)} \Pi = R_1 + R_2 - c(Q_1 + Q_2)
-]
+$$
 即尽可能让 (R_1, R_2) 大（收更多钱），但要满足这四个约束。</p>
 <blockquote>
 <p>厂商想“榨干”每个消费者的剩余，只不过受制于信息约束，不能对高类型下手太狠。</p>
@@ -2986,22 +2986,22 @@ U_i(Q_i) - R_i \ge 0
 <li>如果厂商收得更多，他们就退出市场（违反 IR₂）。</li>
 </ul>
 <p>所以最优情况下，厂商会“榨干”他们的所有剩余：
-[
+$$
 U_2(Q_2) - R_2 = 0 \quad \Rightarrow \quad IR_2 \text{紧约束。}
-]</p>
+$$</p>
 <hr />
 <h3 id="2-ic1">✅（2）为什么 IC₁ 是紧约束？</h3>
 <p>高类型消费者比低类型更看重数量 (Q)，也就是：
-[
+$$
 U_1'(Q) &gt; U_2'(Q)
-]
+$$
 所以高类型<strong>更有动机伪装成低类型</strong>去买“便宜套餐”。</p>
 <p>厂商必须防止这种“假装”。
 要做到这一点，只能<strong>留给高类型一点额外剩余</strong>，让他们觉得买高端套餐更划算一点点。</p>
 <p>也就是说：
-[
+$$
 U_1(Q_1) - R_1 = U_1(Q_2) - R_2
-]
+$$
 恰好无差别（binding）。</p>
 <p>如果不取等号、留得太多剩余，那厂商就浪费利润了。</p>
 <hr />
@@ -3013,9 +3013,9 @@ U_1(Q_1) - R_1 = U_1(Q_2) - R_2
 <p>在厂商已经让低类型刚好愿意参与（IR₂ 紧）的前提下，高类型一定更愿意参与。
 而且，厂商出于激励相容（IC₁）考虑，<strong>必须给他们留一点额外剩余（信息租金）</strong>。</p>
 <p>因此：
-[
+$$
 U_1(Q_1) - R_1 &gt; 0
-]
+$$
 也就是说，IR₁ 约束<strong>自动满足</strong>，但不会紧。</p>
 <p>如果厂商强行让 IR₁ 紧（即把高类型剩余也榨干），那么：</p>
 <ul>
@@ -3032,25 +3032,26 @@ U_1(Q_1) - R_1 &gt; 0
 <li>因此多出的数量带来的效用 &lt; 多付的钱。</li>
 </ul>
 <p>换句话说，低类型买高端套餐并不划算，所以：
-[
+$$
 U_2(Q_2) - R_2 &gt; U_2(Q_1) - R_1
-]
+$$
 该约束自动满足，不会卡到等号。</p>
 <p>这在数学上也能由单交叉条件（single-crossing condition）推出。</p>
 <hr />
 <h2 id="_16">📊 四、图形直观解释</h2>
 <p>想象消费者效用曲线如下图：</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>U(Q)
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│       高类型 U₁(Q)
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│       /
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│      /
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│     /
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│    /
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│   /  低类型 U₂(Q)
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│  /
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│_/__________________ Q
-</span></code></pre></div>
+<div class="arithmatex">\[
+U(Q)
+│
+│       高类型 U₁(Q)
+│       /
+│      /
+│     /
+│    /
+│   /  低类型 U₂(Q)
+│  /
+│_/__________________ Q
+\]</div>
 <ul>
 <li>高类型效用曲线更陡（更偏好数量）；</li>
 <li>低类型效用曲线更平缓。</li>
@@ -3111,40 +3112,40 @@ U_2(Q_2) - R_2 &gt; U_2(Q_1) - R_1
 <hr />
 <h2 id="_19">🧭 一、从利润函数出发</h2>
 <p>厂商的利润是：</p>
-<p>[
+<div class="arithmatex">\[
 \Pi = R_1 + R_2 - c(Q_1 + Q_2)
-]</p>
+\]</div>
 <p>其中 ( c ) 是<strong>每单位产品的边际成本</strong>（constant marginal cost）。</p>
 <hr />
 <h2 id="r_1-r_2">🧩 二、利用约束消去 ( R_1, R_2 )</h2>
 <p>从约束条件：
-[
+$$
 \begin{cases}
 U_2(Q_2) = R_2 &amp; (\text{IR}_2) \
 U_1(Q_1) - R_1 = U_1(Q_2) - R_2 &amp; (\text{IC}_1)
 \end{cases}
-]</p>
+$$</p>
 <p>解得：
-[
+$$
 R_2 = U_2(Q_2)
-]
-[
+$$
+$$
 R_1 = U_1(Q_1) - U_1(Q_2) + U_2(Q_2)
-]</p>
+$$</p>
 <p>代入利润函数：</p>
-<p>[
-\Pi(Q_1, Q_2) = [U_1(Q_1) - U_1(Q_2) + U_2(Q_2)] + [U_2(Q_2)] - c(Q_1 + Q_2)
-]</p>
+<div class="arithmatex">\[
+\Pi(Q_1, Q_2) = $$U_1(Q_1) - U_1(Q_2) + U_2(Q_2)$$ + $$U_2(Q_2)$$ - c(Q_1 + Q_2)
+\]</div>
 <p>整理：
-[
+$$
 \Pi(Q_1, Q_2) = U_1(Q_1) - U_1(Q_2) + 2U_2(Q_2) - c(Q_1 + Q_2)
-]</p>
+$$</p>
 <hr />
 <h2 id="q_1-q_2">⚙️ 三、分别对 ( Q_1 ) 和 ( Q_2 ) 求导</h2>
 <h3 id="1-q_2">（1）对 ( Q_1 ) 求导</h3>
-<p>[
+<div class="arithmatex">\[
 \frac{\partial \Pi}{\partial Q_1} = U_1'(Q_1) - c = 0
-]</p>
+\]</div>
 <p>👉 这里的 ( U_1'(Q_1) ) 是高需求者的<strong>边际效用</strong>，表示他们愿意为“多一点数量”支付的额外金额。
 ( c ) 是<strong>厂商的边际成本</strong>，表示多生产一单位所需的成本。</p>
 <p>当两者相等时，利润达到最大值。
@@ -3158,22 +3159,22 @@ R_1 = U_1(Q_1) - U_1(Q_2) + U_2(Q_2)
 </ul>
 </blockquote>
 <p>这也是为什么我们得到
-[
+$$
 U_1'(Q_1^*) = c
-]</p>
+$$</p>
 <blockquote>
 <p>✅ 这叫做 <strong>“高类型无扭曲（no distortion at the top）”</strong>：
 厂商愿意让高类型拿到社会最优数量，因为不会引起额外的信息租金问题。</p>
 </blockquote>
 <hr />
 <h3 id="2-q_3">（2）对 ( Q_2 ) 求导</h3>
-<p>[
+<div class="arithmatex">\[
 \frac{\partial \Pi}{\partial Q_2} = -U_1'(Q_2) + 2U_2'(Q_2) - c = 0
-]</p>
+\]</div>
 <p>整理得：
-[
+$$
 2U_2'(Q_2) - U_1'(Q_2) = c
-]</p>
+$$</p>
 <p>这已经不再是“直接等于 ( c )”了。
 这是因为 ( Q_2 ) 同时影响高类型的“诱因约束（IC₁）”：</p>
 <ul>

@@ -2445,14 +2445,14 @@
 <p>好的，我们来详细解释一下这个经济模型，保留所有公式，并提供一个具体的例题。</p>
 <h3 id="_1">模型详解</h3>
 <p>这是一个关于<strong>寡头垄断市场中企业合并对消费者福利影响</strong>的经济模型。通常情况下，企业合并会减少市场上的竞争者数量，导致价格上涨，从而损害消费者福利。然而，该模型展示了一种特殊情况：在特定的市场结构下，企业合并反而可能导致价格下降，对消费者有利。</p>
-<p>这个模型的核心是分析<strong>价格-成本边际（Price-Cost Margin, P-c）</strong>的变化。价格-成本边际是衡量市场势力（Market Power）的一个重要指标，它表示价格高出边际成本的程度。如果合并后 <code>P-c</code> 下降，意味着价格更接近成本，这对消费者是有利的。</p>
+<p>这个模型的核心是分析<strong>价格-成本边际（Price-Cost Margin, P-c）</strong>的变化。价格-成本边际是衡量市场势力（Market Power）的一个重要指标，它表示价格高出边际成本的程度。如果合并后 <span class="arithmatex">\(P-c\)</span> 下降，意味着价格更接近成本，这对消费者是有利的。</p>
 <hr />
 <h4 id="1-model-setup">1. 模型设定 (Model Setup)</h4>
 <p>首先，我们定义模型中的各个变量：</p>
 <ul>
 <li><strong>P</strong>: 市场均衡价格 (Market Price)</li>
 <li><strong>c</strong>: 所有企业的单位生产成本（边际成本），假设所有企业成本相同且为常数 (Marginal Cost)</li>
-<li><strong>A</strong>: 市场需求参数，通常代表线性反需求函数 <code>P = A - Q</code> 中的截距，其中 Q 是市场总产量。<code>A-c</code> 代表了市场的潜在总利润空间。</li>
+<li><strong>A</strong>: 市场需求参数，通常代表线性反需求函数 <span class="arithmatex">\(P = A - Q\)</span> 中的截距，其中 Q 是市场总产量。<span class="arithmatex">\(A-c\)</span> 代表了市场的潜在总利润空间。</li>
 <li><strong>N</strong>: 行业内企业的总数量 (Total number of firms)</li>
 <li><strong>L</strong>: <strong>领导者企业 (Leader firms)</strong> 的数量。</li>
 </ul>
@@ -2467,21 +2467,21 @@
 <p>模型分析的是一个特定的合并场景：<strong>两个“跟随者”企业合并，形成一个单一的、新的“领导者”企业</strong>。</p>
 <p><strong>情景一：合并前 (Before Merger)</strong></p>
 <ul>
-<li>市场结构: <code>L</code> 个领导者, <code>N-L</code> 个跟随者，总共有 <code>N</code> 家企业。</li>
+<li>市场结构: <span class="arithmatex">\(L\)</span> 个领导者, <span class="arithmatex">\(N-L\)</span> 个跟随者，总共有 <span class="arithmatex">\(N\)</span> 家企业。</li>
 <li>在此结构下，市场达到均衡时的价格-成本边际由以下公式给出：
     $$ P - c = \frac { A - c } { ( L + 1 ) ( N - L + 1 ) } $$</li>
 </ul>
 <p><strong>情景二：合并后 (After Merger)</strong></p>
 <ul>
 <li>两个跟随者合并成一个新的领导者。市场结构发生如下变化：<ul>
-<li><strong>领导者数量</strong>: 从 <code>L</code> 增加到 <code>L+1</code>。</li>
-<li><strong>企业总数</strong>: 从 <code>N</code> 减少到 <code>N-1</code>。</li>
-<li><strong>跟随者数量</strong>: 从 <code>N-L</code> 减少到 <code>(N-1) - (L+1) = N-L-2</code>。</li>
+<li><strong>领导者数量</strong>: 从 <span class="arithmatex">\(L\)</span> 增加到 <span class="arithmatex">\(L+1\)</span>。</li>
+<li><strong>企业总数</strong>: 从 <span class="arithmatex">\(N\)</span> 减少到 <span class="arithmatex">\(N-1\)</span>。</li>
+<li><strong>跟随者数量</strong>: 从 <span class="arithmatex">\(N-L\)</span> 减少到 <span class="arithmatex">\((N-1) - (L+1) = N-L-2\)</span>。</li>
 </ul>
 </li>
 <li>在新的市场结构下，均衡价格-成本边际的公式变为：
     $$ P - c = \frac { A - c } { ( L + 2 ) ( N - L - 1 ) } $$
-    <em>(注：原文中的 <code>(L + . 2)</code> 应为印刷错误，根据模型推导，应为 <code>(L + 2)</code>)</em></li>
+    <em>(注：原文中的 <span class="arithmatex">\((L + . 2)\)</span> 应为印刷错误，根据模型推导，应为 <span class="arithmatex">\((L + 2)\)</span>)</em></li>
 </ul>
 <hr />
 <h4 id="3-derivation-of-the-condition-for-consumer-benefit">3. 推导消费者受益的条件 (Derivation of the Condition for Consumer Benefit)</h4>
@@ -2490,14 +2490,14 @@
 <p>我们可以通过以下步骤来简化这个不等式：</p>
 <ol>
 <li>
-<p>由于 <code>A &gt; c</code> (否则市场无法存在)，我们可以把分子 <code>(A-c)</code> 从两边约掉。因为我们处理的是分母，所以需要将不等号的方向反转：
+<p>由于 <span class="arithmatex">\(A &gt; c\)</span> (否则市场无法存在)，我们可以把分子 <span class="arithmatex">\((A-c)\)</span> 从两边约掉。因为我们处理的是分母，所以需要将不等号的方向反转：
     $$ ( L + 2 ) ( N - L - 1 ) &gt; ( L + 1 ) ( N - L + 1 ) $$</p>
 </li>
 <li>
 <p>展开不等式两边：</p>
 <ul>
-<li>左边: <code>LN - L^2 - L + 2N - 2L - 2 = LN - L^2 - 3L + 2N - 2</code></li>
-<li>右边: <code>LN - L^2 + L + N - L + 1 = LN - L^2 + N + 1</code></li>
+<li>左边: <span class="arithmatex">\(LN - L^2 - L + 2N - 2L - 2 = LN - L^2 - 3L + 2N - 2\)</span></li>
+<li>右边: <span class="arithmatex">\(LN - L^2 + L + N - L + 1 = LN - L^2 + N + 1\)</span></li>
 </ul>
 </li>
 <li>
@@ -2505,7 +2505,7 @@
     $$ LN - L^2 - 3L + 2N - 2 &gt; LN - L^2 + N + 1 $$</p>
 </li>
 <li>
-<p>简化不等式，消去两边的相同项 <code>LN</code> 和 <code>-L^2</code>：
+<p>简化不等式，消去两边的相同项 <span class="arithmatex">\(LN\)</span> 和 <span class="arithmatex">\(-L^2\)</span>：
     $$ -3L + 2N - 2 &gt; N + 1 $$</p>
 </li>
 <li>
@@ -2518,53 +2518,53 @@
 <hr />
 <h4 id="4-conclusion-and-interpretation">4. 结论与解读 (Conclusion and Interpretation)</h4>
 <p>该模型的最终结论是：
-<strong>当两个跟随者企业合并成为一个新的领导者时，只有在满足条件 <code>N &gt; 3(L+1)</code> 的情况下，消费者才能从中受益（即价格下降）。</strong></p>
+<strong>当两个跟随者企业合并成为一个新的领导者时，只有在满足条件 <span class="arithmatex">\(N &gt; 3(L+1)\)</span> 的情况下，消费者才能从中受益（即价格下降）。</strong></p>
 <p>这个条件也可以变形为：
 $$ L &lt; \frac { N } { 3 } - 1 $$</p>
 <p><strong>经济学直觉</strong>:
 为什么一个减少了竞争者的合并反而可能对消费者有利？关键在于<strong>企业行为的改变</strong>。</p>
 <ul>
-<li><strong>合并的负面效应</strong>: 市场上的企业总数减少了 1 家 (<code>N</code> -&gt; <code>N-1</code>)，这会削弱竞争，倾向于推高价格。</li>
+<li><strong>合并的负面效应</strong>: 市场上的企业总数减少了 1 家 (<span class="arithmatex">\(N\)</span> -&gt; <span class="arithmatex">\(N-1\)</span>)，这会削弱竞争，倾向于推高价格。</li>
 <li><strong>合并的正面效应</strong>: 两个被动的“跟随者”转变为一个更具攻击性的“领导者”。领导者之间的竞争比领导者与跟随者之间的竞争更为激烈。新领导者的加入，加剧了<strong>领导者群体内部的竞争</strong>。</li>
 </ul>
-<p>当 <code>L</code>（原始领导者数量）相对较小时，领导者群体内部的竞争不够激烈。此时，增加一个新的领导者所带来的“竞争加剧效应”会非常显著，其效果超过了“企业总数减少”带来的负面效应，从而导致市场总产量增加，价格下降。</p>
-<p>反之，如果 <code>L</code> 已经很大（不满足条件），领导者群体内部的竞争已经很激烈，再增加一个领导者带来的边际竞争效应很小。此时，“企业总数减少”的负面效应将占主导，导致价格上升。</p>
+<p>当 <span class="arithmatex">\(L\)</span>（原始领导者数量）相对较小时，领导者群体内部的竞争不够激烈。此时，增加一个新的领导者所带来的“竞争加剧效应”会非常显著，其效果超过了“企业总数减少”带来的负面效应，从而导致市场总产量增加，价格下降。</p>
+<p>反之，如果 <span class="arithmatex">\(L\)</span> 已经很大（不满足条件），领导者群体内部的竞争已经很激烈，再增加一个领导者带来的边际竞争效应很小。此时，“企业总数减少”的负面效应将占主导，导致价格上升。</p>
 <p>因此，该模型揭示了：<strong>只有当行业中领导者群体足够小（L &lt; N/3 - 1）时，将跟随者转变为领导者的合并才可能对社会福利（特别是消费者福利）有益。</strong></p>
 <hr />
 <h3 id="_2">例题</h3>
-<p>假设在一个特定行业中，市场反需求函数为 <code>P = 150 - Q</code>，所有企业的边际成本 <code>c = 30</code>。目前市场上有 <strong>N = 20</strong> 家企业，其中 <strong>L = 4</strong> 家是领导者企业。</p>
+<p>假设在一个特定行业中，市场反需求函数为 <span class="arithmatex">\(P = 150 - Q\)</span>，所有企业的边际成本 <span class="arithmatex">\(c = 30\)</span>。目前市场上有 <strong>N = 20</strong> 家企业，其中 <strong>L = 4</strong> 家是领导者企业。</p>
 <p><strong>问题</strong>: 如果两家跟随者企业决定合并，并成为市场中的一个新的领导者，这次合并是否对消费者有利？</p>
 <p><strong>解答</strong>:</p>
 <p>我们可以通过两种方法来解决这个问题。</p>
 <p><strong>方法一：直接检验条件</strong></p>
-<p>我们来检验 <code>N &gt; 3(L+1)</code> 这个条件是否成立。</p>
+<p>我们来检验 <span class="arithmatex">\(N &gt; 3(L+1)\)</span> 这个条件是否成立。</p>
 <ul>
-<li>已知: <code>N = 20</code>, <code>L = 4</code></li>
-<li>代入条件: <code>20 &gt; 3 * (4 + 1)</code></li>
-<li>计算: <code>20 &gt; 3 * 5</code></li>
-<li>结果: <code>20 &gt; 15</code></li>
+<li>已知: <span class="arithmatex">\(N = 20\)</span>, <span class="arithmatex">\(L = 4\)</span></li>
+<li>代入条件: <span class="arithmatex">\(20 &gt; 3 * (4 + 1)\)</span></li>
+<li>计算: <span class="arithmatex">\(20 &gt; 3 * 5\)</span></li>
+<li>结果: <span class="arithmatex">\(20 &gt; 15\)</span></li>
 </ul>
 <p>该不等式<strong>成立</strong>。根据模型的结论，这次合并<strong>将对消费者有利</strong>，市场价格预计会下降。</p>
 <p><strong>方法二：计算合并前后的价格-成本边际</strong></p>
-<p>我们可以利用模型给出的公式来直接计算和比较 <code>P-c</code> 的值。</p>
+<p>我们可以利用模型给出的公式来直接计算和比较 <span class="arithmatex">\(P-c\)</span> 的值。</p>
 <ul>
-<li>已知 <code>A = 150</code>, <code>c = 30</code>，所以 <code>A - c = 120</code>。</li>
+<li>已知 <span class="arithmatex">\(A = 150\)</span>, <span class="arithmatex">\(c = 30\)</span>，所以 <span class="arithmatex">\(A - c = 120\)</span>。</li>
 <li>
-<p><code>N = 20</code>, <code>L = 4</code>。</p>
+<p><span class="arithmatex">\(N = 20\)</span>, <span class="arithmatex">\(L = 4\)</span>。</p>
 </li>
 <li>
-<p><strong>计算合并前的 <code>P-c</code></strong>:
+<p><strong>计算合并前的 <span class="arithmatex">\(P-c\)</span></strong>:
     $$ P_{前} - c = \frac { A - c } { ( L + 1 ) ( N - L + 1 ) } = \frac { 120 } { ( 4 + 1 ) ( 20 - 4 + 1 ) } = \frac { 120 } { 5 \times 17 } = \frac { 120 } { 85 } \approx 1.412 $$</p>
 </li>
 <li>
-<p><strong>计算合并后的 <code>P-c</code></strong>:
-    合并后，<code>L</code> 变为 <code>4+1=5</code>，<code>N</code> 变为 <code>20-1=19</code>。我们可以用合并后的新参数代入公式，但为了保持与推导一致，我们直接使用原始 <code>N</code> 和 <code>L</code> 的公式。
+<p><strong>计算合并后的 <span class="arithmatex">\(P-c\)</span></strong>:
+    合并后，<span class="arithmatex">\(L\)</span> 变为 <span class="arithmatex">\(4+1=5\)</span>，<span class="arithmatex">\(N\)</span> 变为 <span class="arithmatex">\(20-1=19\)</span>。我们可以用合并后的新参数代入公式，但为了保持与推导一致，我们直接使用原始 <span class="arithmatex">\(N\)</span> 和 <span class="arithmatex">\(L\)</span> 的公式。
     $$ P_{后} - c = \frac { A - c } { ( L + 2 ) ( N - L - 1 ) } = \frac { 120 } { ( 4 + 2 ) ( 20 - 4 - 1 ) } = \frac { 120 } { 6 \times 15 } = \frac { 120 } { 90 } \approx 1.333 $$</p>
 </li>
 <li>
 <p><strong>比较结果</strong>:
     $$ 1.333 &lt; 1.412 $$
-    合并后的价格-成本边际 (<code>P_{后}-c</code>) 确实小于合并前的价格-成本边际 (<code>P_{前}-c</code>)。</p>
+    合并后的价格-成本边际 (<span class="arithmatex">\(P_{后}-c\)</span>) 确实小于合并前的价格-成本边际 (<span class="arithmatex">\(P_{前}-c\)</span>)。</p>
 </li>
 </ul>
 <p><strong>结论</strong>: 两种方法都表明，在给定的市场条件下，这次两家跟随者企业合并成一个领导者的行为，会使市场的价格-成本边际下降，从而对消费者有利。</p>

@@ -2434,136 +2434,136 @@
 <ul>
 <li><strong>单位需求 (Unit Demand):</strong> 每个消费者最多只会购买一个单位的商品。要么买一个，要么不买。</li>
 <li><strong>保留价格 (Reservation Price) V(x):</strong> 这是消费者愿意为商品支付的最高价格。每个消费者都有自己的保留价格。</li>
-<li><strong>消费者排序 (Consumer Ranking):</strong> 模型使用一个索引 <code>x</code> 来给消费者排序。<code>x</code> 从 0 开始。<ul>
-<li><code>V(x)</code> 表示索引为 <code>x</code> 的消费者的保留价格。</li>
-<li>我们假设 <code>V'(x) &lt; 0</code>，即随着 <code>x</code> 的增大，消费者的支付意愿是递减的。</li>
-<li><code>V(0) = Ṽ</code> 表示索引为 <code>0</code> 的消费者拥有最高的支付意愿 <code>Ṽ</code>。</li>
+<li><strong>消费者排序 (Consumer Ranking):</strong> 模型使用一个索引 <span class="arithmatex">\(x\)</span> 来给消费者排序。<span class="arithmatex">\(x\)</span> 从 0 开始。<ul>
+<li><span class="arithmatex">\(V(x)\)</span> 表示索引为 <span class="arithmatex">\(x\)</span> 的消费者的保留价格。</li>
+<li>我们假设 <span class="arithmatex">\(V'(x) &lt; 0\)</span>，即随着 <span class="arithmatex">\(x\)</span> 的增大，消费者的支付意愿是递减的。</li>
+<li><span class="arithmatex">\(V(0) = Ṽ\)</span> 表示索引为 <span class="arithmatex">\(0\)</span> 的消费者拥有最高的支付意愿 <span class="arithmatex">\(Ṽ\)</span>。</li>
 </ul>
 </li>
-<li><strong>服务的消费者区间:</strong> 厂商决定服务 <code>[0, s]</code> 这个区间内的所有消费者。这意味着，支付意愿从 <code>V(0)</code> 到 <code>V(s)</code> 的所有消费者都会购买产品。<code>s</code> 代表了那个恰好购买商品的<strong>边际消费者 (marginal consumer)</strong> 的索引。</li>
+<li><strong>服务的消费者区间:</strong> 厂商决定服务 <span class="arithmatex">\([0, s]\)</span> 这个区间内的所有消费者。这意味着，支付意愿从 <span class="arithmatex">\(V(0)\)</span> 到 <span class="arithmatex">\(V(s)\)</span> 的所有消费者都会购买产品。<span class="arithmatex">\(s\)</span> 代表了那个恰好购买商品的<strong>边际消费者 (marginal consumer)</strong> 的索引。</li>
 </ul>
 <p><strong>b. 需求与消费者分布 (Demand and Distribution)</strong></p>
 <ul>
-<li><strong>消费者密度 (Consumer Density) f(x):</strong> <code>f(x)</code> 描述了在索引点 <code>x</code> 附近单位长度上有多少消费者。</li>
-<li><strong>总需求量 (Total Quantity) q:</strong> 总需求量 <code>q</code> 是所有购买商品消费者的总和。它通过对消费者密度函数从 0 到边际消费者 <code>s</code> 进行积分得到。
+<li><strong>消费者密度 (Consumer Density) f(x):</strong> <span class="arithmatex">\(f(x)\)</span> 描述了在索引点 <span class="arithmatex">\(x\)</span> 附近单位长度上有多少消费者。</li>
+<li><strong>总需求量 (Total Quantity) q:</strong> 总需求量 <span class="arithmatex">\(q\)</span> 是所有购买商品消费者的总和。它通过对消费者密度函数从 0 到边际消费者 <span class="arithmatex">\(s\)</span> 进行积分得到。
     &gt; <strong>公式:</strong>
     &gt; $$ q = \int _ { 0 } ^ { s } f ( x ) d x $$</li>
 <li><strong>关键假设：均匀分布 (Uniform Distribution):</strong> 模型为了简化，做出了一个非常重要的假设：消费者是均匀分布的，且密度为1。
     &gt; <strong>公式:</strong>
     &gt; $$ f(x) = 1 $$</li>
-<li><strong>假设的推论:</strong> 在这个假设下，总需求量 <code>q</code> 和边际消费者索引 <code>s</code> 的关系变得非常简单：
+<li><strong>假设的推论:</strong> 在这个假设下，总需求量 <span class="arithmatex">\(q\)</span> 和边际消费者索引 <span class="arithmatex">\(s\)</span> 的关系变得非常简单：
     &gt; $$ q = \int _ { 0 } ^ { s } 1 d x = [x]_0^s = s $$
-    &gt; 这意味着 <strong><code>q = s</code></strong>。这个结论是模型后续分析的基础，它把抽象的消费者索引 <code>s</code> 和具体的市场需求量 <code>q</code> 直接等同起来。</li>
+    &gt; 这意味着 <strong><span class="arithmatex">\(q = s\)</span></strong>。这个结论是模型后续分析的基础，它把抽象的消费者索引 <span class="arithmatex">\(s\)</span> 和具体的市场需求量 <span class="arithmatex">\(q\)</span> 直接等同起来。</li>
 </ul>
 <h4 id="2-single-price-monopoly">2. 核心分析：单一价格垄断 (Single-Price Monopoly)</h4>
-<p>现在，我们分析厂商只设定一个统一价格 <code>p</code> 的情况。</p>
+<p>现在，我们分析厂商只设定一个统一价格 <span class="arithmatex">\(p\)</span> 的情况。</p>
 <ul>
-<li><strong>购买决策:</strong> 在单一价格 <code>p</code> 下，所有保留价格 <code>V(x)</code> 大于或等于 <code>p</code> 的消费者都会购买。
-    &gt; <code>V(x) ≥ p</code>  =&gt; 购买</li>
-<li><strong>价格的决定:</strong> 厂商服务的边际消费者是 <code>s</code>。这个消费者的保留价格是 <code>V(s)</code>。为了让这位边际消费者也愿意购买，市场的最高统一定价只能是 <code>p = V(s)</code>。如果价格再高一点，<code>s</code> 消费者就不会买了。</li>
+<li><strong>购买决策:</strong> 在单一价格 <span class="arithmatex">\(p\)</span> 下，所有保留价格 <span class="arithmatex">\(V(x)\)</span> 大于或等于 <span class="arithmatex">\(p\)</span> 的消费者都会购买。
+    &gt; <span class="arithmatex">\(V(x) ≥ p\)</span>  =&gt; 购买</li>
+<li><strong>价格的决定:</strong> 厂商服务的边际消费者是 <span class="arithmatex">\(s\)</span>。这个消费者的保留价格是 <span class="arithmatex">\(V(s)\)</span>。为了让这位边际消费者也愿意购买，市场的最高统一定价只能是 <span class="arithmatex">\(p = V(s)\)</span>。如果价格再高一点，<span class="arithmatex">\(s\)</span> 消费者就不会买了。</li>
 <li>
-<p><strong>反需求函数 (Inverse Demand Function):</strong> 因为我们已经推导出 <code>s = q</code>，所以价格 <code>p</code> 可以表示为数量 <code>q</code> 的函数：
-    &gt; <code>p = V(s) = V(q)</code>。我们通常把这个写作 <code>p(q)</code>，这就是市场的<strong>反需求函数</strong>。它告诉我们，当市场上要卖出 <code>q</code> 单位商品时，相应的市场价格应该是多少。</p>
+<p><strong>反需求函数 (Inverse Demand Function):</strong> 因为我们已经推导出 <span class="arithmatex">\(s = q\)</span>，所以价格 <span class="arithmatex">\(p\)</span> 可以表示为数量 <span class="arithmatex">\(q\)</span> 的函数：
+    &gt; <span class="arithmatex">\(p = V(s) = V(q)\)</span>。我们通常把这个写作 <span class="arithmatex">\(p(q)\)</span>，这就是市场的<strong>反需求函数</strong>。它告诉我们，当市场上要卖出 <span class="arithmatex">\(q\)</span> 单位商品时，相应的市场价格应该是多少。</p>
 </li>
 <li>
-<p><strong>利润函数 (Profit Function):</strong> 厂商的利润 <code>π</code> 等于总收入 (Total Revenue) 减去总成本 (Total Cost)。</p>
+<p><strong>利润函数 (Profit Function):</strong> 厂商的利润 <span class="arithmatex">\(π\)</span> 等于总收入 (Total Revenue) 减去总成本 (Total Cost)。</p>
 <ul>
-<li>总收入 = 价格 × 数量 = <code>p * q</code></li>
-<li>总成本 = <code>C(q)</code> （这里用 <code>C(q)</code> 表示关于数量 <code>q</code> 的成本函数，您的笔记中写作 <code>c(ε)</code> 或 <code>cq</code>，暗示了可能是线性的总成本或固定的边际成本 <code>c</code>）。<blockquote>
+<li>总收入 = 价格 × 数量 = <span class="arithmatex">\(p * q\)</span></li>
+<li>总成本 = <span class="arithmatex">\(C(q)\)</span> （这里用 <span class="arithmatex">\(C(q)\)</span> 表示关于数量 <span class="arithmatex">\(q\)</span> 的成本函数，您的笔记中写作 <span class="arithmatex">\(c(ε)\)</span> 或 <span class="arithmatex">\(cq\)</span>，暗示了可能是线性的总成本或固定的边际成本 <span class="arithmatex">\(c\)</span>）。<blockquote>
 <p><strong>公式:</strong>
 $$ \pi ( s ) = p q - C(q) $$
-将 <code>p = V(q)</code> 和 <code>s = q</code> 代入，利润函数可以完全用 <code>q</code> 来表示：
+将 <span class="arithmatex">\(p = V(q)\)</span> 和 <span class="arithmatex">\(s = q\)</span> 代入，利润函数可以完全用 <span class="arithmatex">\(q\)</span> 来表示：
 $$ \pi ( q ) = V ( q ) q - C(q) = p ( q ) q - C(q) $$</p>
 </blockquote>
 </li>
 </ul>
 </li>
 <li>
-<p><strong>利润最大化 (Profit Maximization):</strong> 厂商的目标是选择一个最优的产量 <code>q</code> (也即选择服务到哪位边际消费者 <code>s</code>），来最大化自己的利润。在数学上，我们通过对利润函数 <code>π(q)</code> 求导并令其等于零来实现。
-    &gt; <code>max_q π(q)</code>
+<p><strong>利润最大化 (Profit Maximization):</strong> 厂商的目标是选择一个最优的产量 <span class="arithmatex">\(q\)</span> (也即选择服务到哪位边际消费者 <span class="arithmatex">\(s\)</span>），来最大化自己的利润。在数学上，我们通过对利润函数 <span class="arithmatex">\(π(q)\)</span> 求导并令其等于零来实现。
+    &gt; <span class="arithmatex">\(max_q π(q)\)</span>
     &gt; 
-    &gt; 我们对 <code>π(q) = p(q)q - C(q)</code> 求关于 <code>q</code> 的一阶导数：
+    &gt; 我们对 <span class="arithmatex">\(π(q) = p(q)q - C(q)\)</span> 求关于 <span class="arithmatex">\(q\)</span> 的一阶导数：
     &gt; $$ \frac{d\pi}{dq} = \frac{d}{dq}(p(q)q) - \frac{d}{dq}(C(q)) = 0 $$
-    &gt; 对 <code>p(q)q</code> 使用乘法法则求导：<code>p(q) * 1 + q * p'(q)</code>。
-    &gt; <code>d(C(q))/dq</code> 是边际成本 <code>MC(q)</code>。
+    &gt; 对 <span class="arithmatex">\(p(q)q\)</span> 使用乘法法则求导：<span class="arithmatex">\(p(q) * 1 + q * p'(q)\)</span>。
+    &gt; <span class="arithmatex">\(d(C(q))/dq\)</span> 是边际成本 <span class="arithmatex">\(MC(q)\)</span>。
     &gt; 
     &gt; 所以，一阶条件是：
     &gt; $$ p(q) + q \cdot p'(q) - MC(q) = 0 $$
     &gt; 整理后得到利润最大化的核心条件：
     &gt; $$ p(q) + q \cdot p'(q) = MC(q) $$
     &gt; 
-    &gt; 经济学上，等式左边 <code>p(q) + q \cdot p'(q)</code> 正是 <strong>边际收入 (Marginal Revenue, MR)</strong>，等式右边是 <strong>边际成本 (Marginal Cost, MC)</strong>。所以，这个条件就是经典的 <strong><code>MR = MC</code></strong>。</p>
+    &gt; 经济学上，等式左边 <span class="arithmatex">\(p(q) + q \cdot p'(q)\)</span> 正是 <strong>边际收入 (Marginal Revenue, MR)</strong>，等式右边是 <strong>边际成本 (Marginal Cost, MC)</strong>。所以，这个条件就是经典的 <strong><span class="arithmatex">\(MR = MC\)</span></strong>。</p>
 </li>
 <li>
-<p><strong>您笔记中的公式:</strong> 您的笔记最后给出的公式 <code>p(q) + q p'(q) = c</code>，这对应的是一个特殊情况，即<strong>边际成本为常数 <code>c</code></strong>。</p>
+<p><strong>您笔记中的公式:</strong> 您的笔记最后给出的公式 <span class="arithmatex">\(p(q) + q p'(q) = c\)</span>，这对应的是一个特殊情况，即<strong>边际成本为常数 <span class="arithmatex">\(c\)</span></strong>。</p>
 </li>
 </ul>
 <h4 id="3">3. 与个性化定价（一级价格歧视）的对比</h4>
 <ul>
-<li><strong>个性化定价 (Personalized Pricing):</strong> 这是<strong>一级价格歧视 (Perfect Price Discrimination)</strong> 的理想情况。厂商对每一个消费者 <code>x</code> 都收取其愿意支付的最高价格 <code>V(x)</code>。</li>
-<li><strong>生产决策:</strong> 在这种情况下，只要一个消费者的保留价格 <code>V(x)</code> 高于生产这个单位的边际成本 <code>MC</code>，厂商就愿意卖给他。因此，厂商会一直生产，直到最后一个消费者（边际消费者）的保留价格恰好等于边际成本。即 <code>V(q) = MC(q)</code>。</li>
+<li><strong>个性化定价 (Personalized Pricing):</strong> 这是<strong>一级价格歧视 (Perfect Price Discrimination)</strong> 的理想情况。厂商对每一个消费者 <span class="arithmatex">\(x\)</span> 都收取其愿意支付的最高价格 <span class="arithmatex">\(V(x)\)</span>。</li>
+<li><strong>生产决策:</strong> 在这种情况下，只要一个消费者的保留价格 <span class="arithmatex">\(V(x)\)</span> 高于生产这个单位的边际成本 <span class="arithmatex">\(MC\)</span>，厂商就愿意卖给他。因此，厂商会一直生产，直到最后一个消费者（边际消费者）的保留价格恰好等于边际成本。即 <span class="arithmatex">\(V(q) = MC(q)\)</span>。</li>
 <li><strong>对比结论:</strong><ul>
-<li><strong>单一价格垄断:</strong> <code>MR = MC</code>  =&gt;  <code>p(q) + q \cdot p'(q) = MC(q)</code>。因为 <code>p'(q)</code> 通常为负（需求曲线向下倾斜），所以 <code>MR</code> 总是小于价格 <code>p</code>。因此，在最优产量 <code>q*</code> 处，<code>p(q*) &gt; MR(q*) = MC(q*)</code>，即<strong>价格高于边际成本</strong>。</li>
-<li><strong>一级价格歧视:</strong> <code>p(q) = MC(q)</code>，即<strong>价格等于边际成本</strong>。</li>
+<li><strong>单一价格垄断:</strong> <span class="arithmatex">\(MR = MC\)</span>  =&gt;  <span class="arithmatex">\(p(q) + q \cdot p'(q) = MC(q)\)</span>。因为 <span class="arithmatex">\(p'(q)\)</span> 通常为负（需求曲线向下倾斜），所以 <span class="arithmatex">\(MR\)</span> 总是小于价格 <span class="arithmatex">\(p\)</span>。因此，在最优产量 <span class="arithmatex">\(q*\)</span> 处，<span class="arithmatex">\(p(q*) &gt; MR(q*) = MC(q*)\)</span>，即<strong>价格高于边际成本</strong>。</li>
+<li><strong>一级价格歧视:</strong> <span class="arithmatex">\(p(q) = MC(q)\)</span>，即<strong>价格等于边际成本</strong>。</li>
 <li>这表明，单一价格垄断厂商会比进行一级价格歧视的厂商<strong>生产更少的商品</strong>，并<strong>设定更高的价格</strong>（对于边际消费者之外的消费者）。</li>
 </ul>
 </li>
 </ul>
 <hr />
 <h3 id="_2">例题</h3>
-<p>假设一个市场的消费者分布满足模型设定（<code>f(x)=1</code>），消费者的保留价格函数为 <code>V(x) = 120 - 2x</code>。厂商的生产成本为常数边际成本 <code>c = 20</code>（即总成本函数 <code>C(q) = 20q</code>）。</p>
+<p>假设一个市场的消费者分布满足模型设定（<span class="arithmatex">\(f(x)=1\)</span>），消费者的保留价格函数为 <span class="arithmatex">\(V(x) = 120 - 2x\)</span>。厂商的生产成本为常数边际成本 <span class="arithmatex">\(c = 20\)</span>（即总成本函数 <span class="arithmatex">\(C(q) = 20q\)</span>）。</p>
 <p><strong>问题：</strong> 在单一价格垄断下，求解厂商的：
-1.  最优产量 <code>q*</code>
-2.  最优价格 <code>p*</code>
-3.  最大利润 <code>π*</code></p>
+1.  最优产量 <span class="arithmatex">\(q*\)</span>
+2.  最优价格 <span class="arithmatex">\(p*\)</span>
+3.  最大利润 <span class="arithmatex">\(π*\)</span></p>
 <p><strong>解题步骤：</strong></p>
 <p><strong>1. 找出反需求函数 p(q)</strong></p>
-<p>根据模型，我们知道 <code>s=q</code>。
-反需求函数 <code>p(q) = V(q)</code>。
-将 <code>q</code> 代入 <code>V(x)</code> 函数中的 <code>x</code>，得到：
-<code>p(q) = 120 - 2q</code></p>
+<p>根据模型，我们知道 <span class="arithmatex">\(s=q\)</span>。
+反需求函数 <span class="arithmatex">\(p(q) = V(q)\)</span>。
+将 <span class="arithmatex">\(q\)</span> 代入 <span class="arithmatex">\(V(x)\)</span> 函数中的 <span class="arithmatex">\(x\)</span>，得到：
+<span class="arithmatex">\(p(q) = 120 - 2q\)</span></p>
 <p><strong>2. 写出利润函数 π(q)</strong></p>
 <p>利润 = 总收入 (TR) - 总成本 (TC)
-<code>π(q) = p(q) \cdot q - C(q)</code>
-<code>π(q) = (120 - 2q)q - 20q</code>
-<code>π(q) = 120q - 2q² - 20q</code>
-<code>π(q) = 100q - 2q²</code></p>
+<span class="arithmatex">\(π(q) = p(q) \cdot q - C(q)\)</span>
+<span class="arithmatex">\(π(q) = (120 - 2q)q - 20q\)</span>
+<span class="arithmatex">\(π(q) = 120q - 2q² - 20q\)</span>
+<span class="arithmatex">\(π(q) = 100q - 2q²\)</span></p>
 <p><strong>3. 求解边际收入 (MR) 和边际成本 (MC)</strong></p>
 <ul>
 <li>
 <p><strong>边际收入 (MR):</strong>
-    <code>TR(q) = 120q - 2q²</code>
-    <code>MR(q) = d(TR)/dq = 120 - 4q</code></p>
-<p><em>你也可以直接使用公式 <code>p(q) + q \cdot p'(q)</code></em>
-<em><code>p'(q) = -2</code></em>
-<em><code>MR(q) = (120 - 2q) + q(-2) = 120 - 2q - 2q = 120 - 4q</code></em></p>
+    <span class="arithmatex">\(TR(q) = 120q - 2q²\)</span>
+    <span class="arithmatex">\(MR(q) = d(TR)/dq = 120 - 4q\)</span></p>
+<p><em>你也可以直接使用公式 <span class="arithmatex">\(p(q) + q \cdot p'(q)\)</span></em>
+<em><span class="arithmatex">\(p'(q) = -2\)</span></em>
+<em><span class="arithmatex">\(MR(q) = (120 - 2q) + q(-2) = 120 - 2q - 2q = 120 - 4q\)</span></em></p>
 </li>
 <li>
 <p><strong>边际成本 (MC):</strong>
-    <code>TC(q) = 20q</code>
-    <code>MC(q) = d(TC)/dq = 20</code></p>
+    <span class="arithmatex">\(TC(q) = 20q\)</span>
+    <span class="arithmatex">\(MC(q) = d(TC)/dq = 20\)</span></p>
 </li>
 </ul>
 <p><strong>4. 使用 MR = MC 条件求解最优产量 q</strong>*</p>
-<p><code>120 - 4q = 20</code>
-<code>4q = 100</code>
-<strong><code>q* = 25</code></strong></p>
+<p><span class="arithmatex">\(120 - 4q = 20\)</span>
+<span class="arithmatex">\(4q = 100\)</span>
+<strong><span class="arithmatex">\(q* = 25\)</span></strong></p>
 <p>所以，厂商的最优产量是 25 单位。</p>
 <p><strong>5. 求解最优价格 p</strong>*</p>
-<p>将最优产量 <code>q* = 25</code> 代入反需求函数：
-<code>p* = 120 - 2(25)</code>
-<code>p* = 120 - 50</code>
-<strong><code>p* = 70</code></strong></p>
+<p>将最优产量 <span class="arithmatex">\(q* = 25\)</span> 代入反需求函数：
+<span class="arithmatex">\(p* = 120 - 2(25)\)</span>
+<span class="arithmatex">\(p* = 120 - 50\)</span>
+<strong><span class="arithmatex">\(p* = 70\)</span></strong></p>
 <p>所以，厂商设定的最优市场价格是 70。</p>
 <p><strong>6. 求解最大利润 π</strong>*</p>
-<p>将 <code>q* = 25</code> 和 <code>p* = 70</code> 代入利润函数：
-<code>π* = p* \cdot q* - 20q*</code>
-<code>π* = 70 \cdot 25 - 20 \cdot 25</code>
-<code>π* = (70 - 20) \cdot 25</code>
-<code>π* = 50 \cdot 25</code>
-<strong><code>π* = 1250</code></strong></p>
-<p><em>或者直接代入 <code>π(q) = 100q - 2q²</code>:</em>
-<em><code>π* = 100(25) - 2(25)² = 2500 - 2(625) = 2500 - 1250 = 1250</code></em></p>
+<p>将 <span class="arithmatex">\(q* = 25\)</span> 和 <span class="arithmatex">\(p* = 70\)</span> 代入利润函数：
+<span class="arithmatex">\(π* = p* \cdot q* - 20q*\)</span>
+<span class="arithmatex">\(π* = 70 \cdot 25 - 20 \cdot 25\)</span>
+<span class="arithmatex">\(π* = (70 - 20) \cdot 25\)</span>
+<span class="arithmatex">\(π* = 50 \cdot 25\)</span>
+<strong><span class="arithmatex">\(π* = 1250\)</span></strong></p>
+<p><em>或者直接代入 <span class="arithmatex">\(π(q) = 100q - 2q²\)</span>:</em>
+<em><span class="arithmatex">\(π* = 100(25) - 2(25)² = 2500 - 2(625) = 2500 - 1250 = 1250\)</span></em></p>
 <p><strong>最终答案:</strong>
 该单一价格垄断厂商的最优产量为 <strong>25</strong> 单位，最优价格为 <strong>70</strong>，实现的最大利润为 <strong>1250</strong>。</p>
 

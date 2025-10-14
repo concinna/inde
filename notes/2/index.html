@@ -2462,10 +2462,10 @@
 *   <strong>行业 C (Industry C):</strong> 3家公司各占25%，5家公司各占5%。曲线的前三个点会以较陡的斜率上升（到(1, 25%)，(2, 50%)，(3, 75%)），然后斜率变缓。</p>
 <p><strong>结论：</strong> 从集中度曲线来看，行业B的集中度最高，因为其曲线最远离对角线。行业A的集中度最低。</p>
 <h3 id="2-concentration-ratio-crn"><strong>2. 集中度指数 (Concentration Ratio, CRn)</strong></h3>
-<p>集中度指数 <code>CRn</code> 是一个简单直接的衡量指标，它计算行业内规模最大的 <code>n</code> 家公司的市场份额之和。最常用的是 <code>CR4</code>（前4家公司）和 <code>CR8</code>（前8家公司）。</p>
+<p>集中度指数 <span class="arithmatex">\(CRn\)</span> 是一个简单直接的衡量指标，它计算行业内规模最大的 <span class="arithmatex">\(n\)</span> 家公司的市场份额之和。最常用的是 <span class="arithmatex">\(CR4\)</span>（前4家公司）和 <span class="arithmatex">\(CR8\)</span>（前8家公司）。</p>
 <p><strong>计算公式：</strong>
-<code>CRn = S1 + S2 + ... + Sn</code>
-其中 <code>Si</code> 是第 <code>i</code> 大公司的市场份额。</p>
+<span class="arithmatex">\(CRn = S1 + S2 + ... + Sn\)</span>
+其中 <span class="arithmatex">\(Si\)</span> 是第 <span class="arithmatex">\(i\)</span> 大公司的市场份额。</p>
 <p><strong>您提供的例子分析：</strong>
 *   <strong>行业 A:</strong>
     *   CR4 = 10% + 10% + 10% + 10% = 40%
@@ -2477,39 +2477,39 @@
     *   CR4 = 25% + 25% + 25% + 5% = 80%
     *   CR8 = (3 × 25%) + (5 × 5%) = 75% + 25% = 100%</p>
 <p><strong>CRn 指数的局限性：</strong>
-正如您的例子所揭示的，<code>CRn</code> 的结论可能存在矛盾。
-*   使用 <code>CR4</code> 比较：行业 C (80%) &gt; 行业 B (61.75%) &gt; 行业 A (40%)。结论是 C 最集中。
-*   使用 <code>CR8</code> 比较：行业 C (100%) &gt; 行业 A (80%) &gt; 行业 B (70.75%)。结论依然是 C 最集中，但 A 和 B 的相对位置变了。</p>
-<p>这个问题暴露了 <code>CRn</code> 的两大缺点：
-1.  <strong>任意性：</strong> <code>n</code> 的取值（如4或8）是人为设定的，不同的 <code>n</code> 可能得出不同的结论。
-2.  <strong>忽略内部差异：</strong> <code>CRn</code> 只关心前 <code>n</code> 家公司的总份额，不关心这 <code>n</code> 家公司之间的份额分布，也完全忽略了 <code>n</code> 家之后其他公司的信息。</p>
+正如您的例子所揭示的，<span class="arithmatex">\(CRn\)</span> 的结论可能存在矛盾。
+*   使用 <span class="arithmatex">\(CR4\)</span> 比较：行业 C (80%) &gt; 行业 B (61.75%) &gt; 行业 A (40%)。结论是 C 最集中。
+*   使用 <span class="arithmatex">\(CR8\)</span> 比较：行业 C (100%) &gt; 行业 A (80%) &gt; 行业 B (70.75%)。结论依然是 C 最集中，但 A 和 B 的相对位置变了。</p>
+<p>这个问题暴露了 <span class="arithmatex">\(CRn\)</span> 的两大缺点：
+1.  <strong>任意性：</strong> <span class="arithmatex">\(n\)</span> 的取值（如4或8）是人为设定的，不同的 <span class="arithmatex">\(n\)</span> 可能得出不同的结论。
+2.  <strong>忽略内部差异：</strong> <span class="arithmatex">\(CRn\)</span> 只关心前 <span class="arithmatex">\(n\)</span> 家公司的总份额，不关心这 <span class="arithmatex">\(n\)</span> 家公司之间的份额分布，也完全忽略了 <span class="arithmatex">\(n\)</span> 家之后其他公司的信息。</p>
 <h3 id="3-herfindahl-hirschman-index-hhi"><strong>3. 赫芬达尔-赫希曼指数 (Herfindahl-Hirschman Index, HHI)</strong></h3>
 <p>HHI 是一个更全面、更精确的衡量市场集中度的指标。它考虑了行业内<strong>所有</strong>公司，并给予市场份额越大的公司越高的权重。</p>
 <p><strong>计算公式：</strong>
 $$ H = \sum _ { i = 1 } ^ { n } S _ { i } ^ { 2 } $$
 其中：
-*   <code>H</code> 是 HHI 指数。
-*   <code>n</code> 是行业内公司的总数量。
-*   <code>S_i</code> 是第 <code>i</code> 家公司的市场份额。</p>
-<p><strong>重要说明：</strong> 在计算时，市场份额 <code>S</code> 通常用百分比的整数部分表示（例如，10% 就用 10 来计算）。</p>
+*   <span class="arithmatex">\(H\)</span> 是 HHI 指数。
+*   <span class="arithmatex">\(n\)</span> 是行业内公司的总数量。
+*   <span class="arithmatex">\(S_i\)</span> 是第 <span class="arithmatex">\(i\)</span> 家公司的市场份额。</p>
+<p><strong>重要说明：</strong> 在计算时，市场份额 <span class="arithmatex">\(S\)</span> 通常用百分比的整数部分表示（例如，10% 就用 10 来计算）。</p>
 <p><strong>根据您提供的数据计算 HHI：</strong>
 *   <strong>行业 A (Industry A):</strong>
-    <code>HHI_A = 10 × (10^2) = 10 × 100 = 1000</code>
+    <span class="arithmatex">\(HHI_A = 10 × (10^2) = 10 × 100 = 1000\)</span>
 *   <strong>行业 B (Industry B):</strong>
-    <code>HHI_B = (55^2) + 20 × (2.25^2) = 3025 + 20 × 5.0625 = 3025 + 101.25 = 3126.25</code>
+    <span class="arithmatex">\(HHI_B = (55^2) + 20 × (2.25^2) = 3025 + 20 × 5.0625 = 3025 + 101.25 = 3126.25\)</span>
 *   <strong>行业 C (Industry C):</strong>
-    <code>HHI_C = 3 × (25^2) + 5 × (5^2) = 3 × 625 + 5 × 25 = 1875 + 125 = 2000</code></p>
+    <span class="arithmatex">\(HHI_C = 3 × (25^2) + 5 × (5^2) = 3 × 625 + 5 × 25 = 1875 + 125 = 2000\)</span></p>
 <p><strong>HHI 结论：</strong>
-根据 HHI 指数，<code>HHI_B (3126.25) &gt; HHI_C (2000) &gt; HHI_A (1000)</code>。
-这个结论是：<strong>行业 B 集中度最高，其次是行业 C，行业 A 最低。</strong> HHI 成功捕捉到了行业 B 中存在一个超级巨头（占55%）这一事实，因此给出了最高的集中度评分，这比 <code>CRn</code> 的结论更符合直觉。</p>
+根据 HHI 指数，<span class="arithmatex">\(HHI_B (3126.25) &gt; HHI_C (2000) &gt; HHI_A (1000)\)</span>。
+这个结论是：<strong>行业 B 集中度最高，其次是行业 C，行业 A 最低。</strong> HHI 成功捕捉到了行业 B 中存在一个超级巨头（占55%）这一事实，因此给出了最高的集中度评分，这比 <span class="arithmatex">\(CRn\)</span> 的结论更符合直觉。</p>
 <hr />
 <h4 id="hhi"><strong>关于 HHI 指数范围的问题解答</strong></h4>
 <p><strong>1. HHI 的最大值是多少？ (What’s the maximum # for H?)</strong>
-当市场为<strong>完全垄断 (Pure Monopoly)</strong> 时，即一家公司占据 100% 的市场份额 (<code>S₁ = 100</code>)，HHI 达到最大值。
-<code>H_max = 100² = 10,000</code></p>
+当市场为<strong>完全垄断 (Pure Monopoly)</strong> 时，即一家公司占据 100% 的市场份额 (<span class="arithmatex">\(S₁ = 100\)</span>)，HHI 达到最大值。
+<span class="arithmatex">\(H_max = 100² = 10,000\)</span></p>
 <p><strong>2. HHI 的最小值是多少？ (What’s the lowest # for H?)</strong>
-当市场为<strong>完全竞争 (Perfect Competition)</strong> 时，市场中有无数家规模极小的公司，每家公司的市场份额趋近于 0 (<code>Sᵢ → 0</code>)。在这种理论情况下，HHI 的值趋近于 0。
-<code>H_min → 0</code></p>
+当市场为<strong>完全竞争 (Perfect Competition)</strong> 时，市场中有无数家规模极小的公司，每家公司的市场份额趋近于 0 (<span class="arithmatex">\(Sᵢ → 0\)</span>)。在这种理论情况下，HHI 的值趋近于 0。
+<span class="arithmatex">\(H_min → 0\)</span></p>
 <p><strong>HHI 指数的通用解读标准（例如美国司法部标准）：</strong>
 *   <strong>HHI &lt; 1500:</strong> 市场集中度低 (Unconcentrated Market)，竞争激烈。
 *   <strong>1500 ≤ HHI ≤ 2500:</strong> 市场中度集中 (Moderately Concentrated Market)。
@@ -2527,28 +2527,28 @@ $$ H = \sum _ { i = 1 } ^ { n } S _ { i } ^ { 2 } $$
 *   其他所有小厂商合计: 市场份额 2%</p>
 <p>为了简化计算，我们假设“其他”这部分由两家公司构成，每家占 1% 的市场份额。</p>
 <p><strong>请计算并分析：</strong>
-1.  该市场的 <code>CR2</code> (前两大公司的集中度指数)。
-2.  该市场的 <code>HHI</code> 指数。
-3.  根据 <code>HHI</code> 指数，判断该市场的市场结构类型。</p>
+1.  该市场的 <span class="arithmatex">\(CR2\)</span> (前两大公司的集中度指数)。
+2.  该市场的 <span class="arithmatex">\(HHI\)</span> 指数。
+3.  根据 <span class="arithmatex">\(HHI\)</span> 指数，判断该市场的市场结构类型。</p>
 <hr />
 <p><strong>解答：</strong></p>
 <p><strong>1. 计算 CR2:</strong>
-<code>CR2</code> 是前两大公司的市场份额之和。
-<code>CR2 = 市场份额(谷歌) + 市场份额(苹果)</code>
-<code>CR2 = 70% + 28% = 98%</code></p>
-<p><strong>分析：</strong> <code>CR2</code> 高达 98%，这表明仅两家公司就几乎控制了整个市场，这是一个非常明显的双头寡头垄断（Duopoly）的迹象。</p>
+<span class="arithmatex">\(CR2\)</span> 是前两大公司的市场份额之和。
+<span class="arithmatex">\(CR2 = 市场份额(谷歌) + 市场份额(苹果)\)</span>
+<span class="arithmatex">\(CR2 = 70% + 28% = 98%\)</span></p>
+<p><strong>分析：</strong> <span class="arithmatex">\(CR2\)</span> 高达 98%，这表明仅两家公司就几乎控制了整个市场，这是一个非常明显的双头寡头垄断（Duopoly）的迹象。</p>
 <p><strong>2. 计算 HHI 指数:</strong>
 我们需要将每家公司的市场份额（用百分比的整数部分）平方后求和。
 市场参与者份额：70, 28, 1, 1。
 $$ H = \sum S _ { i } ^ { 2 } $$
-<code>HHI = (70^2) + (28^2) + (1^2) + (1^2)</code>
-<code>HHI = 4900 + 784 + 1 + 1</code>
-<code>HHI = 5686</code></p>
+<span class="arithmatex">\(HHI = (70^2) + (28^2) + (1^2) + (1^2)\)</span>
+<span class="arithmatex">\(HHI = 4900 + 784 + 1 + 1\)</span>
+<span class="arithmatex">\(HHI = 5686\)</span></p>
 <p><strong>3. 分析市场结构类型:</strong>
 计算出的 HHI 值为 5686。
 根据通用标准：
-*   <code>HHI &gt; 2500</code> 属于高度集中市场。</p>
-<p>我们的计算结果 5686 远大于 2500，这表明全球智能手机操作系统市场是一个<strong>高度集中 (Highly Concentrated)</strong> 的市场，具有非常强的寡头垄断特征。这个结论与我们通过 <code>CR2</code> 得到的直观感受是一致的。HHI 的计算更加精确地量化了这种集中程度。</p>
+*   <span class="arithmatex">\(HHI &gt; 2500\)</span> 属于高度集中市场。</p>
+<p>我们的计算结果 5686 远大于 2500，这表明全球智能手机操作系统市场是一个<strong>高度集中 (Highly Concentrated)</strong> 的市场，具有非常强的寡头垄断特征。这个结论与我们通过 <span class="arithmatex">\(CR2\)</span> 得到的直观感受是一致的。HHI 的计算更加精确地量化了这种集中程度。</p>
 
 
 

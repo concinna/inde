@@ -2500,19 +2500,19 @@
 即： <span class="arithmatex">\(V_{today} = \text{E}[\text{profit}_{today}] + \rho \cdot \text{E}[V_{tomorrow}]\)</span></p>
 <p>在一个时期内，对于一个卡特尔成员来说，有三种可能发生的情况：</p>
 <p><strong>(1) 情况一：未被调查 (No investigation)</strong>
-*   发生的概率为 <code>(1-a)</code>。
+*   发生的概率为 <span class="arithmatex">\((1-a)\)</span>。
 *   企业获得当期利润 π<sub>m</sub>。
 *   卡特尔继续存在，所以从下一期开始的期望总利润现值仍然是 <span class="arithmatex">\(V_m\)</span>。
 *   这一部分的期望价值贡献为：<span class="arithmatex">\(V_1 = (1-a)(\pi_m + \rho V_m)\)</span>。
-    *   <em>注：原始文本中的 <code>(1-a)(π_m + ρπ_m)</code> 可能是笔误，因为未来价值应该是整个卡特尔的期望价值 <span class="arithmatex">\(V_m\)</span>，而不是单期利润 π<sub>m</sub>。以下推导将基于标准的 <span class="arithmatex">\(V_m\)</span> 进行。</em></p>
+    *   <em>注：原始文本中的 <span class="arithmatex">\((1-a)(π_m + ρπ_m)\)</span> 可能是笔误，因为未来价值应该是整个卡特尔的期望价值 <span class="arithmatex">\(V_m\)</span>，而不是单期利润 π<sub>m</sub>。以下推导将基于标准的 <span class="arithmatex">\(V_m\)</span> 进行。</em></p>
 <p><strong>(2) 情况二：被调查但未成功 (Unsuccessful investigation)</strong>
-*   发生的概率为 <code>a(1-s)</code>。
+*   发生的概率为 <span class="arithmatex">\(a(1-s)\)</span>。
 *   企业获得当期利润 π<sub>m</sub>。
 *   调查不成功，卡特尔继续存在，下一期开始的期望总利润现值仍然是 <span class="arithmatex">\(V_m\)</span>。
 *   这一部分的期望价值贡献为：<span class="arithmatex">\(V_2 = a(1-s)(\pi_m + \rho V_m)\)</span>。</p>
 <p><strong>(3) 情况三：被调查且成功起诉 (Successful prosecution)</strong>
-*   发生的概率为 <code>as</code>。
-*   企业获得当期利润 π<sub>m</sub>，但必须支付罚款 F。所以当期净收益为 <code>π_m - F</code>。
+*   发生的概率为 <span class="arithmatex">\(as\)</span>。
+*   企业获得当期利润 π<sub>m</sub>，但必须支付罚款 F。所以当期净收益为 <span class="arithmatex">\(π_m - F\)</span>。
 *   卡特尔在此之后<strong>永久瓦解</strong>。从下一期开始，企业只能获得竞争利润 π<sub>n</sub>。
 *   未来所有竞争利润的现值为：<span class="arithmatex">\(\rho\pi_n + \rho^2\pi_n + \rho^3\pi_n + ... = \frac{\rho}{1-\rho}\pi_n\)</span>。
 *   这一部分的期望价值贡献为：<span class="arithmatex">\(V_3 = as(\pi_m - F + \frac{\rho}{1-\rho}\pi_n)\)</span>。</p>
@@ -2524,8 +2524,8 @@ $$ V_m = (1-a)(\pi_m + \rho V_m) + a(1-s)(\pi_m + \rho V_m) + as(\pi_m - F + \fr
 *   <strong>第一步：合并同类项</strong>
     将包含 π<sub>m</sub> 的项和包含 ρV<sub>m</sub> 的项合并。
     $$ V_m = [(1-a) + a(1-s) + as]\pi_m - asF + \frac{as\rho}{1-\rho}\pi_n + [(1-a) + a(1-s)]\rho V_m $$
-    注意到 <code>(1-a) + a(1-s) + as = 1 - a + a - as + as = 1</code>。
-    并且 <code>(1-a) + a(1-s) = 1 - a + a - as = 1 - as</code>。
+    注意到 <span class="arithmatex">\((1-a) + a(1-s) + as = 1 - a + a - as + as = 1\)</span>。
+    并且 <span class="arithmatex">\((1-a) + a(1-s) = 1 - a + a - as = 1 - as\)</span>。
     代入上式，得到简化后的方程：
     $$ V_m = \pi_m - asF + \frac{as\rho}{1-\rho}\pi_n + (1-as)\rho V_m $$
 *   <strong>第二步：求解 V<sub>m</sub></strong>
@@ -2547,7 +2547,7 @@ $$ V_m &gt; V_d $$
 $$ \frac{\pi_m - asF + \frac{as\rho}{1-\rho}\pi_n}{1 - \rho(1-as)} &gt; \pi_d + \frac{\rho}{1-\rho}\pi_n $$</p>
 <p>这个不等式揭示了反垄断政策如何影响卡特尔的稳定性：
 1.  <strong>提高罚款 F</strong>: 罚款 F 增大，会使分子变小，从而降低 <span class="arithmatex">\(V_m\)</span>，使得不等式更难成立，卡特尔更容易瓦解。
-2.  <strong>提高调查概率 a 或成功率 s</strong>: 提高 <code>as</code>（即成功起诉的总概率）有多重影响。它会因为罚款 <code>F</code> 而降低 <span class="arithmatex">\(V_m\)</span>，同时也会改变分母，影响对未来价值的贴现。总的来说，<code>as</code> 越高，卡特尔越不稳定。</p>
+2.  <strong>提高调查概率 a 或成功率 s</strong>: 提高 <span class="arithmatex">\(as\)</span>（即成功起诉的总概率）有多重影响。它会因为罚款 <span class="arithmatex">\(F\)</span> 而降低 <span class="arithmatex">\(V_m\)</span>，同时也会改变分母，影响对未来价值的贴现。总的来说，<span class="arithmatex">\(as\)</span> 越高，卡特尔越不稳定。</p>
 <h4 id="5-bertrand-example"><strong>5. 伯特兰竞争下的特例 (Bertrand Example)</strong></h4>
 <p>在伯特兰（Bertrand）价格竞争模型中，产品同质，企业通过价格竞争。
 *   垄断时，两家企业可以合谋定价，平分市场和利润：<span class="arithmatex">\(\pi_m = \frac{\pi^M}{2}\)</span> (其中 <span class="arithmatex">\(\pi^M\)</span> 是总垄断利润)。
@@ -2563,12 +2563,12 @@ $$ \rho &gt; \rho^<em> = \frac{\pi_d - \pi_m}{\pi_d(1-as)} $$
 $$ \rho^</em> = \frac{\pi^M - \frac{\pi^M}{2}}{\pi^M(1-as)} = \frac{\frac{\pi^M}{2}}{\pi^M(1-as)} = \frac{1}{2(1-as)} $$
 这个公式的含义是：
 *   <strong>如果没有反垄断调查 (a=0 或 s=0)</strong>，那么 <span class="arithmatex">\(\rho^* = \frac{1}{2}\)</span>。这意味着只有当企业足够有耐心（即 ρ &gt; 1/2）时，卡特尔才能维持。
-*   <strong>随着 as 的增加</strong>，分母 <code>2(1-as)</code> 变小，导致临界值 ρ<sup>*</sup> 增大。这意味着，政府调查的威胁越大，对企业的耐心要求就越高。当 <code>as</code> 足够大（例如，当 as ≥ 0.5 时，ρ<sup>*</sup> ≥ 1，由于 ρ 必须小于1，卡特尔将永远无法维持），即使没有罚款，卡特尔也无法形成。</p>
+*   <strong>随着 as 的增加</strong>，分母 <span class="arithmatex">\(2(1-as)\)</span> 变小，导致临界值 ρ<sup>*</sup> 增大。这意味着，政府调查的威胁越大，对企业的耐心要求就越高。当 <span class="arithmatex">\(as\)</span> 足够大（例如，当 as ≥ 0.5 时，ρ<sup>*</sup> ≥ 1，由于 ρ 必须小于1，卡特尔将永远无法维持），即使没有罚款，卡特尔也无法形成。</p>
 <hr />
 <h3 id="leniency-program"><strong>模型第二部分：引入宽恕计划 (Leniency Program)</strong></h3>
 <p>宽恕计划允许第一个主动向当局坦白并提供证据的卡特尔成员获得罚款减免（甚至豁免）。这为企业引入了新的策略选项。</p>
 <ul>
-<li><strong>L</strong>: 坦白者需要支付的减免后的罚款 (Leniency fine)，其中 <code>0 ≤ L &lt; F</code>。如果完全豁免，则 L=0。</li>
+<li><strong>L</strong>: 坦白者需要支付的减免后的罚款 (Leniency fine)，其中 <span class="arithmatex">\(0 ≤ L &lt; F\)</span>。如果完全豁免，则 L=0。</li>
 </ul>
 <p>现在，一个卡特尔成员有三种主要策略：
 1.  <strong>合作但不坦白 (Collude, Not Reveal)</strong>: 其期望价值为 <span class="arithmatex">\(V_{NR}^C\)</span> (NR = Not Reveal)，这与我们第一部分计算的 <span class="arithmatex">\(V_m\)</span> 相同。
@@ -2606,7 +2606,7 @@ $$ V_R^C = \frac{\pi_m - aL + \frac{a\rho}{1-\rho}\pi_n}{1 - \rho(1-a)} $$
 1.  在没有宽恕计划的情况下，这个卡特尔是稳定的吗？
 2.  如果引入一项宽恕计划，坦白者可以完全免除罚款（即 L=0），那么这个计划会如何影响卡特尔的稳定性？</p>
 <p><strong>解答：</strong></p>
-<p>首先计算关键的组合概率：<code>as = 0.5 * 0.4 = 0.2</code>。</p>
+<p>首先计算关键的组合概率：<span class="arithmatex">\(as = 0.5 * 0.4 = 0.2\)</span>。</p>
 <p><strong>1. 分析没有宽恕计划的情况</strong></p>
 <p>我们需要比较<strong>合作（不坦白）的价值 (<span class="arithmatex">\(V_{NR}^C\)</span>)</strong> 和 <strong>欺骗的价值 (<span class="arithmatex">\(V_d\)</span>)</strong>。</p>
 <ul>
@@ -2646,7 +2646,7 @@ $$ V_R^C = \frac{\pi_m - aL + \frac{a\rho}{1-\rho}\pi_n}{1 - \rho(1-a)} $$
 <li>合作并坦白的价值: <span class="arithmatex">\(V_R^C = 3000\)</span></li>
 <li>合作不坦白的价值: <span class="arithmatex">\(V_{NR}^C = 3000\)</span></li>
 </ul>
-<p>在这个特定的参数下，我们看到 <span class="arithmatex">\(V_R^C = V_{NR}^C\)</span>。这是因为罚款F正好等于欺骗的额外收益 <code>π_d - π_m = 1800</code>，<code>asF</code>带来的惩罚效果被 <code>(1-ρ(1-as))</code> 这个分母抵消后，恰好与<code>V_R^C</code>相等。</p>
+<p>在这个特定的参数下，我们看到 <span class="arithmatex">\(V_R^C = V_{NR}^C\)</span>。这是因为罚款F正好等于欺骗的额外收益 <span class="arithmatex">\(π_d - π_m = 1800\)</span>，<span class="arithmatex">\(asF\)</span>带来的惩罚效果被 <span class="arithmatex">\((1-ρ(1-as))\)</span> 这个分母抵消后，恰好与<span class="arithmatex">\(V_R^C\)</span>相等。</p>
 <p>让我们稍微修改一下题目，以便更好地展示宽恕计划的效果。假设罚款 <strong>F=5000</strong>。
 *   <span class="arithmatex">\(V_d\)</span> 不变，仍为 3600。
 *   <span class="arithmatex">\(V_{NR}^C = \frac{1800 - (0.2)(5000)}{1 - 0.64} = \frac{1800 - 1000}{0.36} = \frac{800}{0.36} \approx 2222\)</span>

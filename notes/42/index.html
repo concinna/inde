@@ -2577,70 +2577,70 @@
 <p>我们使用一个标准的古诺（Cournot）竞争模型来分析这个问题。</p>
 <p><strong>基本假设:</strong></p>
 <ul>
-<li>市场上有 <code>N</code> 个完全相同的公司 (<code>N &gt; 2</code>)。</li>
+<li>市场上有 <span class="arithmatex">\(N\)</span> 个完全相同的公司 (<span class="arithmatex">\(N &gt; 2\)</span>)。</li>
 <li>这些公司进行数量竞争（Cournot competition），即同时决定各自的产量。</li>
 <li>所有公司的成本函数相同且为线性：
-    <code>$$C(q_i) = c q_i$$</code>
-    其中 <code>q_i</code> 是公司 <code>i</code> 的产量，<code>c</code> 是不变的边际成本。</li>
+    <span class="arithmatex">\(<span class="arithmatex">\(C(q_i) = c q_i\)</span>\)</span>
+    其中 <span class="arithmatex">\(q_i\)</span> 是公司 <span class="arithmatex">\(i\)</span> 的产量，<span class="arithmatex">\(c\)</span> 是不变的边际成本。</li>
 <li>市场的逆需求函数为线性：
-    <code>$$P = A - BQ$$</code>
-    其中 <code>P</code> 是市场价格，<code>Q</code> 是市场总产量 (<code>Q = \sum q_i</code>)，<code>A</code> 是市场的最大需求价格（截距），<code>B</code> 是需求曲线的斜率。</li>
-<li>公司 <code>i</code> 的利润 <code>π_i</code> 为：
-    <code>$$\pi_i = P \cdot q_i - C(q_i) = q_i [A - B(q_i + Q_{-i}) - c]$$</code>
-    其中 <code>Q_{-i}</code> 代表除公司 <code>i</code> 之外所有其他公司的总产量。</li>
+    <span class="arithmatex">\(<span class="arithmatex">\(P = A - BQ\)</span>\)</span>
+    其中 <span class="arithmatex">\(P\)</span> 是市场价格，<span class="arithmatex">\(Q\)</span> 是市场总产量 (<span class="arithmatex">\(Q = \sum q_i\)</span>)，<span class="arithmatex">\(A\)</span> 是市场的最大需求价格（截距），<span class="arithmatex">\(B\)</span> 是需求曲线的斜率。</li>
+<li>公司 <span class="arithmatex">\(i\)</span> 的利润 <span class="arithmatex">\(π_i\)</span> 为：
+    <span class="arithmatex">\(<span class="arithmatex">\(\pi_i = P \cdot q_i - C(q_i) = q_i [A - B(q_i + Q_{-i}) - c]\)</span>\)</span>
+    其中 <span class="arithmatex">\(Q_{-i}\)</span> 代表除公司 <span class="arithmatex">\(i\)</span> 之外所有其他公司的总产量。</li>
 </ul>
 <hr />
 <h4 id="3-pre-merger-cournot-equilibrium">3. 合并前的古诺均衡 (Pre-Merger Cournot Equilibrium)</h4>
-<p>在标准的 <code>N</code> 公司古诺模型中，通过求解每个公司利润最大化的一阶条件，可以得到对称均衡下每个公司的产量和利润。我们将合并前（Before Merger）的状态用上标 <code>BM</code> 或 <code>NC</code> (No Change) 来表示。</p>
+<p>在标准的 <span class="arithmatex">\(N\)</span> 公司古诺模型中，通过求解每个公司利润最大化的一阶条件，可以得到对称均衡下每个公司的产量和利润。我们将合并前（Before Merger）的状态用上标 <span class="arithmatex">\(BM\)</span> 或 <span class="arithmatex">\(NC\)</span> (No Change) 来表示。</p>
 <ul>
 <li><strong>每个公司的均衡产量 (Equilibrium Output per Firm):</strong>
-    <code>$$q_i^{BM} = \frac{A - c}{B(N + 1)}$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(q_i^{BM} = \frac{A - c}{B(N + 1)}\)</span>\)</span></li>
 <li><strong>每个公司的均衡利润 (Equilibrium Profit per Firm):</strong>
-    <code>$$\pi_i^{BM} = \frac{(A - c)^2}{B(N + 1)^2}$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(\pi_i^{BM} = \frac{(A - c)^2}{B(N + 1)^2}\)</span>\)</span></li>
 </ul>
-<p>在这个阶段，所有 <code>N</code> 家公司都是一样的，所以它们的产量和利润也都相同。</p>
+<p>在这个阶段，所有 <span class="arithmatex">\(N\)</span> 家公司都是一样的，所以它们的产量和利润也都相同。</p>
 <hr />
 <h4 id="4-post-merger-analysis">4. 合并后的分析 (Post-Merger Analysis)</h4>
-<p>现在，假设市场中的 <code>M</code> 家公司 (<code>2 \le M &lt; N</code>) 决定合并成一家大公司。</p>
+<p>现在，假设市场中的 <span class="arithmatex">\(M\)</span> 家公司 (<span class="arithmatex">\(2 \le M &lt; N\)</span>) 决定合并成一家大公司。</p>
 <ul>
-<li><strong>局内者 (Insiders, I):</strong> 参与合并的 <code>M</code> 家公司。合并后它们成为一个单一的实体。</li>
-<li><strong>局外者 (Outsiders, O):</strong> 未参与合并的 <code>N - M</code> 家公司。</li>
+<li><strong>局内者 (Insiders, I):</strong> 参与合并的 <span class="arithmatex">\(M\)</span> 家公司。合并后它们成为一个单一的实体。</li>
+<li><strong>局外者 (Outsiders, O):</strong> 未参与合并的 <span class="arithmatex">\(N - M\)</span> 家公司。</li>
 </ul>
-<p>合并后，市场上的竞争者数量从 <code>N</code> 减少到了 <code>(N - M) + 1</code>。这个新市场中的所有 <code>(N - M + 1)</code> 个“玩家”（1个合并后的大公司和 <code>N-M</code> 个局外者公司）再次进行古诺竞争。</p>
-<p><strong>重要假设：</strong> 模型暂时<strong>忽略</strong>了任何成本节约。合并后的新公司的边际成本仍然是 <code>c</code>。</p>
-<p>因此，合并后的新公司和所有局外者公司在结构上是完全一样的。我们可以直接使用古诺均衡公式，只需将公司总数 <code>N</code> 替换为 <code>N - M + 1</code>。</p>
-<p>我们将合并后（After Merger）的状态用上标 <code>AM</code> 表示。</p>
+<p>合并后，市场上的竞争者数量从 <span class="arithmatex">\(N\)</span> 减少到了 <span class="arithmatex">\((N - M) + 1\)</span>。这个新市场中的所有 <span class="arithmatex">\((N - M + 1)\)</span> 个“玩家”（1个合并后的大公司和 <span class="arithmatex">\(N-M\)</span> 个局外者公司）再次进行古诺竞争。</p>
+<p><strong>重要假设：</strong> 模型暂时<strong>忽略</strong>了任何成本节约。合并后的新公司的边际成本仍然是 <span class="arithmatex">\(c\)</span>。</p>
+<p>因此，合并后的新公司和所有局外者公司在结构上是完全一样的。我们可以直接使用古诺均衡公式，只需将公司总数 <span class="arithmatex">\(N\)</span> 替换为 <span class="arithmatex">\(N - M + 1\)</span>。</p>
+<p>我们将合并后（After Merger）的状态用上标 <span class="arithmatex">\(AM\)</span> 表示。</p>
 <ul>
 <li><strong>合并后任何一家公司（包括合并公司和局外者）的均衡产量:</strong>
-    <code>$$q_I^{AM} = q_O^{AM} = \frac{A - c}{B(N - M + 2)}$$</code>
-    (这里的 <code>N-M+2</code> 来自于新的公司总数 <code>(N-M+1)</code> 再加1，即 <code>(N-M+1)+1</code>)</li>
+    <span class="arithmatex">\(<span class="arithmatex">\(q_I^{AM} = q_O^{AM} = \frac{A - c}{B(N - M + 2)}\)</span>\)</span>
+    (这里的 <span class="arithmatex">\(N-M+2\)</span> 来自于新的公司总数 <span class="arithmatex">\((N-M+1)\)</span> 再加1，即 <span class="arithmatex">\((N-M+1)+1\)</span>)</li>
 <li><strong>合并后任何一家公司（包括合并公司和局外者）的均衡利润:</strong>
-    <code>$$\pi_I^{AM} = \pi_O^{AM} = \frac{(A - c)^2}{B(N - M + 2)^2}$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(\pi_I^{AM} = \pi_O^{AM} = \frac{(A - c)^2}{B(N - M + 2)^2}\)</span>\)</span></li>
 </ul>
 <hr />
 <h4 id="5">5. 结果分析与悖论的产生</h4>
 <h5 id="51-effect-on-outsiders">5.1 对局外者的影响 (Effect on Outsiders)</h5>
 <p>比较局外者在合并前后的产量：
-<code>$$q_O^{AM} = \frac{A - c}{B(N - M + 2)} &gt; \frac{A - c}{B(N + 1)} = q_O^{BM}$$</code>
-因为 <code>M \ge 2</code>，所以 <code>N - M + 2 &lt; N + 1</code>，分母变小，因此局外者的产量增加了。</p>
-<p><strong>直觉解释：</strong> 合并行为相当于局内者（合并后的公司）承诺会减少它们的总产量（从 <code>M</code> 个小公司的总产量变为 <code>1</code> 个大公司的产量）。这为市场留出了空间，作为对局内者减产的最佳应对，局外者会选择增产来抢占市场份额。</p>
+<span class="arithmatex">\(<span class="arithmatex">\(q_O^{AM} = \frac{A - c}{B(N - M + 2)} &gt; \frac{A - c}{B(N + 1)} = q_O^{BM}\)</span>\)</span>
+因为 <span class="arithmatex">\(M \ge 2\)</span>，所以 <span class="arithmatex">\(N - M + 2 &lt; N + 1\)</span>，分母变小，因此局外者的产量增加了。</p>
+<p><strong>直觉解释：</strong> 合并行为相当于局内者（合并后的公司）承诺会减少它们的总产量（从 <span class="arithmatex">\(M\)</span> 个小公司的总产量变为 <span class="arithmatex">\(1\)</span> 个大公司的产量）。这为市场留出了空间，作为对局内者减产的最佳应对，局外者会选择增产来抢占市场份额。</p>
 <p>由于产量增加且市场价格上升（因为市场总产量下降了，见下文），<strong>局外者的利润必然增加</strong>。这被称为“<strong>搭便车问题</strong>”（Free-riding opportunity），局外者不承担任何合并风险，却能从中获益。</p>
 <h5 id="52-effect-on-total-output-and-price">5.2 对市场总产量和价格的影响 (Effect on Total Output and Price)</h5>
 <ul>
-<li><strong>合并前市场总产量:</strong> <code>Q^{BM} = N \cdot q^{BM} = \frac{N(A - c)}{B(N + 1)}</code></li>
-<li><strong>合并后市场总产量:</strong> <code>Q^{AM} = (N-M+1) \cdot q^{AM} = \frac{(N-M+1)(A - c)}{B(N - M + 2)}</code></li>
+<li><strong>合并前市场总产量:</strong> <span class="arithmatex">\(Q^{BM} = N \cdot q^{BM} = \frac{N(A - c)}{B(N + 1)}\)</span></li>
+<li><strong>合并后市场总产量:</strong> <span class="arithmatex">\(Q^{AM} = (N-M+1) \cdot q^{AM} = \frac{(N-M+1)(A - c)}{B(N - M + 2)}\)</span></li>
 </ul>
-<p>可以证明，<code>Q^{AM} &lt; Q^{BM}</code> 总是成立的。因为总产量下降了，根据需求曲线 <code>P = A - BQ</code>，<strong>市场价格 <code>P</code> 在合并后会上升</strong>。这对消费者是不利的。</p>
+<p>可以证明，<span class="arithmatex">\(Q^{AM} &lt; Q^{BM}\)</span> 总是成立的。因为总产量下降了，根据需求曲线 <span class="arithmatex">\(P = A - BQ\)</span>，<strong>市场价格 <span class="arithmatex">\(P\)</span> 在合并后会上升</strong>。这对消费者是不利的。</p>
 <h5 id="53-profitability-condition-for-insiders">5.3 对局内者的影响：盈利条件 (Profitability Condition for Insiders)</h5>
 <p>这是悖论的核心。合并对局内者是否有利，取决于它们合并前的<strong>总利润</strong>与合并后的<strong>单一利润</strong>的比较。</p>
 <p>合并有利的条件是：
-<code>$$\pi_I^{AM} &gt; M \cdot \pi_i^{BM}$$</code></p>
+<span class="arithmatex">\(<span class="arithmatex">\(\pi_I^{AM} &gt; M \cdot \pi_i^{BM}\)</span>\)</span></p>
 <p>将公式代入：
-<code>$$\frac{(A - c)^2}{B(N - M + 2)^2} &gt; M \cdot \frac{(A - c)^2}{B(N + 1)^2}$$</code></p>
-<p>消去相同项 <code>(A-c)^2 / B</code>，我们得到：
-<code>$$\frac{1}{(N - M + 2)^2} &gt; \frac{M}{(N + 1)^2}$$</code>
-<code>$$\implies (N + 1)^2 &gt; M (N - M + 2)^2$$</code></p>
-<p>这个条件<strong>非常难以满足</strong>。它要求参与合并的公司数量 <code>M</code> 必须非常大，接近于市场中所有公司的数量 <code>N</code>。</p>
+<span class="arithmatex">\(<span class="arithmatex">\(\frac{(A - c)^2}{B(N - M + 2)^2} &gt; M \cdot \frac{(A - c)^2}{B(N + 1)^2}\)</span>\)</span></p>
+<p>消去相同项 <span class="arithmatex">\((A-c)^2 / B\)</span>，我们得到：
+<span class="arithmatex">\(<span class="arithmatex">\(\frac{1}{(N - M + 2)^2} &gt; \frac{M}{(N + 1)^2}\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(\implies (N + 1)^2 &gt; M (N - M + 2)^2\)</span>\)</span></p>
+<p>这个条件<strong>非常难以满足</strong>。它要求参与合并的公司数量 <span class="arithmatex">\(M\)</span> 必须非常大，接近于市场中所有公司的数量 <span class="arithmatex">\(N\)</span>。</p>
 <h5 id="54-80">5.4 “80%规则”与悖论的总结</h5>
 <p>Salant, Switzer, and Reynolds (1983) 的研究表明，在没有成本节约的线性古诺模型中，为了使合并有利可图，通常需要行业中<strong>至少80%的公司</strong>参与合并。</p>
 <table>
@@ -2685,7 +2685,7 @@
 <h5 id="55">5.5 模型未能捕捉到的现实因素</h5>
 <p>悖论的产生是因为模型过于简化。现实世界的合并远比模型复杂，古诺模型未能捕捉到以下关键因素：</p>
 <ol>
-<li><strong>成本协同效应 (Cost Synergies)</strong>：这是最重要的因素。如果合并能显著降低边际成本 <code>c</code>，那么即使只有少数公司参与合并，也可能变得有利可图。</li>
+<li><strong>成本协同效应 (Cost Synergies)</strong>：这是最重要的因素。如果合并能显著降低边际成本 <span class="arithmatex">\(c\)</span>，那么即使只有少数公司参与合并，也可能变得有利可图。</li>
 <li><strong>产品差异化</strong>：古诺模型假设产品同质。如果产品有差异，公司间的竞争就不那么激烈，合并带来的市场势力提升效果会更明显。</li>
 <li><strong>不同的竞争模式</strong>：如果公司进行价格竞争（伯特兰模型 Bertrand Model）而非数量竞争，任何两家公司的合并（在产品同质情况下）都会因为减少了价格战的压力而变得有利可图。</li>
 <li><strong>收购低效企业</strong>：合并可能是为了收购管理不善、成本高昂的企业，并通过更高效的管理来提升其价值。</li>
@@ -2693,8 +2693,8 @@
 <hr />
 <h3 id="_1">例题</h3>
 <p>假设一个行业中有3家完全相同的公司（N=3），它们进行古诺竞争。
-市场逆需求函数为 <code>P = 120 - Q</code>，其中 <code>Q = q_1 + q_2 + q_3</code>。
-所有公司的边际成本都为 <code>c = 30</code>。</p>
+市场逆需求函数为 <span class="arithmatex">\(P = 120 - Q\)</span>，其中 <span class="arithmatex">\(Q = q_1 + q_2 + q_3\)</span>。
+所有公司的边际成本都为 <span class="arithmatex">\(c = 30\)</span>。</p>
 <p><strong>问题：</strong>
 (a) 计算合并前的均衡状态：每家公司的产量、利润，以及市场价格。
 (b) 假设公司1和公司2决定合并。计算合并后的均衡状态：合并后公司（Insiders）的产量和利润，局外者公司3（Outsider）的产量和利润，以及新的市场价格。
@@ -2705,44 +2705,44 @@ A = 120, B = 1, c = 30, N = 3</p>
 <p><strong>(a) 合并前的均衡 (N=3)</strong></p>
 <ul>
 <li><strong>每家公司的产量:</strong>
-    <code>$$q^{BM} = \frac{A - c}{B(N + 1)} = \frac{120 - 30}{1(3 + 1)} = \frac{90}{4} = 22.5$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(q^{BM} = \frac{A - c}{B(N + 1)} = \frac{120 - 30}{1(3 + 1)} = \frac{90}{4} = 22.5\)</span>\)</span></li>
 <li><strong>市场总产量:</strong>
-    <code>$$Q^{BM} = N \cdot q^{BM} = 3 \times 22.5 = 67.5$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(Q^{BM} = N \cdot q^{BM} = 3 \times 22.5 = 67.5\)</span>\)</span></li>
 <li><strong>市场价格:</strong>
-    <code>$$P^{BM} = 120 - Q^{BM} = 120 - 67.5 = 52.5$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(P^{BM} = 120 - Q^{BM} = 120 - 67.5 = 52.5\)</span>\)</span></li>
 <li><strong>每家公司的利润:</strong>
-    <code>$$\pi^{BM} = (P^{BM} - c) \cdot q^{BM} = (52.5 - 30) \times 22.5 = 22.5 \times 22.5 = 506.25$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(\pi^{BM} = (P^{BM} - c) \cdot q^{BM} = (52.5 - 30) \times 22.5 = 22.5 \times 22.5 = 506.25\)</span>\)</span></li>
 </ul>
 <p><strong>(b) 合并后的均衡 (M=2)</strong></p>
-<p>公司1和2合并后，市场上剩下2个竞争实体（合并后的公司I，和局外者公司O）。新的“公司总数”为 <code>N' = (N-M)+1 = (3-2)+1 = 2</code>。</p>
+<p>公司1和2合并后，市场上剩下2个竞争实体（合并后的公司I，和局外者公司O）。新的“公司总数”为 <span class="arithmatex">\(N' = (N-M)+1 = (3-2)+1 = 2\)</span>。</p>
 <ul>
 <li><strong>合并后每家实体的产量 (包括Insider和Outsider):</strong>
-    <code>$$q^{AM} = \frac{A - c}{B(N' + 1)} = \frac{120 - 30}{1(2 + 1)} = \frac{90}{3} = 30$$</code>
-    所以，合并后公司的产量 <code>q_I^{AM} = 30</code>，局外者公司3的产量 <code>q_O^{AM} = 30</code>。</li>
+    <span class="arithmatex">\(<span class="arithmatex">\(q^{AM} = \frac{A - c}{B(N' + 1)} = \frac{120 - 30}{1(2 + 1)} = \frac{90}{3} = 30\)</span>\)</span>
+    所以，合并后公司的产量 <span class="arithmatex">\(q_I^{AM} = 30\)</span>，局外者公司3的产量 <span class="arithmatex">\(q_O^{AM} = 30\)</span>。</li>
 <li><strong>市场总产量:</strong>
-    <code>$$Q^{AM} = 2 \times q^{AM} = 2 \times 30 = 60$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(Q^{AM} = 2 \times q^{AM} = 2 \times 30 = 60\)</span>\)</span></li>
 <li><strong>市场价格:</strong>
-    <code>$$P^{AM} = 120 - Q^{AM} = 120 - 60 = 60$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(P^{AM} = 120 - Q^{AM} = 120 - 60 = 60\)</span>\)</span></li>
 <li><strong>合并后公司的利润:</strong>
-    <code>$$\pi_I^{AM} = (P^{AM} - c) \cdot q_I^{AM} = (60 - 30) \times 30 = 900$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(\pi_I^{AM} = (P^{AM} - c) \cdot q_I^{AM} = (60 - 30) \times 30 = 900\)</span>\)</span></li>
 <li><strong>局外者公司3的利润:</strong>
-    <code>$$\pi_O^{AM} = (P^{AM} - c) \cdot q_O^{AM} = (60 - 30) \times 30 = 900$$</code></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(\pi_O^{AM} = (P^{AM} - c) \cdot q_O^{AM} = (60 - 30) \times 30 = 900\)</span>\)</span></li>
 </ul>
 <p><strong>(c) 分析与结论</strong></p>
 <ul>
 <li>
 <p><strong>对局内者 (公司1和2):</strong>
-    它们合并前的总利润是 <code>2 \times \pi^{BM} = 2 \times 506.25 = 1012.5</code>。
-    合并后的利润是 <code>\pi_I^{AM} = 900</code>。
-    因为 <code>900 &lt; 1012.5</code>，所以这次合并对于参与者来说是<strong>无利可图的</strong>。</p>
+    它们合并前的总利润是 <span class="arithmatex">\(2 \times \pi^{BM} = 2 \times 506.25 = 1012.5\)</span>。
+    合并后的利润是 <span class="arithmatex">\(\pi_I^{AM} = 900\)</span>。
+    因为 <span class="arithmatex">\(900 &lt; 1012.5\)</span>，所以这次合并对于参与者来说是<strong>无利可图的</strong>。</p>
 </li>
 <li>
 <p><strong>对局外者 (公司3):</strong>
-    它合并前的利润是 <code>506.25</code>，合并后的利润增加到了 <code>900</code>。局外者成为了合并的“搭便车者”，利润大幅增加。</p>
+    它合并前的利润是 <span class="arithmatex">\(506.25\)</span>，合并后的利润增加到了 <span class="arithmatex">\(900\)</span>。局外者成为了合并的“搭便车者”，利润大幅增加。</p>
 </li>
 <li>
 <p><strong>对消费者:</strong>
-    市场价格从 <code>52.5</code> 上涨到 <code>60</code>，消费者福利受损。</p>
+    市场价格从 <span class="arithmatex">\(52.5\)</span> 上涨到 <span class="arithmatex">\(60\)</span>，消费者福利受损。</p>
 </li>
 </ul>
 <p><strong>结论：</strong> 这个例子完美地展示了<strong>合并悖论</strong>。在一个三家公司的市场中，两家公司的横向合并导致了：

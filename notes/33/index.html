@@ -2535,144 +2535,144 @@
 <p>这个模型建立在斯塔克伯格双寡头模型（Stackelberg Duopoly Model）的基础上。在斯塔克伯格模型中，一个领导者（Leader, L）首先决定其产量，然后一个跟随者（Follower, F）观察到领导者的产量后再决定自己的产量。</p>
 <h4 id="1">1. 基本设定</h4>
 <ul>
-<li>市场逆需求函数 (Inverse Demand): <code>P = A - BQ</code>，其中 <code>Q = q_L + q_F</code> 是市场总产量。为了简化，我们遵循您文本中的隐含假设，令 <code>B=1</code>，即 <code>P = A - (q_L + q_F)</code>。</li>
-<li>成本：两家公司的边际成本（Marginal Cost）都为常数 <code>C</code>。</li>
-<li>进入成本：潜在进入者（跟随者）需要支付一笔固定的、沉没的进入成本（Fixed Cost of Entry）<code>F</code>。</li>
+<li>市场逆需求函数 (Inverse Demand): <span class="arithmatex">\(P = A - BQ\)</span>，其中 <span class="arithmatex">\(Q = q_L + q_F\)</span> 是市场总产量。为了简化，我们遵循您文本中的隐含假设，令 <span class="arithmatex">\(B=1\)</span>，即 <span class="arithmatex">\(P = A - (q_L + q_F)\)</span>。</li>
+<li>成本：两家公司的边际成本（Marginal Cost）都为常数 <span class="arithmatex">\(C\)</span>。</li>
+<li>进入成本：潜在进入者（跟随者）需要支付一笔固定的、沉没的进入成本（Fixed Cost of Entry）<span class="arithmatex">\(F\)</span>。</li>
 </ul>
 <h4 id="2">2. 模型分析</h4>
-<p>模型的关键在于，在位者（领导者）知道潜在进入者只有在预期利润为正时才会进入市场。因此，在位者可以通过调整自己的产量 <code>q_L</code> 来影响进入者的利润预期。</p>
+<p>模型的关键在于，在位者（领导者）知道潜在进入者只有在预期利润为正时才会进入市场。因此，在位者可以通过调整自己的产量 <span class="arithmatex">\(q_L\)</span> 来影响进入者的利润预期。</p>
 <p><strong>第一步：分析跟随者的进入决策</strong></p>
-<p>如果跟随者决定进入，它会选择一个产量 <code>q_F</code> 来最大化其利润 <code>π_F</code>。
+<p>如果跟随者决定进入，它会选择一个产量 <span class="arithmatex">\(q_F\)</span> 来最大化其利润 <span class="arithmatex">\(π_F\)</span>。
 跟随者的利润函数为：
-<code>π_F = P * q_F - C * q_F - F = (A - q_L - q_F - C) * q_F - F</code></p>
-<p>为了求利润最大化，我们对 <code>q_F</code> 求一阶导数（FOC）：
-<code>∂π_F / ∂q_F = A - q_L - 2q_F - C = 0</code></p>
-<p>解出 <code>q_F</code>，得到跟随者的<strong>最优反应函数 (Best Response Function)</strong>：
+<span class="arithmatex">\(π_F = P * q_F - C * q_F - F = (A - q_L - q_F - C) * q_F - F\)</span></p>
+<p>为了求利润最大化，我们对 <span class="arithmatex">\(q_F\)</span> 求一阶导数（FOC）：
+<span class="arithmatex">\(∂π_F / ∂q_F = A - q_L - 2q_F - C = 0\)</span></p>
+<p>解出 <span class="arithmatex">\(q_F\)</span>，得到跟随者的<strong>最优反应函数 (Best Response Function)</strong>：
 $$ q_F = \frac{A - C - q_L}{2} $$
-这个公式表明，在位者 <code>q_L</code> 产量越高，留给跟随者的市场空间就越小，跟随者的最优产量 <code>q_F</code> 也越低。</p>
+这个公式表明，在位者 <span class="arithmatex">\(q_L\)</span> 产量越高，留给跟随者的市场空间就越小，跟随者的最优产量 <span class="arithmatex">\(q_F\)</span> 也越低。</p>
 <p><strong>第二步：在位者如何威慑进入</strong></p>
-<p>在位者知道，只要跟随者的预期最大利润 <code>π_F</code> 大于0，它就会进入。为了阻止进入，在位者可以选择一个产量 <code>q_L</code>，使得跟随者的最大利润恰好为0或小于0。</p>
-<p>将最优反应 <code>q_F</code> 代入利润函数 <code>π_F</code>：
-<code>π_F = (A - q_L - \frac{A - C - q_L}{2} - C) * (\frac{A - C - q_L}{2}) - F</code>
-<code>π_F = (\frac{A - C - q_L}{2}) * (\frac{A - C - q_L}{2}) - F</code>
+<p>在位者知道，只要跟随者的预期最大利润 <span class="arithmatex">\(π_F\)</span> 大于0，它就会进入。为了阻止进入，在位者可以选择一个产量 <span class="arithmatex">\(q_L\)</span>，使得跟随者的最大利润恰好为0或小于0。</p>
+<p>将最优反应 <span class="arithmatex">\(q_F\)</span> 代入利润函数 <span class="arithmatex">\(π_F\)</span>：
+<span class="arithmatex">\(π_F = (A - q_L - \frac{A - C - q_L}{2} - C) * (\frac{A - C - q_L}{2}) - F\)</span>
+<span class="arithmatex">\(π_F = (\frac{A - C - q_L}{2}) * (\frac{A - C - q_L}{2}) - F\)</span>
 $$ \pi_F = \left( \frac{A - C - q_L}{2} \right)^2 - F $$</p>
-<p>为了阻止进入，必须满足 <code>π_F ≤ 0</code>。在位者需要设定的最小威慑产量（称为<strong>限制性产量, limit output</strong>）<code>q_L^d</code> 恰好能使 <code>π_F = 0</code>。
-<code>\left( \frac{A - C - q_L^d}{2} \right)^2 = F</code>
-<code>\frac{A - C - q_L^d}{2} = \sqrt{F}</code>
-解出 <code>q_L^d</code>：
+<p>为了阻止进入，必须满足 <span class="arithmatex">\(π_F ≤ 0\)</span>。在位者需要设定的最小威慑产量（称为<strong>限制性产量, limit output</strong>）<span class="arithmatex">\(q_L^d\)</span> 恰好能使 <span class="arithmatex">\(π_F = 0\)</span>。
+<span class="arithmatex">\(\left( \frac{A - C - q_L^d}{2} \right)^2 = F\)</span>
+<span class="arithmatex">\(\frac{A - C - q_L^d}{2} = \sqrt{F}\)</span>
+解出 <span class="arithmatex">\(q_L^d\)</span>：
 $$ q_L^d = A - C - 2\sqrt{F} $$
 这就是在位者为阻止进入而必须承诺生产的产量。</p>
 <h4 id="3">3. 在位者的策略选择</h4>
 <p>在位者面临三种选择，它会选择利润最高的那一种：</p>
 <ol>
 <li>
-<p><strong>容忍进入 (Accommodating Entry)</strong>：在位者接受跟随者将会进入的事实，并按照标准的斯塔克伯格领导者来行动。此时，领导者的产量为 <code>q_L^S = (A-C)/2</code>，利润为：
+<p><strong>容忍进入 (Accommodating Entry)</strong>：在位者接受跟随者将会进入的事实，并按照标准的斯塔克伯格领导者来行动。此时，领导者的产量为 <span class="arithmatex">\(q_L^S = (A-C)/2\)</span>，利润为：
     $$ \pi_L^S = \frac{(A-C)^2}{8} $$
-    (注：原文公式有误，斯塔克伯格领导者利润是 <code>(A-C)²/8B</code>，跟随者是 <code>(A-C)²/16B</code>。这里 <code>B=1</code>)</p>
+    (注：原文公式有误，斯塔克伯格领导者利润是 <span class="arithmatex">\((A-C)²/8B\)</span>，跟随者是 <span class="arithmatex">\((A-C)²/16B\)</span>。这里 <span class="arithmatex">\(B=1\)</span>)</p>
 </li>
 <li>
-<p><strong>威慑进入 (Deterring Entry)</strong>：在位者生产限制性产量 <code>q_L^d = A - C - 2\sqrt{F}</code>。此时市场上只有它自己，它将获得全部利润。
-    市场价格 <code>P = A - q_L^d = A - (A - C - 2\sqrt{F}) = C + 2\sqrt{F}</code>。
+<p><strong>威慑进入 (Deterring Entry)</strong>：在位者生产限制性产量 <span class="arithmatex">\(q_L^d = A - C - 2\sqrt{F}\)</span>。此时市场上只有它自己，它将获得全部利润。
+    市场价格 <span class="arithmatex">\(P = A - q_L^d = A - (A - C - 2\sqrt{F}) = C + 2\sqrt{F}\)</span>。
     在位者的利润为：
-    <code>π_L^d = (P - C) * q_L^d = (C + 2\sqrt{F} - C) * (A - C - 2\sqrt{F})</code>
+    <span class="arithmatex">\(π_L^d = (P - C) * q_L^d = (C + 2\sqrt{F} - C) * (A - C - 2\sqrt{F})\)</span>
     $$ \pi_L^d = 2\sqrt{F}(A - C - 2\sqrt{F}) = 2(A-C)\sqrt{F} - 4F $$
-    (注：原文公式 <code>4√F</code> 是一个笔误，应为 <code>4F</code>)</p>
+    (注：原文公式 <span class="arithmatex">\(4√F\)</span> 是一个笔误，应为 <span class="arithmatex">\(4F\)</span>)</p>
 </li>
 <li>
-<p><strong>进入被自然阻止 (Blockaded Entry)</strong>：如果进入成本 <code>F</code> 非常高，高到即使在位者按自身垄断产量 <code>q_L^M = (A-C)/2</code>（这也是斯塔克伯格领导者产量）生产时，潜在进入者的利润 <code>π_F</code> 仍然为负。
-    在这种情况下，<code>π_F = (\frac{A - C - q_L^M}{2})^2 - F = (\frac{A - C - (A-C)/2}{2})^2 - F = (\frac{A-C}{4})^2 - F &lt; 0</code>。
+<p><strong>进入被自然阻止 (Blockaded Entry)</strong>：如果进入成本 <span class="arithmatex">\(F\)</span> 非常高，高到即使在位者按自身垄断产量 <span class="arithmatex">\(q_L^M = (A-C)/2\)</span>（这也是斯塔克伯格领导者产量）生产时，潜在进入者的利润 <span class="arithmatex">\(π_F\)</span> 仍然为负。
+    在这种情况下，<span class="arithmatex">\(π_F = (\frac{A - C - q_L^M}{2})^2 - F = (\frac{A - C - (A-C)/2}{2})^2 - F = (\frac{A-C}{4})^2 - F &lt; 0\)</span>。
     即，如果满足以下条件，进入就被自然阻止：
     $$ F &gt; \frac{(A-C)^2}{16} $$
-    此时，在位者无需采取任何额外策略，只需按垄断者（或斯塔克伯格领导者）的方式生产即可，其利润就是 <code>(A-C)²/8</code>。</p>
+    此时，在位者无需采取任何额外策略，只需按垄断者（或斯塔克伯格领导者）的方式生产即可，其利润就是 <span class="arithmatex">\((A-C)²/8\)</span>。</p>
 </li>
 </ol>
 <h4 id="4">4. 决策分析</h4>
 <p>在位者将在“容忍进入”和“威慑进入”之间进行权衡（假设进入未被自然阻止）。它会选择威慑进入，当且仅当：
-<code>π_L^d &gt; π_L^S</code>
+<span class="arithmatex">\(π_L^d &gt; π_L^S\)</span>
 $$ 2(A-C)\sqrt{F} - 4F &gt; \frac{(A-C)^2}{8} $$</p>
-<p>为了简化分析，我们引入一个参数 <code>α</code>，它表示进入成本相对于市场规模的大小。
-令 <code>\sqrt{F} = \frac{\alpha(A-C)}{4}</code>，其中 <code>0 ≤ α &lt; 1</code>。
-（当 <code>α=1</code> 时，<code>F = (A-C)²/16</code>，这是进入被自然阻止的临界点）。</p>
-<p>将 <code>√F</code> 和 <code>F</code> 代入不等式：
-<code>2(A-C)\frac{\alpha(A-C)}{4} - 4\left(\frac{\alpha(A-C)}{4}\right)^2 &gt; \frac{(A-C)^2}{8}</code>
-<code>\frac{\alpha(A-C)^2}{2} - \frac{4\alpha^2(A-C)^2}{16} &gt; \frac{(A-C)^2}{8}</code>
-两边同除以 <code>(A-C)²</code>：
-<code>\frac{\alpha}{2} - \frac{\alpha^2}{4} &gt; \frac{1}{8}</code>
-乘以8：<code>4\alpha - 2\alpha^2 &gt; 1</code>
-<code>2\alpha^2 - 4\alpha + 1 &lt; 0</code></p>
-<p>解二次方程 <code>2\alpha^2 - 4\alpha + 1 = 0</code> 的根为 <code>α = (4 ± √(16-8))/4 = 1 ± 1/√2</code>。
-由于我们知道 <code>0 ≤ α &lt; 1</code>，所以不等式的解为 <code>1 - 1/√2 &lt; α &lt; 1</code>。</p>
-<p><strong>结论</strong>：当进入成本 <code>F</code> 处于一个中等范围时（即 <code>α</code> 满足 <code>1 - 1/√2 &lt; α &lt; 1</code>），在位者选择“威慑进入”策略是有利可图的。如果进入成本太低（<code>α</code> 小于 <code>1 - 1/√2</code>），那么威慑成本太高（需要生产非常高的产量），不如容忍进入。如果进入成本太高（<code>α ≥ 1</code>），进入被自然阻止。</p>
+<p>为了简化分析，我们引入一个参数 <span class="arithmatex">\(α\)</span>，它表示进入成本相对于市场规模的大小。
+令 <span class="arithmatex">\(\sqrt{F} = \frac{\alpha(A-C)}{4}\)</span>，其中 <span class="arithmatex">\(0 ≤ α &lt; 1\)</span>。
+（当 <span class="arithmatex">\(α=1\)</span> 时，<span class="arithmatex">\(F = (A-C)²/16\)</span>，这是进入被自然阻止的临界点）。</p>
+<p>将 <span class="arithmatex">\(√F\)</span> 和 <span class="arithmatex">\(F\)</span> 代入不等式：
+<span class="arithmatex">\(2(A-C)\frac{\alpha(A-C)}{4} - 4\left(\frac{\alpha(A-C)}{4}\right)^2 &gt; \frac{(A-C)^2}{8}\)</span>
+<span class="arithmatex">\(\frac{\alpha(A-C)^2}{2} - \frac{4\alpha^2(A-C)^2}{16} &gt; \frac{(A-C)^2}{8}\)</span>
+两边同除以 <span class="arithmatex">\((A-C)²\)</span>：
+<span class="arithmatex">\(\frac{\alpha}{2} - \frac{\alpha^2}{4} &gt; \frac{1}{8}\)</span>
+乘以8：<span class="arithmatex">\(4\alpha - 2\alpha^2 &gt; 1\)</span>
+<span class="arithmatex">\(2\alpha^2 - 4\alpha + 1 &lt; 0\)</span></p>
+<p>解二次方程 <span class="arithmatex">\(2\alpha^2 - 4\alpha + 1 = 0\)</span> 的根为 <span class="arithmatex">\(α = (4 ± √(16-8))/4 = 1 ± 1/√2\)</span>。
+由于我们知道 <span class="arithmatex">\(0 ≤ α &lt; 1\)</span>，所以不等式的解为 <span class="arithmatex">\(1 - 1/√2 &lt; α &lt; 1\)</span>。</p>
+<p><strong>结论</strong>：当进入成本 <span class="arithmatex">\(F\)</span> 处于一个中等范围时（即 <span class="arithmatex">\(α\)</span> 满足 <span class="arithmatex">\(1 - 1/√2 &lt; α &lt; 1\)</span>），在位者选择“威慑进入”策略是有利可图的。如果进入成本太低（<span class="arithmatex">\(α\)</span> 小于 <span class="arithmatex">\(1 - 1/√2\)</span>），那么威慑成本太高（需要生产非常高的产量），不如容忍进入。如果进入成本太高（<span class="arithmatex">\(α ≥ 1\)</span>），进入被自然阻止。</p>
 <hr />
 <h3 id="_1">例题：模型一的应用</h3>
-<p><strong>问题</strong>：假设一个市场的逆需求函数为 <code>P = 100 - Q</code>，所有公司的边际成本 <code>C = 20</code>。一个潜在进入者需要支付固定的进入成本 <code>F</code>。
-1.  如果 <code>F = 25</code>，在位者应该选择容忍进入还是威慑进入？
-2.  如果 <code>F = 100</code>，在位者应该如何决策？
-3.  进入被自然阻止的 <code>F</code> 值是多少？</p>
+<p><strong>问题</strong>：假设一个市场的逆需求函数为 <span class="arithmatex">\(P = 100 - Q\)</span>，所有公司的边际成本 <span class="arithmatex">\(C = 20\)</span>。一个潜在进入者需要支付固定的进入成本 <span class="arithmatex">\(F\)</span>。
+1.  如果 <span class="arithmatex">\(F = 25\)</span>，在位者应该选择容忍进入还是威慑进入？
+2.  如果 <span class="arithmatex">\(F = 100\)</span>，在位者应该如何决策？
+3.  进入被自然阻止的 <span class="arithmatex">\(F\)</span> 值是多少？</p>
 <p><strong>解答</strong>：</p>
 <p>首先，计算一些基准值：
-<code>A = 100</code>, <code>C = 20</code>, <code>A-C = 80</code>.</p>
+<span class="arithmatex">\(A = 100\)</span>, <span class="arithmatex">\(C = 20\)</span>, <span class="arithmatex">\(A-C = 80\)</span>.</p>
 <p><strong>基准策略1：容忍进入 (斯塔克伯格)</strong>
 在位者的利润为：
-<code>π_L^S = (A-C)² / 8 = (80)² / 8 = 6400 / 8 = 800</code>
+<span class="arithmatex">\(π_L^S = (A-C)² / 8 = (80)² / 8 = 6400 / 8 = 800\)</span>
 这是我们比较的基准利润。</p>
 <p><strong>分析问题1：F = 25</strong></p>
-<p>我们需要计算威慑进入的利润 <code>π_L^d</code>。
-<code>√F = √25 = 5</code>
-<code>π_L^d = 2(A-C)√F - 4F = 2(80)(5) - 4(25) = 800 - 100 = 700</code></p>
-<p>比较利润：<code>π_L^d (700) &lt; π_L^S (800)</code>。
-<strong>结论1</strong>：当 <code>F=25</code> 时，威慑进入的利润（700）低于容忍进入的利润（800）。因此，在位者应该<strong>容忍进入</strong>，并按斯塔克伯格领导者的方式生产。</p>
+<p>我们需要计算威慑进入的利润 <span class="arithmatex">\(π_L^d\)</span>。
+<span class="arithmatex">\(√F = √25 = 5\)</span>
+<span class="arithmatex">\(π_L^d = 2(A-C)√F - 4F = 2(80)(5) - 4(25) = 800 - 100 = 700\)</span></p>
+<p>比较利润：<span class="arithmatex">\(π_L^d (700) &lt; π_L^S (800)\)</span>。
+<strong>结论1</strong>：当 <span class="arithmatex">\(F=25\)</span> 时，威慑进入的利润（700）低于容忍进入的利润（800）。因此，在位者应该<strong>容忍进入</strong>，并按斯塔克伯格领导者的方式生产。</p>
 <p><strong>分析问题2：F = 100</strong></p>
-<p><code>√F = √100 = 10</code>
-<code>π_L^d = 2(A-C)√F - 4F = 2(80)(10) - 4(100) = 1600 - 400 = 1200</code></p>
-<p>比较利润：<code>π_L^d (1200) &gt; π_L^S (800)</code>。
-<strong>结论2</strong>：当 <code>F=100</code> 时，威慑进入的利润（1200）高于容忍进入的利润（800）。因此，在位者应该选择<strong>威慑进入</strong>。它会生产限制性产量 <code>q_L^d = A - C - 2√F = 80 - 2(10) = 60</code>。</p>
+<p><span class="arithmatex">\(√F = √100 = 10\)</span>
+<span class="arithmatex">\(π_L^d = 2(A-C)√F - 4F = 2(80)(10) - 4(100) = 1600 - 400 = 1200\)</span></p>
+<p>比较利润：<span class="arithmatex">\(π_L^d (1200) &gt; π_L^S (800)\)</span>。
+<strong>结论2</strong>：当 <span class="arithmatex">\(F=100\)</span> 时，威慑进入的利润（1200）高于容忍进入的利润（800）。因此，在位者应该选择<strong>威慑进入</strong>。它会生产限制性产量 <span class="arithmatex">\(q_L^d = A - C - 2√F = 80 - 2(10) = 60\)</span>。</p>
 <p><strong>分析问题3：进入被自然阻止的条件</strong></p>
 <p>进入被自然阻止的条件是：
-<code>F &gt; (A-C)² / 16 = (80)² / 16 = 6400 / 16 = 400</code>
-<strong>结论3</strong>：如果进入成本 <code>F</code> <strong>大于400</strong>，那么在位者无需采取任何特殊行动，潜在进入者自然不会进入。在位者只需生产垄断产量 <code>q_L^M = (A-C)/2 = 40</code> 即可。</p>
+<span class="arithmatex">\(F &gt; (A-C)² / 16 = (80)² / 16 = 6400 / 16 = 400\)</span>
+<strong>结论3</strong>：如果进入成本 <span class="arithmatex">\(F\)</span> <strong>大于400</strong>，那么在位者无需采取任何特殊行动，潜在进入者自然不会进入。在位者只需生产垄断产量 <span class="arithmatex">\(q_L^M = (A-C)/2 = 40\)</span> 即可。</p>
 <hr />
 <h3 id="dixits-model">模型二：迪克西特产能扩张与可信进入威慑模型 (Dixit's Model)</h3>
-<p>这个模型解决了第一个模型中的一个核心问题：<strong>可信度 (Credibility)</strong>。在第一个模型中，在位者只是“声称”要生产高产量 <code>q_L^d</code>。但如果进入者真的进入了，在位者再坚持生产 <code>q_L^d</code> 可能已经不是最优选择了。迪克西特模型通过引入<strong>沉没的产能投资</strong>来使威胁变得可信。</p>
+<p>这个模型解决了第一个模型中的一个核心问题：<strong>可信度 (Credibility)</strong>。在第一个模型中，在位者只是“声称”要生产高产量 <span class="arithmatex">\(q_L^d\)</span>。但如果进入者真的进入了，在位者再坚持生产 <span class="arithmatex">\(q_L^d\)</span> 可能已经不是最优选择了。迪克西特模型通过引入<strong>沉没的产能投资</strong>来使威胁变得可信。</p>
 <h4 id="1_1">1. 基本设定</h4>
 <p>这是一个两阶段博弈：
-*   <strong>阶段一 (Stage 1)</strong>：在位者（公司1）选择并投资一个产能水平 <code>K_1</code>。单位产能的成本是 <code>r</code>。这个投资是沉没成本，一旦投入无法收回。
-*   <strong>阶段二 (Stage 2)</strong>：潜在进入者（公司2）观察到 <code>K_1</code> 后，决定是否进入。如果进入，它需要支付固定成本 <code>F_2</code> 并建立自己的产能。然后，两家公司同时（à la Cournot）选择产量 <code>q_1</code> 和 <code>q_2</code>。</p>
+*   <strong>阶段一 (Stage 1)</strong>：在位者（公司1）选择并投资一个产能水平 <span class="arithmatex">\(K_1\)</span>。单位产能的成本是 <span class="arithmatex">\(r\)</span>。这个投资是沉没成本，一旦投入无法收回。
+*   <strong>阶段二 (Stage 2)</strong>：潜在进入者（公司2）观察到 <span class="arithmatex">\(K_1\)</span> 后，决定是否进入。如果进入，它需要支付固定成本 <span class="arithmatex">\(F_2\)</span> 并建立自己的产能。然后，两家公司同时（à la Cournot）选择产量 <span class="arithmatex">\(q_1\)</span> 和 <span class="arithmatex">\(q_2\)</span>。</p>
 <h4 id="2_1">2. 核心机制：成本结构的变化</h4>
 <p>产能投资改变了在位者的成本结构：
-*   单位产量的可变成本（如劳动力）为 <code>w</code>。
-*   在位者的总成本 <code>C_1</code>：
-    *   如果产量 <code>q_1 ≤ K_1</code> (在已建产能内生产)，产能成本 <code>rK_1</code> 已是沉没成本，生产的边际成本仅为可变成本 <code>w</code>。
+*   单位产量的可变成本（如劳动力）为 <span class="arithmatex">\(w\)</span>。
+*   在位者的总成本 <span class="arithmatex">\(C_1\)</span>：
+    *   如果产量 <span class="arithmatex">\(q_1 ≤ K_1\)</span> (在已建产能内生产)，产能成本 <span class="arithmatex">\(rK_1\)</span> 已是沉没成本，生产的边际成本仅为可变成本 <span class="arithmatex">\(w\)</span>。
     $$ C_1(q_1) = F_1 + wq_1 + r\bar{K}_1 \quad (q_1 \leq \bar{K}_1) \implies MC_1 = w $$
-    *   如果产量 <code>q_1 &gt; K_1</code> (需要临时增加产能)，则每增加一单位产量，不仅要付可变成本 <code>w</code>，还要付新增的产能成本 <code>r</code>。
+    *   如果产量 <span class="arithmatex">\(q_1 &gt; K_1\)</span> (需要临时增加产能)，则每增加一单位产量，不仅要付可变成本 <span class="arithmatex">\(w\)</span>，还要付新增的产能成本 <span class="arithmatex">\(r\)</span>。
     $$ C_1(q_1) = F_1 + wq_1 + r\bar{K}_1 + r(q_1 - \bar{K}_1) = F_1 + (w+r)q_1 \quad (q_1 &gt; \bar{K}_1) \implies MC_1 = w+r $$
-*   进入者（公司2）的成本 <code>C_2</code>：
-    由于它没有预先投资，它的边际成本总是 <code>w+r</code>。
+*   进入者（公司2）的成本 <span class="arithmatex">\(C_2\)</span>：
+    由于它没有预先投资，它的边际成本总是 <span class="arithmatex">\(w+r\)</span>。
     $$ C_2(q_2) = F_2 + (w+r)q_2 \implies MC_2 = w+r $$</p>
 <h4 id="3_1">3. 博弈分析（逆向归纳法）</h4>
 <p><strong>第二阶段：产量竞争</strong></p>
-<p>给定在位者第一阶段选择的产能 <code>K_1</code>，两家公司进行古诺竞争。
+<p>给定在位者第一阶段选择的产能 <span class="arithmatex">\(K_1\)</span>，两家公司进行古诺竞争。
 *   <strong>进入者的最优反应函数</strong>：
-    <code>π_2 = [A - (q_1 + q_2)]q_2 - (w+r)q_2 - F_2</code>
+    <span class="arithmatex">\(π_2 = [A - (q_1 + q_2)]q_2 - (w+r)q_2 - F_2\)</span>
     求一阶导数得到：
     $$ q_2^* = \frac{A - (w+r) - q_1}{2} $$</p>
 <ul>
 <li><strong>在位者的最优反应函数</strong>：
     由于其边际成本是分段的，其反应函数也有一个“扭结”（kink）。<ul>
-<li>当 <code>q_1 ≤ K_1</code> (低成本区间, <code>MC=w</code>)
-    <code>π_1 = [A - (q_1 + q_2)]q_1 - wq_1</code>
+<li>当 <span class="arithmatex">\(q_1 ≤ K_1\)</span> (低成本区间, <span class="arithmatex">\(MC=w\)</span>)
+    <span class="arithmatex">\(π_1 = [A - (q_1 + q_2)]q_1 - wq_1\)</span>
     一阶导数得到：
     $$ q_1^* = \frac{A - w - q_2}{2} $$</li>
-<li>当 <code>q_1 &gt; K_1</code> (高成本区间, <code>MC=w+r</code>)
-    <code>π_1 = [A - (q_1 + q_2)]q_1 - (w+r)q_1</code>
+<li>当 <span class="arithmatex">\(q_1 &gt; K_1\)</span> (高成本区间, <span class="arithmatex">\(MC=w+r\)</span>)
+    <span class="arithmatex">\(π_1 = [A - (q_1 + q_2)]q_1 - (w+r)q_1\)</span>
     一阶导数得到：
     $$ q_1^* = \frac{A - (w+r) - q_2}{2} $$</li>
 </ul>
 </li>
 </ul>
 <p><strong>第一阶段：在位者的产能决策</strong></p>
-<p>在位者在第一阶段选择 <code>K_1</code> 时，它会预见到 <code>K_1</code> 将如何影响第二阶段的古诺均衡。通过选择一个较大的 <code>K_1</code>，在位者可以有效地将自己的低成本生产区间 (<code>MC=w</code>) 扩大。这相当于一个<strong>可信的承诺</strong>：”我已经花钱建了这么多产能，所以在第二阶段我一定会大量生产，因为我的边际成本很低。“</p>
-<p>这个承诺会改变进入者的预期。进入者看到一个大的 <code>K_1</code>，就会预料到在位者在第二阶段会表现得非常“激进”（生产高产量），从而导致市场价格下降。如果预期的市场价格足够低，使得进入者的预期利润 <code>π_2</code> 小于0，那么进入者就会放弃进入。</p>
+<p>在位者在第一阶段选择 <span class="arithmatex">\(K_1\)</span> 时，它会预见到 <span class="arithmatex">\(K_1\)</span> 将如何影响第二阶段的古诺均衡。通过选择一个较大的 <span class="arithmatex">\(K_1\)</span>，在位者可以有效地将自己的低成本生产区间 (<span class="arithmatex">\(MC=w\)</span>) 扩大。这相当于一个<strong>可信的承诺</strong>：”我已经花钱建了这么多产能，所以在第二阶段我一定会大量生产，因为我的边际成本很低。“</p>
+<p>这个承诺会改变进入者的预期。进入者看到一个大的 <span class="arithmatex">\(K_1\)</span>，就会预料到在位者在第二阶段会表现得非常“激进”（生产高产量），从而导致市场价格下降。如果预期的市场价格足够低，使得进入者的预期利润 <span class="arithmatex">\(π_2\)</span> 小于0，那么进入者就会放弃进入。</p>
 <p><strong>策略含义</strong></p>
 <ul>
 <li><strong>产能的战略价值</strong>：产能投资不仅仅是为了满足生产需要，它更是一种战略工具。通过“过度投资”产能，在位者可以向潜在对手发出一个强有力的、可信的威慑信号。</li>

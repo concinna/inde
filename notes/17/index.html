@@ -2759,11 +2759,11 @@
 </ul>
 <h4 id="formulas-and-welfare-analysis"><strong>公式与福利分析 (Formulas and Welfare Analysis)</strong></h4>
 <ul>
-<li><strong>产量 (Output)</strong>: 垄断者会一直生产，直到最后一个单位的价格等于其边际成本。即生产到 <strong>Q</strong>*，满足 <code>P(Q*) = MC(Q*)</code>。</li>
+<li><strong>产量 (Output)</strong>: 垄断者会一直生产，直到最后一个单位的价格等于其边际成本。即生产到 <strong>Q</strong>*，满足 <span class="arithmatex">\(P(Q*) = MC(Q*)\)</span>。</li>
 <li><strong>社会最优 (Socially Optimal)</strong>: 这个产量 <strong>Q</strong><em> 正是完全竞争市场下的产量，即</em><em>社会最优产量</em>*。因为在这一点上，消费者对最后一单位的估值 (P) 恰好等于生产该单位的社会成本 (MC)，资源配置是有效率的。</li>
 <li><strong>消费者剩余 (Consumer Surplus, CS)</strong>: <strong>CS = 0</strong>。因为每个消费者都支付了他们愿意支付的最高价格，所以他们没有获得任何剩余。</li>
 <li><strong>生产者剩余 (Producer Surplus, PS)</strong>: 生产者攫取了全部的社会总剩余。PS 等于需求曲线以下、边际成本曲线以上、从0到Q*的全部面积。
-    <code>PS = ∫[0 to Q*] (P(Q) - MC(Q)) dQ</code></li>
+    <span class="arithmatex">\(PS = ∫[0 to Q*] (P(Q) - MC(Q)) dQ\)</span></li>
 <li><strong>社会福利 (Social Welfare, SW)</strong>: SW = CS + PS = 0 + PS = PS。由于产量是社会最优的，<strong>无谓损失 (Deadweight Loss, DWL) = 0</strong>。</li>
 </ul>
 <p><strong>结论</strong>: 一级价格歧视在<strong>分配上</strong>是极端不公平的（消费者被完全剥削），但在<strong>效率上</strong>是完美的（产量达到社会最优水平）。</p>
@@ -2772,57 +2772,57 @@
 <p>也称为<strong>非线性定价 (Non-linear Pricing)</strong> 或按量定价。</p>
 <h4 id="_3"><strong>核心思想</strong></h4>
 <p>垄断者信息不完全 (<strong>less info</strong>)，知道市场上有不同类型的消费者（如高需求者和低需求者），但无法在购买前识别出每个消费者的具体类型。因此，它不能直接对人定价，只能通过设计不同的价格-数量“套餐”，让消费者“自我选择” (self-selection)。最典型的例子就是两部定价。</p>
-<p>一个两部定价包含一个固定的准入费 (Fixed Fee, <strong>T</strong>) 和一个可变的按量使用费 (Per-unit Price, <strong>p</strong>)。总花费 <code>C(q) = T + p*q</code>。</p>
+<p>一个两部定价包含一个固定的准入费 (Fixed Fee, <strong>T</strong>) 和一个可变的按量使用费 (Per-unit Price, <strong>p</strong>)。总花费 <span class="arithmatex">\(C(q) = T + p*q\)</span>。</p>
 <p>我们来分析你提到的两种情况：</p>
 <h4 id="a"><strong>情况A: 攫取所有消费者剩余，但低需求者产量次优</strong></h4>
 <p>这是在存在多种消费者类型且信息不对称时的标准模型。假设市场上有高需求 (H) 和低需求 (L) 两类消费者。垄断者的目标是设计两个套餐 (T_H, p_H) 和 (T_L, p_L) 来最大化总利润。</p>
 <p>为了让消费者做出正确的选择，必须满足两个约束：
 1.  <strong>参与约束 (Participation Constraint, PC)</strong>: 每个类型的消费者从选择“为自己设计”的套餐中获得的效用（或消费者剩余）必须非负。
-    *   <code>CS_L(T_L, p_L) ≥ 0</code>
-    *   <code>CS_H(T_H, p_H) ≥ 0</code>
+    *   <span class="arithmatex">\(CS_L(T_L, p_L) ≥ 0\)</span>
+    *   <span class="arithmatex">\(CS_H(T_H, p_H) ≥ 0\)</span>
 2.  <strong>激励相容约束 (Incentive Compatibility Constraint, ICC)</strong>: 每个类型的消费者选择“为自己设计”的套餐，比选择为另一类型设计的套餐要好。
-    *   <code>CS_L(T_L, p_L) ≥ CS_L(T_H, p_H)</code>
-    *   <code>CS_H(T_H, p_H) ≥ CS_H(T_L, p_L)</code>  <strong>(这个是关键约束)</strong></p>
+    *   <span class="arithmatex">\(CS_L(T_L, p_L) ≥ CS_L(T_H, p_H)\)</span>
+    *   <span class="arithmatex">\(CS_H(T_H, p_H) ≥ CS_H(T_L, p_L)\)</span>  <strong>(这个是关键约束)</strong></p>
 <p><strong>优化结果</strong>:
-*   <strong>对高需求者 (H)</strong>: 按量收费 <code>p_H</code> 等于边际成本 <code>MC</code>。这被称为<strong>“顶部无扭曲” (no distortion at the top)</strong>，因为这能最大化可从高需求者那里榨取的总剩余。他们的准入费 <code>T_H</code> 会被设定得很高，但又必须给他们留下一部分剩余，以防止他们伪装成低需求者。这部分留下的剩余被称为<strong>信息租金 (information rent)</strong>。
-*   <strong>对低需求者 (L)</strong>: 为了使低需求套餐对高需求者吸引力下降，垄断者会<strong>扭曲</strong>低需求者的套餐。具体表现为：按量收费 <code>p_L</code> <strong>高于</strong>边际成本 <code>MC</code> (<code>p_L &gt; MC</code>)。这导致低需求者的消费量 <code>Q_L</code> <strong>低于</strong>其社会最优水平 (<strong>suboptimal output for low-demand</strong>)。同时，准入费 <code>T_L</code> 会榨干他们在 <code>p_L</code> 价格下的全部消费者剩余。</p>
+*   <strong>对高需求者 (H)</strong>: 按量收费 <span class="arithmatex">\(p_H\)</span> 等于边际成本 <span class="arithmatex">\(MC\)</span>。这被称为<strong>“顶部无扭曲” (no distortion at the top)</strong>，因为这能最大化可从高需求者那里榨取的总剩余。他们的准入费 <span class="arithmatex">\(T_H\)</span> 会被设定得很高，但又必须给他们留下一部分剩余，以防止他们伪装成低需求者。这部分留下的剩余被称为<strong>信息租金 (information rent)</strong>。
+*   <strong>对低需求者 (L)</strong>: 为了使低需求套餐对高需求者吸引力下降，垄断者会<strong>扭曲</strong>低需求者的套餐。具体表现为：按量收费 <span class="arithmatex">\(p_L\)</span> <strong>高于</strong>边际成本 <span class="arithmatex">\(MC\)</span> (<span class="arithmatex">\(p_L &gt; MC\)</span>)。这导致低需求者的消费量 <span class="arithmatex">\(Q_L\)</span> <strong>低于</strong>其社会最优水平 (<strong>suboptimal output for low-demand</strong>)。同时，准入费 <span class="arithmatex">\(T_L\)</span> 会榨干他们在 <span class="arithmatex">\(p_L\)</span> 价格下的全部消费者剩余。</p>
 <p><strong>结论</strong>: 垄断者通过牺牲低需求群体的效率（让他们消费不足），来换取从高需求群体中榨取更多利润的能力。高需求者获得了正的消费者剩余，但社会总产量并非最优，存在无谓损失。</p>
 <h4 id="b"><strong>情况B: 留有正的消费者剩余，但产量达到社会最优</strong></h4>
 <p>这种情况通常发生在垄断者可以区分消费者类型，或者市场上只有一种消费者类型的时候。我们以只有一种类型的消费者为例来解释：
 *   <strong>机制</strong>: 垄断者设定一个两部价格 (T, p)。
 *   <strong>最优策略</strong>:
-    1.  设定按量使用费 <code>p = MC</code>。这会引导消费者消费到社会最优的量 <code>Q*</code>，从而使得“蛋糕”（总剩余）最大化。
-    2.  设定固定准入费 <code>T</code> 等于消费者在 <code>p = MC</code> 时的全部消费者剩余。<code>T = CS(p=MC)</code>。
+    1.  设定按量使用费 <span class="arithmatex">\(p = MC\)</span>。这会引导消费者消费到社会最优的量 <span class="arithmatex">\(Q*\)</span>，从而使得“蛋糕”（总剩余）最大化。
+    2.  设定固定准入费 <span class="arithmatex">\(T\)</span> 等于消费者在 <span class="arithmatex">\(p = MC\)</span> 时的全部消费者剩余。<span class="arithmatex">\(T = CS(p=MC)\)</span>。
 *   <strong>福利分析</strong>:
-    *   产量 <code>Q*</code> 是<strong>社会最优的 (social optimal output)</strong>。
-    *   消费者剩余 <code>CS = 0</code> (因为准入费T恰好等于他们的全部剩余)。
-    *   生产者剩余 <code>PS = T + (p-MC)*Q* = T + 0 = T</code>，生产者攫取了全部剩余。
-    *   社会福利最大化，<code>DWL = 0</code>。</p>
+    *   产量 <span class="arithmatex">\(Q*\)</span> 是<strong>社会最优的 (social optimal output)</strong>。
+    *   消费者剩余 <span class="arithmatex">\(CS = 0\)</span> (因为准入费T恰好等于他们的全部剩余)。
+    *   生产者剩余 <span class="arithmatex">\(PS = T + (p-MC)*Q* = T + 0 = T\)</span>，生产者攫取了全部剩余。
+    *   社会福利最大化，<span class="arithmatex">\(DWL = 0\)</span>。</p>
 <p><strong>对比</strong>: 你提到的两种情况，实际上是二级价格歧视在<strong>信息不对称</strong>（情况A）和<strong>信息对称/单一类型</strong>（情况B）下的不同结果。在更现实的信息不对称情况下，为了实现利润最大化，必然会导致低需求群体的效率损失。</p>
 <hr />
 <h3 id="3-third-degree-price-discrimination"><strong>(3) 三级价格歧视 (Third-Degree Price Discrimination)</strong></h3>
 <h4 id="_4"><strong>核心思想</strong></h4>
 <p>垄断者可以根据一些<strong>可观测的特征</strong> (如年龄、地理位置、学生身份等) 将消费者分成不同的市场，并且能够有效<strong>防止市场间的套利 (arbitrage)</strong>。然后，垄断者在每个分割开的市场上制定不同的垄断价格。</p>
 <h4 id="_5"><strong>运行机制</strong></h4>
-<p>垄断者将每个市场视为一个独立的垄断市场，在每个市场内都根据 <code>MR = MC</code> 的原则来定价和决定产量。
-假设有两个市场，1和2。总成本取决于总产量 <code>C(Q_total) = C(Q_1 + Q_2)</code>。
-利润 <code>π = P_1(Q_1) * Q_1 + P_2(Q_2) * Q_2 - C(Q_1 + Q_2)</code>。</p>
+<p>垄断者将每个市场视为一个独立的垄断市场，在每个市场内都根据 <span class="arithmatex">\(MR = MC\)</span> 的原则来定价和决定产量。
+假设有两个市场，1和2。总成本取决于总产量 <span class="arithmatex">\(C(Q_total) = C(Q_1 + Q_2)\)</span>。
+利润 <span class="arithmatex">\(π = P_1(Q_1) * Q_1 + P_2(Q_2) * Q_2 - C(Q_1 + Q_2)\)</span>。</p>
 <h4 id="_6"><strong>公式与福利分析</strong></h4>
 <ul>
 <li><strong>利润最大化条件</strong>:
-    <code>MR_1(Q_1) = MC(Q_1 + Q_2)</code>
-    <code>MR_2(Q_2) = MC(Q_1 + Q_2)</code>
-    这意味着，在最优状态下，<strong>每个市场的边际收益都相等，并且等于总产量的边际成本</strong>: <code>MR_1 = MR_2 = MC</code>。</li>
+    <span class="arithmatex">\(MR_1(Q_1) = MC(Q_1 + Q_2)\)</span>
+    <span class="arithmatex">\(MR_2(Q_2) = MC(Q_1 + Q_2)\)</span>
+    这意味着，在最优状态下，<strong>每个市场的边际收益都相等，并且等于总产量的边际成本</strong>: <span class="arithmatex">\(MR_1 = MR_2 = MC\)</span>。</li>
 <li><strong>价格与需求弹性的关系</strong>:
-    我们知道 <code>MR = P * (1 + 1/ε)</code>，其中 <code>ε</code> 是需求价格弹性。
-    所以 <code>P_1 * (1 + 1/ε_1) = P_2 * (1 + 1/ε_2) = MC</code>。
+    我们知道 <span class="arithmatex">\(MR = P * (1 + 1/ε)\)</span>，其中 <span class="arithmatex">\(ε\)</span> 是需求价格弹性。
+    所以 <span class="arithmatex">\(P_1 * (1 + 1/ε_1) = P_2 * (1 + 1/ε_2) = MC\)</span>。
     由此得出著名结论：<strong>需求弹性较小（更缺乏弹性）的市场，会被收取更高的价格</strong>。</li>
 <li><strong>福利与无谓损失 (Welfare and DWL)</strong>:
-    在每个被分割的市场上，价格都高于边际成本 (<code>P &gt; MC</code>)，产量都低于社会最优水平。因此，<strong>每个市场都存在无谓损失</strong>。总的无谓损失是各市场无谓损失之和。相较于一级和（理想化的）二级价格歧视，三级价格歧视通常导致<strong>最大的无谓损失 (largest deadweight loss)</strong>，因为价格和产量的扭曲是普遍存在的。</li>
+    在每个被分割的市场上，价格都高于边际成本 (<span class="arithmatex">\(P &gt; MC\)</span>)，产量都低于社会最优水平。因此，<strong>每个市场都存在无谓损失</strong>。总的无谓损失是各市场无谓损失之和。相较于一级和（理想化的）二级价格歧视，三级价格歧视通常导致<strong>最大的无谓损失 (largest deadweight loss)</strong>，因为价格和产量的扭曲是普遍存在的。</li>
 </ul>
 <h4 id="uniform-price"><strong>与统一定价 (Uniform Price) 的比较</strong></h4>
 <ul>
-<li><strong>线性需求模型</strong>: 在一个特殊的<strong>线性需求模型</strong>下，如果垄断者实行三级价格歧视的总产量 <code>Q_third</code>，与它在所有市场上实行一个最优的统一定价 <code>P_uniform</code> 时的总产量 <code>Q_uniform</code>，两者是<strong>相等</strong>的 (<code>Q_third = Q_uniform</code>)。但这并不意味着社会福利相同。</li>
+<li><strong>线性需求模型</strong>: 在一个特殊的<strong>线性需求模型</strong>下，如果垄断者实行三级价格歧视的总产量 <span class="arithmatex">\(Q_third\)</span>，与它在所有市场上实行一个最优的统一定价 <span class="arithmatex">\(P_uniform\)</span> 时的总产量 <span class="arithmatex">\(Q_uniform\)</span>，两者是<strong>相等</strong>的 (<span class="arithmatex">\(Q_third = Q_uniform\)</span>)。但这并不意味着社会福利相同。</li>
 <li><strong>市场覆盖问题</strong>: 如果一个统一定价高到会使得某些需求弹性大的市场（穷人市场）完全退出，那么实行三级价格歧视（在穷人市场收取较低价格）反而能<strong>增加总产量和提升社会福利</strong>，因为它服务了更多的市场。</li>
 </ul>
 <hr />
@@ -2865,73 +2865,73 @@
 <hr />
 <h3 id="example-problem"><strong>例题 (Example Problem)</strong></h3>
 <p>假设一个软件垄断厂商面临两类消费者：商业用户 (H) 和学生用户 (L)，且两类用户数量相等，我们标准化为各1个。他们的反需求函数分别为：
-*   商业用户 (H): <code>P_H = 100 - Q_H</code>
-*   学生用户 (L): <code>P_L = 60 - Q_L</code>
-软件的边际生产成本为 <code>MC = 20</code>。</p>
+*   商业用户 (H): <span class="arithmatex">\(P_H = 100 - Q_H\)</span>
+*   学生用户 (L): <span class="arithmatex">\(P_L = 60 - Q_L\)</span>
+软件的边际生产成本为 <span class="arithmatex">\(MC = 20\)</span>。</p>
 <p><strong>问题</strong>: 分别计算厂商在 (a) 三级价格歧视 和 (b) 最优两部定价（二级价格歧视）下的利润，并进行比较。</p>
 <hr />
 <h4 id="a-third-degree-price-discrimination"><strong>(a) 三级价格歧视 (Third-Degree Price Discrimination)</strong></h4>
-<p>厂商将市场分割为H和L，在每个市场内按 <code>MR = MC</code> 定价。</p>
+<p>厂商将市场分割为H和L，在每个市场内按 <span class="arithmatex">\(MR = MC\)</span> 定价。</p>
 <p><strong>市场 L (学生):</strong>
-*   需求: <code>P_L = 60 - Q_L</code>
-*   边际收益: <code>MR_L = 60 - 2*Q_L</code>
-*   令 <code>MR_L = MC</code>: <code>60 - 2*Q_L = 20</code>  =&gt; <code>2*Q_L = 40</code> =&gt; <code>Q_L = 20</code>
-*   价格: <code>P_L = 60 - 20 = 40</code>
-*   学生市场利润: <code>π_L = (P_L - MC) * Q_L = (40 - 20) * 20 = 400</code></p>
+*   需求: <span class="arithmatex">\(P_L = 60 - Q_L\)</span>
+*   边际收益: <span class="arithmatex">\(MR_L = 60 - 2*Q_L\)</span>
+*   令 <span class="arithmatex">\(MR_L = MC\)</span>: <span class="arithmatex">\(60 - 2*Q_L = 20\)</span>  =&gt; <span class="arithmatex">\(2*Q_L = 40\)</span> =&gt; <span class="arithmatex">\(Q_L = 20\)</span>
+*   价格: <span class="arithmatex">\(P_L = 60 - 20 = 40\)</span>
+*   学生市场利润: <span class="arithmatex">\(π_L = (P_L - MC) * Q_L = (40 - 20) * 20 = 400\)</span></p>
 <p><strong>市场 H (商业):</strong>
-*   需求: <code>P_H = 100 - Q_H</code>
-*   边际收益: <code>MR_H = 100 - 2*Q_H</code>
-*   令 <code>MR_H = MC</code>: <code>100 - 2*Q_H = 20</code> =&gt; <code>2*Q_H = 80</code> =&gt; <code>Q_H = 40</code>
-*   价格: <code>P_H = 100 - 40 = 60</code>
-*   商业市场利润: <code>π_H = (P_H - MC) * Q_H = (60 - 20) * 40 = 1600</code></p>
+*   需求: <span class="arithmatex">\(P_H = 100 - Q_H\)</span>
+*   边际收益: <span class="arithmatex">\(MR_H = 100 - 2*Q_H\)</span>
+*   令 <span class="arithmatex">\(MR_H = MC\)</span>: <span class="arithmatex">\(100 - 2*Q_H = 20\)</span> =&gt; <span class="arithmatex">\(2*Q_H = 80\)</span> =&gt; <span class="arithmatex">\(Q_H = 40\)</span>
+*   价格: <span class="arithmatex">\(P_H = 100 - 40 = 60\)</span>
+*   商业市场利润: <span class="arithmatex">\(π_H = (P_H - MC) * Q_H = (60 - 20) * 40 = 1600\)</span></p>
 <p><strong>总利润 (三级歧视):</strong>
-<code>π_Third = π_L + π_H = 400 + 1600 = 2000</code></p>
+<span class="arithmatex">\(π_Third = π_L + π_H = 400 + 1600 = 2000\)</span></p>
 <hr />
 <h4 id="b_1"><strong>(b) 最优两部定价 (二级价格歧视)</strong></h4>
-<p>厂商需要设计两个套餐 <code>(T_L, p_L)</code> 和 <code>(T_H, p_H)</code>。</p>
-<p><strong>1. 设定 <code>p_H</code> (高需求者的单位价格):</strong>
-根据“顶部无扭曲”原则，设定 <code>p_H = MC = 20</code>。
-此时，商业用户会消费 <code>Q_H</code> 直到 <code>P_H = p_H</code>，即 <code>100 - Q_H = 20</code> =&gt; <code>Q_H = 80</code>。
-在单位价格为20时，商业用户的潜在消费者剩余为 <code>CS_H(p=20) = 0.5 * (100-20) * 80 = 3200</code>。这是我们可以收取的 <code>T_H</code> 的上限。</p>
-<p><strong>2. 设计 <code>(T_L, p_L)</code> 并利用约束求解:</strong>
-我们需要设计低需求套餐 <code>(T_L, p_L)</code>，它必须满足：
-*   <strong>低需求者参与约束 (PC)</strong>: 学生愿意购买。厂商会榨干他们的剩余，所以 <code>T_L = CS_L(p_L)</code>。
-    <code>CS_L(p_L) = 0.5 * (60 - p_L) * Q_L = 0.5 * (60 - p_L) * (60 - p_L) = 0.5 * (60 - p_L)²</code>
-    所以 <code>T_L = 0.5 * (60 - p_L)²</code>。
+<p>厂商需要设计两个套餐 <span class="arithmatex">\((T_L, p_L)\)</span> 和 <span class="arithmatex">\((T_H, p_H)\)</span>。</p>
+<p><strong>1. 设定 <span class="arithmatex">\(p_H\)</span> (高需求者的单位价格):</strong>
+根据“顶部无扭曲”原则，设定 <span class="arithmatex">\(p_H = MC = 20\)</span>。
+此时，商业用户会消费 <span class="arithmatex">\(Q_H\)</span> 直到 <span class="arithmatex">\(P_H = p_H\)</span>，即 <span class="arithmatex">\(100 - Q_H = 20\)</span> =&gt; <span class="arithmatex">\(Q_H = 80\)</span>。
+在单位价格为20时，商业用户的潜在消费者剩余为 <span class="arithmatex">\(CS_H(p=20) = 0.5 * (100-20) * 80 = 3200\)</span>。这是我们可以收取的 <span class="arithmatex">\(T_H\)</span> 的上限。</p>
+<p><strong>2. 设计 <span class="arithmatex">\((T_L, p_L)\)</span> 并利用约束求解:</strong>
+我们需要设计低需求套餐 <span class="arithmatex">\((T_L, p_L)\)</span>，它必须满足：
+*   <strong>低需求者参与约束 (PC)</strong>: 学生愿意购买。厂商会榨干他们的剩余，所以 <span class="arithmatex">\(T_L = CS_L(p_L)\)</span>。
+    <span class="arithmatex">\(CS_L(p_L) = 0.5 * (60 - p_L) * Q_L = 0.5 * (60 - p_L) * (60 - p_L) = 0.5 * (60 - p_L)²\)</span>
+    所以 <span class="arithmatex">\(T_L = 0.5 * (60 - p_L)²\)</span>。
 *   <strong>高需求者激励相容约束 (ICC)</strong>: 商业用户选择H套餐比选择L套餐更好。
-    <code>CS_H(H_套餐) ≥ CS_H(L_套餐)</code>
-    <code>[CS_H(p_H) - T_H] ≥ [CS_H(p_L) - T_L]</code>
-    为了最大化利润，厂商会让这个约束恰好成立（取等号），并且尽可能提高 <code>T_H</code>。
-    <code>3200 - T_H = CS_H(p_L) - T_L</code>
-    其中，<code>CS_H(p_L)</code> 是商业用户在面对L套餐的单位价格 <code>p_L</code> 时的消费者剩余。
-    <code>Q_H(p_L) = 100 - p_L</code>
-    <code>CS_H(p_L) = 0.5 * (100 - p_L) * (100 - p_L) = 0.5 * (100 - p_L)²</code>
+    <span class="arithmatex">\(CS_H(H_套餐) ≥ CS_H(L_套餐)\)</span>
+    <span class="arithmatex">\([CS_H(p_H) - T_H] ≥ [CS_H(p_L) - T_L]\)</span>
+    为了最大化利润，厂商会让这个约束恰好成立（取等号），并且尽可能提高 <span class="arithmatex">\(T_H\)</span>。
+    <span class="arithmatex">\(3200 - T_H = CS_H(p_L) - T_L\)</span>
+    其中，<span class="arithmatex">\(CS_H(p_L)\)</span> 是商业用户在面对L套餐的单位价格 <span class="arithmatex">\(p_L\)</span> 时的消费者剩余。
+    <span class="arithmatex">\(Q_H(p_L) = 100 - p_L\)</span>
+    <span class="arithmatex">\(CS_H(p_L) = 0.5 * (100 - p_L) * (100 - p_L) = 0.5 * (100 - p_L)²\)</span>
     代入所有已知项:
-    <code>3200 - T_H = 0.5 * (100 - p_L)² - 0.5 * (60 - p_L)²</code>
-    解出 <code>T_H</code>:
-    <code>T_H = 3200 - [0.5 * (100 - p_L)² - 0.5 * (60 - p_L)²]</code></p>
+    <span class="arithmatex">\(3200 - T_H = 0.5 * (100 - p_L)² - 0.5 * (60 - p_L)²\)</span>
+    解出 <span class="arithmatex">\(T_H\)</span>:
+    <span class="arithmatex">\(T_H = 3200 - [0.5 * (100 - p_L)² - 0.5 * (60 - p_L)²]\)</span></p>
 <p><strong>3. 构建总利润函数并最大化:</strong>
-总利润 <code>π = π_L + π_H</code>。
-<code>π_L = T_L + (p_L - MC) * Q_L = 0.5*(60-p_L)² + (p_L - 20)*(60-p_L)</code>
-<code>π_H = T_H + (p_H - MC) * Q_H = T_H + (20 - 20) * 80 = T_H</code>
-所以 <code>π_Total = π_L + T_H</code>
-<code>π_Total = [0.5*(60-p_L)² + (p_L-20)*(60-p_L)] + [3200 - 0.5*(100-p_L)² + 0.5*(60-p_L)²]</code></p>
+总利润 <span class="arithmatex">\(π = π_L + π_H\)</span>。
+<span class="arithmatex">\(π_L = T_L + (p_L - MC) * Q_L = 0.5*(60-p_L)² + (p_L - 20)*(60-p_L)\)</span>
+<span class="arithmatex">\(π_H = T_H + (p_H - MC) * Q_H = T_H + (20 - 20) * 80 = T_H\)</span>
+所以 <span class="arithmatex">\(π_Total = π_L + T_H\)</span>
+<span class="arithmatex">\(π_Total = [0.5*(60-p_L)² + (p_L-20)*(60-p_L)] + [3200 - 0.5*(100-p_L)² + 0.5*(60-p_L)²]\)</span></p>
 <p>化简这个函数:
-<code>π_Total = (p_L - 20)*(60 - p_L) + 3200 - 0.5 * (100 - p_L)² + (60 - p_L)²</code>
-<code>π_Total = 60p_L - p_L² - 1200 + 20p_L + 3200 - 0.5(10000 - 200p_L + p_L²) + (3600 - 120p_L + p_L²)</code>
-<code>π_Total = -p_L² + 80p_L + 2000 - 5000 + 100p_L - 0.5p_L² + 3600 - 120p_L + p_L²</code>
-<code>π_Total = -0.5p_L² + 60p_L + 600</code></p>
-<p>对 <code>p_L</code> 求导并令其为0来找到最优的 <code>p_L</code>:
-<code>dπ / dp_L = -p_L + 60 = 0</code>
-<code>p_L = 60</code></p>
-<p>这个结果 <code>p_L = 60</code> 有点极端，这意味着学生市场的按量收费等于他们的最高愿意支付价格，导致<code>Q_L=0</code>， <code>T_L=0</code>，<code>π_L=0</code>。这在模型中是可能的，意味着厂商完全放弃了低需求市场，只专注于高需求市场。此时：
-<code>T_H = 3200 - [0.5 * (100-60)² - 0.5*(60-60)²] = 3200 - 0.5 * 40² = 3200 - 800 = 2400</code>
-总利润 <code>π_Second = π_L + π_H = 0 + T_H = 2400</code>。
-<em>(注: 这个结果是因为两类用户需求差异较大。如果差异较小，会得到一个 <code>MC &lt; p_L &lt; 60</code> 的解。但这里的计算流程是完全正确的。)</em></p>
+<span class="arithmatex">\(π_Total = (p_L - 20)*(60 - p_L) + 3200 - 0.5 * (100 - p_L)² + (60 - p_L)²\)</span>
+<span class="arithmatex">\(π_Total = 60p_L - p_L² - 1200 + 20p_L + 3200 - 0.5(10000 - 200p_L + p_L²) + (3600 - 120p_L + p_L²)\)</span>
+<span class="arithmatex">\(π_Total = -p_L² + 80p_L + 2000 - 5000 + 100p_L - 0.5p_L² + 3600 - 120p_L + p_L²\)</span>
+<span class="arithmatex">\(π_Total = -0.5p_L² + 60p_L + 600\)</span></p>
+<p>对 <span class="arithmatex">\(p_L\)</span> 求导并令其为0来找到最优的 <span class="arithmatex">\(p_L\)</span>:
+<span class="arithmatex">\(dπ / dp_L = -p_L + 60 = 0\)</span>
+<span class="arithmatex">\(p_L = 60\)</span></p>
+<p>这个结果 <span class="arithmatex">\(p_L = 60\)</span> 有点极端，这意味着学生市场的按量收费等于他们的最高愿意支付价格，导致<span class="arithmatex">\(Q_L=0\)</span>， <span class="arithmatex">\(T_L=0\)</span>，<span class="arithmatex">\(π_L=0\)</span>。这在模型中是可能的，意味着厂商完全放弃了低需求市场，只专注于高需求市场。此时：
+<span class="arithmatex">\(T_H = 3200 - [0.5 * (100-60)² - 0.5*(60-60)²] = 3200 - 0.5 * 40² = 3200 - 800 = 2400\)</span>
+总利润 <span class="arithmatex">\(π_Second = π_L + π_H = 0 + T_H = 2400\)</span>。
+<em>(注: 这个结果是因为两类用户需求差异较大。如果差异较小，会得到一个 <span class="arithmatex">\(MC &lt; p_L &lt; 60\)</span> 的解。但这里的计算流程是完全正确的。)</em></p>
 <p><strong>4. 比较利润:</strong>
-*   <strong>三级价格歧视利润</strong>: <code>π_Third = 2000</code>
-*   <strong>二级价格歧视利润</strong>: <code>π_Second = 2400</code></p>
-<p><strong>结论</strong>: 在这个例子中，<strong>二级价格歧视（最优两部定价）比三级价格歧视带来了更高的利润</strong> (<code>2400 &gt; 2000</code>)。这验证了我们的理论：二级价格歧视是一种更强大的利润榨取工具。厂商通过精心设计套餐，让高需求用户为“不伪装成低需求用户”而支付了更多的费用，从而实现了整体利润的提升。</p>
+*   <strong>三级价格歧视利润</strong>: <span class="arithmatex">\(π_Third = 2000\)</span>
+*   <strong>二级价格歧视利润</strong>: <span class="arithmatex">\(π_Second = 2400\)</span></p>
+<p><strong>结论</strong>: 在这个例子中，<strong>二级价格歧视（最优两部定价）比三级价格歧视带来了更高的利润</strong> (<span class="arithmatex">\(2400 &gt; 2000\)</span>)。这验证了我们的理论：二级价格歧视是一种更强大的利润榨取工具。厂商通过精心设计套餐，让高需求用户为“不伪装成低需求用户”而支付了更多的费用，从而实现了整体利润的提升。</p>
 
 
 

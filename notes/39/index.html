@@ -2467,10 +2467,10 @@
 <li>
 <p><strong>贴现因子 (Discount Factor, δ):</strong></p>
 <ul>
-<li>未来的收益不如现在的收益有价值。我们用一个贴现因子 <code>δ</code> (其中 <code>0 &lt; δ &lt; 1</code>) 来衡量未来的价值。</li>
-<li><code>δ</code> 可以理解为：<ul>
-<li><strong>耐心程度</strong>：<code>δ</code> 越高，代表参与者越有耐心，越看重未来的收益。</li>
-<li><strong>博弈继续的概率</strong>：<code>δ</code> 也可以是在每一期结束后，博弈能继续到下一期的概率 <code>ρ</code>。</li>
+<li>未来的收益不如现在的收益有价值。我们用一个贴现因子 <span class="arithmatex">\(δ\)</span> (其中 <span class="arithmatex">\(0 &lt; δ &lt; 1\)</span>) 来衡量未来的价值。</li>
+<li><span class="arithmatex">\(δ\)</span> 可以理解为：<ul>
+<li><strong>耐心程度</strong>：<span class="arithmatex">\(δ\)</span> 越高，代表参与者越有耐心，越看重未来的收益。</li>
+<li><strong>博弈继续的概率</strong>：<span class="arithmatex">\(δ\)</span> 也可以是在每一期结束后，博弈能继续到下一期的概率 <span class="arithmatex">\(ρ\)</span>。</li>
 </ul>
 </li>
 </ul>
@@ -2502,7 +2502,7 @@
 <li><strong>如果参与者1继续遵守策略（合作）</strong>:
     他将获得合作收益（假设为4），直到永远。其总贴现收益为：
     $$ \text{Payoff}_{\text{Cooperate}} = 4 + 4\delta + 4\delta^2 + 4\delta^3 + \cdots = \frac{4}{1-\delta} $$
-    <em>(注：你提供的文本中 <code>4δ-2</code> 可能是 <code>4/(1-δ)</code> 的一种非标准写法或印刷错误，这里使用标准的几何级数求和公式)</em></li>
+    <em>(注：你提供的文本中 <span class="arithmatex">\(4δ-2\)</span> 可能是 <span class="arithmatex">\(4/(1-δ)\)</span> 的一种非标准写法或印刷错误，这里使用标准的几何级数求和公式)</em></li>
 <li><strong>如果参与者1选择偏离（背叛）</strong>:
     他将在当期获得一次性的背叛高收益（假设为5），但从下一期开始，将永远陷入（竞争 C, 竞争 C）的惩罚阶段，每期收益为1。其总贴现收益为：
     $$ \text{Payoff}_{\text{Deviate}} = 5 + 1\cdot\delta + 1\cdot\delta^2 + 1\cdot\delta^3 + \cdots = 5 + \frac{\delta}{1-\delta} $$</li>
@@ -2513,7 +2513,7 @@
     $$ 4 \ge 5 - 5\delta + \delta $$
     $$ 4\delta \ge 1 $$
     $$ \delta \ge \frac{1}{4} $$
-    <em>(注：你原文中推导出的 <code>δ ≥ 1/2</code> 是基于不同的收益数值，但推导逻辑是完全一样的。这个条件意味着，只要参与者足够有耐心（或博弈继续的概率足够高），他们就会选择合作。)</em></li>
+    <em>(注：你原文中推导出的 <span class="arithmatex">\(δ ≥ 1/2\)</span> 是基于不同的收益数值，但推导逻辑是完全一样的。这个条件意味着，只要参与者足够有耐心（或博弈继续的概率足够高），他们就会选择合作。)</em></li>
 </ul>
 </li>
 <li>
@@ -2526,7 +2526,7 @@
     当对方已经决定永远选择 C 时，你选择 NC 会得到最差的收益（假设为0）。之后博弈依然是 (C, C) 的惩罚阶段。总贴现收益为：
     $$ \text{Payoff}_{\text{Deviate}} = 0 + 1\cdot\delta + 1\cdot\delta^2 + \cdots = \frac{\delta}{1-\delta} $$</li>
 <li><strong>不偏离的条件</strong>:
-    因为 <code>1 &gt; δ</code> (由于 <code>0 &lt; δ &lt; 1</code>)，所以 <code>1/(1-δ) &gt; δ/(1-δ)</code>。因此，在惩罚阶段，遵守策略（选择C）总是比单方面偏离（选择NC）要好。这说明惩罚是 <strong>可信的</strong>。</li>
+    因为 <span class="arithmatex">\(1 &gt; δ\)</span> (由于 <span class="arithmatex">\(0 &lt; δ &lt; 1\)</span>)，所以 <span class="arithmatex">\(1/(1-δ) &gt; δ/(1-δ)\)</span>。因此，在惩罚阶段，遵守策略（选择C）总是比单方面偏离（选择NC）要好。这说明惩罚是 <strong>可信的</strong>。</li>
 </ul>
 </li>
 </ul>
@@ -2578,7 +2578,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>问题：</strong> 在一个无限重复的古诺博弈中，要维持合作（双方都生产低产量），贴现因子 <code>δ</code> 必须满足什么条件？</p>
+<p><strong>问题：</strong> 在一个无限重复的古诺博弈中，要维持合作（双方都生产低产量），贴现因子 <span class="arithmatex">\(δ\)</span> 必须满足什么条件？</p>
 <p><strong>解答：</strong></p>
 <p>我们使用 <strong>触发策略 (Trigger Strategy)</strong> 来分析。</p>
 <ol>
@@ -2612,8 +2612,8 @@
     $$ \frac{10}{1-\delta} \ge 15 + \frac{5\delta}{1-\delta} $$</p>
 </li>
 <li>
-<p><strong>求解 <code>δ</code></strong>:
-    为了方便计算，将不等式两边都乘以 <code>(1-δ)</code>：
+<p><strong>求解 <span class="arithmatex">\(δ\)</span></strong>:
+    为了方便计算，将不等式两边都乘以 <span class="arithmatex">\((1-δ)\)</span>：
     $$ 10 \ge 15(1-\delta) + 5\delta $$
     $$ 10 \ge 15 - 15\delta + 5\delta $$
     $$ 10 \ge 15 - 10\delta $$
@@ -2623,7 +2623,7 @@
 </li>
 </ol>
 <p><strong>结论：</strong>
-只要贴现因子 <code>δ</code> 大于或等于 1/2，即参与者对未来收益的重视程度足够高（或者说博弈有超过50%的概率会继续），那么通过触发策略，两家公司之间的合作（共同维持高价格和低产量）就是可以持续的子博弈精炼纳什均衡。如果 <code>δ &lt; 1/2</code>，那么短期的背叛诱惑过大，合作将无法维持。</p>
+只要贴现因子 <span class="arithmatex">\(δ\)</span> 大于或等于 1/2，即参与者对未来收益的重视程度足够高（或者说博弈有超过50%的概率会继续），那么通过触发策略，两家公司之间的合作（共同维持高价格和低产量）就是可以持续的子博弈精炼纳什均衡。如果 <span class="arithmatex">\(δ &lt; 1/2\)</span>，那么短期的背叛诱惑过大，合作将无法维持。</p>
 
 
 

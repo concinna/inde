@@ -2464,48 +2464,48 @@
 <hr />
 <h3 id="_1"><strong>模型详解：古诺模型中的等利润曲线</strong></h3>
 <h4 id="1-definition"><strong>1. 核心定义 (Definition)</strong></h4>
-<p><strong>等利润曲线（Isoprofit Curve）</strong> 指的是在产量组合空间 <code>(Q₁, Q₂)</code> 中，能使某一个厂商（例如厂商1）获得<strong>某一特定利润水平</strong>的所有产量组合 <code>(Q₁, Q₂)</code> 的集合。</p>
-<p>简单来说，这条曲线上的每一个点，都代表着厂商1自己生产 <code>Q₁</code>、竞争对手厂商2生产 <code>Q₂</code> 的一种情况，而在所有这些情况下，厂商1的利润都是<strong>相同</strong>的。</p>
+<p><strong>等利润曲线（Isoprofit Curve）</strong> 指的是在产量组合空间 <span class="arithmatex">\((Q₁, Q₂)\)</span> 中，能使某一个厂商（例如厂商1）获得<strong>某一特定利润水平</strong>的所有产量组合 <span class="arithmatex">\((Q₁, Q₂)\)</span> 的集合。</p>
+<p>简单来说，这条曲线上的每一个点，都代表着厂商1自己生产 <span class="arithmatex">\(Q₁\)</span>、竞争对手厂商2生产 <span class="arithmatex">\(Q₂\)</span> 的一种情况，而在所有这些情况下，厂商1的利润都是<strong>相同</strong>的。</p>
 <h4 id="2-mathematical-model-and-derivation"><strong>2. 数学模型与推导 (Mathematical Model and Derivation)</strong></h4>
 <p>我们使用你提供的线性模型来进行分析。</p>
 <ul>
 <li>
 <p><strong>市场需求函数 (Market Demand):</strong>
-    市场价格 <code>P</code> 由两个厂商的总产量 <code>Q₁ + Q₂</code> 决定。
-    <code>P = α - β₁Q₁ - β₂Q₂</code>
-    为了简化，我们采纳你的设定：<code>β₁ = β₂ = 1</code>。
-    于是，需求函数简化为：<code>P = α - (Q₁ + Q₂)</code>。</p>
+    市场价格 <span class="arithmatex">\(P\)</span> 由两个厂商的总产量 <span class="arithmatex">\(Q₁ + Q₂\)</span> 决定。
+    <span class="arithmatex">\(P = α - β₁Q₁ - β₂Q₂\)</span>
+    为了简化，我们采纳你的设定：<span class="arithmatex">\(β₁ = β₂ = 1\)</span>。
+    于是，需求函数简化为：<span class="arithmatex">\(P = α - (Q₁ + Q₂)\)</span>。</p>
 </li>
 <li>
 <p><strong>成本函数 (Cost Function):</strong>
-    假设生产成本为零，即 <code>cost = 0</code>。这是一个常见的简化假设，便于我们聚焦于策略互动。</p>
+    假设生产成本为零，即 <span class="arithmatex">\(cost = 0\)</span>。这是一个常见的简化假设，便于我们聚焦于策略互动。</p>
 </li>
 <li>
 <p><strong>厂商1的利润函数 (Profit Function for Firm 1):</strong>
-    利润 <code>π₁</code> 等于总收益减去总成本。
-    <code>π₁ (Q₁, Q₂) = P * Q₁ - cost</code>
-    将 <code>P</code> 和 <code>cost</code> 代入，得到：
-    <code>π₁ (Q₁, Q₂) = (α - Q₁ - Q₂) Q₁</code>
+    利润 <span class="arithmatex">\(π₁\)</span> 等于总收益减去总成本。
+    <span class="arithmatex">\(π₁ (Q₁, Q₂) = P * Q₁ - cost\)</span>
+    将 <span class="arithmatex">\(P\)</span> 和 <span class="arithmatex">\(cost\)</span> 代入，得到：
+    <span class="arithmatex">\(π₁ (Q₁, Q₂) = (α - Q₁ - Q₂) Q₁\)</span>
     展开后：
-    <code>π₁ (Q₁, Q₂) = αQ₁ - Q₁² - Q₁Q₂</code></p>
+    <span class="arithmatex">\(π₁ (Q₁, Q₂) = αQ₁ - Q₁² - Q₁Q₂\)</span></p>
 </li>
 <li>
 <p><strong>推导等利润曲线方程 (Deriving the Isoprofit Curve Equation):</strong>
-    根据定义，等利润曲线是利润 <code>π₁</code> 保持恒定的所有 <code>(Q₁, Q₂)</code> 组合。我们设这个恒定的利润值为 <code>π̄₁</code>（例如，你例子中的 <code>π̄₁ = 100</code>）。</p>
-<p><code>π̄₁ = αQ₁ - Q₁² - Q₁Q₂</code></p>
-<p>为了在 <code>(Q₁, Q₂)</code> 平面（横轴为 <code>Q₁</code>，纵轴为 <code>Q₂</code>）上画出这条曲线，我们需要将 <code>Q₂</code> 表示为 <code>Q₁</code> 的函数。通过代数变形：</p>
-<p><code>Q₁Q₂ = αQ₁ - Q₁² - π̄₁</code></p>
-<p><code>Q₂ = α - Q₁ - (π̄₁ / Q₁)</code></p>
-<p>这就是厂商1在利润水平为 <code>π̄₁</code> 时的<strong>等利润曲线方程</strong>。</p>
+    根据定义，等利润曲线是利润 <span class="arithmatex">\(π₁\)</span> 保持恒定的所有 <span class="arithmatex">\((Q₁, Q₂)\)</span> 组合。我们设这个恒定的利润值为 <span class="arithmatex">\(π̄₁\)</span>（例如，你例子中的 <span class="arithmatex">\(π̄₁ = 100\)</span>）。</p>
+<p><span class="arithmatex">\(π̄₁ = αQ₁ - Q₁² - Q₁Q₂\)</span></p>
+<p>为了在 <span class="arithmatex">\((Q₁, Q₂)\)</span> 平面（横轴为 <span class="arithmatex">\(Q₁\)</span>，纵轴为 <span class="arithmatex">\(Q₂\)</span>）上画出这条曲线，我们需要将 <span class="arithmatex">\(Q₂\)</span> 表示为 <span class="arithmatex">\(Q₁\)</span> 的函数。通过代数变形：</p>
+<p><span class="arithmatex">\(Q₁Q₂ = αQ₁ - Q₁² - π̄₁\)</span></p>
+<p><span class="arithmatex">\(Q₂ = α - Q₁ - (π̄₁ / Q₁)\)</span></p>
+<p>这就是厂商1在利润水平为 <span class="arithmatex">\(π̄₁\)</span> 时的<strong>等利润曲线方程</strong>。</p>
 </li>
 </ul>
 <h4 id="3"><strong>3. 等利润曲线的形状与特征</strong></h4>
 <p>这条曲线的形状不是一条直线或简单的抛物线，我们可以通过求导来分析它的斜率。</p>
 <ul>
 <li>
-<p><strong>对 <code>Q₁</code> 求导:</strong>
-    <code>dQ₂ / dQ₁ = -1 + (π̄₁ / Q₁²)</code>
-    这个导数告诉我们，当厂商1的产量 <code>Q₁</code> 变化时，为了维持利润不变，厂商2的产量 <code>Q₂</code> 需要如何相应地变化。</p>
+<p><strong>对 <span class="arithmatex">\(Q₁\)</span> 求导:</strong>
+    <span class="arithmatex">\(dQ₂ / dQ₁ = -1 + (π̄₁ / Q₁²)\)</span>
+    这个导数告诉我们，当厂商1的产量 <span class="arithmatex">\(Q₁\)</span> 变化时，为了维持利润不变，厂商2的产量 <span class="arithmatex">\(Q₂\)</span> 需要如何相应地变化。</p>
 </li>
 <li>
 <p><strong>分析斜率:</strong></p>
@@ -2513,22 +2513,22 @@
 <li>
 <p><strong>寻找曲线的顶点 (Peak/Trough):</strong>
     曲线的顶点（从厂商1的角度看，是其最理想的点）出现在斜率为0的地方。
-    令 <code>dQ₂ / dQ₁ = 0</code>：
-    <code>-1 + (π̄₁ / Q₁²) = 0  =&gt;  Q₁² = π̄₁  =&gt;  Q₁ = √π̄₁</code>
-    以你的例子 <code>π̄₁ = 100</code> 为例，顶点出现在 <code>Q₁ = √100 = 10</code> 的地方。</p>
+    令 <span class="arithmatex">\(dQ₂ / dQ₁ = 0\)</span>：
+    <span class="arithmatex">\(-1 + (π̄₁ / Q₁²) = 0  =&gt;  Q₁² = π̄₁  =&gt;  Q₁ = √π̄₁\)</span>
+    以你的例子 <span class="arithmatex">\(π̄₁ = 100\)</span> 为例，顶点出现在 <span class="arithmatex">\(Q₁ = √100 = 10\)</span> 的地方。</p>
 </li>
 <li>
 <p><strong>斜率的正负:</strong></p>
 <ul>
-<li>当 <code>Q₁ &lt; √π̄₁</code> (例如 <code>Q₁ &lt; 10</code>) 时，<code>Q₁² &lt; π̄₁</code>，所以 <code>π̄₁ / Q₁² &gt; 1</code>，导致 <code>dQ₂ / dQ₁ &gt; 0</code>。此时曲线是<strong>向上倾斜</strong>的。</li>
-<li>当 <code>Q₁ &gt; √π̄₁</code> (例如 <code>Q₁ &gt; 10</code>) 时，<code>Q₁² &gt; π̄₁</code>，所以 <code>π̄₁ / Q₁² &lt; 1</code>，导致 <code>dQ₂ / dQ₁ &lt; 0</code>。此时曲线是<strong>向下倾斜</strong>的。</li>
+<li>当 <span class="arithmatex">\(Q₁ &lt; √π̄₁\)</span> (例如 <span class="arithmatex">\(Q₁ &lt; 10\)</span>) 时，<span class="arithmatex">\(Q₁² &lt; π̄₁\)</span>，所以 <span class="arithmatex">\(π̄₁ / Q₁² &gt; 1\)</span>，导致 <span class="arithmatex">\(dQ₂ / dQ₁ &gt; 0\)</span>。此时曲线是<strong>向上倾斜</strong>的。</li>
+<li>当 <span class="arithmatex">\(Q₁ &gt; √π̄₁\)</span> (例如 <span class="arithmatex">\(Q₁ &gt; 10\)</span>) 时，<span class="arithmatex">\(Q₁² &gt; π̄₁\)</span>，所以 <span class="arithmatex">\(π̄₁ / Q₁² &lt; 1\)</span>，导致 <span class="arithmatex">\(dQ₂ / dQ₁ &lt; 0\)</span>。此时曲线是<strong>向下倾斜</strong>的。</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
 <p><strong>经济学直觉:</strong>
-    等利润曲线是围绕厂商1的最优产量选择点“弯曲”的。从厂商1的角度来看，它希望 <code>Q₂</code> 尽可能小。曲线的形状像一个向右开口的“C”形。曲线的顶点代表了：在能获得 <code>π̄₁</code> 这个利润水平的前提下，厂商1所能容忍的<strong>最低</strong>的对手产量 <code>Q₂</code>。</p>
+    等利润曲线是围绕厂商1的最优产量选择点“弯曲”的。从厂商1的角度来看，它希望 <span class="arithmatex">\(Q₂\)</span> 尽可能小。曲线的形状像一个向右开口的“C”形。曲线的顶点代表了：在能获得 <span class="arithmatex">\(π̄₁\)</span> 这个利润水平的前提下，厂商1所能容忍的<strong>最低</strong>的对手产量 <span class="arithmatex">\(Q₂\)</span>。</p>
 <p><em>(上图是一个示意图，横轴是Q₁, 纵轴是Q₂。曲线π₁&lt;π₂代表厂商1的利润更低，曲线π₂代表更高的利润)</em></p>
 </li>
 </ul>
@@ -2537,39 +2537,39 @@
 <ul>
 <li>
 <p><strong>数学解释:</strong>
-    比较两条等利润曲线：一条代表低利润 <code>π̄₁</code>，另一条代表高利润 <code>π̂₁</code> (<code>π̂₁ &gt; π̄₁</code>)。</p>
+    比较两条等利润曲线：一条代表低利润 <span class="arithmatex">\(π̄₁\)</span>，另一条代表高利润 <span class="arithmatex">\(π̂₁\)</span> (<span class="arithmatex">\(π̂₁ &gt; π̄₁\)</span>)。</p>
 <ul>
-<li>低利润曲线: <code>Q₂ = α - Q₁ - (π̄₁ / Q₁)</code></li>
-<li>高利润曲线: <code>Q₂ = α - Q₁ - (π̂₁ / Q₁)</code>
-对于任何给定的 <code>Q₁</code>，由于 <code>π̂₁ &gt; π̄₁</code>，所以 <code>(π̂₁ / Q₁) &gt; (π̄₁ / Q₁)</code>。因此，高利润曲线的 <code>Q₂</code> 值会更小。这意味着代表<strong>更高利润</strong>的等利润曲线，在坐标系中位置更<strong>靠下</strong>（即更靠近 <code>Q₁</code> 轴）。</li>
+<li>低利润曲线: <span class="arithmatex">\(Q₂ = α - Q₁ - (π̄₁ / Q₁)\)</span></li>
+<li>高利润曲线: <span class="arithmatex">\(Q₂ = α - Q₁ - (π̂₁ / Q₁)\)</span>
+对于任何给定的 <span class="arithmatex">\(Q₁\)</span>，由于 <span class="arithmatex">\(π̂₁ &gt; π̄₁\)</span>，所以 <span class="arithmatex">\((π̂₁ / Q₁) &gt; (π̄₁ / Q₁)\)</span>。因此，高利润曲线的 <span class="arithmatex">\(Q₂\)</span> 值会更小。这意味着代表<strong>更高利润</strong>的等利润曲线，在坐标系中位置更<strong>靠下</strong>（即更靠近 <span class="arithmatex">\(Q₁\)</span> 轴）。</li>
 </ul>
 </li>
 <li>
 <p><strong>经济学直觉:</strong>
-    这非常符合逻辑。对厂商1来说，要获得更高的利润，要么是自己的产量更优，要么是市场价格更高。在自己产量 <code>Q₁</code> 不变的情况下，只有当竞争对手厂商2的产量 <code>Q₂</code> <strong>减少</strong>时，市场总供给才会下降，价格才会上升，从而使厂商1获得更高利润。因此，代表更高利润的曲线必然对应着更低的 <code>Q₂</code> 值。</p>
+    这非常符合逻辑。对厂商1来说，要获得更高的利润，要么是自己的产量更优，要么是市场价格更高。在自己产量 <span class="arithmatex">\(Q₁\)</span> 不变的情况下，只有当竞争对手厂商2的产量 <span class="arithmatex">\(Q₂\)</span> <strong>减少</strong>时，市场总供给才会下降，价格才会上升，从而使厂商1获得更高利润。因此，代表更高利润的曲线必然对应着更低的 <span class="arithmatex">\(Q₂\)</span> 值。</p>
 </li>
 </ul>
 <h4 id="5-best-response-function"><strong>5. 等利润曲线与最优反应函数 (Best Response Function) 的关系</strong></h4>
 <p>这是等利润曲线最重要的应用。</p>
 <ul>
 <li>
-<p><strong>最优反应函数 (Best Response Function / Reaction Curve):</strong> 厂商1的最优反应函数 <code>R₁(Q₂)</code> 给出了在给定厂商2产量 <code>Q₂</code> 的情况下，厂商1应该选择的能使其利润最大化的产量 <code>Q₁</code>。</p>
+<p><strong>最优反应函数 (Best Response Function / Reaction Curve):</strong> 厂商1的最优反应函数 <span class="arithmatex">\(R₁(Q₂)\)</span> 给出了在给定厂商2产量 <span class="arithmatex">\(Q₂\)</span> 的情况下，厂商1应该选择的能使其利润最大化的产量 <span class="arithmatex">\(Q₁\)</span>。</p>
 </li>
 <li>
 <p><strong>几何关系:</strong>
-    想象厂商2选择了一个固定的产量 <code>Q₂*</code>。这在 <code>(Q₁, Q₂)</code> 图上是一条水平线。厂商1的目标是在这条水平线上选择一个 <code>Q₁</code> 点，使自己的利润最大化。根据我们上面的分析，利润越高的等利润曲线位置越靠下。因此，厂商1会选择能与 <code>Q₂*</code> 这条水平线<strong>相切</strong>的那条<strong>最低的</strong>等利润曲线。</p>
-<p>相切点意味着什么？在这一点，等利润曲线的斜率为0 (<code>dQ₂/dQ₁ = 0</code>)。</p>
-<p>你提到的 "connecting the peaks of the isoprofit curves yields the firm’s best response" (连接所有等利润曲线的顶点就构成了厂商的最优反应函数) 是完全正确的。因为每个顶点都代表了在某个特定的利润水平上，厂商1在最优产量下的状态。将所有这些顶点连接起来，就描绘出了对于<strong>任意</strong>可能的 <code>Q₂</code>，厂商1的最优 <code>Q₁</code> 选择。</p>
+    想象厂商2选择了一个固定的产量 <span class="arithmatex">\(Q₂*\)</span>。这在 <span class="arithmatex">\((Q₁, Q₂)\)</span> 图上是一条水平线。厂商1的目标是在这条水平线上选择一个 <span class="arithmatex">\(Q₁\)</span> 点，使自己的利润最大化。根据我们上面的分析，利润越高的等利润曲线位置越靠下。因此，厂商1会选择能与 <span class="arithmatex">\(Q₂*\)</span> 这条水平线<strong>相切</strong>的那条<strong>最低的</strong>等利润曲线。</p>
+<p>相切点意味着什么？在这一点，等利润曲线的斜率为0 (<span class="arithmatex">\(dQ₂/dQ₁ = 0\)</span>)。</p>
+<p>你提到的 "connecting the peaks of the isoprofit curves yields the firm’s best response" (连接所有等利润曲线的顶点就构成了厂商的最优反应函数) 是完全正确的。因为每个顶点都代表了在某个特定的利润水平上，厂商1在最优产量下的状态。将所有这些顶点连接起来，就描绘出了对于<strong>任意</strong>可能的 <span class="arithmatex">\(Q₂\)</span>，厂商1的最优 <span class="arithmatex">\(Q₁\)</span> 选择。</p>
 </li>
 </ul>
 <hr />
 <h3 id="_2"><strong>例题与求解</strong></h3>
 <p><strong>题目:</strong>
-假设两个寡头厂商（厂商1和厂商2）在一个市场上进行古诺竞争。市场反需求函数为 <code>P = 120 - Q</code>，其中 <code>Q = Q₁ + Q₂</code>。两个厂商的生产成本都为零。</p>
+假设两个寡头厂商（厂商1和厂商2）在一个市场上进行古诺竞争。市场反需求函数为 <span class="arithmatex">\(P = 120 - Q\)</span>，其中 <span class="arithmatex">\(Q = Q₁ + Q₂\)</span>。两个厂商的生产成本都为零。</p>
 <ol>
 <li>写出厂商1的利润函数和其等利润曲线的一般方程。</li>
-<li>如果厂商1的目标利润是 <code>π₁ = 1600</code>，求出对应的等利润曲线方程，并找出该曲线的顶点坐标 <code>(Q₁, Q₂)</code>。</li>
-<li>推导出厂商1的最优反应函数 <code>R₁(Q₂)</code>。</li>
+<li>如果厂商1的目标利润是 <span class="arithmatex">\(π₁ = 1600\)</span>，求出对应的等利润曲线方程，并找出该曲线的顶点坐标 <span class="arithmatex">\((Q₁, Q₂)\)</span>。</li>
+<li>推导出厂商1的最优反应函数 <span class="arithmatex">\(R₁(Q₂)\)</span>。</li>
 <li>验证第2问中求出的顶点，是否位于厂商1的最优反应函数上。</li>
 </ol>
 <p><strong>解答:</strong></p>
@@ -2577,52 +2577,52 @@
 <ul>
 <li>
 <p>厂商1的利润函数：
-    <code>π₁ (Q₁, Q₂) = P * Q₁ = (120 - Q₁ - Q₂) Q₁ = 120Q₁ - Q₁² - Q₁Q₂</code></p>
+    <span class="arithmatex">\(π₁ (Q₁, Q₂) = P * Q₁ = (120 - Q₁ - Q₂) Q₁ = 120Q₁ - Q₁² - Q₁Q₂\)</span></p>
 </li>
 <li>
 <p>等利润曲线的一般方程：
-    设利润为常数 <code>π̄₁</code>，则 <code>π̄₁ = 120Q₁ - Q₁² - Q₁Q₂</code>。
-    整理得到 <code>Q₂</code> 关于 <code>Q₁</code> 的函数：
-    <code>Q₂ = 120 - Q₁ - (π̄₁ / Q₁)</code></p>
+    设利润为常数 <span class="arithmatex">\(π̄₁\)</span>，则 <span class="arithmatex">\(π̄₁ = 120Q₁ - Q₁² - Q₁Q₂\)</span>。
+    整理得到 <span class="arithmatex">\(Q₂\)</span> 关于 <span class="arithmatex">\(Q₁\)</span> 的函数：
+    <span class="arithmatex">\(Q₂ = 120 - Q₁ - (π̄₁ / Q₁)\)</span></p>
 </li>
 </ul>
-<p><strong>2. 求解 <code>π₁ = 1600</code> 时的等利润曲线与顶点</strong></p>
+<p><strong>2. 求解 <span class="arithmatex">\(π₁ = 1600\)</span> 时的等利润曲线与顶点</strong></p>
 <ul>
 <li>
-<p>将 <code>π̄₁ = 1600</code> 代入方程：
-    <code>Q₂ = 120 - Q₁ - (1600 / Q₁)</code></p>
+<p>将 <span class="arithmatex">\(π̄₁ = 1600\)</span> 代入方程：
+    <span class="arithmatex">\(Q₂ = 120 - Q₁ - (1600 / Q₁)\)</span></p>
 </li>
 <li>
-<p>为了找顶点，我们对 <code>Q₂</code> 关于 <code>Q₁</code> 求导，并令其为0：
-    <code>dQ₂ / dQ₁ = -1 + (1600 / Q₁²) = 0</code>
-    <code>Q₁² = 1600</code>
-    <code>Q₁ = 40</code> （产量不能为负，故取正根）</p>
+<p>为了找顶点，我们对 <span class="arithmatex">\(Q₂\)</span> 关于 <span class="arithmatex">\(Q₁\)</span> 求导，并令其为0：
+    <span class="arithmatex">\(dQ₂ / dQ₁ = -1 + (1600 / Q₁²) = 0\)</span>
+    <span class="arithmatex">\(Q₁² = 1600\)</span>
+    <span class="arithmatex">\(Q₁ = 40\)</span> （产量不能为负，故取正根）</p>
 </li>
 <li>
-<p>当 <code>Q₁ = 40</code> 时，我们计算对应的 <code>Q₂</code> 值：
-    <code>Q₂ = 120 - 40 - (1600 / 40) = 80 - 40 = 40</code>
+<p>当 <span class="arithmatex">\(Q₁ = 40\)</span> 时，我们计算对应的 <span class="arithmatex">\(Q₂\)</span> 值：
+    <span class="arithmatex">\(Q₂ = 120 - 40 - (1600 / 40) = 80 - 40 = 40\)</span>
     所以，当利润为1600时，等利润曲线的顶点坐标为 <strong>(40, 40)</strong>。</p>
 </li>
 </ul>
 <p><strong>3. 推导厂商1的最优反应函数</strong></p>
 <ul>
 <li>
-<p>为了求最优反应函数，我们最大化厂商1的利润函数 <code>π₁ = 120Q₁ - Q₁² - Q₁Q₂</code>。我们将 <code>Q₂</code> 视为常数，对 <code>Q₁</code> 求偏导，并令其为0：
-    <code>∂π₁ / ∂Q₁ = 120 - 2Q₁ - Q₂ = 0</code></p>
+<p>为了求最优反应函数，我们最大化厂商1的利润函数 <span class="arithmatex">\(π₁ = 120Q₁ - Q₁² - Q₁Q₂\)</span>。我们将 <span class="arithmatex">\(Q₂\)</span> 视为常数，对 <span class="arithmatex">\(Q₁\)</span> 求偏导，并令其为0：
+    <span class="arithmatex">\(∂π₁ / ∂Q₁ = 120 - 2Q₁ - Q₂ = 0\)</span></p>
 </li>
 <li>
-<p>整理得到 <code>Q₁</code> 关于 <code>Q₂</code> 的函数，即最优反应函数 <code>R₁(Q₂)</code>：
-    <code>2Q₁ = 120 - Q₂</code>
-    <code>Q₁ = R₁(Q₂) = 60 - 0.5Q₂</code></p>
+<p>整理得到 <span class="arithmatex">\(Q₁\)</span> 关于 <span class="arithmatex">\(Q₂\)</span> 的函数，即最优反应函数 <span class="arithmatex">\(R₁(Q₂)\)</span>：
+    <span class="arithmatex">\(2Q₁ = 120 - Q₂\)</span>
+    <span class="arithmatex">\(Q₁ = R₁(Q₂) = 60 - 0.5Q₂\)</span></p>
 </li>
 </ul>
 <p><strong>4. 验证顶点是否在最优反应函数上</strong></p>
 <ul>
-<li>我们将顶点坐标 <code>(Q₁, Q₂) = (40, 40)</code> 代入最优反应函数 <code>Q₁ = 60 - 0.5Q₂</code> 的方程中进行验证。</li>
-<li>将 <code>Q₂ = 40</code> 代入方程右边：
-    <code>60 - 0.5 * (40) = 60 - 20 = 40</code></li>
-<li>计算结果 <code>40</code> 正好等于顶点的 <code>Q₁</code> 坐标。</li>
-<li><strong>结论：</strong> 顶点 <code>(40, 40)</code> 确实位于厂商1的最优反应函数上。这验证了理论：等利润曲线的顶点轨迹（集合）构成了该厂商的最优反应函数。</li>
+<li>我们将顶点坐标 <span class="arithmatex">\((Q₁, Q₂) = (40, 40)\)</span> 代入最优反应函数 <span class="arithmatex">\(Q₁ = 60 - 0.5Q₂\)</span> 的方程中进行验证。</li>
+<li>将 <span class="arithmatex">\(Q₂ = 40\)</span> 代入方程右边：
+    <span class="arithmatex">\(60 - 0.5 * (40) = 60 - 20 = 40\)</span></li>
+<li>计算结果 <span class="arithmatex">\(40\)</span> 正好等于顶点的 <span class="arithmatex">\(Q₁\)</span> 坐标。</li>
+<li><strong>结论：</strong> 顶点 <span class="arithmatex">\((40, 40)\)</span> 确实位于厂商1的最优反应函数上。这验证了理论：等利润曲线的顶点轨迹（集合）构成了该厂商的最优反应函数。</li>
 </ul>
 <p>最后，你提到的 "cannot competition &amp; prison’s dilemma" 是对古诺模型结果的一个经典评价。古诺均衡（即两条最优反应函数的交点）是一个纳什均衡，但它对于厂商双方来说通常不是最优的。如果它们能合谋（像一个垄断者一样生产），它们本可以获得更高的总利润。但由于每个厂商都有单方面偏离合谋协议以增加自己利润的动机，最终导致了一个对双方都更差的结果，这与<strong>囚徒困境 (Prisoner's Dilemma)</strong> 的逻辑是完全一致的。</p>
 

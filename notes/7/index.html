@@ -2500,7 +2500,7 @@ $$
 E: q_D = q_S = q
 \]</div>
 <p>这个方程是模型的闭环，它陈述了一个核心的经济学假设：在市场均衡状态下，需求量等于供给量。这个共同的数量就是我们在现实世界中观测到的<strong>均衡交易量 (Equilibrium Quantity)</strong>，记为 <span class="arithmatex">\(q\)</span>。同时，实现这个均衡的价格被称为<strong>均衡价格 (Equilibrium Price)</strong>，记为 <span class="arithmatex">\(p\)</span>。</p>
-<p>这意味着，我们观测到的任何一个 <code>(q, p)</code> 数据点，都是需求曲线和供给曲线共同作用下的交点。</p>
+<p>这意味着，我们观测到的任何一个 <span class="arithmatex">\((q, p)\)</span> 数据点，都是需求曲线和供给曲线共同作用下的交点。</p>
 <h3 id="_2">核心问题与解决方法</h3>
 <p><strong>1. 核心问题：内生性 (Endogeneity) 与联立方程偏误 (Simultaneity Bias)</strong></p>
 <p>如果我们试图用普通最小二乘法 (OLS) 直接对需求方程（回归 <span class="arithmatex">\(q\)</span> 对 <span class="arithmatex">\(p\)</span> 和 <span class="arithmatex">\(X_D\)</span>）或供给方程（回归 <span class="arithmatex">\(q\)</span> 对 <span class="arithmatex">\(p\)</span> 和 <span class="arithmatex">\(X_S\)</span>）进行估计，得到的结果将是<strong>有偏 (biased)</strong> 和<strong>不一致 (inconsistent)</strong> 的。</p>
@@ -2514,7 +2514,7 @@ E: q_D = q_S = q
 <li>
 <p><strong>识别条件（阶条件 Order Condition）</strong>：要识别一个方程，该方程中<strong>未包含</strong>的<strong>外生变量</strong>（exogenous variables，即模型之外决定的变量）数量必须<strong>大于或等于</strong>该方程中包含的<strong>内生变量</strong>（endogenous variables，即模型之内决定的变量，这里是 <span class="arithmatex">\(q\)</span> 和 <span class="arithmatex">\(p\)</span>）数量减一。</p>
 <ul>
-<li>在这个模型中，内生变量是 <span class="arithmatex">\(q\)</span> 和 <span class="arithmatex">\(p\)</span>（共2个）。所以，为了识别需求方程，供给方程中至少要有 <code>2-1=1</code> 个需求方程里没有的外生变量。反之亦然。</li>
+<li>在这个模型中，内生变量是 <span class="arithmatex">\(q\)</span> 和 <span class="arithmatex">\(p\)</span>（共2个）。所以，为了识别需求方程，供给方程中至少要有 <span class="arithmatex">\(2-1=1\)</span> 个需求方程里没有的外生变量。反之亦然。</li>
 </ul>
 </li>
 <li>
@@ -2528,11 +2528,11 @@ E: q_D = q_S = q
 <hr />
 <h3 id="_3">例题</h3>
 <p>假设我们想研究美国猪肉市场的供给和需求。我们收集了年度数据，包括：
-*   <code>q_pork</code>: 人均猪肉消费量（磅）
-*   <code>p_pork</code>: 猪肉的真实价格（美元/磅）
-*   <code>p_beef</code>: 牛肉的真实价格（美元/磅，猪肉的替代品）
-*   <code>income</code>: 人均可支配收入（美元）
-*   <code>p_feed</code>: 猪饲料的真实价格（美元/吨，生产成本）</p>
+*   <span class="arithmatex">\(q_pork\)</span>: 人均猪肉消费量（磅）
+*   <span class="arithmatex">\(p_pork\)</span>: 猪肉的真实价格（美元/磅）
+*   <span class="arithmatex">\(p_beef\)</span>: 牛肉的真实价格（美元/磅，猪肉的替代品）
+*   <span class="arithmatex">\(income\)</span>: 人均可支配收入（美元）
+*   <span class="arithmatex">\(p_feed\)</span>: 猪饲料的真实价格（美元/吨，生产成本）</p>
 <p><strong>第一步：建立模型</strong></p>
 <p>根据经济理论，我们可以构建如下的联立方程模型：</p>
 <ol>

@@ -2488,73 +2488,73 @@
 <p>我们首先分析最简单的情况：垄断厂商只开设一家商店。假设这家店位于大街的中心点。</p>
 <ul>
 <li><strong>关键变量定义:</strong><ul>
-<li><code>V</code>: 消费者的<strong>保留价格 (Reservation Price)</strong>，即消费者愿意为“完美契合其偏好的产品”支付的最高价格。</li>
-<li><code>P</code>: 商店设定的产品价格。</li>
-<li><code>t</code>: <strong>运输成本率 (Transportation Cost)</strong>，表示消费者每移动一个单位距离所需承担的费用（或效用损失）。</li>
-<li><code>x</code>: 消费者与商店之间的距离。</li>
+<li><span class="arithmatex">\(V\)</span>: 消费者的<strong>保留价格 (Reservation Price)</strong>，即消费者愿意为“完美契合其偏好的产品”支付的最高价格。</li>
+<li><span class="arithmatex">\(P\)</span>: 商店设定的产品价格。</li>
+<li><span class="arithmatex">\(t\)</span>: <strong>运输成本率 (Transportation Cost)</strong>，表示消费者每移动一个单位距离所需承担的费用（或效用损失）。</li>
+<li><span class="arithmatex">\(x\)</span>: 消费者与商店之间的距离。</li>
 </ul>
 </li>
 <li>
 <p><strong>消费者购买决策:</strong>
-    一个距离商店为 <code>x</code> 的消费者，他购买商品所需要支付的<strong>“全部价格” (Full Price)</strong> 是 <code>产品价格 + 运输成本</code>，即 <code>P + tx</code>。
-    只有当这个“全部价格”不高于他的保留价格 <code>V</code> 时，他才会购买。
-    <code>P + tx ≤ V</code></p>
+    一个距离商店为 <span class="arithmatex">\(x\)</span> 的消费者，他购买商品所需要支付的<strong>“全部价格” (Full Price)</strong> 是 <span class="arithmatex">\(产品价格 + 运输成本\)</span>，即 <span class="arithmatex">\(P + tx\)</span>。
+    只有当这个“全部价格”不高于他的保留价格 <span class="arithmatex">\(V\)</span> 时，他才会购买。
+    <span class="arithmatex">\(P + tx ≤ V\)</span></p>
 </li>
 <li>
 <p><strong>市场边界的确定:</strong>
-    市场能覆盖的最远距离 <code>X</code> 是由<strong>“无差异消费者”</strong>决定的。这个消费者位于市场的边缘，对他来说，买与不买的效用完全相同。他的“全部价格”正好等于他的保留价格。</p>
+    市场能覆盖的最远距离 <span class="arithmatex">\(X\)</span> 是由<strong>“无差异消费者”</strong>决定的。这个消费者位于市场的边缘，对他来说，买与不买的效用完全相同。他的“全部价格”正好等于他的保留价格。</p>
 <p><span class="arithmatex">\(P_1 + tX = V\)</span></p>
-<p>通过这个公式，我们可以解出这家商店单侧的市场覆盖半径 <code>X</code>：</p>
+<p>通过这个公式，我们可以解出这家商店单侧的市场覆盖半径 <span class="arithmatex">\(X\)</span>：</p>
 <p><span class="arithmatex">\(X = \frac{V - P_1}{t}\)</span></p>
 </li>
 <li>
 <p><strong>需求函数 (Demand Function):</strong>
-    假设消费者是均匀分布的，密度为 <code>N</code>（例如，每公里有N个消费者）。由于商店可以同时服务于左右两侧的消费者，其总市场覆盖长度为 <code>2X</code>。因此，总的需求量 <code>Q</code> 是：</p>
+    假设消费者是均匀分布的，密度为 <span class="arithmatex">\(N\)</span>（例如，每公里有N个消费者）。由于商店可以同时服务于左右两侧的消费者，其总市场覆盖长度为 <span class="arithmatex">\(2X\)</span>。因此，总的需求量 <span class="arithmatex">\(Q\)</span> 是：</p>
 <p><span class="arithmatex">\(Q = 2 \cdot X \cdot N = \frac{2N}{t}(V-P)\)</span></p>
-<p>从这个需求函数可以看出，当价格 <code>P</code> 下降时 (<code>P↓</code>)，市场覆盖半径 <code>X</code> 变大，总需求量 <code>Q</code> 也随之上升 (<code>Q↑</code>)。</p>
+<p>从这个需求函数可以看出，当价格 <span class="arithmatex">\(P\)</span> 下降时 (<span class="arithmatex">\(P↓\)</span>)，市场覆盖半径 <span class="arithmatex">\(X\)</span> 变大，总需求量 <span class="arithmatex">\(Q\)</span> 也随之上升 (<span class="arithmatex">\(Q↑\)</span>)。</p>
 </li>
 <li>
 <p><strong>覆盖整个市场的定价策略:</strong>
     如果垄断厂商的目标是服务于整个市场（比如一条总长度为1的街道，商店在中心0.5处），那么它必须确保距离最远的消费者（距离为0.5）也愿意购买。
-    最远消费者的购买条件是 <code>P + t * (1/2) ≤ V</code>。
+    最远消费者的购买条件是 <span class="arithmatex">\(P + t * (1/2) ≤ V\)</span>。
     为了利润最大化，厂商会将价格定在刚好满足这个条件的临界点上：</p>
 <p><span class="arithmatex">\(P + \frac{t}{2} = V \Rightarrow P = V - \frac{t}{2}\)</span></p>
 <p>这是在假设市场总长度为1的情况下，覆盖整个市场的最高定价。</p>
 </li>
 </ul>
 <h4 id="4"><strong>4. 多商店（多工厂）垄断模型</strong></h4>
-<p>现在考虑厂商开设多家商店的情况。开设更多商店的好处是，消费者离商店的平均距离变短了，这降低了消费者的“运输成本”，从而使得厂商可以设定更高的价格。但同时，厂商也需要承担更多的固定成本 <code>F</code> (建店成本)。</p>
+<p>现在考虑厂商开设多家商店的情况。开设更多商店的好处是，消费者离商店的平均距离变短了，这降低了消费者的“运输成本”，从而使得厂商可以设定更高的价格。但同时，厂商也需要承担更多的固定成本 <span class="arithmatex">\(F\)</span> (建店成本)。</p>
 <ul>
 <li>
 <p><strong>两家商店 (Two Stores):</strong>
     为了最有效地覆盖市场（假设总长度为1），厂商会把两家店分别设在 1/4 和 3/4 的位置。这样，任何一个消费者距离最近商店的最远距离是 1/4。
     此时，覆盖整个市场的定价条件变为：
     <span class="arithmatex">\(P + t \cdot \frac{1}{4} = V \Rightarrow P = V - \frac{t}{4}\)</span>
-    总利润为 <code>π = N(P - c) - 2F</code> (其中 <code>N</code> 为总消费者数，<code>c</code> 为单位生产成本，<code>F</code> 为每家店的固定成本)。</p>
+    总利润为 <span class="arithmatex">\(π = N(P - c) - 2F\)</span> (其中 <span class="arithmatex">\(N\)</span> 为总消费者数，<span class="arithmatex">\(c\)</span> 为单位生产成本，<span class="arithmatex">\(F\)</span> 为每家店的固定成本)。</p>
 </li>
 <li>
 <p><strong>三家商店 (Three Stores):</strong>
     三家店会设在 1/6, 3/6, 5/6 的位置。最远距离变为 1/6。
     定价条件：
     <span class="arithmatex">\(P + t \cdot \frac{1}{6} = V \Rightarrow P = V - \frac{t}{6}\)</span>
-    总利润为 <code>π = N(P - c) - 3F</code>。</p>
+    总利润为 <span class="arithmatex">\(π = N(P - c) - 3F\)</span>。</p>
 </li>
 <li>
 <p><strong>n 家商店 (n Stores):</strong>
-    推广到一般情况，如果开设 <code>n</code> 家商店，它们会被均匀地设置在 <code>1/2n, 3/2n, ..., (2n-1)/2n</code> 的位置。任何消费者距离最近商店的最远距离是 <code>1/2n</code>。
+    推广到一般情况，如果开设 <span class="arithmatex">\(n\)</span> 家商店，它们会被均匀地设置在 <span class="arithmatex">\(1/2n, 3/2n, ..., (2n-1)/2n\)</span> 的位置。任何消费者距离最近商店的最远距离是 <span class="arithmatex">\(1/2n\)</span>。
     定价条件：
     <span class="arithmatex">\(P + t \cdot \frac{1}{2n} = V \Rightarrow P = V - \frac{t}{2n}\)</span>
-    总利润为 <code>π = N(P - c) - nF</code>。</p>
+    总利润为 <span class="arithmatex">\(π = N(P - c) - nF\)</span>。</p>
 </li>
 </ul>
 <h4 id="5"><strong>5. 垄断与竞争的对比</strong></h4>
 <p>原文最后简单对比了<strong>空间垄断 (Spatial Monopoly)</strong> 和 <strong>洛施竞争 (Loschian Competition)</strong>（一种自由进入的市场竞争模型）。其结论是：
-*   在垄断下，市场分割的半径（<code>Radius</code>）更大，但单位价格 <code>P</code> 可能更低。
-*   在自由市场竞争下，由于新厂商会不断进入，直到利润为零，导致每个厂商服务的市场半径 <code>r</code> 更小（商店更密集），但单位价格 <code>P</code> 反而可能更高。这主要是因为每个厂商需要在更小的客户群上收回其固定成本。</p>
+*   在垄断下，市场分割的半径（<span class="arithmatex">\(Radius\)</span>）更大，但单位价格 <span class="arithmatex">\(P\)</span> 可能更低。
+*   在自由市场竞争下，由于新厂商会不断进入，直到利润为零，导致每个厂商服务的市场半径 <span class="arithmatex">\(r\)</span> 更小（商店更密集），但单位价格 <span class="arithmatex">\(P\)</span> 反而可能更高。这主要是因为每个厂商需要在更小的客户群上收回其固定成本。</p>
 <hr />
 <h3 id="_2"><strong>例题与解答</strong></h3>
 <p><strong>题目：</strong>
-假设在一个长达 1 公里的“步行街”上，均匀分布着 2000 名潜在消费者。每个消费者对于某种特色饮料的保留价格 <code>V</code> 为 15 元。消费者去商店购买饮料的“不便成本”（相当于运输成本）为每公里 <code>t = 10</code> 元。该饮料的单位生产成本 <code>c</code> 为 3 元。垄断厂商每开设一家分店的固定成本 <code>F</code> 为 1000 元。
+假设在一个长达 1 公里的“步行街”上，均匀分布着 2000 名潜在消费者。每个消费者对于某种特色饮料的保留价格 <span class="arithmatex">\(V\)</span> 为 15 元。消费者去商店购买饮料的“不便成本”（相当于运输成本）为每公里 <span class="arithmatex">\(t = 10\)</span> 元。该饮料的单位生产成本 <span class="arithmatex">\(c\)</span> 为 3 元。垄断厂商每开设一家分店的固定成本 <span class="arithmatex">\(F\)</span> 为 1000 元。
 厂商的目标是服务于整条街的所有消费者。请回答以下问题：</p>
 <ol>
 <li>如果厂商只在步行街的中心（0.5公里处）开设一家店，它应该如何定价？此时它的总利润是多少？</li>
@@ -2566,7 +2566,7 @@
 <ul>
 <li>
 <p><strong>定价 (Price):</strong>
-    当只有一家店在中心时，距离最远的消费者在街道的两端，距离为 0.5 公里。为了让这些消费者也愿意购买，价格 <code>P</code> 必须满足：
+    当只有一家店在中心时，距离最远的消费者在街道的两端，距离为 0.5 公里。为了让这些消费者也愿意购买，价格 <span class="arithmatex">\(P\)</span> 必须满足：
     <span class="arithmatex">\(P + t \cdot (\text{最远距离}) = V\)</span>
     <span class="arithmatex">\(P_1 + 10 \cdot 0.5 = 15\)</span>
     <span class="arithmatex">\(P_1 + 5 = 15\)</span>
@@ -2578,8 +2578,8 @@
     总收入 = 价格 × 消费者总数 = <span class="arithmatex">\(10 \times 2000 = 20000\)</span> 元
     总可变成本 = 单位成本 × 消费者总数 = <span class="arithmatex">\(3 \times 2000 = 6000\)</span> 元
     总固定成本 = <span class="arithmatex">\(F = 1000\)</span> 元
-    总利润 <code>π₁</code> = 总收入 - 总可变成本 - 总固定成本
-    <code>π₁</code> = <span class="arithmatex">\(20000 - 6000 - 1000 = 13000\)</span> 元</p>
+    总利润 <span class="arithmatex">\(π₁\)</span> = 总收入 - 总可变成本 - 总固定成本
+    <span class="arithmatex">\(π₁\)</span> = <span class="arithmatex">\(20000 - 6000 - 1000 = 13000\)</span> 元</p>
 </li>
 </ul>
 <p><strong>2. 开设两家店的情况</strong></p>
@@ -2587,7 +2587,7 @@
 <li>
 <p><strong>定价 (Price):</strong>
     当开设两家店（在0.25和0.75公里处）时，任何消费者距离最近商店的最远距离变为 0.25 公里（例如，位于中心的消费者距离两家店都是0.25公里）。
-    价格 <code>P</code> 必须满足：
+    价格 <span class="arithmatex">\(P\)</span> 必须满足：
     <span class="arithmatex">\(P + t \cdot (\text{最远距离}) = V\)</span>
     <span class="arithmatex">\(P_2 + 10 \cdot 0.25 = 15\)</span>
     <span class="arithmatex">\(P_2 + 2.5 = 15\)</span>
@@ -2599,16 +2599,16 @@
     总收入 = 价格 × 消费者总数 = <span class="arithmatex">\(12.5 \times 2000 = 25000\)</span> 元
     总可变成本 = 单位成本 × 消费者总数 = <span class="arithmatex">\(3 \times 2000 = 6000\)</span> 元
     总固定成本 = <span class="arithmatex">\(2 \times F = 2 \times 1000 = 2000\)</span> 元
-    总利润 <code>π₂</code> = 总收入 - 总可变成本 - 总固定成本
-    <code>π₂</code> = <span class="arithmatex">\(25000 - 6000 - 2000 = 17000\)</span> 元</p>
+    总利润 <span class="arithmatex">\(π₂\)</span> = 总收入 - 总可变成本 - 总固定成本
+    <span class="arithmatex">\(π₂\)</span> = <span class="arithmatex">\(25000 - 6000 - 2000 = 17000\)</span> 元</p>
 </li>
 </ul>
 <p><strong>3. 决策比较</strong></p>
 <ul>
-<li>开设一家店的总利润 <code>π₁</code> = 13000 元。</li>
-<li>开设两家店的总利润 <code>π₂</code> = 17000 元。</li>
+<li>开设一家店的总利润 <span class="arithmatex">\(π₁\)</span> = 13000 元。</li>
+<li>开设两家店的总利润 <span class="arithmatex">\(π₂\)</span> = 17000 元。</li>
 </ul>
-<p>因为 <code>π₂ &gt; π₁</code>，所以开设两家店是更优的决策。</p>
+<p>因为 <span class="arithmatex">\(π₂ &gt; π₁\)</span>，所以开设两家店是更优的决策。</p>
 <p>这个例子清晰地展示了模型的核心权衡：<strong>增加商店数量（即增加产品多样性），虽然会增加固定成本，但由于降低了消费者的“不便成本”，使得厂商可以设定更高的价格，从而可能带来更高的总利润。</strong> 厂商需要找到那个能让总利润最大化的最佳商店数量。</p>
 
 

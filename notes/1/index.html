@@ -2461,68 +2461,68 @@
 <h4 id="1-perfectly-competitive">1. 完全竞争市场 (Perfectly Competitive)</h4>
 <p>在完全竞争市场中，存在大量的买者和卖者，产品同质，信息完全，厂商可以自由进出市场。最重要的特征是：<strong>单个厂商是价格的接受者 (price taker)</strong>，无法影响市场价格。</p>
 <p><strong>利润最大化的一阶条件 (First-Order Condition, FOC):</strong></p>
-<p>一个厂商 <code>i</code> 的利润 <code>πᵢ</code> 是总收益 <code>P * qᵢ</code> 减去总成本 <code>c(qᵢ)</code>。由于市场价格 <code>P</code> 对单个厂商来说是给定的常数，其利润最大化问题是：
-<code>max πᵢ = P * qᵢ - c(qᵢ)</code></p>
-<p>为了求最大值，我们对产量 <code>qᵢ</code> 求一阶导数并使其等于零：
-<code>dπᵢ / dqᵢ = P - c'(qᵢ) = 0</code></p>
+<p>一个厂商 <span class="arithmatex">\(i\)</span> 的利润 <span class="arithmatex">\(πᵢ\)</span> 是总收益 <span class="arithmatex">\(P * qᵢ\)</span> 减去总成本 <span class="arithmatex">\(c(qᵢ)\)</span>。由于市场价格 <span class="arithmatex">\(P\)</span> 对单个厂商来说是给定的常数，其利润最大化问题是：
+<span class="arithmatex">\(max πᵢ = P * qᵢ - c(qᵢ)\)</span></p>
+<p>为了求最大值，我们对产量 <span class="arithmatex">\(qᵢ\)</span> 求一阶导数并使其等于零：
+<span class="arithmatex">\(dπᵢ / dqᵢ = P - c'(qᵢ) = 0\)</span></p>
 <p>这就得到了完全竞争厂商的利润最大化条件：</p>
 <div class="arithmatex">\[ P = c'(q_i) \]</div>
 <ul>
 <li><strong>P</strong>: 市场价格 (Price)。</li>
-<li><strong>c'(qᵢ)</strong>: 厂商 <code>i</code> 的边际成本 (Marginal Cost, MC)，即生产最后一单位产品所增加的成本。</li>
+<li><strong>c'(qᵢ)</strong>: 厂商 <span class="arithmatex">\(i\)</span> 的边际成本 (Marginal Cost, MC)，即生产最后一单位产品所增加的成本。</li>
 </ul>
 <p><strong>释义</strong>:
-这个公式的经济学含义是，一个完全竞争厂商会持续生产，直到生产最后一单位产品的边际成本恰好等于该产品所能卖出的市场价格。如果 <code>P &gt; MC</code>，厂商增加产量还能赚钱；如果 <code>P &lt; MC</code>，生产最后一单位会亏钱，厂商应该减产。</p>
+这个公式的经济学含义是，一个完全竞争厂商会持续生产，直到生产最后一单位产品的边际成本恰好等于该产品所能卖出的市场价格。如果 <span class="arithmatex">\(P &gt; MC\)</span>，厂商增加产量还能赚钱；如果 <span class="arithmatex">\(P &lt; MC\)</span>，生产最后一单位会亏钱，厂商应该减产。</p>
 <p><strong>行业供给曲线 (Industry Supply):</strong></p>
 <p>行业供给曲线是所有单个厂商供给曲线的水平加总。
-首先，从 <code>P = cᵢ'(qᵢ)</code> 中，我们可以反解出每个厂商在给定价格 <code>P</code> 下愿意生产的产量 <code>qᵢ</code>：</p>
+首先，从 <span class="arithmatex">\(P = cᵢ'(qᵢ)\)</span> 中，我们可以反解出每个厂商在给定价格 <span class="arithmatex">\(P\)</span> 下愿意生产的产量 <span class="arithmatex">\(qᵢ\)</span>：</p>
 <div class="arithmatex">\[ q_i = c_i'^{-1}(p) \]</div>
-<p>这里 <code>cᵢ'⁻¹(p)</code> 是边际成本函数的反函数。然后，将所有厂商的产量加总，就得到了整个市场的总供给量 <code>Q*</code>：</p>
+<p>这里 <span class="arithmatex">\(cᵢ'⁻¹(p)\)</span> 是边际成本函数的反函数。然后，将所有厂商的产量加总，就得到了整个市场的总供给量 <span class="arithmatex">\(Q*\)</span>：</p>
 <div class="arithmatex">\[ Q^* = \sum_{i=1}^{n} q_i = \sum_{i=1}^{n} c_i'^{-1}(p) = F(p) \]</div>
-<p>这条曲线 <code>Q* = F(p)</code> 就是行业的供给曲线，它表示在每个价格水平上，整个行业愿意供给的总产量。</p>
+<p>这条曲线 <span class="arithmatex">\(Q* = F(p)\)</span> 就是行业的供给曲线，它表示在每个价格水平上，整个行业愿意供给的总产量。</p>
 <hr />
 <h4 id="2-monopoly">2. 垄断市场 (Monopoly)</h4>
 <p>垄断市场只有一个卖者，该卖者是<strong>价格的制定者 (price maker)</strong>。它面对的是整个市场的需求曲线，通常是向下倾斜的。这意味着垄断者要想卖出更多的产品，就必须降低价格。</p>
 <p><strong>利润最大化的一阶条件:</strong></p>
-<p>垄断者的利润 <code>π</code> 是总收益 <code>TR</code> 减去总成本 <code>TC</code>。
-<code>π = TR(Q) - TC(Q) = P(Q) * Q - c(Q)</code>
-注意这里的价格 <code>P</code> 是产量 <code>Q</code> 的函数 <code>P(Q)</code>，因为垄断者改变产量会影响价格。</p>
-<p>对 <code>Q</code> 求一阶导数并令其为零：
-<code>dπ / dQ = d(P(Q) * Q)/dQ - c'(Q) = 0</code></p>
-<p>使用乘法法则对 <code>P(Q) * Q</code> 求导：
-<code>d(P(Q) * Q)/dQ = (dP/dQ) * Q + P * (dQ/dQ) = P'(Q)Q + P</code></p>
-<p>这个 <code>P'(Q)Q + P</code> 就是<strong>边际收益 (Marginal Revenue, MR)</strong>。因此，垄断者的利润最大化条件是 <strong>MR = MC</strong>:</p>
+<p>垄断者的利润 <span class="arithmatex">\(π\)</span> 是总收益 <span class="arithmatex">\(TR\)</span> 减去总成本 <span class="arithmatex">\(TC\)</span>。
+<span class="arithmatex">\(π = TR(Q) - TC(Q) = P(Q) * Q - c(Q)\)</span>
+注意这里的价格 <span class="arithmatex">\(P\)</span> 是产量 <span class="arithmatex">\(Q\)</span> 的函数 <span class="arithmatex">\(P(Q)\)</span>，因为垄断者改变产量会影响价格。</p>
+<p>对 <span class="arithmatex">\(Q\)</span> 求一阶导数并令其为零：
+<span class="arithmatex">\(dπ / dQ = d(P(Q) * Q)/dQ - c'(Q) = 0\)</span></p>
+<p>使用乘法法则对 <span class="arithmatex">\(P(Q) * Q\)</span> 求导：
+<span class="arithmatex">\(d(P(Q) * Q)/dQ = (dP/dQ) * Q + P * (dQ/dQ) = P'(Q)Q + P\)</span></p>
+<p>这个 <span class="arithmatex">\(P'(Q)Q + P\)</span> 就是<strong>边际收益 (Marginal Revenue, MR)</strong>。因此，垄断者的利润最大化条件是 <strong>MR = MC</strong>:</p>
 <div class="arithmatex">\[P'(Q)Q + P = c'(Q)\]</div>
 <ul>
 <li><strong>P'(Q)Q + P</strong>: 边际收益 (MR)。</li>
 <li><strong>c'(Q)</strong>: 边际成本 (MC)。</li>
 </ul>
 <p><strong>MR 与 P 的关系</strong>:
-由于需求曲线向下倾斜，<code>P'(Q) = dP/dQ &lt; 0</code>。这意味着 <code>P'(Q)Q</code> 这一项是负数。因此，对于垄断者来说：
+由于需求曲线向下倾斜，<span class="arithmatex">\(P'(Q) = dP/dQ &lt; 0\)</span>。这意味着 <span class="arithmatex">\(P'(Q)Q\)</span> 这一项是负数。因此，对于垄断者来说：
 <strong>MR = P + P'(Q)Q &lt; P</strong></p>
 <p><strong>释义</strong>:
 垄断者的边际收益总是低于其产品的售价。这是因为当它决定多卖一单位产品时，它不仅要为这新增的一单位产品设定一个较低的价格，还必须对<strong>之前所有</strong>原本可以高价卖出的产品都降价销售。这个对存量单位的降价损失，使得边际收益小于价格。</p>
 <hr />
 <h4 id="3-an-alternative-way-elasticity">3. 弹性分析 (An Alternative way: elasticity)</h4>
 <p>这是一种更通用的方法，可以将上述两种情况统一起来。</p>
-<p>需求价格弹性 <code>ε</code> 的定义是：
+<p>需求价格弹性 <span class="arithmatex">\(ε\)</span> 的定义是：
 $$ \varepsilon = - \frac{\partial Q}{\partial p} \frac{p}{Q} $$</p>
-<p>垄断者的利润最大化条件 <code>P'(Q)Q + P = c'(Q)</code> 可以变形为：
-<code>P - c' = -P'(Q)Q</code></p>
-<p>两边同时除以 <code>P</code>：
+<p>垄断者的利润最大化条件 <span class="arithmatex">\(P'(Q)Q + P = c'(Q)\)</span> 可以变形为：
+<span class="arithmatex">\(P - c' = -P'(Q)Q\)</span></p>
+<p>两边同时除以 <span class="arithmatex">\(P\)</span>：
 $$ \frac{P - c'}{P} = - \frac{P'(Q)Q}{P} = - \frac{dQ}{dp} \frac{Q}{P} $$</p>
-<p>注意到 <code>P'(Q) = dp/dQ</code>，所以 <code>-P'(Q) = -dp/dQ = 1 / (dQ/dp)</code>。代入上式：
+<p>注意到 <span class="arithmatex">\(P'(Q) = dp/dQ\)</span>，所以 <span class="arithmatex">\(-P'(Q) = -dp/dQ = 1 / (dQ/dp)\)</span>。代入上式：
 $$ \frac{P - c'}{P} = \frac{1}{\frac{\partial Q}{\partial p} \frac{p}{Q}} = \frac{1}{\varepsilon} $$</p>
 <p>这个公式被称为<strong>勒纳指数 (Lerner Index)</strong>，它衡量了厂商的市场势力（定价能力）。
 从这个公式可以推导出价格和边际成本的关系：
 $$ p(1 - \frac{1}{\varepsilon}) = c' \Rightarrow p = \left(\frac{\varepsilon}{\varepsilon - 1}\right) c' $$</p>
 <ul>
 <li>
-<p><strong>在垄断市场中</strong>: <code>ε</code> 是一个有限的正数（且 <code>ε &gt; 1</code>，因为垄断者总是在需求曲线的弹性部分经营）。<code>ε / (ε - 1)</code> 大于 1，所以 <code>P &gt; c'</code>。需求弹性 <code>ε</code> 越小（消费者对价格越不敏感），<code>ε / (ε - 1)</code> 的值就越大，垄断者定的价格 <code>P</code> 相对于边际成本 <code>c'</code> 就越高。</p>
+<p><strong>在垄断市场中</strong>: <span class="arithmatex">\(ε\)</span> 是一个有限的正数（且 <span class="arithmatex">\(ε &gt; 1\)</span>，因为垄断者总是在需求曲线的弹性部分经营）。<span class="arithmatex">\(ε / (ε - 1)\)</span> 大于 1，所以 <span class="arithmatex">\(P &gt; c'\)</span>。需求弹性 <span class="arithmatex">\(ε\)</span> 越小（消费者对价格越不敏感），<span class="arithmatex">\(ε / (ε - 1)\)</span> 的值就越大，垄断者定的价格 <span class="arithmatex">\(P\)</span> 相对于边际成本 <span class="arithmatex">\(c'\)</span> 就越高。</p>
 </li>
 <li>
-<p><strong>在完全竞争市场中</strong>: 单个厂商面对的是一条水平的需求曲线，意味着需求有<strong>无限弹性 (perfectly elastic)</strong>，即 <code>ε → ∞</code>。
-    将 <code>ε → ∞</code> 代入公式：
+<p><strong>在完全竞争市场中</strong>: 单个厂商面对的是一条水平的需求曲线，意味着需求有<strong>无限弹性 (perfectly elastic)</strong>，即 <span class="arithmatex">\(ε → ∞\)</span>。
+    将 <span class="arithmatex">\(ε → ∞\)</span> 代入公式：
     $$ \frac{P - c'}{P} = \frac{1}{\infty} = 0 \Rightarrow P - c' = 0 \Rightarrow P = c' $$
     这与我们之前得到的完全竞争市场结论完全一致。</p>
 </li>
@@ -2532,8 +2532,8 @@ $$ p(1 - \frac{1}{\varepsilon}) = c' \Rightarrow p = \left(\frac{\varepsilon}{\v
 <p>原文中已经给出了一个垄断市场的例子，我们来给出一个<strong>完全竞争市场</strong>的例子，并与垄断进行对比，以便更好地理解二者的区别。</p>
 <p>假设一个市场的需求曲线和成本状况如下：</p>
 <ul>
-<li><strong>市场需求曲线 (Market Demand)</strong>: <code>Q = 1000 - 20P</code></li>
-<li><strong>行业边际成本 (Marginal Cost)</strong>: <code>MC = 10</code> (为简化，假设所有厂商的边际成本都是常数10，这也是行业的供给曲线)</li>
+<li><strong>市场需求曲线 (Market Demand)</strong>: <span class="arithmatex">\(Q = 1000 - 20P\)</span></li>
+<li><strong>行业边际成本 (Marginal Cost)</strong>: <span class="arithmatex">\(MC = 10\)</span> (为简化，假设所有厂商的边际成本都是常数10，这也是行业的供给曲线)</li>
 </ul>
 <p><strong>问题：</strong>
 1.  如果该市场是<strong>完全竞争</strong>的，均衡价格和产量是多少？
@@ -2544,14 +2544,14 @@ $$ p(1 - \frac{1}{\varepsilon}) = c' \Rightarrow p = \left(\frac{\varepsilon}{\v
 <p><strong>1. 完全竞争市场 (Perfect Competition)</strong></p>
 <p><strong>目标函数</strong>: 在完全竞争市场中，均衡点是市场供给与市场需求相交之处。均衡条件是<strong>价格等于边际成本 (P = MC)</strong>。</p>
 <ul>
-<li><strong>供给</strong>: 行业的供给曲线由边际成本决定。由于 <code>MC = 10</code>，这意味着无论产量多少，提供一单位产品的边际成本都是10。所以，行业的供给曲线是一条在 <code>P = 10</code> 处的水平线。</li>
+<li><strong>供给</strong>: 行业的供给曲线由边际成本决定。由于 <span class="arithmatex">\(MC = 10\)</span>，这意味着无论产量多少，提供一单位产品的边际成本都是10。所以，行业的供给曲线是一条在 <span class="arithmatex">\(P = 10\)</span> 处的水平线。</li>
 <li>
-<p><strong>均衡</strong>: 设定市场价格 <code>P</code> 等于边际成本 <code>MC</code>。
-    <code>P_c = MC = 10</code></p>
-<p>将均衡价格 <code>P_c = 10</code> 代入市场需求曲线，求出均衡产量 <code>Q_c</code>：
-<code>Q_c = 1000 - 20 * P_c</code>
-<code>Q_c = 1000 - 20 * (10)</code>
-<code>Q_c = 1000 - 200 = 800</code></p>
+<p><strong>均衡</strong>: 设定市场价格 <span class="arithmatex">\(P\)</span> 等于边际成本 <span class="arithmatex">\(MC\)</span>。
+    <span class="arithmatex">\(P_c = MC = 10\)</span></p>
+<p>将均衡价格 <span class="arithmatex">\(P_c = 10\)</span> 代入市场需求曲线，求出均衡产量 <span class="arithmatex">\(Q_c\)</span>：
+<span class="arithmatex">\(Q_c = 1000 - 20 * P_c\)</span>
+<span class="arithmatex">\(Q_c = 1000 - 20 * (10)\)</span>
+<span class="arithmatex">\(Q_c = 1000 - 200 = 800\)</span></p>
 </li>
 </ul>
 <p><strong>结论</strong>: 在完全竞争市场下，均衡价格为 <strong>10</strong>，均衡产量为 <strong>800</strong>。</p>
@@ -2560,28 +2560,28 @@ $$ p(1 - \frac{1}{\varepsilon}) = c' \Rightarrow p = \left(\frac{\varepsilon}{\v
 <ul>
 <li>
 <p><strong>第一步：求边际收益 (MR)</strong>
-    首先，我们需要从需求曲线 <code>Q = 1000 - 20P</code> 中得到反需求曲线（即 <code>P</code> 关于 <code>Q</code> 的函数）：
-    <code>20P = 1000 - Q</code>
-    <code>P = 50 - (1/20)Q</code></p>
+    首先，我们需要从需求曲线 <span class="arithmatex">\(Q = 1000 - 20P\)</span> 中得到反需求曲线（即 <span class="arithmatex">\(P\)</span> 关于 <span class="arithmatex">\(Q\)</span> 的函数）：
+    <span class="arithmatex">\(20P = 1000 - Q\)</span>
+    <span class="arithmatex">\(P = 50 - (1/20)Q\)</span></p>
 <p>然后，计算总收益 (TR)：
-<code>TR = P * Q = (50 - (1/20)Q) * Q = 50Q - (1/20)Q²</code></p>
-<p>对总收益 <code>TR</code> 求关于 <code>Q</code> 的导数，得到边际收益 <code>MR</code>：
-<code>MR = d(TR)/dQ = 50 - 2 * (1/20)Q = 50 - (1/10)Q</code>
+<span class="arithmatex">\(TR = P * Q = (50 - (1/20)Q) * Q = 50Q - (1/20)Q²\)</span></p>
+<p>对总收益 <span class="arithmatex">\(TR\)</span> 求关于 <span class="arithmatex">\(Q\)</span> 的导数，得到边际收益 <span class="arithmatex">\(MR\)</span>：
+<span class="arithmatex">\(MR = d(TR)/dQ = 50 - 2 * (1/20)Q = 50 - (1/10)Q\)</span>
 <em>(一个有用的技巧：对于线性需求曲线 P = a - bQ，其边际收益曲线为 MR = a - 2bQ，截距相同，斜率是两倍)</em></p>
 </li>
 <li>
 <p><strong>第二步：令 MR = MC</strong>
-    我们已知 <code>MC = 10</code>。
-    <code>50 - (1/10)Q_m = 10</code>
-    <code>(1/10)Q_m = 40</code>
-    <code>Q_m = 400</code></p>
+    我们已知 <span class="arithmatex">\(MC = 10\)</span>。
+    <span class="arithmatex">\(50 - (1/10)Q_m = 10\)</span>
+    <span class="arithmatex">\((1/10)Q_m = 40\)</span>
+    <span class="arithmatex">\(Q_m = 400\)</span></p>
 </li>
 <li>
 <p><strong>第三步：求垄断价格 (P_m)</strong>
-    将垄断产量 <code>Q_m = 400</code> 代入反需求曲线：
-    <code>P_m = 50 - (1/20) * Q_m</code>
-    <code>P_m = 50 - (1/20) * (400)</code>
-    <code>P_m = 50 - 20 = 30</code></p>
+    将垄断产量 <span class="arithmatex">\(Q_m = 400\)</span> 代入反需求曲线：
+    <span class="arithmatex">\(P_m = 50 - (1/20) * Q_m\)</span>
+    <span class="arithmatex">\(P_m = 50 - (1/20) * (400)\)</span>
+    <span class="arithmatex">\(P_m = 50 - 20 = 30\)</span></p>
 </li>
 </ul>
 <p><strong>结论</strong>: 在垄断市场下，垄断产量为 <strong>400</strong>，垄断价格为 <strong>30</strong>。</p>
@@ -2608,8 +2608,8 @@ $$ p(1 - \frac{1}{\varepsilon}) = c' \Rightarrow p = \left(\frac{\varepsilon}{\v
 </tbody>
 </table>
 <p>通过对比可以清晰地看到：
-*   <strong>垄断导致更高的价格</strong> (<code>30 &gt; 10</code>)。
-*   <strong>垄断导致更低的产量</strong> (<code>400 &lt; 800</code>)。</p>
+*   <strong>垄断导致更高的价格</strong> (<span class="arithmatex">\(30 &gt; 10\)</span>)。
+*   <strong>垄断导致更低的产量</strong> (<span class="arithmatex">\(400 &lt; 800\)</span>)。</p>
 <p>这就是垄断造成的<strong>经济效率损失</strong>或<strong>无谓损失 (Deadweight Loss)</strong>。垄断者为了最大化自身利润，会限制产量并抬高价格，这使得一部分原本在完全竞争市场下可以成交的、对社会有效率的交易（即消费者的支付意愿高于生产的边际成本）无法发生，从而损害了社会总福利。</p>
 
 

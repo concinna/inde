@@ -2435,34 +2435,34 @@
 <li>
 <p><strong>市场设定</strong>:</p>
 <ul>
-<li>初始有 <code>N+1</code> 家企业。</li>
-<li>市场反需求函数为 <code>P = A - BQ</code>，其中 <code>P</code> 是价格，<code>Q</code> 是市场总产量。</li>
-<li>所有企业的边际成本（marginal cost）相同且为常数 <code>c</code>。</li>
+<li>初始有 <span class="arithmatex">\(N+1\)</span> 家企业。</li>
+<li>市场反需求函数为 <span class="arithmatex">\(P = A - BQ\)</span>，其中 <span class="arithmatex">\(P\)</span> 是价格，<span class="arithmatex">\(Q\)</span> 是市场总产量。</li>
+<li>所有企业的边际成本（marginal cost）相同且为常数 <span class="arithmatex">\(c\)</span>。</li>
 </ul>
 </li>
 <li>
 <p><strong>古诺均衡结果</strong>:
-    在 <code>N+1</code> 家企业进行古诺竞争（即同时决定产量）的对称均衡下，各个企业的产量、市场总产量、价格和利润如下：</p>
+    在 <span class="arithmatex">\(N+1\)</span> 家企业进行古诺竞争（即同时决定产量）的对称均衡下，各个企业的产量、市场总产量、价格和利润如下：</p>
 <ul>
 <li>
 <p><strong>单个企业产量 (Individual Firm's Quantity):</strong>
     $$ q _ { i } = \frac { A - c } { B ( N + 2 ) } $$
-    这个公式表示，每家企业的产量与市场潜在利润空间 (<code>A-c</code>) 成正比，与企业总数 (<code>N+1</code>，体现在分母的 <code>N+2</code> 中) 成反比。</p>
+    这个公式表示，每家企业的产量与市场潜在利润空间 (<span class="arithmatex">\(A-c\)</span>) 成正比，与企业总数 (<span class="arithmatex">\(N+1\)</span>，体现在分母的 <span class="arithmatex">\(N+2\)</span> 中) 成反比。</p>
 </li>
 <li>
 <p><strong>市场总产量 (Total Quantity):</strong>
     $$ Q = (N+1)q_i = \frac { ( N + 1 ) ( A - c ) } { B ( N + 2 ) } $$
-    总产量是单个企业产量的 <code>N+1</code> 倍。</p>
+    总产量是单个企业产量的 <span class="arithmatex">\(N+1\)</span> 倍。</p>
 </li>
 <li>
 <p><strong>市场价格 (Price):</strong>
     $$ P = A - BQ = \frac { A + ( N + 1 ) c } { N + 2 } $$
-    价格等于一个市场基础价格和所有企业成本的加权平均。企业越多，价格越接近边际成本 <code>c</code>。</p>
+    价格等于一个市场基础价格和所有企业成本的加权平均。企业越多，价格越接近边际成本 <span class="arithmatex">\(c\)</span>。</p>
 </li>
 <li>
 <p><strong>单个企业利润 (Individual Firm's Profit):</strong>
     $$ \pi _ { i } = (P-c)q_i = \frac { ( A - c ) ^ { 2 } } { B ( N + 2 )^2 } $$
-    <em>注意：原文中 <code>π_i</code> 的分母应为 <code>B(N+2)^2</code>，这里我已根据标准古诺模型进行了修正。原文可能存在一个印刷错误。</em></p>
+    <em>注意：原文中 <span class="arithmatex">\(π_i\)</span> 的分母应为 <span class="arithmatex">\(B(N+2)^2\)</span>，这里我已根据标准古诺模型进行了修正。原文可能存在一个印刷错误。</em></p>
 </li>
 </ul>
 </li>
@@ -2474,12 +2474,12 @@
 <li>
 <p><strong>新的市场结构</strong>:</p>
 <ul>
-<li>原先的 <code>N+1</code> 家企业变成了 <code>N</code> 个独立的决策单位：<ul>
+<li>原先的 <span class="arithmatex">\(N+1\)</span> 家企业变成了 <span class="arithmatex">\(N\)</span> 个独立的决策单位：<ul>
 <li><strong>1个领导者 (Leader)</strong>：由两家企业合并而成的新实体。</li>
 <li><strong>N-1个跟随者 (Followers)</strong>：其他未合并的企业。</li>
 </ul>
 </li>
-<li>竞争模式从同时决策（古诺）转变为序贯决策（斯塔克伯格）。领导者首先决定自己的产量 <code>Q^L</code>，然后 <code>N-1</code> 个跟随者观察到 <code>Q^L</code> 后，再同时决定自己的产量 <code>q_f</code>。</li>
+<li>竞争模式从同时决策（古诺）转变为序贯决策（斯塔克伯格）。领导者首先决定自己的产量 <span class="arithmatex">\(Q^L\)</span>，然后 <span class="arithmatex">\(N-1\)</span> 个跟随者观察到 <span class="arithmatex">\(Q^L\)</span> 后，再同时决定自己的产量 <span class="arithmatex">\(q_f\)</span>。</li>
 </ul>
 </li>
 <li>
@@ -2488,22 +2488,22 @@
 <ol>
 <li>
 <p><strong>跟随者的利润最大化</strong>:
-    对于任何一个跟随者 <code>f</code>，其利润函数为：
+    对于任何一个跟随者 <span class="arithmatex">\(f\)</span>，其利润函数为：
     $$ \pi _ { f } = ( P - c ) q _ { f } = ( A - B ( Q ^ { L } + Q _ { F - f } + q _ { f } ) - c ) q _ { f } $$
-    其中 <code>Q^L</code> 是领导者的产量（被跟随者视为给定值），<code>Q_{F-f}</code> 是除 <code>f</code> 之外的其他 <code>N-2</code> 个跟随者的总产量。</p>
-<p>对 <code>q_f</code> 求一阶导数（FOC）并令其为零，可以得到跟随者 <code>f</code> 的反应函数。根据对称性（所有跟随者都一样），我们可以得到每个跟随者的产量 <code>q_f</code> 与领导者产量 <code>Q^L</code> 之间的关系。</p>
-<p>经过推导（原文的推导步骤有些跳跃和简化），可以得到所有跟随者的总产量 <code>Q^F</code> 与领导者产量 <code>Q^L</code> 的关系：
+    其中 <span class="arithmatex">\(Q^L\)</span> 是领导者的产量（被跟随者视为给定值），<span class="arithmatex">\(Q_{F-f}\)</span> 是除 <span class="arithmatex">\(f\)</span> 之外的其他 <span class="arithmatex">\(N-2\)</span> 个跟随者的总产量。</p>
+<p>对 <span class="arithmatex">\(q_f\)</span> 求一阶导数（FOC）并令其为零，可以得到跟随者 <span class="arithmatex">\(f\)</span> 的反应函数。根据对称性（所有跟随者都一样），我们可以得到每个跟随者的产量 <span class="arithmatex">\(q_f\)</span> 与领导者产量 <span class="arithmatex">\(Q^L\)</span> 之间的关系。</p>
+<p>经过推导（原文的推导步骤有些跳跃和简化），可以得到所有跟随者的总产量 <span class="arithmatex">\(Q^F\)</span> 与领导者产量 <span class="arithmatex">\(Q^L\)</span> 的关系：
 $$ Q ^ { F } = ( N - 1 ) q _ { f } = \frac { ( N - 1 ) ( A - c ) } { B N } - \frac { ( N - 1 ) Q ^ { L } } { N } $$
-这个公式的含义是：领导者产量 <code>Q^L</code> 越高，留给跟随者的市场空间就越小，所以跟随者的总产量 <code>Q^F</code> 就会越低。</p>
+这个公式的含义是：领导者产量 <span class="arithmatex">\(Q^L\)</span> 越高，留给跟随者的市场空间就越小，所以跟随者的总产量 <span class="arithmatex">\(Q^F\)</span> 就会越低。</p>
 </li>
 <li>
 <p><strong>领导者的利润最大化</strong>:
-    领导者在决定自己的产量 <code>Q^L</code> 时，已经预见到了跟随者会如何反应（即上面的 <code>Q^F</code> 函数）。因此，领导者将这个反应函数代入自己的利润函数中：
+    领导者在决定自己的产量 <span class="arithmatex">\(Q^L\)</span> 时，已经预见到了跟随者会如何反应（即上面的 <span class="arithmatex">\(Q^F\)</span> 函数）。因此，领导者将这个反应函数代入自己的利润函数中：
     $$ \pi ^ { L } = ( A - B ( Q ^ { L } + Q ^ { F } ) - c ) Q ^ { L } $$
-    将 <code>Q^F</code> 的表达式代入并化简，可以得到领导者的利润函数（只与 <code>Q^L</code> 有关）：
+    将 <span class="arithmatex">\(Q^F\)</span> 的表达式代入并化简，可以得到领导者的利润函数（只与 <span class="arithmatex">\(Q^L\)</span> 有关）：
     $$ \pi ^ { L } = \frac { Q ^ { L } ( A - c - B Q ^ { L } ) } { N } $$
-    <em>注意：原文为 <code>(A - BQ^L - c)</code>，这里加上了 <code>-c</code> 之后，<code>π^L = (P-c)Q^L</code> 化简后的结果。</em></p>
-<p>对 <code>Q^L</code> 求一阶导数（FOC）并令其为零，解出领导者的最优产量：
+    <em>注意：原文为 <span class="arithmatex">\((A - BQ^L - c)\)</span>，这里加上了 <span class="arithmatex">\(-c\)</span> 之后，<span class="arithmatex">\(π^L = (P-c)Q^L\)</span> 化简后的结果。</em></p>
+<p>对 <span class="arithmatex">\(Q^L\)</span> 求一阶导数（FOC）并令其为零，解出领导者的最优产量：
 $$ Q ^ { L } = \frac { A - c } { 2 B } $$
 这是一个非常经典的结果：斯塔克伯格领导者的产量等于垄断产量的一半。</p>
 </li>
@@ -2511,37 +2511,37 @@ $$ Q ^ { L } = \frac { A - c } { 2 B } $$
 </li>
 <li>
 <p><strong>合并后的均衡结果</strong>:
-    将 <code>Q^L</code> 的值代回到之前的公式中，我们可以解出整个市场的均衡。</p>
+    将 <span class="arithmatex">\(Q^L\)</span> 的值代回到之前的公式中，我们可以解出整个市场的均衡。</p>
 <ul>
 <li>
 <p><strong>单个跟随者产量</strong>:
     $$ q _ { f } = \frac { (A-c) } { 2BN } $$
-    <em>注意：原文 <code>q_f = 1/(2N)</code> 显然是印刷错误，它忽略了 <code>(A-c)/B</code> 这个重要的部分。</em></p>
+    <em>注意：原文 <span class="arithmatex">\(q_f = 1/(2N)\)</span> 显然是印刷错误，它忽略了 <span class="arithmatex">\((A-c)/B\)</span> 这个重要的部分。</em></p>
 </li>
 <li>
 <p><strong>跟随者总产量</strong>:
     $$ Q ^ { F } = (N-1)q_f = \frac { ( N - 1 ) ( A - c ) } { 2 B N } $$
-    <em>注意：原文 <code>(N-1)(A-c)/(2N)</code> 也漏掉了分母中的 <code>B</code>。</em></p>
+    <em>注意：原文 <span class="arithmatex">\((N-1)(A-c)/(2N)\)</span> 也漏掉了分母中的 <span class="arithmatex">\(B\)</span>。</em></p>
 </li>
 <li>
 <p><strong>市场总产量</strong>:
     $$ Q = Q ^ { L } + Q ^ { F } = \frac { ( 2 N - 1 ) ( A - c ) } { 2 B N } $$
-    <em>同样，原文漏掉了分母中的 <code>B</code>。</em></p>
+    <em>同样，原文漏掉了分母中的 <span class="arithmatex">\(B\)</span>。</em></p>
 </li>
 <li>
 <p><strong>市场价格</strong>:
     $$ P = A - BQ = \frac { A + ( 2 N - 1 ) c } { 2 N } $$
-    这个公式是正确的。我们可以看到，价格比完全竞争 (<code>P=c</code>) 要高，但比垄断 (<code>P=(A+c)/2</code>) 要低。</p>
+    这个公式是正确的。我们可以看到，价格比完全竞争 (<span class="arithmatex">\(P=c\)</span>) 要高，但比垄断 (<span class="arithmatex">\(P=(A+c)/2\)</span>) 要低。</p>
 </li>
 <li>
 <p><strong>领导者（合并后企业）的利润</strong>:
     $$ \pi ^ { L } = (P-c)Q^L = \frac { ( A - c ) ^ { 2 } } { 4 B N } $$
-    <em>注意：原文 <code>π^L = 1/(4N)</code> 也忽略了 <code>(A-c)^2/B</code>。</em></p>
+    <em>注意：原文 <span class="arithmatex">\(π^L = 1/(4N)\)</span> 也忽略了 <span class="arithmatex">\((A-c)^2/B\)</span>。</em></p>
 </li>
 <li>
 <p><strong>单个跟随者的利润</strong>:
     $$ \pi _ { f } = (P-c)q_f = \frac { ( A - c ) ^ { 2 } } { 4 B N^2 } $$
-    <em>注意：原文 <code>π_f = (A-c)/(4N)</code> 在量纲上是错误的，利润应该是 <code>(价格*数量)</code> 的量纲，即 <code>(A-c)^2</code>。</em></p>
+    <em>注意：原文 <span class="arithmatex">\(π_f = (A-c)/(4N)\)</span> 在量纲上是错误的，利润应该是 <span class="arithmatex">\((价格*数量)\)</span> 的量纲，即 <span class="arithmatex">\((A-c)^2\)</span>。</em></p>
 </li>
 </ul>
 </li>
@@ -2551,15 +2551,15 @@ $$ Q ^ { L } = \frac { A - c } { 2 B } $$
 <ol>
 <li>
 <p><strong>合并对合并企业有利</strong>: 合并是盈利的。
-    比较合并后领导者的利润 <code>π^L</code> 和合并前两家企业的利润之和 <code>2π_i</code>。只要 <code>N &gt; 2</code>（即合并后市场上至少有3个参与者），<code>π^L &gt; 2π_i</code> 成立。这意味着合并解决了“合并悖论”（在标准古诺模型中，小规模合并往往对合并方不利）。</p>
+    比较合并后领导者的利润 <span class="arithmatex">\(π^L\)</span> 和合并前两家企业的利润之和 <span class="arithmatex">\(2π_i\)</span>。只要 <span class="arithmatex">\(N &gt; 2\)</span>（即合并后市场上至少有3个参与者），<span class="arithmatex">\(π^L &gt; 2π_i\)</span> 成立。这意味着合并解决了“合并悖论”（在标准古诺模型中，小规模合并往往对合并方不利）。</p>
 </li>
 <li>
 <p><strong>合并对未合并企业不利</strong>: 跟随者处境变差。
-    比较合并后跟随者的利润 <code>π_f</code> 和合并前企业的利润 <code>π_i</code>。只要 <code>N &gt; 2</code>，<code>π_f &lt; π_i</code> 成立。这意味着未合并的企业因为合并者的“侵略性”扩张（成为领导者并大幅提高产量）而受损。这阻止了“搭便车”（free-riding）行为。</p>
+    比较合并后跟随者的利润 <span class="arithmatex">\(π_f\)</span> 和合并前企业的利润 <span class="arithmatex">\(π_i\)</span>。只要 <span class="arithmatex">\(N &gt; 2\)</span>，<span class="arithmatex">\(π_f &lt; π_i\)</span> 成立。这意味着未合并的企业因为合并者的“侵略性”扩张（成为领导者并大幅提高产量）而受损。这阻止了“搭便车”（free-riding）行为。</p>
 </li>
 <li>
 <p><strong>合并对消费者有利</strong>: 价格下降了！
-    比较合并后的价格 <code>P_post = (A + (2N-1)c) / (2N)</code> 和合并前的价格 <code>P_pre = (A + (N+1)c) / (N+2)</code>。可以证明 <code>P_post &lt; P_pre</code>。这是因为领导者的产量扩张效应超过了市场集中度提高的效应，导致总产量增加，价格下降。</p>
+    比较合并后的价格 <span class="arithmatex">\(P_post = (A + (2N-1)c) / (2N)\)</span> 和合并前的价格 <span class="arithmatex">\(P_pre = (A + (N+1)c) / (N+2)\)</span>。可以证明 <span class="arithmatex">\(P_post &lt; P_pre\)</span>。这是因为领导者的产量扩张效应超过了市场集中度提高的效应，导致总产量增加，价格下降。</p>
 </li>
 <li>
 <p><strong>反垄断悖论 (Antitrust Paradox)</strong>:
@@ -2573,7 +2573,7 @@ $$ Q ^ { L } = \frac { A - c } { 2 B } $$
 </ol>
 <hr />
 <h3 id="_5">例题</h3>
-<p>假设一个市场，其反需求函数为 <code>P = 120 - Q</code>，所有企业的边际成本 <code>c = 0</code>。最初市场上有4家相同的企业进行古诺竞争。</p>
+<p>假设一个市场，其反需求函数为 <span class="arithmatex">\(P = 120 - Q\)</span>，所有企业的边际成本 <span class="arithmatex">\(c = 0\)</span>。最初市场上有4家相同的企业进行古诺竞争。</p>
 <p><strong>问题</strong>:
 1.  计算合并前的市场均衡（价格、各企业产量、利润）。
 2.  现在，假设其中两家企业合并，并成为斯塔克伯格领导者，其余两家成为跟随者。计算合并后的市场均衡（价格、领导者和跟随者的产量与利润）。
@@ -2581,8 +2581,8 @@ $$ Q ^ { L } = \frac { A - c } { 2 B } $$
 <p><strong>解答</strong>:</p>
 <p><strong>1. 合并前（古诺竞争）</strong></p>
 <ul>
-<li><strong>参数</strong>: <code>A = 120</code>, <code>B = 1</code>, <code>c = 0</code>。</li>
-<li><strong>企业数量</strong>: <code>N+1 = 4</code>，所以 <code>N = 3</code>。</li>
+<li><strong>参数</strong>: <span class="arithmatex">\(A = 120\)</span>, <span class="arithmatex">\(B = 1\)</span>, <span class="arithmatex">\(c = 0\)</span>。</li>
+<li><strong>企业数量</strong>: <span class="arithmatex">\(N+1 = 4\)</span>，所以 <span class="arithmatex">\(N = 3\)</span>。</li>
 </ul>
 <p>使用古诺均衡公式：
 *   <strong>单个企业产量</strong>:
@@ -2591,12 +2591,12 @@ $$ Q ^ { L } = \frac { A - c } { 2 B } $$
     $$ Q = (N+1)q_i = 4 \times 24 = 96 $$
 *   <strong>市场价格</strong>:
     $$ P = \frac { A + ( N + 1 ) c } { N + 2 } = \frac { 120 + 4 \times 0 } { 3 + 2 } = \frac { 120 } { 5 } = 24 $$
-    或者 <code>P = 120 - Q = 120 - 96 = 24</code>。
+    或者 <span class="arithmatex">\(P = 120 - Q = 120 - 96 = 24\)</span>。
 *   <strong>单个企业利润</strong>:
     $$ \pi _ { i } = \frac { ( A - c ) ^ { 2 } } { B ( N + 2 )^2 } = \frac { ( 120 - 0 ) ^ { 2 } } { 1 ( 3 + 2 )^2 } = \frac { 14400 } { 25 } = 576 $$</p>
 <p><strong>2. 合并后（斯塔克伯格领导）</strong></p>
 <p>两家企业合并，市场结构变为：1个领导者，2个跟随者。
-*   <strong>决策单位总数</strong>: <code>N = 3</code> (1个领导者 + 2个跟随者)。</p>
+*   <strong>决策单位总数</strong>: <span class="arithmatex">\(N = 3\)</span> (1个领导者 + 2个跟随者)。</p>
 <p>使用斯塔克伯格均衡公式：
 *   <strong>领导者产量</strong>:
     $$ Q ^ { L } = \frac { A - c } { 2 B } = \frac { 120 - 0 } { 2 \times 1 } = 60 $$
@@ -2606,7 +2606,7 @@ $$ Q ^ { L } = \frac { A - c } { 2 B } $$
     $$ Q = Q ^ { L } + 2q _ { f } = 60 + 2 \times 20 = 100 $$
 *   <strong>市场价格</strong>:
     $$ P = \frac { A + ( 2 N - 1 ) c } { 2 N } = \frac { 120 + ( 2 \times 3 - 1 ) \times 0 } { 2 \times 3 } = \frac { 120 } { 6 } = 20 $$
-    或者 <code>P = 120 - Q = 120 - 100 = 20</code>。
+    或者 <span class="arithmatex">\(P = 120 - Q = 120 - 100 = 20\)</span>。
 *   <strong>领导者利润</strong>:
     $$ \pi ^ { L } = \frac { ( A - c ) ^ { 2 } } { 4 B N } = \frac { ( 120 - 0 ) ^ { 2 } } { 4 \times 1 \times 3 } = \frac { 14400 } { 12 } = 1200 $$
 *   <strong>单个跟随者利润</strong>:
@@ -2615,20 +2615,20 @@ $$ Q ^ { L } = \frac { A - c } { 2 B } $$
 <ul>
 <li>
 <p><strong>对合并企业</strong>:
-    合并前，两家企业的利润总和为 <code>2 * π_i = 2 * 576 = 1152</code>。
-    合并后，领导者的利润为 <code>π^L = 1200</code>。
-    因为 <code>1200 &gt; 1152</code>，所以这次合并对合并方是有利的。</p>
+    合并前，两家企业的利润总和为 <span class="arithmatex">\(2 * π_i = 2 * 576 = 1152\)</span>。
+    合并后，领导者的利润为 <span class="arithmatex">\(π^L = 1200\)</span>。
+    因为 <span class="arithmatex">\(1200 &gt; 1152\)</span>，所以这次合并对合并方是有利的。</p>
 </li>
 <li>
 <p><strong>对未合并企业（跟随者）</strong>:
-    合并前，它们的利润为 <code>π_i = 576</code>。
-    合并后，它们的利润为 <code>π_f = 400</code>。
-    因为 <code>400 &lt; 576</code>，所以未合并的企业因这次合并而受损。</p>
+    合并前，它们的利润为 <span class="arithmatex">\(π_i = 576\)</span>。
+    合并后，它们的利润为 <span class="arithmatex">\(π_f = 400\)</span>。
+    因为 <span class="arithmatex">\(400 &lt; 576\)</span>，所以未合并的企业因这次合并而受损。</p>
 </li>
 <li>
 <p><strong>对消费者</strong>:
-    合并前的价格为 <code>P_pre = 24</code>。
-    合并后的价格为 <code>P_post = 20</code>。
+    合并前的价格为 <span class="arithmatex">\(P_pre = 24\)</span>。
+    合并后的价格为 <span class="arithmatex">\(P_post = 20\)</span>。
     因为价格下降了，所以消费者从这次合并中受益。</p>
 </li>
 </ul>

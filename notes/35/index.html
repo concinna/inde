@@ -2435,17 +2435,17 @@
 </ol>
 <p><strong>动态规划</strong>正是利用这两个特性来高效求解的。它的核心思想是：与其每次都重新计算，不如把第一次算出的子问题答案存起来。您用的词非常形象——<strong>“look-up table”（查阅表）</strong>，在算法领域，我们称之为<strong>备忘录（Memoization）</strong>或<strong>制表法（Tabulation）</strong>。</p>
 <p><strong>切钢管例子：</strong>
-假设一根长度为 <code>n</code> 的钢管，不同长度的钢管售价不同。如何切割才能让总售价最高？
--   <strong>暴力解法</strong>：尝试所有 <code>2^(n-1)</code> 种切割方法，计算量巨大。
+假设一根长度为 <span class="arithmatex">\(n\)</span> 的钢管，不同长度的钢管售价不同。如何切割才能让总售价最高？
+-   <strong>暴力解法</strong>：尝试所有 <span class="arithmatex">\(2^(n-1)\)</span> 种切割方法，计算量巨大。
 -   <strong>动态规划解法</strong>：我们只考虑<strong>第一刀</strong>切在哪里。
-    -   可以不切，卖掉整根长度 <code>n</code> 的钢管。
-    -   可以切下 <code>1</code> 寸，卖掉它，然后对剩下的 <code>n-1</code> 寸钢管求解“如何切割使其价值最大”的问题。
-    -   可以切下 <code>2</code> 寸，卖掉它，然后对剩下的 <code>n-2</code> 寸钢管求解最优切割问题。
+    -   可以不切，卖掉整根长度 <span class="arithmatex">\(n\)</span> 的钢管。
+    -   可以切下 <span class="arithmatex">\(1\)</span> 寸，卖掉它，然后对剩下的 <span class="arithmatex">\(n-1\)</span> 寸钢管求解“如何切割使其价值最大”的问题。
+    -   可以切下 <span class="arithmatex">\(2\)</span> 寸，卖掉它，然后对剩下的 <span class="arithmatex">\(n-2\)</span> 寸钢管求解最优切割问题。
     -   ...
-    -   可以切下 <code>i</code> 寸，卖掉它，然后对剩下的 <code>n-i</code> 寸钢管求解最优切割问题。</p>
-<p>我们定义 <code>Profit(n)</code> 为切割长度为 <code>n</code> 的钢管能得到的最大利润。那么：
-<code>Profit(n) = max(price(n), price(1)+Profit(n-1), price(2)+Profit(n-2), ..., price(n-1)+Profit(1))</code></p>
-<p>当我们计算 <code>Profit(n)</code> 时，需要 <code>Profit(n-1)</code>, <code>Profit(n-2)</code>... 的值。而计算 <code>Profit(n-1)</code> 时，又需要 <code>Profit(n-2)</code>, <code>Profit(n-3)</code>... 的值。看到了吗？<code>Profit(n-2)</code> 这个子问题被重复计算了。因此，我们可以从 <code>Profit(1)</code> 开始，依次计算并把结果存入一个“查阅表”中，这样后续计算就可以直接使用，大大提高了效率。</p>
+    -   可以切下 <span class="arithmatex">\(i\)</span> 寸，卖掉它，然后对剩下的 <span class="arithmatex">\(n-i\)</span> 寸钢管求解最优切割问题。</p>
+<p>我们定义 <span class="arithmatex">\(Profit(n)\)</span> 为切割长度为 <span class="arithmatex">\(n\)</span> 的钢管能得到的最大利润。那么：
+<span class="arithmatex">\(Profit(n) = max(price(n), price(1)+Profit(n-1), price(2)+Profit(n-2), ..., price(n-1)+Profit(1))\)</span></p>
+<p>当我们计算 <span class="arithmatex">\(Profit(n)\)</span> 时，需要 <span class="arithmatex">\(Profit(n-1)\)</span>, <span class="arithmatex">\(Profit(n-2)\)</span>... 的值。而计算 <span class="arithmatex">\(Profit(n-1)\)</span> 时，又需要 <span class="arithmatex">\(Profit(n-2)\)</span>, <span class="arithmatex">\(Profit(n-3)\)</span>... 的值。看到了吗？<span class="arithmatex">\(Profit(n-2)\)</span> 这个子问题被重复计算了。因此，我们可以从 <span class="arithmatex">\(Profit(1)\)</span> 开始，依次计算并把结果存入一个“查阅表”中，这样后续计算就可以直接使用，大大提高了效率。</p>
 <h3 id="-">第二部分：您提供的经济学模型——无限期界消费-储蓄问题</h3>
 <p>现在，我们将上述思想应用到您提供的经济学模型中。这是一个经典的<strong>拉姆齐-卡斯-库普曼斯模型（Ramsey–Cass–Koopmans model）</strong>的简化版，描述了一个有无限寿命的代表性个人（或家庭）如何在每一期做出消费和储蓄的决策，以最大化其一生的总效用。</p>
 <h4 id="1">1. 模型的设定</h4>
@@ -2453,8 +2453,8 @@
 $$
 \operatorname {max} \sum _ { t = 0 } ^ { \infty } \beta ^ { t } u ( c _ { t } )
 $$
-这个公式的含义是：最大化从现在（<code>t=0</code>）到未来无穷期（<code>t=∞</code>）的所有效用的<strong>折现总和</strong>。
--   <span class="arithmatex">\(c_t\)</span>: 第 <code>t</code> 期的消费量。
+这个公式的含义是：最大化从现在（<span class="arithmatex">\(t=0\)</span>）到未来无穷期（<span class="arithmatex">\(t=∞\)</span>）的所有效用的<strong>折现总和</strong>。
+-   <span class="arithmatex">\(c_t\)</span>: 第 <span class="arithmatex">\(t\)</span> 期的消费量。
 -   <span class="arithmatex">\(u(c_t)\)</span>: 消费 <span class="arithmatex">\(c_t\)</span> 带来的<strong>瞬时效用（instantaneous utility）</strong>。通常我们假设 <span class="arithmatex">\(u'(c) &gt; 0\)</span>（消费越多越好）和 <span class="arithmatex">\(u''(c) &lt; 0\)</span>（边际效用递减，即第一个面包比第十个带来的满足感更强）。
 -   <span class="arithmatex">\(\beta\)</span>: <strong>折现因子（discount factor）</strong>，其中 <span class="arithmatex">\(0 &lt; \beta &lt; 1\)</span>。它代表了“耐心”的程度。<span class="arithmatex">\(\beta\)</span> 越接近1，说明你越有耐心，越看重未来的效用；<span class="arithmatex">\(\beta\)</span> 越接近0，说明你越急躁，只在乎眼前的享乐。<span class="arithmatex">\(\beta^t\)</span> 意味着未来的效用需要打一个折扣，因为未来的满足感不如现在的满足感“值钱”。</p>
 <p><strong>约束条件 (Constraint / Law of Motion for Capital):</strong>
@@ -2462,9 +2462,9 @@ $$
 K _ { t + 1 } + c _ { t } = ( 1 + r ) K _ { t }
 $$
 这个公式描述了财富（资本）的演变规律。
--   <span class="arithmatex">\(K_t\)</span>: 第 <code>t</code> 期期初所拥有的资本（或财富、储蓄）。
+-   <span class="arithmatex">\(K_t\)</span>: 第 <span class="arithmatex">\(t\)</span> 期期初所拥有的资本（或财富、储蓄）。
 -   <span class="arithmatex">\(r\)</span>: 资本的固定回报率（比如银行利率）。
--   <span class="arithmatex">\((1+r)K_t\)</span>: 第 <code>t</code> 期的总可用资源。它等于期初的资本 <span class="arithmatex">\(K_t\)</span> 加上这期资本所产生的收益 <span class="arithmatex">\(rK_t\)</span>。
+-   <span class="arithmatex">\((1+r)K_t\)</span>: 第 <span class="arithmatex">\(t\)</span> 期的总可用资源。它等于期初的资本 <span class="arithmatex">\(K_t\)</span> 加上这期资本所产生的收益 <span class="arithmatex">\(rK_t\)</span>。
 -   这笔总资源被分为两部分：一部分用于当期消费 <span class="arithmatex">\(c_t\)</span>，剩下的部分 <span class="arithmatex">\(K_{t+1}\)</span> 则作为下一期的期初资本。</p>
 <p>我们可以将约束条件变形为：
 $$
@@ -2473,7 +2473,7 @@ $$
 这清楚地表明，今天的消费是今天总资源与为明天储蓄的资本之间的差额。这是一个<strong>权衡（trade-off）</strong>：今天消费得越多，明天可用的资本就越少，反之亦然。</p>
 <h4 id="2">2. 动态规划的引入：贝尔曼方程的推导</h4>
 <p>直接解决这个无限期界问题很困难。但是，我们可以运用动态规划的思想，把这个“无限”的问题转化为一个“两期”的递归问题。这就是理查德·贝尔曼（Richard Bellman）的<strong>最优化原理（Principle of Optimality）</strong>。</p>
-<p>我们定义一个<strong>价值函数（Value Function）</strong> <span class="arithmatex">\(V(K_t)\)</span>，它表示从第 <code>t</code> 期开始，拥有资本 <span class="arithmatex">\(K_t\)</span> 的个体，所能获得的最大终身折现效用。</p>
+<p>我们定义一个<strong>价值函数（Value Function）</strong> <span class="arithmatex">\(V(K_t)\)</span>，它表示从第 <span class="arithmatex">\(t\)</span> 期开始，拥有资本 <span class="arithmatex">\(K_t\)</span> 的个体，所能获得的最大终身折现效用。</p>
 <ul>
 <li>
 <p><strong>问题在 t=0 时刻：</strong>
@@ -2504,12 +2504,12 @@ $$
 V(K_0) = \operatorname{max}</em>{K_1} [ u((1+r)K_0 - K_1) + \beta V(K_1) ]
 $$
 这个方程就是<strong>贝尔曼方程</strong>。它把一个复杂的无限期界问题，转化成了一个简单的两期决策问题：
-“今天我手上有 <span class="arithmatex">\(K_0\)</span> 的资本，我应该选择为明天留下多少资本 <span class="arithmatex">\(K_1\)</span>（这也就决定了今天的消费 <span class="arithmatex">\(c_0\)</span>），才能使得<strong>今天的效用</strong> <code>u(c_0)</code> 加上<strong>被折现的明天开始的未来总效用</strong> <code>βV(K_1)</code> 之和最大？”</p>
+“今天我手上有 <span class="arithmatex">\(K_0\)</span> 的资本，我应该选择为明天留下多少资本 <span class="arithmatex">\(K_1\)</span>（这也就决定了今天的消费 <span class="arithmatex">\(c_0\)</span>），才能使得<strong>今天的效用</strong> <span class="arithmatex">\(u(c_0)\)</span> 加上<strong>被折现的明天开始的未来总效用</strong> <span class="arithmatex">\(βV(K_1)\)</span> 之和最大？”</p>
 <p>由于这个问题是<strong>平稳的（stationary）</strong>（即 <span class="arithmatex">\(u(\cdot)\)</span>, <span class="arithmatex">\(\beta\)</span>, <span class="arithmatex">\(r\)</span> 不随时间改变），价值函数的形式也与时间无关，我们可以去掉时间下标，写成更通用的形式（用 <span class="arithmatex">\(K\)</span> 代表当期资本， <span class="arithmatex">\(K'\)</span> 代表下期资本）：
 $$
 V(K) = \operatorname{max}_{K'} [ u((1+r)K - K') + \beta V(K') ]
 $$
-这就是您最后写出的 <code>L(k_0) = max[...βL(k_1)]</code> 和 <code>V = u + βV</code> 的精确数学表达。<code>V = u + βV</code> 是一个高度抽象的符号表示，它捕捉了“当前价值 = 当前回报 + 折现后的未来价值”这一核心思想。</p>
+这就是您最后写出的 <span class="arithmatex">\(L(k_0) = max[...βL(k_1)]\)</span> 和 <span class="arithmatex">\(V = u + βV\)</span> 的精确数学表达。<span class="arithmatex">\(V = u + βV\)</span> 是一个高度抽象的符号表示，它捕捉了“当前价值 = 当前回报 + 折现后的未来价值”这一核心思想。</p>
 <h3 id="_2">第三部分：一道例题</h3>
 <p>下面我们用一个具体的例子来求解这个贝尔曼方程。</p>
 <p><strong>问题设定：</strong>

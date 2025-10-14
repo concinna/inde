@@ -2499,75 +2499,75 @@
 <li>
 <p><strong>市场结构</strong>:</p>
 <ul>
-<li>市场中共有 <code>N</code> 家公司。</li>
-<li>其中有 <code>L</code> 家是领导者 (Leaders)。</li>
-<li>剩下的 <code>F = N - L</code> 家是跟随者 (Followers)。</li>
+<li>市场中共有 <span class="arithmatex">\(N\)</span> 家公司。</li>
+<li>其中有 <span class="arithmatex">\(L\)</span> 家是领导者 (Leaders)。</li>
+<li>剩下的 <span class="arithmatex">\(F = N - L\)</span> 家是跟随者 (Followers)。</li>
 </ul>
 </li>
 <li>
 <p><strong>需求与成本</strong>:</p>
 <ul>
-<li>市场逆需求函数为线性形式：<code>P = A - BQ</code>，其中 <code>P</code> 是市场价格，<code>Q</code> 是市场总产量。<code>A</code> 和 <code>B</code> 是正的需求参数。</li>
-<li>所有公司的边际成本 <code>c</code> 相同且为常数。为简化，我们假设没有固定成本。</li>
+<li>市场逆需求函数为线性形式：<span class="arithmatex">\(P = A - BQ\)</span>，其中 <span class="arithmatex">\(P\)</span> 是市场价格，<span class="arithmatex">\(Q\)</span> 是市场总产量。<span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span> 是正的需求参数。</li>
+<li>所有公司的边际成本 <span class="arithmatex">\(c\)</span> 相同且为常数。为简化，我们假设没有固定成本。</li>
 </ul>
 </li>
 <li>
 <p><strong>总产量</strong>:</p>
 <ul>
-<li>市场总产量 <code>Q</code> 是所有领导者总产量 <code>Q^L</code> 和所有跟随者总产量 <code>Q^F</code> 的总和。</li>
-<li><code>Q = Q^L + Q^F</code></li>
-<li><code>Q^L = \sum_{i=1}^{L} q_{l_i}</code> 是 <code>L</code> 个领导者产量的总和。</li>
-<li><code>Q^F = \sum_{j=1}^{F} q_{f_j}</code> 是 <code>N-L</code> 个跟随者产量的总和。</li>
+<li>市场总产量 <span class="arithmatex">\(Q\)</span> 是所有领导者总产量 <span class="arithmatex">\(Q^L\)</span> 和所有跟随者总产量 <span class="arithmatex">\(Q^F\)</span> 的总和。</li>
+<li><span class="arithmatex">\(Q = Q^L + Q^F\)</span></li>
+<li><span class="arithmatex">\(Q^L = \sum_{i=1}^{L} q_{l_i}\)</span> 是 <span class="arithmatex">\(L\)</span> 个领导者产量的总和。</li>
+<li><span class="arithmatex">\(Q^F = \sum_{j=1}^{F} q_{f_j}\)</span> 是 <span class="arithmatex">\(N-L\)</span> 个跟随者产量的总和。</li>
 </ul>
 </li>
 <li>
 <p><strong>博弈顺序 (Game Sequence)</strong>:</p>
 <ul>
-<li><strong>阶段一</strong>: <code>L</code> 家领导者同时选择各自的产量 <code>q_l</code>。</li>
-<li><strong>阶段二</strong>: <code>N-L</code> 家跟随者观察到领导者的总产量 <code>Q^L</code> 后，同时选择各自的产量 <code>q_f</code>。</li>
+<li><strong>阶段一</strong>: <span class="arithmatex">\(L\)</span> 家领导者同时选择各自的产量 <span class="arithmatex">\(q_l\)</span>。</li>
+<li><strong>阶段二</strong>: <span class="arithmatex">\(N-L\)</span> 家跟随者观察到领导者的总产量 <span class="arithmatex">\(Q^L\)</span> 后，同时选择各自的产量 <span class="arithmatex">\(q_f\)</span>。</li>
 </ul>
 </li>
 </ol>
 <p>我们将使用<strong>逆向归纳法 (Backward Induction)</strong> 来求解这个博弈的子博弈精炼纳什均衡。</p>
 <h4 id="solving-for-equilibrium"><strong>二、求解均衡 (Solving for Equilibrium)</strong></h4>
 <h5 id="1"><strong>第1步：求解跟随者的最优反应</strong></h5>
-<p>我们从博弈的第二阶段开始。跟随者在决策时，将领导者的总产量 <code>Q^L</code> 视为一个已知的常数。此时，<code>N-L</code> 个跟随者之间进行的是一场<strong>古诺竞争 (Cournot Competition)</strong>。</p>
-<p>对于任意一个跟随者 <code>f</code>，其利润函数为：
+<p>我们从博弈的第二阶段开始。跟随者在决策时，将领导者的总产量 <span class="arithmatex">\(Q^L\)</span> 视为一个已知的常数。此时，<span class="arithmatex">\(N-L\)</span> 个跟随者之间进行的是一场<strong>古诺竞争 (Cournot Competition)</strong>。</p>
+<p>对于任意一个跟随者 <span class="arithmatex">\(f\)</span>，其利润函数为：
 $$ \pi_f = (P - c) q_f = (A - B(Q^L + Q_{F-f} + q_f) - c) q_f $$
-其中 <code>q_f</code> 是该跟随者的产量，<code>Q_{F-f}</code> 是除它以外的其他 <code>N-L-1</code> 个跟随者的总产量。</p>
-<p>为了实现利润最大化，该跟随者对自己的产量 <code>q_f</code> 求一阶导数并令其为零：
+其中 <span class="arithmatex">\(q_f\)</span> 是该跟随者的产量，<span class="arithmatex">\(Q_{F-f}\)</span> 是除它以外的其他 <span class="arithmatex">\(N-L-1\)</span> 个跟随者的总产量。</p>
+<p>为了实现利润最大化，该跟随者对自己的产量 <span class="arithmatex">\(q_f\)</span> 求一阶导数并令其为零：
 $$ \frac{\partial \pi_f}{\partial q_f} = A - B(Q^L + Q_{F-f}) - 2Bq_f - c = 0 $$
-解出 <code>q_f</code>，得到该跟随者的最优反应函数：
+解出 <span class="arithmatex">\(q_f\)</span>，得到该跟随者的最优反应函数：
 $$ q_f = \frac{A - c}{2B} - \frac{Q^L}{2} - \frac{Q_{F-f}}{2} $$
-由于所有跟随者都是对称的（成本相同），在均衡状态下，它们的产量会相同，即 <code>q_f</code> 都相等。因此，<code>Q_{F-f} = (N-L-1)q_f</code>。代入上式：
+由于所有跟随者都是对称的（成本相同），在均衡状态下，它们的产量会相同，即 <span class="arithmatex">\(q_f\)</span> 都相等。因此，<span class="arithmatex">\(Q_{F-f} = (N-L-1)q_f\)</span>。代入上式：
 $$ q_f = \frac{A - c}{2B} - \frac{Q^L}{2} - \frac{(N-L-1)q_f}{2} $$
 整理得到：
 $$ (1 + \frac{N-L-1}{2})q_f = \frac{A-c-BQ^L}{2B} $$
 $$ (\frac{N-L+1}{2})q_f = \frac{A-c-BQ^L}{2B} $$
-最终，我们得到单个跟随者的产量是领导者总产量 <code>Q^L</code> 的函数：
+最终，我们得到单个跟随者的产量是领导者总产量 <span class="arithmatex">\(Q^L\)</span> 的函数：
 $$ q_f = \frac{A-c}{B(N-L+1)} - \frac{Q^L}{N-L+1} $$
-所有跟随者的总产量 <code>Q^F</code> 为：
+所有跟随者的总产量 <span class="arithmatex">\(Q^F\)</span> 为：
 $$ Q^F = (N-L)q_f = \frac{(N-L)(A-c)}{B(N-L+1)} - \frac{(N-L)Q^L}{N-L+1} $$
 这就是跟随者群体的<strong>最优反应函数</strong>。</p>
 <h5 id="2"><strong>第2步：求解领导者的最优决策</strong></h5>
-<p>现在我们回到博弈的第一阶段。领导者是理性的，它们能够完美预测到第二阶段跟随者会如何根据它们的产量 <code>Q^L</code> 做出反应。因此，领导者在决策时，会把跟随者的反应函数 <code>Q^F</code> 嵌入到自己的利润函数中。</p>
-<p>对于任意一个领导者 <code>l</code>，其利润函数为：
+<p>现在我们回到博弈的第一阶段。领导者是理性的，它们能够完美预测到第二阶段跟随者会如何根据它们的产量 <span class="arithmatex">\(Q^L\)</span> 做出反应。因此，领导者在决策时，会把跟随者的反应函数 <span class="arithmatex">\(Q^F\)</span> 嵌入到自己的利润函数中。</p>
+<p>对于任意一个领导者 <span class="arithmatex">\(l\)</span>，其利润函数为：
 $$ \pi_l = (P - c) q_l = [A - B(Q^L + Q^F) - c] q_l $$
-将 <code>Q^F</code> 的表达式代入，可以得到领导者所面临的有效市场价格 <code>P</code>：
+将 <span class="arithmatex">\(Q^F\)</span> 的表达式代入，可以得到领导者所面临的有效市场价格 <span class="arithmatex">\(P\)</span>：
 $$ P = A - B \left( Q^L + \frac{(N-L)(A-c)}{B(N-L+1)} - \frac{(N-L)Q^L}{N-L+1} \right) $$
 $$ P = A - B \left( \frac{(N-L+1) - (N-L)}{N-L+1} Q^L + \frac{(N-L)(A-c)}{B(N-L+1)} \right) $$
 $$ P = A - B \left( \frac{1}{N-L+1} Q^L \right) - \frac{(N-L)(A-c)}{N-L+1} $$
-将这个价格代入领导者 <code>l</code> 的利润函数 <code>π_l</code>：
+将这个价格代入领导者 <span class="arithmatex">\(l\)</span> 的利润函数 <span class="arithmatex">\(π_l\)</span>：
 $$ \pi_l = \left[ A - \frac{B}{N-L+1} Q^L - \frac{(N-L)(A-c)}{N-L+1} - c \right] q_l $$
 整理括号内的项：
 $$ \pi_l = \left[ \frac{(N-L+1)(A-c) - (N-L)(A-c)}{N-L+1} - \frac{B}{N-L+1} Q^L \right] q_l $$
 $$ \pi_l = \left[ \frac{A-c}{N-L+1} - \frac{B}{N-L+1} Q^L \right] q_l $$
-由于 <code>Q^L = Q_{L-1} + q_l</code>（其中 <code>Q_{L-1}</code> 是其他 <code>L-1</code> 个领导者的总产量），代入上式：
+由于 <span class="arithmatex">\(Q^L = Q_{L-1} + q_l\)</span>（其中 <span class="arithmatex">\(Q_{L-1}\)</span> 是其他 <span class="arithmatex">\(L-1\)</span> 个领导者的总产量），代入上式：
 $$ \pi_l = \frac{1}{N-L+1} [A - c - B(Q_{L-1} + q_l)] q_l $$
-领导者之间也进行古诺竞争。对 <code>q_l</code> 求导并令其为零：
+领导者之间也进行古诺竞争。对 <span class="arithmatex">\(q_l\)</span> 求导并令其为零：
 $$ \frac{\partial \pi_l}{\partial q_l} = \frac{1}{N-L+1} [A - c - BQ_{L-1} - 2Bq_l] = 0 $$
 $$ q_l = \frac{A-c}{2B} - \frac{Q_{L-1}}{2} $$
-由于所有领导者也是对称的，均衡时它们的产量 <code>q_l</code> 会相同。因此 <code>Q_{L-1} = (L-1)q_l</code>。代入上式：
+由于所有领导者也是对称的，均衡时它们的产量 <span class="arithmatex">\(q_l\)</span> 会相同。因此 <span class="arithmatex">\(Q_{L-1} = (L-1)q_l\)</span>。代入上式：
 $$ q_l = \frac{A-c}{2B} - \frac{(L-1)q_l}{2} $$
 $$ (1 + \frac{L-1}{2})q_l = \frac{A-c}{2B} \implies (\frac{L+1}{2})q_l = \frac{A-c}{2B} $$
 最终解得单个领导者的均衡产量：
@@ -2581,7 +2581,7 @@ $$ q_l = \frac{A-c}{B(L+1)} $$</p>
 </li>
 <li>
 <p><strong>单个跟随者产量</strong>:
-    将 <code>Q^L</code> 代入 <code>q_f</code> 的表达式：
+    将 <span class="arithmatex">\(Q^L\)</span> 代入 <span class="arithmatex">\(q_f\)</span> 的表达式：
     $$ q_f = \frac{A-c}{B(N-L+1)} - \frac{1}{N-L+1} \left( \frac{L(A-c)}{B(L+1)} \right) $$
     $$ q_f = \frac{A-c}{B(N-L+1)} \left( 1 - \frac{L}{L+1} \right) = \frac{A-c}{B(N-L+1)} \left( \frac{1}{L+1} \right) $$
     $$ q_f = \frac{A-c}{B(L+1)(N-L+1)} $$</p>
@@ -2597,13 +2597,13 @@ $$ q_l = \frac{A-c}{B(L+1)} $$</p>
     $$ Q^T = \frac{A-c}{B(L+1)(N-L+1)} [L(N-L+1) + (N-L)] $$
     $$ Q^T = \frac{A-c}{B(L+1)(N-L+1)} [NL - L^2 + L + N - L] $$
     $$ Q^T = \frac{(NL - L^2 + N)(A-c)}{B(L+1)(N-L+1)} $$
-    <em>注意：原文中的 <code>N + NL - L^2</code> 可能是一个印刷错误或不同的化简结果，但核心思想一致。我们以推导为准。</em></p>
+    <em>注意：原文中的 <span class="arithmatex">\(N + NL - L^2\)</span> 可能是一个印刷错误或不同的化简结果，但核心思想一致。我们以推导为准。</em></p>
 </li>
 <li>
 <p><strong>市场价格</strong>:
-    <code>P = A - BQ^T</code>
+    <span class="arithmatex">\(P = A - BQ^T\)</span>
     $$ P = A - \frac{(NL - L^2 + N)(A-c)}{(L+1)(N-L+1)} $$
-    计算价格-成本边际 <code>P-c</code>：
+    计算价格-成本边际 <span class="arithmatex">\(P-c\)</span>：
     $$ P-c = (A-c) - BQ^T = (A-c) \left( 1 - \frac{NL - L^2 + N}{(L+1)(N-L+1)} \right) $$
     $$ P-c = (A-c) \frac{(L+1)(N-L+1) - (NL-L^2+N)}{(L+1)(N-L+1)} $$
     $$ P-c = (A-c) \frac{(NL-L^2+L+N-L+1) - (NL-L^2+N)}{(L+1)(N-L+1)} $$
@@ -2613,21 +2613,21 @@ $$ q_l = \frac{A-c}{B(L+1)} $$</p>
 <li>
 <p><strong>各厂商利润</strong>:</p>
 <ul>
-<li><strong>单个领导者利润</strong>: <code>π_l = (P-c)q_l</code>
+<li><strong>单个领导者利润</strong>: <span class="arithmatex">\(π_l = (P-c)q_l\)</span>
     $$ \pi_l = \left( \frac{A-c}{(L+1)(N-L+1)} \right) \left( \frac{A-c}{B(L+1)} \right) = \frac{(A-c)^2}{B(L+1)^2(N-L+1)} $$</li>
-<li><strong>单个跟随者利润</strong>: <code>π_f = (P-c)q_f</code>
+<li><strong>单个跟随者利润</strong>: <span class="arithmatex">\(π_f = (P-c)q_f\)</span>
     $$ \pi_f = \left( \frac{A-c}{(L+1)(N-L+1)} \right) \left( \frac{A-c}{B(L+1)(N-L+1)} \right) = \frac{(A-c)^2}{B(L+1)^2(N-L+1)^2} $$</li>
 </ul>
 </li>
 </ol>
 <p><strong>关键观察</strong>:
-*   <code>q_l = (N-L+1)q_f</code>。单个领导者的产量总是比单个跟随者多。
-*   <code>π_l = (N-L+1)π_f</code>。单个领导者的利润也总是比单个跟随者多。这体现了先行者优势。</p>
+*   <span class="arithmatex">\(q_l = (N-L+1)q_f\)</span>。单个领导者的产量总是比单个跟随者多。
+*   <span class="arithmatex">\(π_l = (N-L+1)π_f\)</span>。单个领导者的利润也总是比单个跟随者多。这体现了先行者优势。</p>
 <h4 id="_2"><strong>三、模型分析：合并的动机</strong></h4>
 <p>模型的一个重要应用是分析公司合并的动机。特别是，<strong>两个跟随者是否愿意合并成为一个新的领导者？</strong></p>
 <ul>
-<li><strong>合并前状态</strong>: 市场中有 <code>N</code> 家公司，<code>L</code> 个领导者，<code>N-L</code> 个跟随者。两个跟随者各自的利润是 <code>π_f(N, L)</code>。它们的总利润是 <code>2π_f(N, L)</code>。</li>
-<li><strong>合并后状态</strong>: 两个跟随者合并成一个新公司，并成为领导者。现在市场上有 <code>N-1</code> 家公司，<code>L+1</code> 个领导者，<code>N-L-2</code> 个跟随者。新公司的利润是 <code>π_l(N-1, L+1)</code>。</li>
+<li><strong>合并前状态</strong>: 市场中有 <span class="arithmatex">\(N\)</span> 家公司，<span class="arithmatex">\(L\)</span> 个领导者，<span class="arithmatex">\(N-L\)</span> 个跟随者。两个跟随者各自的利润是 <span class="arithmatex">\(π_f(N, L)\)</span>。它们的总利润是 <span class="arithmatex">\(2π_f(N, L)\)</span>。</li>
+<li><strong>合并后状态</strong>: 两个跟随者合并成一个新公司，并成为领导者。现在市场上有 <span class="arithmatex">\(N-1\)</span> 家公司，<span class="arithmatex">\(L+1\)</span> 个领导者，<span class="arithmatex">\(N-L-2\)</span> 个跟随者。新公司的利润是 <span class="arithmatex">\(π_l(N-1, L+1)\)</span>。</li>
 </ul>
 <p>合并是否有利可图，取决于新公司的利润是否大于原来两家公司利润之和：
 $$ \pi_l(N-1, L+1) &gt; 2\pi_f(N, L) $$
@@ -2639,12 +2639,12 @@ $$ \frac{1}{(L+2)^2(N-L-1)} &gt; \frac{2}{(L+1)^2(N-L+1)^2} $$
 <p><strong>结论</strong>: 从跟随者的地位出发，两家公司总是有动机合并成为一个领导者。这会带来所谓的<strong>“多米诺骨牌效应”</strong>：一旦行业内发生了一次这样的合并，剩下的跟随者会发现自己的生存空间被进一步挤压（因为领导者增多，他们的产量和利润会下降），从而更有动力去寻求类似的合并，以避免被边缘化。</p>
 <hr />
 <h3 id="_3"><strong>例题</strong></h3>
-<p>假设一个行业的市场逆需求函数为 <code>P = 120 - Q</code>，所有公司的边际成本都为 <code>c = 20</code>。</p>
+<p>假设一个行业的市场逆需求函数为 <span class="arithmatex">\(P = 120 - Q\)</span>，所有公司的边际成本都为 <span class="arithmatex">\(c = 20\)</span>。</p>
 <p><strong>情景A：初始状态</strong>
-市场中有 <code>N=10</code> 家公司，其中 <code>L=2</code> 家是领导者，<code>F = N-L = 8</code> 家是跟随者。</p>
+市场中有 <span class="arithmatex">\(N=10\)</span> 家公司，其中 <span class="arithmatex">\(L=2\)</span> 家是领导者，<span class="arithmatex">\(F = N-L = 8\)</span> 家是跟随者。</p>
 <ol>
-<li><strong>参数</strong>: <code>A=120</code>, <code>B=1</code>, <code>c=20</code>, <code>N=10</code>, <code>L=2</code>.</li>
-<li><code>A-c = 100</code>.</li>
+<li><strong>参数</strong>: <span class="arithmatex">\(A=120\)</span>, <span class="arithmatex">\(B=1\)</span>, <span class="arithmatex">\(c=20\)</span>, <span class="arithmatex">\(N=10\)</span>, <span class="arithmatex">\(L=2\)</span>.</li>
+<li><span class="arithmatex">\(A-c = 100\)</span>.</li>
 <li><strong>计算各公司产量</strong>:<ul>
 <li>单个领导者产量:
     $$ q_l = \frac{A-c}{B(L+1)} = \frac{100}{1(2+1)} = \frac{100}{3} \approx 33.33 $$</li>
@@ -2653,35 +2653,35 @@ $$ \frac{1}{(L+2)^2(N-L-1)} &gt; \frac{2}{(L+1)^2(N-L+1)^2} $$
 </ul>
 </li>
 <li><strong>计算总产量和价格</strong>:<ul>
-<li>领导者总产量: <code>Q^L = L \cdot q_l = 2 \times \frac{100}{3} = \frac{200}{3}</code>.</li>
-<li>跟随者总产量: <code>Q^F = (N-L) \cdot q_f = 8 \times \frac{100}{27} = \frac{800}{27}</code>.</li>
-<li>市场总产量: <code>Q^T = \frac{200}{3} + \frac{800}{27} = \frac{1800+800}{27} = \frac{2600}{27} \approx 96.30</code>.</li>
-<li>市场价格: <code>P = 120 - Q^T = 120 - \frac{2600}{27} = \frac{3240-2600}{27} = \frac{640}{27} \approx 23.70</code>.</li>
+<li>领导者总产量: <span class="arithmatex">\(Q^L = L \cdot q_l = 2 \times \frac{100}{3} = \frac{200}{3}\)</span>.</li>
+<li>跟随者总产量: <span class="arithmatex">\(Q^F = (N-L) \cdot q_f = 8 \times \frac{100}{27} = \frac{800}{27}\)</span>.</li>
+<li>市场总产量: <span class="arithmatex">\(Q^T = \frac{200}{3} + \frac{800}{27} = \frac{1800+800}{27} = \frac{2600}{27} \approx 96.30\)</span>.</li>
+<li>市场价格: <span class="arithmatex">\(P = 120 - Q^T = 120 - \frac{2600}{27} = \frac{3240-2600}{27} = \frac{640}{27} \approx 23.70\)</span>.</li>
 </ul>
 </li>
 <li><strong>计算各公司利润</strong>:<ul>
-<li>价格-成本边际: <code>P-c = \frac{640}{27} - 20 = \frac{640-540}{27} = \frac{100}{27}</code>.</li>
+<li>价格-成本边际: <span class="arithmatex">\(P-c = \frac{640}{27} - 20 = \frac{640-540}{27} = \frac{100}{27}\)</span>.</li>
 <li>单个领导者利润:
     $$ \pi_l = (P-c)q_l = \frac{100}{27} \times \frac{100}{3} = \frac{10000}{81} \approx 123.46 $$</li>
 <li>单个跟随者利润:
     $$ \pi_f = (P-c)q_f = \frac{100}{27} \times \frac{100}{27} = \frac{10000}{729} \approx 13.72 $$
-两个跟随者的总利润为 <code>2 \times 13.72 = 27.44</code>。</li>
+两个跟随者的总利润为 <span class="arithmatex">\(2 \times 13.72 = 27.44\)</span>。</li>
 </ul>
 </li>
 </ol>
 <p><strong>情景B：两个跟随者合并</strong>
 现在，两家跟随者合并成为一个新的领导者。</p>
 <ol>
-<li><strong>新参数</strong>: <code>N' = 9</code>, <code>L' = 3</code>.</li>
+<li><strong>新参数</strong>: <span class="arithmatex">\(N' = 9\)</span>, <span class="arithmatex">\(L' = 3\)</span>.</li>
 <li><strong>计算新领导者（即合并后的公司）的利润</strong>:
-    我们使用 <code>π_l</code> 的通用公式，代入新的参数 <code>N'</code> 和 <code>L'</code>：
+    我们使用 <span class="arithmatex">\(π_l\)</span> 的通用公式，代入新的参数 <span class="arithmatex">\(N'\)</span> 和 <span class="arithmatex">\(L'\)</span>：
     $$ \pi_{l, \text{new}} = \frac{(A-c)^2}{B(L'+1)^2(N'-L'+1)} = \frac{100^2}{1(3+1)^2(9-3+1)} $$
     $$ \pi_{l, \text{new}} = \frac{10000}{4^2 \times 7} = \frac{10000}{16 \times 7} = \frac{10000}{112} \approx 89.29 $$</li>
 </ol>
 <p><strong>比较与决策</strong>
-*   合并前，两家跟随者的利润总和为 <code>2 \times π_f \approx 27.44</code>。
-*   合并后，新公司作为领导者的利润为 <code>π_{l, \text{new}} \approx 89.29</code>。</p>
-<p>因为 <code>89.29 &gt; 27.44</code>，所以这两家跟随者公司有强烈的动机进行合并。这个例子验证了模型的理论预测。</p>
+*   合并前，两家跟随者的利润总和为 <span class="arithmatex">\(2 \times π_f \approx 27.44\)</span>。
+*   合并后，新公司作为领导者的利润为 <span class="arithmatex">\(π_{l, \text{new}} \approx 89.29\)</span>。</p>
+<p>因为 <span class="arithmatex">\(89.29 &gt; 27.44\)</span>，所以这两家跟随者公司有强烈的动机进行合并。这个例子验证了模型的理论预测。</p>
 
 
 

@@ -1683,7 +1683,7 @@
           <li class="md-nav__item">
   <a href="#4-p-r" class="md-nav__link">
     <span class="md-ellipsis">
-      第4步：求解均衡价格 p 和市场半径 R
+      第4步：求解均衡价格 \(p\) 和市场半径 \(R\)
     </span>
   </a>
   
@@ -2404,7 +2404,7 @@
           <li class="md-nav__item">
   <a href="#4-p-r" class="md-nav__link">
     <span class="md-ellipsis">
-      第4步：求解均衡价格 p 和市场半径 R
+      第4步：求解均衡价格 \(p\) 和市场半径 \(R\)
     </span>
   </a>
   
@@ -2450,62 +2450,62 @@
 <p>这个模型建立在一系列假设之上，理解这些假设是掌握整个模型的关键。</p>
 <p><strong>1. 核心假设</strong></p>
 <ul>
-<li><strong>空间设定</strong>：企业（比如加油站、零售店）分布在广阔的平原上，消费者均匀分布，密度为 <code>G</code>。</li>
-<li><strong>FOB 定价 (Free on Board / Mill Pricing)</strong>：这是“离岸价”或“工厂交货价”。消费者购买商品时，需要支付企业设定的“出厂价” <code>p</code>，并额外自己承担从企业所在地到自己家的运输成本。</li>
-<li><strong>运输成本</strong>：运输成本与距离成正比，单位距离的运输成本为 <code>t</code>。对于距离企业 <code>r</code> 的消费者，他需要支付的总价格（到手价）为 <code>p + tr</code>。</li>
-<li><strong>需求函数</strong>：每个消费者的需求取决于他支付的到手价。单个消费者的需求函数为线性需求：<code>q = a - b(p + tr)</code>，其中 <code>a</code> 和 <code>b</code> 是正常数，<code>a</code> 代表最大需求潜力，<code>b</code> 代表价格敏感度。</li>
-<li><strong>勒施猜想 (Loschian Conjecture)</strong>：这是该模型最核心、最独特的假设。每个企业都<strong>预料</strong>到，如果自己调整价格，其所有竞争对手都会做出<strong>完全相同</strong>的价格调整来应对。这意味着，如果我把价格从 <code>p</code> 调整到 <code>p'</code>，我的对手也会把他的价格从 <code>p*</code> 调整到 <code>p*'</code>，且 <code>p' - p = p*'- p*</code>。用微分形式表达就是：
+<li><strong>空间设定</strong>：企业（比如加油站、零售店）分布在广阔的平原上，消费者均匀分布，密度为 <span class="arithmatex">\(G\)</span>。</li>
+<li><strong>FOB 定价 (Free on Board / Mill Pricing)</strong>：这是“离岸价”或“工厂交货价”。消费者购买商品时，需要支付企业设定的“出厂价” <span class="arithmatex">\(p\)</span>，并额外自己承担从企业所在地到自己家的运输成本。</li>
+<li><strong>运输成本</strong>：运输成本与距离成正比，单位距离的运输成本为 <span class="arithmatex">\(t\)</span>。对于距离企业 <span class="arithmatex">\(r\)</span> 的消费者，他需要支付的总价格（到手价）为 <span class="arithmatex">\(p + tr\)</span>。</li>
+<li><strong>需求函数</strong>：每个消费者的需求取决于他支付的到手价。单个消费者的需求函数为线性需求：<span class="arithmatex">\(q = a - b(p + tr)\)</span>，其中 <span class="arithmatex">\(a\)</span> 和 <span class="arithmatex">\(b\)</span> 是正常数，<span class="arithmatex">\(a\)</span> 代表最大需求潜力，<span class="arithmatex">\(b\)</span> 代表价格敏感度。</li>
+<li><strong>勒施猜想 (Loschian Conjecture)</strong>：这是该模型最核心、最独特的假设。每个企业都<strong>预料</strong>到，如果自己调整价格，其所有竞争对手都会做出<strong>完全相同</strong>的价格调整来应对。这意味着，如果我把价格从 <span class="arithmatex">\(p\)</span> 调整到 <span class="arithmatex">\(p'\)</span>，我的对手也会把他的价格从 <span class="arithmatex">\(p*\)</span> 调整到 <span class="arithmatex">\(p*'\)</span>，且 <span class="arithmatex">\(p' - p = p*'- p*\)</span>。用微分形式表达就是：
     $$ \frac{\partial p^*}{\partial p} = 1 $$
-    其中 <code>p*</code> 是竞争对手的价格。</li>
-<li><strong>市场边界不变</strong>：由于所有企业都同步调整价格，企业之间的市场势力范围边界 <code>R</code> 不会因为价格变动而移动。市场边界是由两个相邻企业的“到手价”相等决定的。如果价格同涨同跌，边界点的位置不变。因此，企业在做定价决策时，认为其市场半径 <code>R</code> 是固定的。
+    其中 <span class="arithmatex">\(p*\)</span> 是竞争对手的价格。</li>
+<li><strong>市场边界不变</strong>：由于所有企业都同步调整价格，企业之间的市场势力范围边界 <span class="arithmatex">\(R\)</span> 不会因为价格变动而移动。市场边界是由两个相邻企业的“到手价”相等决定的。如果价格同涨同跌，边界点的位置不变。因此，企业在做定价决策时，认为其市场半径 <span class="arithmatex">\(R\)</span> 是固定的。
     $$ \frac{\partial R}{\partial p} = 0 $$</li>
 <li><strong>长期均衡</strong>：模型假设企业可以自由进入市场。如果有利润存在，新企业就会进入，抢占市场空间，直到所有企业的经济利润都降为零。这和典型的垄断竞争理论一致。</li>
 </ul>
 <p><strong>2. 模型推导</strong></p>
 <h4 id="1-total-sales-q">第1步：计算企业的总销量 (Total Sales, Q)</h4>
-<p>一个企业的市场区域是一个半径为 <code>R</code> 的圆形。要计算总销量 <code>Q</code>，我们需要对这个圆形区域内所有消费者的需求进行积分。</p>
+<p>一个企业的市场区域是一个半径为 <span class="arithmatex">\(R\)</span> 的圆形。要计算总销量 <span class="arithmatex">\(Q\)</span>，我们需要对这个圆形区域内所有消费者的需求进行积分。</p>
 <ul>
-<li>在一个半径为 <code>r</code>、宽度为 <code>dr</code> 的极小圆环上，面积为 <code>2πr dr</code>。</li>
-<li>这个圆环上的消费者数量为 <code>G \cdot 2πr dr</code>。</li>
-<li>这个圆环上每个消费者的需求量为 <code>a - b(p + tr)</code>。</li>
-<li>因此，这个圆环上的总需求为 <code>G \cdot 2πr \cdot [a - b(p + tr)] dr</code>。</li>
+<li>在一个半径为 <span class="arithmatex">\(r\)</span>、宽度为 <span class="arithmatex">\(dr\)</span> 的极小圆环上，面积为 <span class="arithmatex">\(2πr dr\)</span>。</li>
+<li>这个圆环上的消费者数量为 <span class="arithmatex">\(G \cdot 2πr dr\)</span>。</li>
+<li>这个圆环上每个消费者的需求量为 <span class="arithmatex">\(a - b(p + tr)\)</span>。</li>
+<li>因此，这个圆环上的总需求为 <span class="arithmatex">\(G \cdot 2πr \cdot [a - b(p + tr)] dr\)</span>。</li>
 </ul>
-<p>将从圆心 (<code>r=0</code>) 到市场边界 (<code>r=R</code>) 的所有圆环的需求加总，得到总销量 <code>Q</code>：
+<p>将从圆心 (<span class="arithmatex">\(r=0\)</span>) 到市场边界 (<span class="arithmatex">\(r=R\)</span>) 的所有圆环的需求加总，得到总销量 <span class="arithmatex">\(Q\)</span>：
 $$ Q = \int_{0}^{R} G \cdot 2\pi r \cdot (a - b p - b t r) dr $$
 $$ Q = 2\pi G \int_{0}^{R} (ar - bpr - btr^2) dr $$
 $$ Q = 2\pi G \left[ \frac{ar^2}{2} - \frac{bpr^2}{2} - \frac{btr^3}{3} \right]_{0}^{R} $$
 $$ Q = 2\pi G \left( \frac{aR^2}{2} - \frac{bpR^2}{2} - \frac{btR^3}{3} \right) $$
 整理后得到：
 $$ Q = \pi G R^2 (a - bp - \frac{2btR}{3}) $$
-<em>（注：你提供的原文中 <code>G R^2 (...)</code> 的形式可能是将 <code>π</code> 合并到了 <code>G</code> 中，这里使用标准形式以便于理解。）</em></p>
+<em>（注：你提供的原文中 <span class="arithmatex">\(G R^2 (...)\)</span> 的形式可能是将 <span class="arithmatex">\(π\)</span> 合并到了 <span class="arithmatex">\(G\)</span> 中，这里使用标准形式以便于理解。）</em></p>
 <h4 id="2-short-run-profit-maximization">第2步：短期利润最大化 (Short-Run Profit Maximization)</h4>
-<p>企业的利润 <code>Π</code> 等于总收益减去总成本。假设企业的边际生产成本为 <code>m</code>，固定成本为 <code>F</code>。</p>
+<p>企业的利润 <span class="arithmatex">\(Π\)</span> 等于总收益减去总成本。假设企业的边际生产成本为 <span class="arithmatex">\(m\)</span>，固定成本为 <span class="arithmatex">\(F\)</span>。</p>
 <ul>
-<li>总收益 (TR) = <code>p \cdot Q</code></li>
-<li>总成本 (TC) = <code>m \cdot Q + F</code></li>
-<li>利润 (Π) = <code>TR - TC = (p - m)Q - F</code></li>
+<li>总收益 (TR) = <span class="arithmatex">\(p \cdot Q\)</span></li>
+<li>总成本 (TC) = <span class="arithmatex">\(m \cdot Q + F\)</span></li>
+<li>利润 (Π) = <span class="arithmatex">\(TR - TC = (p - m)Q - F\)</span></li>
 </ul>
-<p>企业通过选择价格 <code>p</code> 来最大化利润。根据勒施猜想，企业在决策时视 <code>R</code> 为常数。我们对 <code>Π</code> 求 <code>p</code> 的偏导数并令其为零：
+<p>企业通过选择价格 <span class="arithmatex">\(p\)</span> 来最大化利润。根据勒施猜想，企业在决策时视 <span class="arithmatex">\(R\)</span> 为常数。我们对 <span class="arithmatex">\(Π\)</span> 求 <span class="arithmatex">\(p\)</span> 的偏导数并令其为零：
 $$ \frac{\partial \Pi}{\partial p} = Q + (p-m)\frac{\partial Q}{\partial p} = 0 $$
-从 <code>Q</code> 的表达式中，我们可以求出 <code>∂Q/∂p</code>：
+从 <span class="arithmatex">\(Q\)</span> 的表达式中，我们可以求出 <span class="arithmatex">\(∂Q/∂p\)</span>：
 $$ \frac{\partial Q}{\partial p} = \frac{\partial}{\partial p} \left[ \pi G R^2 (a - bp - \frac{2btR}{3}) \right] = -\pi G R^2 b $$
 代入利润最大化的一阶条件：
 $$ \pi G R^2 (a - bp - \frac{2btR}{3}) + (p-m)(-\pi G R^2 b) = 0 $$
-两边同时除以 <code>πGR²b</code> (假设 <code>b &gt; 0, R &gt; 0</code>)：
+两边同时除以 <span class="arithmatex">\(πGR²b\)</span> (假设 <span class="arithmatex">\(b &gt; 0, R &gt; 0\)</span>)：
 $$ \frac{1}{b}(a - bp - \frac{2btR}{3}) - (p-m) = 0 $$
 $$ \frac{a}{b} - p - \frac{2tR}{3} - p + m = 0 $$
 $$ \frac{a}{b} + m - \frac{2tR}{3} = 2p $$
-解出最优价格 <code>p</code>：
+解出最优价格 <span class="arithmatex">\(p\)</span>：
 $$ p = \frac{a + bm - \frac{2btR}{3}}{2b} $$
-<em>（注：你提供的原文中有 <code>4btR/3</code> 和 <code>btR/2</code> 两种形式，这可能是源于不同的模型假设或笔误。根据标准的勒施竞争推导，<code>2btR/3</code> 是正确的结果。）</em></p>
-<p>这个公式被称为<strong>“价格反应函数”</strong>，它显示了在给定市场半径 <code>R</code> 的情况下，企业的最优定价策略。</p>
+<em>（注：你提供的原文中有 <span class="arithmatex">\(4btR/3\)</span> 和 <span class="arithmatex">\(btR/2\)</span> 两种形式，这可能是源于不同的模型假设或笔误。根据标准的勒施竞争推导，<span class="arithmatex">\(2btR/3\)</span> 是正确的结果。）</em></p>
+<p>这个公式被称为<strong>“价格反应函数”</strong>，它显示了在给定市场半径 <span class="arithmatex">\(R\)</span> 的情况下，企业的最优定价策略。</p>
 <h4 id="3-long-run-zero-profit-equilibrium">第3步：长期零利润均衡 (Long-Run Zero-Profit Equilibrium)</h4>
-<p>在长期，由于新企业可以自由进入，任何正的经济利润都会吸引竞争者，导致现有企业的市场半径 <code>R</code> 缩小，直到利润降为零。</p>
-<p>零利润条件为 <code>Π = 0</code>，即：
+<p>在长期，由于新企业可以自由进入，任何正的经济利润都会吸引竞争者，导致现有企业的市场半径 <span class="arithmatex">\(R\)</span> 缩小，直到利润降为零。</p>
+<p>零利润条件为 <span class="arithmatex">\(Π = 0\)</span>，即：
 $$ (p - m)Q - F = 0 $$
 $$ p = m + \frac{F}{Q} $$
-这说明在长期均衡时，价格 <code>p</code> 必须等于企业的平均成本 <code>AC</code> (<code>AC = m + F/Q</code>)。</p>
-<h4 id="4-p-r">第4步：求解均衡价格 <code>p</code> 和市场半径 <code>R</code></h4>
+这说明在长期均衡时，价格 <span class="arithmatex">\(p\)</span> 必须等于企业的平均成本 <span class="arithmatex">\(AC\)</span> (<span class="arithmatex">\(AC = m + F/Q\)</span>)。</p>
+<h4 id="4-p-r">第4步：求解均衡价格 <span class="arithmatex">\(p\)</span> 和市场半径 <span class="arithmatex">\(R\)</span></h4>
 <p>长期均衡是短期利润最大化和长期零利润条件同时满足的状态。因此，我们需要联立求解以下两个方程：</p>
 <ol>
 <li><strong>利润最大化条件 (MR=MC)</strong>：
@@ -2513,18 +2513,18 @@ $$ p = m + \frac{F}{Q} $$
 <li><strong>零利润条件 (P=AC)</strong>：
     $$ p = m + \frac{F}{Q} = m + \frac{F}{\pi G R^2 (a - bp - \frac{2btR}{3})} \quad \cdots (2) $$</li>
 </ol>
-<p>这两个方程构成了一个关于 <code>p</code> 和 <code>R</code> 的方程组。通过求解这个方程组，我们就可以得到市场达到长期均衡时的<strong>均衡价格 <code>p</code></strong> 和<strong>均衡市场半径 <code>R</code></strong>。求解过程通常比较复杂，需要将 (1) 代入 (2) 以消去 <code>p</code>，得到一个只关于 <code>R</code> 的方程。</p>
+<p>这两个方程构成了一个关于 <span class="arithmatex">\(p\)</span> 和 <span class="arithmatex">\(R\)</span> 的方程组。通过求解这个方程组，我们就可以得到市场达到长期均衡时的<strong>均衡价格 <span class="arithmatex">\(p\)</span></strong> 和<strong>均衡市场半径 <span class="arithmatex">\(R\)</span></strong>。求解过程通常比较复杂，需要将 (1) 代入 (2) 以消去 <span class="arithmatex">\(p\)</span>，得到一个只关于 <span class="arithmatex">\(R\)</span> 的方程。</p>
 <hr />
 <h3 id="_1">例题</h3>
 <p>假设一个市场中，众多冰淇淋店在一条很长的海滩上竞争（可以近似为一维或二维空间）。消费者均匀分布，参数如下：</p>
 <ul>
-<li>消费者密度 <code>G</code> = 0.1 (人/平方米)</li>
-<li>需求函数参数 <code>a</code> = 20, <code>b</code> = 2</li>
-<li>运输成本 <code>t</code> = 0.5 (元/米)</li>
-<li>边际生产成本 <code>m</code> = 4 (元/个)</li>
-<li>固定成本 <code>F</code> = 1000 (元)</li>
+<li>消费者密度 <span class="arithmatex">\(G\)</span> = 0.1 (人/平方米)</li>
+<li>需求函数参数 <span class="arithmatex">\(a\)</span> = 20, <span class="arithmatex">\(b\)</span> = 2</li>
+<li>运输成本 <span class="arithmatex">\(t\)</span> = 0.5 (元/米)</li>
+<li>边际生产成本 <span class="arithmatex">\(m\)</span> = 4 (元/个)</li>
+<li>固定成本 <span class="arithmatex">\(F\)</span> = 1000 (元)</li>
 </ul>
-<p><strong>问题：</strong> 求解在勒施竞争下的长期均衡价格 <code>p</code> 和市场半径 <code>R</code>。</p>
+<p><strong>问题：</strong> 求解在勒施竞争下的长期均衡价格 <span class="arithmatex">\(p\)</span> 和市场半径 <span class="arithmatex">\(R\)</span>。</p>
 <p><strong>解答：</strong></p>
 <p><strong>第1步：写出两个核心方程</strong></p>
 <p>根据上面推导的公式和给定的参数，我们建立方程组。</p>
@@ -2543,9 +2543,9 @@ $$ p = m + \frac{F}{Q} $$
 </li>
 </ul>
 <p><strong>第2步：联立求解</strong></p>
-<p>我们将方程 (1) 的表达式 <code>p = 7 - R/6</code> 代入方程 (2) 中，以消去 <code>p</code>。</p>
+<p>我们将方程 (1) 的表达式 <span class="arithmatex">\(p = 7 - R/6\)</span> 代入方程 (2) 中，以消去 <span class="arithmatex">\(p\)</span>。</p>
 <p>首先，简化方程 (2) 的分母部分：
-<code>20 - 2p - 2R/3 = 20 - 2(7 - R/6) - 2R/3 = 20 - 14 + R/3 - 2R/3 = 6 - R/3</code></p>
+<span class="arithmatex">\(20 - 2p - 2R/3 = 20 - 2(7 - R/6) - 2R/3 = 20 - 14 + R/3 - 2R/3 = 6 - R/3\)</span></p>
 <p>现在代入：
 $$ 7 - \frac{R}{6} = 4 + \frac{1000}{0.1\pi R^2 (6 - R/3)} $$</p>
 <p>整理这个方程：
@@ -2558,29 +2558,29 @@ $$ R^2 (18 - R)^2 = \frac{18000}{0.1\pi} = \frac{180000}{\pi} \approx 57295.8 $$
 $$ R(18 - R) = \sqrt{57295.8} \approx 239.36 $$
 $$ 18R - R^2 = 239.36 $$
 $$ R^2 - 18R + 239.36 = 0 $$</p>
-<p>这是一个一元二次方程。我们用求根公式 <code>R = [-b ± sqrt(b²-4ac)] / 2a</code> 来检查判别式 <code>Δ = b² - 4ac</code>：
-<code>Δ = (-18)² - 4(1)(239.36) = 324 - 957.44 = -633.44</code></p>
-<p>由于判别式为负，这意味着在给定的参数下，该方程没有实数解。这在经济模型中是可能发生的，它意味着<strong>在这些参数条件下，市场无法形成稳定的长期均衡</strong>。可能的原因是固定成本 <code>F</code> 相对于需求 (<code>a</code>) 和利润空间 (<code>a/b - m</code>) 来说太高了，导致企业即使在垄断状态下也无法覆盖成本，因此市场根本无法存在。</p>
-<p><strong>为了使例题可解，我们调整一下固定成本 <code>F</code>。</strong> 假设 <code>F = 150</code>。</p>
+<p>这是一个一元二次方程。我们用求根公式 <span class="arithmatex">\(R = [-b ± sqrt(b²-4ac)] / 2a\)</span> 来检查判别式 <span class="arithmatex">\(Δ = b² - 4ac\)</span>：
+<span class="arithmatex">\(Δ = (-18)² - 4(1)(239.36) = 324 - 957.44 = -633.44\)</span></p>
+<p>由于判别式为负，这意味着在给定的参数下，该方程没有实数解。这在经济模型中是可能发生的，它意味着<strong>在这些参数条件下，市场无法形成稳定的长期均衡</strong>。可能的原因是固定成本 <span class="arithmatex">\(F\)</span> 相对于需求 (<span class="arithmatex">\(a\)</span>) 和利润空间 (<span class="arithmatex">\(a/b - m\)</span>) 来说太高了，导致企业即使在垄断状态下也无法覆盖成本，因此市场根本无法存在。</p>
+<p><strong>为了使例题可解，我们调整一下固定成本 <span class="arithmatex">\(F\)</span>。</strong> 假设 <span class="arithmatex">\(F = 150\)</span>。</p>
 <p>重新计算：
 $$ R^2 (18 - R)^2 = \frac{18 \cdot F}{0.1\pi} = \frac{18 \cdot 150}{0.1\pi} = \frac{27000}{0.1\pi} = \frac{27000}{\pi} \approx 8594.4 $$
 $$ R(18 - R) = \sqrt{8594.4} \approx 92.7 $$
 $$ R^2 - 18R + 92.7 = 0 $$
-判别式 <code>Δ = (-18)² - 4(1)(92.7) = 324 - 370.8 &lt; 0</code>，仍然无解。</p>
+判别式 <span class="arithmatex">\(Δ = (-18)² - 4(1)(92.7) = 324 - 370.8 &lt; 0\)</span>，仍然无解。</p>
 <p><strong>让我们再调整一下，让计算更简单。</strong>
 假设经过代入化简后，我们得到的方程是（这只是为了演示计算过程）：
 $$ R(18-R) = 80 $$
 $$ 18R - R^2 = 80 \implies R^2 - 18R + 80 = 0 $$
 $$ (R - 8)(R - 10) = 0 $$
-解得 <code>R = 8</code> 或 <code>R = 10</code>。
-在空间竞争模型中，通常存在两个均衡解，一个稳定，一个不稳定。一般我们取较小的市场半径作为稳定均衡解。所以我们选择 <code>R = 8</code>。</p>
-<p><strong>第3步：求均衡价格 <code>p</code></strong></p>
-<p>将 <code>R = 8</code> 代入价格反应函数（方程1）：
+解得 <span class="arithmatex">\(R = 8\)</span> 或 <span class="arithmatex">\(R = 10\)</span>。
+在空间竞争模型中，通常存在两个均衡解，一个稳定，一个不稳定。一般我们取较小的市场半径作为稳定均衡解。所以我们选择 <span class="arithmatex">\(R = 8\)</span>。</p>
+<p><strong>第3步：求均衡价格 <span class="arithmatex">\(p\)</span></strong></p>
+<p>将 <span class="arithmatex">\(R = 8\)</span> 代入价格反应函数（方程1）：
 $$ p = 7 - \frac{R}{6} = 7 - \frac{8}{6} = 7 - \frac{4}{3} = \frac{21-4}{3} = \frac{17}{3} \approx 5.67 $$</p>
 <p><strong>答案：</strong>
 在调整后的参数下，市场的长期均衡状态是：
-*   <strong>市场半径 <code>R = 8</code> 米</strong>
-*   <strong>商品价格 <code>p ≈ 5.67</code> 元</strong></p>
+*   <strong>市场半径 <span class="arithmatex">\(R = 8\)</span> 米</strong>
+*   <strong>商品价格 <span class="arithmatex">\(p ≈ 5.67\)</span> 元</strong></p>
 <p>每个企业的市场区域半径为8米，它们将价格定为5.67元，此时它们的经济利润正好为零。</p>
 
 

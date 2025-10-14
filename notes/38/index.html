@@ -2443,7 +2443,7 @@
 <h4 id="2-payoff-matrix"><strong>2. 支付矩阵 (Payoff Matrix) 的解释</strong></h4>
 <p>现在我们来详细解读您给出的第一个支付矩阵。</p>
 <p><strong>关键符号定义:</strong>
-*   <strong><code>πa</code></strong>: 代表整个市场的总垄断利润。也就是说，如果这两家公司合并成一家垄断企业，它们能获得的总利润就是 <code>πa</code>。</p>
+*   <strong><span class="arithmatex">\(πa\)</span></strong>: 代表整个市场的总垄断利润。也就是说，如果这两家公司合并成一家垄断企业，它们能获得的总利润就是 <span class="arithmatex">\(πa\)</span>。</p>
 <p><strong>支付矩阵:</strong></p>
 <table><thead><tr><th></th><th>公司 j 的策略</th><th></th></tr></thead><tbody><tr><td></td><td><strong>合作 (cooperate)</strong></td><td><strong>削价 (undercut)</strong></td></tr><tr><td><strong>公司 i 的策略</strong></td><td><strong>合作 (cooperate)</strong></td><td>(πa/2, πa/2)</td><td>(0, πa)</td></tr><tr><td></td><td><strong>削价 (undercut)</strong></td><td>(πa, 0)</td><td>(0, 0)</td></tr></tbody></table>
 
@@ -2453,28 +2453,28 @@
 <p><strong>(合作, 合作) → (πa/2, πa/2)</strong></p>
 <ul>
 <li><strong>情况:</strong> 公司i和公司j都选择合作，维持高价。</li>
-<li><strong>结果:</strong> 它们平分了市场和总垄断利润。每家公司都获得了一半的垄断利润，即 <code>πa/2</code>。这是一个对双方都有利的结果。</li>
+<li><strong>结果:</strong> 它们平分了市场和总垄断利润。每家公司都获得了一半的垄断利润，即 <span class="arithmatex">\(πa/2\)</span>。这是一个对双方都有利的结果。</li>
 </ul>
 </li>
 <li>
 <p><strong>(合作, 削价) → (0, πa)</strong></p>
 <ul>
 <li><strong>情况:</strong> 公司i选择了合作（维持高价），而公司j选择了削价（价格稍低）。</li>
-<li><strong>结果:</strong> 因为产品是同质的，所有消费者都会去购买价格更低的公司j的产品。公司j赢得了整个市场，获得了全部的垄断利润 <code>πa</code>。而公司i因为价格过高，一件产品也卖不出去，利润为0。</li>
+<li><strong>结果:</strong> 因为产品是同质的，所有消费者都会去购买价格更低的公司j的产品。公司j赢得了整个市场，获得了全部的垄断利润 <span class="arithmatex">\(πa\)</span>。而公司i因为价格过高，一件产品也卖不出去，利润为0。</li>
 </ul>
 </li>
 <li>
 <p><strong>(削价, 合作) → (πa, 0)</strong></p>
 <ul>
 <li><strong>情况:</strong> 这与上一种情况正好相反。公司i选择了削价，而公司j选择了合作。</li>
-<li><strong>结果:</strong> 公司i赢得了整个市场，获得全部利润 <code>πa</code>。公司j的利润为0。</li>
+<li><strong>结果:</strong> 公司i赢得了整个市场，获得全部利润 <span class="arithmatex">\(πa\)</span>。公司j的利润为0。</li>
 </ul>
 </li>
 <li>
 <p><strong>(削价, 削价) → (0, 0)</strong></p>
 <ul>
 <li><strong>情况:</strong> 两家公司都试图通过削价来抢占市场。</li>
-<li><strong>结果:</strong> 激烈的价格战爆发。在经典的伯特兰模型中，价格会一直下降到等于边际成本的水平，导致两家公司的经济利润都降为零。这个 <code>(0, 0)</code> 的结果代表了恶性竞争的最终状态。</li>
+<li><strong>结果:</strong> 激烈的价格战爆发。在经典的伯特兰模型中，价格会一直下降到等于边际成本的水平，导致两家公司的经济利润都降为零。这个 <span class="arithmatex">\((0, 0)\)</span> 的结果代表了恶性竞争的最终状态。</li>
 </ul>
 </li>
 </ol>
@@ -2484,7 +2484,7 @@
 <li>
 <p><strong>从公司i的角度思考:</strong></p>
 <ul>
-<li><strong>如果</strong>公司j选择“合作”，我（公司i）应该怎么选？我选择“合作”能得到 <code>πa/2</code>，选择“削价”能得到 <code>πa</code>。因为 <code>πa &gt; πa/2</code>，所以我应该选择<strong>“削价”</strong>。</li>
+<li><strong>如果</strong>公司j选择“合作”，我（公司i）应该怎么选？我选择“合作”能得到 <span class="arithmatex">\(πa/2\)</span>，选择“削价”能得到 <span class="arithmatex">\(πa\)</span>。因为 <span class="arithmatex">\(πa &gt; πa/2\)</span>，所以我应该选择<strong>“削价”</strong>。</li>
 <li><strong>如果</strong>公司j选择“削价”，我（公司i）应该怎么选？我选择“合作”会得到0，选择“削价”也会得到0。在这种情况下，选择“削价”至少能避免成为那个被对手赚走全部利润的“傻瓜”，所以理性选择是<strong>“削价”</strong>。</li>
 </ul>
 </li>
@@ -2496,10 +2496,10 @@
 <p>既然双方的占优策略都是“削价”，那么这个博弈唯一的纳什均衡就是 <strong>(削价, 削价)</strong>，其结果是 <strong>(0, 0)</strong>。</p>
 <p><strong>这就是囚徒困境的核心：</strong></p>
 <ul>
-<li>对两个公司<strong>集体来说</strong>，最优的结果是 <strong>(合作, 合作)</strong>，这样它们都能获得 <code>πa/2</code> 的利润。</li>
-<li>但从<strong>个体理性</strong>出发，每个公司都有强烈的动机去背叛对方（进行削价），最终导致了 <strong>(削价, 削价)</strong> 这个对双方来说都更糟糕的结果 <code>(0, 0)</code>。</li>
+<li>对两个公司<strong>集体来说</strong>，最优的结果是 <strong>(合作, 合作)</strong>，这样它们都能获得 <span class="arithmatex">\(πa/2\)</span> 的利润。</li>
+<li>但从<strong>个体理性</strong>出发，每个公司都有强烈的动机去背叛对方（进行削价），最终导致了 <strong>(削价, 削价)</strong> 这个对双方来说都更糟糕的结果 <span class="arithmatex">\((0, 0)\)</span>。</li>
 </ul>
-<p><em>（注：您提供的第二个矩阵<code>((1,1), (5,0), (0,5), (4,4))</code>并不是一个典型的囚徒困境，因为在其中(NC, NC)得到的(4,4)比(C,C)得到的(1,1)要好。一个标准的囚徒困境应该是双方合作优于双方背叛，但单方背叛的诱惑最大。您给的第一个矩阵完美地诠释了囚徒困境。）</em></p>
+<p><em>（注：您提供的第二个矩阵<span class="arithmatex">\(((1,1), (5,0), (0,5), (4,4))\)</span>并不是一个典型的囚徒困境，因为在其中(NC, NC)得到的(4,4)比(C,C)得到的(1,1)要好。一个标准的囚徒困境应该是双方合作优于双方背叛，但单方背叛的诱惑最大。您给的第一个矩阵完美地诠释了囚徒困境。）</em></p>
 <hr />
 <h3 id="_2"><strong>例题</strong></h3>
 <p><strong>背景:</strong>
@@ -2515,8 +2515,8 @@
 <p><strong>解答:</strong></p>
 <p><strong>1. 构建支付矩阵</strong></p>
 <p>首先，我们确定关键利润值：
-*   总垄断利润 <code>πa = 20</code> 亿美元。
-*   合作时平分的利润 <code>πa/2 = 10</code> 亿美元。</p>
+*   总垄断利润 <span class="arithmatex">\(πa = 20\)</span> 亿美元。
+*   合作时平分的利润 <span class="arithmatex">\(πa/2 = 10\)</span> 亿美元。</p>
 <p>支付矩阵如下（单位：亿美元）：</p>
 <table><thead><tr><th></th><th>庞巴迪 (Bombardier)</th><th></th></tr></thead><tbody><tr><td></td><td><strong>合作 (定价$75M)</strong></td><td><strong>削价 (定价$70M)</strong></td></tr><tr><td><strong>湾流 (Gulfstream)</strong></td><td><strong>合作 (定价$75M)</strong></td><td>(10, 10)</td><td>(0, 20)</td></tr><tr><td></td><td><strong>削价 (定价$70M)</strong></td><td>(20, 0)</td><td>(0, 0)</td></tr></tbody></table>
 
@@ -2531,7 +2531,7 @@
 <ul>
 <li>
 <p><strong>为什么是囚徒困境:</strong>
-    这个结果是典型的囚徒困境，因为存在一个对双方都更好的结果——<strong>(合作, 合作)</strong>，即 <code>(10, 10)</code>。如果双方都能信守承诺，维持高价，它们都能赚取10亿美元的丰厚利润。然而，由于害怕对方背叛以及自身背叛的诱惑（可以独吞20亿利润），双方最终被“个体理性”驱使，陷入了恶性价格战，导致谁也赚不到钱。</p>
+    这个结果是典型的囚徒困境，因为存在一个对双方都更好的结果——<strong>(合作, 合作)</strong>，即 <span class="arithmatex">\((10, 10)\)</span>。如果双方都能信守承诺，维持高价，它们都能赚取10亿美元的丰厚利润。然而，由于害怕对方背叛以及自身背叛的诱惑（可以独吞20亿利润），双方最终被“个体理性”驱使，陷入了恶性价格战，导致谁也赚不到钱。</p>
 </li>
 <li>
 <p><strong>对公司的启示:</strong></p>

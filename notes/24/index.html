@@ -2524,15 +2524,15 @@
 <p><strong>模型1（基本形式）:</strong>
 $$ \mathrm { P } _ { i t } = \mathrm { constant } _ { t } + \alpha _ { i } + \beta _ { 1 } X _ { i t } + \beta _ { 2 } Z _ { i t } + e _ { i t } $$</p>
 <ul>
-<li><strong>$ \mathrm { P } _ { i t } $:</strong> 加油站 <code>i</code> 在时间 <code>t</code> 的零售汽油价格。这是我们关心的<strong>被解释变量</strong>。</li>
-<li><strong>$ \mathrm { constant } _ { t } $:</strong> <strong>时间固定效应 (Time Fixed Effect)</strong>。这个变量捕捉所有加油站在同一个时间<code>t</code>共同面临的宏观冲击，例如国际原油价格的波动、季节性需求变化等。有了它，我们就不会把油价的普遍上涨错误地归因于并购。</li>
-<li><strong>$ \alpha _ { i } $:</strong> <strong>个体固定效应 (Individual Fixed Effect)</strong>。这个变量捕捉每个加油站<code>i</code>不随时间改变的自身特征，例如其优越的地理位置、品牌声誉、固定的运营成本等。这可以控制那些本身就导致某些加油站价格偏高的因素。</li>
-<li><strong>$ X _ { i t } $:</strong> 核心的<strong>解释变量</strong>。根据原文，这个变量衡量的是加油站 <code>i</code> <strong>附近竞争对手的构成</strong>。在这里，它可以被定义为“加油站<code>i</code>的一个主要竞争对手是否是独立品牌（如Thrifty）”。它是一个虚拟变量（Dummy Variable）：<ul>
-<li>如果加油站<code>i</code>的竞争对手是独立品牌，则 <span class="arithmatex">\(X_{it} = 1\)</span>。</li>
-<li>如果加油站<code>i</code>的竞争对手是大型品牌，则 <span class="arithmatex">\(X_{it} = 0\)</span>。</li>
+<li><strong>$ \mathrm { P } _ { i t } $:</strong> 加油站 <span class="arithmatex">\(i\)</span> 在时间 <span class="arithmatex">\(t\)</span> 的零售汽油价格。这是我们关心的<strong>被解释变量</strong>。</li>
+<li>**$ \mathrm { constant } _ { t } <span class="arithmatex">\(:** **时间固定效应 (Time Fixed Effect)**。这个变量捕捉所有加油站在同一个时间\)</span>t$共同面临的宏观冲击，例如国际原油价格的波动、季节性需求变化等。有了它，我们就不会把油价的普遍上涨错误地归因于并购。</li>
+<li>**$ \alpha _ { i } <span class="arithmatex">\(:** **个体固定效应 (Individual Fixed Effect)**。这个变量捕捉每个加油站\)</span>i$不随时间改变的自身特征，例如其优越的地理位置、品牌声誉、固定的运营成本等。这可以控制那些本身就导致某些加油站价格偏高的因素。</li>
+<li>**$ X _ { i t } <span class="arithmatex">(:<strong> 核心的</strong>解释变量**。根据原文，这个变量衡量的是加油站 <span class="arithmatex">\(i\)</span> **附近竞争对手的构成**。在这里，它可以被定义为“加油站\)</span>i$的一个主要竞争对手是否是独立品牌（如Thrifty）”。它是一个虚拟变量（Dummy Variable）：<ul>
+<li>如果加油站<span class="arithmatex">\(i\)</span>的竞争对手是独立品牌，则 <span class="arithmatex">\(X_{it} = 1\)</span>。</li>
+<li>如果加油站<span class="arithmatex">\(i\)</span>的竞争对手是大型品牌，则 <span class="arithmatex">\(X_{it} = 0\)</span>。</li>
 </ul>
 </li>
-<li><strong>$ Z _ { i t } $:</strong> <strong>控制变量 (Control Variable)</strong>。例如，<code>if is owned by a big name</code> 指的是加油站 <code>i</code> <strong>本身</strong>是否隶属于一个大品牌。</li>
+<li><strong>$ Z _ { i t } <span class="arithmatex">\(:** **控制变量 (Control Variable)**。例如，\)</span>if is owned by a big name$ 指的是加油站 <span class="arithmatex">\(i\)</span> </strong>本身**是否隶属于一个大品牌。</li>
 <li><strong>$ e _ { i t } $:</strong> 随机误差项。</li>
 </ul>
 <p><strong>我们最关心的系数是 $ \beta_1 $。</strong> 它衡量的是，在控制了加油站自身特性和宏观时间趋势后，“有一个独立品牌作为竞争对手”对该加油站价格的影响。我们预期 $ \beta_1 &lt; 0 $，即独立竞争者的存在会迫使加油站降价。</p>
@@ -2542,7 +2542,7 @@ $$ \mathrm { P } _ { i t } = \mathrm { constant } _ { t } + \alpha _ { i } + \be
 <li><strong>处理组 (Treatment Group):</strong> 那些在并购前，其竞争对手是Thrifty加油站的加油站。对于这些加油站，并购事件使得它们的竞争对手从一个独立品牌（Thrifty）变成了一个大型品牌（ARCO）。因此，它们的 <span class="arithmatex">\(X_{it}\)</span> 变量值从1（并购前）变成了0（并购后）。</li>
 <li><strong>控制组 (Control Group):</strong> 那些在并购前，其竞争对手<strong>不是</strong>Thrifty的加油站（例如，它们的竞争对手本来就是ARCO或者其他大型品牌）。对于这些加油站，并购事件没有改变它们的竞争环境，它们的 <span class="arithmatex">\(X_{it}\)</span> 变量值在并购前后保持不变（例如，一直为0）。</li>
 </ul>
-<p>下面的表格展示了DID的逻辑（为了清晰，我们暂时忽略<span class="arithmatex">\(Z_{it}\)</span>和时间趋势项<code>constant_t</code>，并假设<code>time effect</code>就是<code>constant_t</code>的变化）：</p>
+<p>下面的表格展示了DID的逻辑（为了清晰，我们暂时忽略<span class="arithmatex">\(Z_{it}\)</span>和时间趋势项<span class="arithmatex">\(constant_t\)</span>，并假设<span class="arithmatex">\(time effect\)</span>就是<span class="arithmatex">\(constant_t\)</span>的变化）：</p>
 <table>
 <thead>
 <tr>
@@ -2554,13 +2554,13 @@ $$ \mathrm { P } _ { i t } = \mathrm { constant } _ { t } + \alpha _ { i } + \be
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>处理组 (Treatment Group)</strong> <br> (原与Thrifty竞争的加油站<code>i</code>)</td>
+<td style="text-align: left;"><strong>处理组 (Treatment Group)</strong> <br> (原与Thrifty竞争的加油站<span class="arithmatex">\(i\)</span>)</td>
 <td style="text-align: left;">$ E(P) = \alpha_i + \beta_1 \cdot 1 $</td>
 <td style="text-align: left;">$ E(P) = \alpha_i + \beta_1 \cdot 0 + \text{time effect} $</td>
 <td style="text-align: left;">$ (\alpha_i + \text{time effect}) - (\alpha_i + \beta_1) = \text{time effect} - \beta_1 $</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>控制组 (Control Group)</strong> <br> (原与其他大品牌竞争的加油站<code>j</code>)</td>
+<td style="text-align: left;"><strong>控制组 (Control Group)</strong> <br> (原与其他大品牌竞争的加油站<span class="arithmatex">\(j\)</span>)</td>
 <td style="text-align: left;">$ E(P) = \alpha_j + \beta_1 \cdot 0 $</td>
 <td style="text-align: left;">$ E(P) = \alpha_j + \beta_1 \cdot 0 + \text{time effect} $</td>
 <td style="text-align: left;">$ (\alpha_j + \text{time effect}) - \alpha_j = \text{time effect} $</td>
@@ -2583,21 +2583,21 @@ DID = $ (\text{time effect} - \beta_1) - (\text{time effect}) = -\beta_1 $</p>
 <p>这里的公式似乎是该模型的一个结论，但可能存在一些笔误。标准的利润最大化垄断者选择的店铺/产品数量公式与社会最优的公式不同。我们来梳理一下。</p>
 <p>假设在一个圆形市场上：
 *   <strong>N:</strong> 消费者总数，均匀分布。
-*   <strong>t:</strong> 单位距离的<strong>交通成本</strong>。这代表了消费者对产品差异化的厌恶程度。<code>t</code>越高，消费者越不希望产品偏离自己的理想型。
-*   <strong>F (笔记中写作P):</strong> 开设一个店铺或生产一种产品的<strong>固定成本 (Fixed Cost)</strong>。你的笔记中用<code>P</code>，但在标准模型中<code>P</code>通常指价格，<code>F</code>或<code>f</code>指固定成本。这里我假设<code>P</code>就是指固定成本<code>F</code>。</p>
+*   <strong>t:</strong> 单位距离的<strong>交通成本</strong>。这代表了消费者对产品差异化的厌恶程度。<span class="arithmatex">\(t\)</span>越高，消费者越不希望产品偏离自己的理想型。
+*   <strong>F (笔记中写作P):</strong> 开设一个店铺或生产一种产品的<strong>固定成本 (Fixed Cost)</strong>。你的笔记中用<span class="arithmatex">\(P\)</span>，但在标准模型中<span class="arithmatex">\(P\)</span>通常指价格，<span class="arithmatex">\(F\)</span>或<span class="arithmatex">\(f\)</span>指固定成本。这里我假设<span class="arithmatex">\(P\)</span>就是指固定成本<span class="arithmatex">\(F\)</span>。</p>
 <h4 id="2-n">2. 不同场景下的产品数量 (n)</h4>
 <p><strong>场景1：利润最大化的垄断者 (Profit-Maximizing Monopolist)</strong></p>
-<p>一个垄断企业决定在市场上开设 <code>n</code> 家店铺。它需要平衡两个因素：
+<p>一个垄断企业决定在市场上开设 <span class="arithmatex">\(n\)</span> 家店铺。它需要平衡两个因素：
 1.  <strong>增加店铺的好处：</strong> 店铺越多，消费者离店铺的平均距离越近，交通成本越低。这使得垄断者可以制定更高的基础价格来攫取更多的消费者剩余。
-2.  <strong>增加店铺的成本：</strong> 每多开一家店，就要多付一份固定成本 <code>F</code>。</p>
-<p>经过利润最大化计算，垄断者选择的店铺数量 <code>n</code> 为：
+2.  <strong>增加店铺的成本：</strong> 每多开一家店，就要多付一份固定成本 <span class="arithmatex">\(F\)</span>。</p>
+<p>经过利润最大化计算，垄断者选择的店铺数量 <span class="arithmatex">\(n\)</span> 为：
 $$ n_{monopoly} = \sqrt{\frac{tN}{4F}} $$
-<em>你的笔记 <code>n = √tN4P</code> 格式有点乱，但内容 <code>tN/4P</code> 是正确的，如果<code>P</code>是固定成本<code>F</code>。</em></p>
+<em>你的笔记 <span class="arithmatex">\(n = √tN4P\)</span> 格式有点乱，但内容 <span class="arithmatex">\(tN/4P\)</span> 是正确的，如果<span class="arithmatex">\(P\)</span>是固定成本<span class="arithmatex">\(F\)</span>。</em></p>
 <p><strong>场景2：社会最优 (Socially Optimal)</strong></p>
 <p>一个社会计划者（Social Planner）的目标是最大化社会总福利，即最小化社会总成本。社会总成本包括两部分：
-1.  所有店铺的总固定成本： <code>n * F</code>
+1.  所有店铺的总固定成本： <span class="arithmatex">\(n * F\)</span>
 2.  所有消费者的总交通成本</p>
-<p>经过计算，实现社会最优的店铺数量 <code>n</code> 为：
+<p>经过计算，实现社会最优的店铺数量 <span class="arithmatex">\(n\)</span> 为：
 $$ n_{social} = \sqrt{\frac{tN}{F}} $$</p>
 <p><strong>比较与结论：</strong>
 $$ n_{monopoly} = \sqrt{\frac{tN}{4F}} = \frac{1}{2} \sqrt{\frac{tN}{F}} = \frac{1}{2} n_{social} $$</p>
@@ -2637,9 +2637,9 @@ $$ n_{monopoly} = \sqrt{\frac{tN}{4F}} = \frac{1}{2} \sqrt{\frac{tN}{F}} = \frac
 <p>你建立了如下的简化版DID回归模型：
 $$ \text{Price}<em>{it} = \beta_0 + \beta_1 \cdot \text{Treat}_i + \beta_2 \cdot \text{After}_t + \beta_3 \cdot (\text{Treat}_i \times \text{After}_t) + e</em>{it} $$
 其中：
-*   <code>Treat_i</code>: 如果是处理组（研磨时光），则为1；否则为0。
-*   <code>After_t</code>: 如果是并购后时期，则为1；否则为0。
-*   <code>Treat_i * After_t</code>: 交互项，其系数 $ \beta_3 $ 就是我们关心的DID估计量。</p>
+*   <span class="arithmatex">\(Treat_i\)</span>: 如果是处理组（研磨时光），则为1；否则为0。
+*   <span class="arithmatex">\(After_t\)</span>: 如果是并购后时期，则为1；否则为0。
+*   <span class="arithmatex">\(Treat_i * After_t\)</span>: 交互项，其系数 $ \beta_3 $ 就是我们关心的DID估计量。</p>
 <p><strong>问题：</strong></p>
 <ol>
 <li>请根据上表数据，手动计算本次并购对“研磨时光”咖啡价格的净影响（即DID估计值）。</li>

@@ -2510,8 +2510,8 @@
 <li><strong>下游市场 (Downstream Market)</strong>: 有两家寡头厂商（比如电脑制造商），它们也进行古诺竞争，生产最终消费品。我们称之为厂商D1和D2。</li>
 <li><strong>生产技术</strong>: 生产一单位的最终产品需要一单位的中间产品。</li>
 <li><strong>成本</strong>:<ul>
-<li>上游厂商的边际生产成本为 <code>cᵘ</code>。</li>
-<li>下游厂商除了购买中间产品的成本外，还有自己的加工边际成本 <code>cᴰ</code>。</li>
+<li>上游厂商的边际生产成本为 <span class="arithmatex">\(cᵘ\)</span>。</li>
+<li>下游厂商除了购买中间产品的成本外，还有自己的加工边际成本 <span class="arithmatex">\(cᴰ\)</span>。</li>
 </ul>
 </li>
 </ul>
@@ -2520,86 +2520,86 @@
 <h4 id="2"><strong>2. 模型推导过程</strong></h4>
 <p>这个模型采用<strong>逆向归纳法 (Backward Induction)</strong> 进行求解，即先分析下游市场，再根据下游市场的行为推导出上游市场面临的需求，最后分析上游市场。</p>
 <h5 id="downstream-market"><strong>第一步：分析下游市场 (Downstream Market)</strong></h5>
-<p>假设下游的两家厂商D1和D2以价格 <code>Pⁿ</code> 从上游购买中间产品。那么，对于下游厂商来说，<code>Pⁿ</code> 是其成本的一部分。因此，下游厂商的总边际成本为 <code>Pⁿ + cᴰ</code>。</p>
-<p>最终消费品市场的反需求函数为 <code>P = A - BQ</code>，其中 <code>Q</code> 是市场总产量，<code>Q = q₁ᴰ + q₂ᴰ</code>。</p>
+<p>假设下游的两家厂商D1和D2以价格 <span class="arithmatex">\(Pⁿ\)</span> 从上游购买中间产品。那么，对于下游厂商来说，<span class="arithmatex">\(Pⁿ\)</span> 是其成本的一部分。因此，下游厂商的总边际成本为 <span class="arithmatex">\(Pⁿ + cᴰ\)</span>。</p>
+<p>最终消费品市场的反需求函数为 <span class="arithmatex">\(P = A - BQ\)</span>，其中 <span class="arithmatex">\(Q\)</span> 是市场总产量，<span class="arithmatex">\(Q = q₁ᴰ + q₂ᴰ\)</span>。</p>
 <p>下游厂商D1的利润函数为：
 $$ \pi_1^D = (P - (P^n + c^D))q_1^D = (A - B(q_1^D + q_2^D) - P^n - c^D)q_1^D $$
-这是一个标准的古诺双寡头竞争模型。我们知道，在对称的古诺双寡头模型中，市场总成本为 <code>C</code>，均衡时每个厂商的产量为 <code>(A-C)/3B</code>。</p>
-<p>在这里，下游厂商的边际成本 <code>C = Pⁿ + cᴰ</code>。因此，每个下游厂商的均衡产量为：
+这是一个标准的古诺双寡头竞争模型。我们知道，在对称的古诺双寡头模型中，市场总成本为 <span class="arithmatex">\(C\)</span>，均衡时每个厂商的产量为 <span class="arithmatex">\((A-C)/3B\)</span>。</p>
+<p>在这里，下游厂商的边际成本 <span class="arithmatex">\(C = Pⁿ + cᴰ\)</span>。因此，每个下游厂商的均衡产量为：
 $$ q_1^D = q_2^D = \frac{A - (P^n + c^D)}{3B} = \frac{A - P^n - c^D}{3B} $$
 每个下游厂商的利润为：
 $$ \pi_1^D = \pi_2^D = B \cdot (q_1^D)^2 = B \cdot \left( \frac{A - P^n - c^D}{3B} \right)^2 = \frac{(A - P^n - c^D)^2}{9B} $$</p>
 <h5 id="_2"><strong>第二步：推导上游市场面临的需求</strong></h5>
-<p>上游市场生产的中间产品被下游厂商作为投入品购买。由于生产一单位最终品需要一单位中间品，所以上游市场面临的总需求 <code>Qⁿ</code> 等于下游市场的总产量 <code>Qᴰ</code>。</p>
+<p>上游市场生产的中间产品被下游厂商作为投入品购买。由于生产一单位最终品需要一单位中间品，所以上游市场面临的总需求 <span class="arithmatex">\(Qⁿ\)</span> 等于下游市场的总产量 <span class="arithmatex">\(Qᴰ\)</span>。</p>
 <p>$$ Q^n = Q^D = q_1^D + q_2^D = 2 \times \frac{A - P^n - c^D}{3B} = \frac{2(A - P^n - c^D)}{3B} $$
-这个公式表达了上游产品的需求量 <code>Qⁿ</code> 与其价格 <code>Pⁿ</code> 之间的关系。为了分析上游市场的竞争，我们需要将其转换为<strong>反需求函数</strong>（即价格 <code>Pⁿ</code> 表示为数量 <code>Qⁿ</code> 的函数）。</p>
+这个公式表达了上游产品的需求量 <span class="arithmatex">\(Qⁿ\)</span> 与其价格 <span class="arithmatex">\(Pⁿ\)</span> 之间的关系。为了分析上游市场的竞争，我们需要将其转换为<strong>反需求函数</strong>（即价格 <span class="arithmatex">\(Pⁿ\)</span> 表示为数量 <span class="arithmatex">\(Qⁿ\)</span> 的函数）。</p>
 <p>从上式整理可得：
 $$ \frac{3B}{2} Q^n = A - P^n - c^D $$
 $$ P^n = A - c^D - \frac{3B}{2} Q^n $$
 这就是上游市场面临的反需求函数。</p>
 <h5 id="upstream-market"><strong>第三步：分析上游市场 (Upstream Market)</strong></h5>
-<p>现在我们来分析上游市场的古诺竞争。上游有两家厂商U1和U2，总产量 <code>Qⁿ = Q₁ⁿ + Q₂ⁿ</code>。
+<p>现在我们来分析上游市场的古诺竞争。上游有两家厂商U1和U2，总产量 <span class="arithmatex">\(Qⁿ = Q₁ⁿ + Q₂ⁿ\)</span>。
 上游厂商面临的反需求函数为：
 $$ P^n = (A - c^D) - \frac{3B}{2} (Q_1^n + Q_2^n) $$
-这又是一个标准的古诺双寡头模型。我们可以将其看作 <code>P = a - bQ</code> 的形式，其中：
-*   截距 <code>a = A - c^D</code>
-*   斜率 <code>b = 3B/2</code></p>
-<p>上游厂商的边际成本为 <code>cᵘ</code>（原文中用 <code>e^u</code>，这里统一为 <code>cᵘ</code>）。
-根据古诺均衡解，每个上游厂商的均衡产量为 <code>q = (a - cᵘ) / 3b</code>。
-将 <code>a</code> 和 <code>b</code> 代入，我们得到每个上游厂商的均衡产量：
+这又是一个标准的古诺双寡头模型。我们可以将其看作 <span class="arithmatex">\(P = a - bQ\)</span> 的形式，其中：
+*   截距 <span class="arithmatex">\(a = A - c^D\)</span>
+*   斜率 <span class="arithmatex">\(b = 3B/2\)</span></p>
+<p>上游厂商的边际成本为 <span class="arithmatex">\(cᵘ\)</span>（原文中用 <span class="arithmatex">\(e^u\)</span>，这里统一为 <span class="arithmatex">\(cᵘ\)</span>）。
+根据古诺均衡解，每个上游厂商的均衡产量为 <span class="arithmatex">\(q = (a - cᵘ) / 3b\)</span>。
+将 <span class="arithmatex">\(a\)</span> 和 <span class="arithmatex">\(b\)</span> 代入，我们得到每个上游厂商的均衡产量：
 $$ Q_1^n = Q_2^n = \frac{(A - c^D) - c^u}{3 \cdot (\frac{3B}{2})} = \frac{A - c^D - c^u}{\frac{9B}{2}} = \frac{2(A - c^u - c^D)}{9B} $$
-<em>（注：原文此处公式有误，<code>q=(a-c)/3b</code>，原文写成了<code>2b</code>，这里已更正为标准古诺解的<code>3b</code>。但为了与原文推导过程保持一致，我们暂时沿用原文的推导逻辑，即<code>q=(a-c)/3b</code>。原文似乎在<code>q_1=q_2=(a-e^u)/2b</code> 这里混淆了垄断和古诺的公式，但后面的结果<code>Q^u</code>和<code>P^u</code>又是基于<code>q_1=q_2=(a-c)/3b</code>推出来的。我们以最终结果为准进行推导。）</em></p>
+<em>（注：原文此处公式有误，<span class="arithmatex">\(q=(a-c)/3b\)</span>，原文写成了<span class="arithmatex">\(2b\)</span>，这里已更正为标准古诺解的<span class="arithmatex">\(3b\)</span>。但为了与原文推导过程保持一致，我们暂时沿用原文的推导逻辑，即<span class="arithmatex">\(q=(a-c)/3b\)</span>。原文似乎在<span class="arithmatex">\(q_1=q_2=(a-e^u)/2b\)</span> 这里混淆了垄断和古诺的公式，但后面的结果<span class="arithmatex">\(Q^u\)</span>和<span class="arithmatex">\(P^u\)</span>又是基于<span class="arithmatex">\(q_1=q_2=(a-c)/3b\)</span>推出来的。我们以最终结果为准进行推导。）</em></p>
 <p>上游市场的总产量为：
 $$ Q^u = Q_1^n + Q_2^n = 2 \times \frac{2(A - c^u - c^D)}{9B} = \frac{4(A - c^u - c^D)}{9B} $$
-将总产量 <code>Qᵘ</code> 代入上游反需求函数，得到中间产品的均衡价格 <code>Pᵘ</code>：
+将总产量 <span class="arithmatex">\(Qᵘ\)</span> 代入上游反需求函数，得到中间产品的均衡价格 <span class="arithmatex">\(Pᵘ\)</span>：
 $$ \begin{aligned} P^u &amp;= (A - c^D) - \frac{3B}{2} Q^u \ &amp;= (A - c^D) - \frac{3B}{2} \cdot \frac{4(A - c^u - c^D)}{9B} \ &amp;= (A - c^D) - \frac{2}{3}(A - c^u - c^D) \ &amp;= \frac{3(A - c^D) - 2(A - c^u - c^D)}{3} \ &amp;= \frac{3A - 3c^D - 2A + 2c^u + 2c^D}{3} \ &amp;= \frac{A - c^D + 2c^u}{3} \end{aligned} $$</p>
 <h5 id="_3"><strong>第四步：计算最终的均衡结果</strong></h5>
-<p>现在我们得到了中间产品的均衡价格 <code>Pᵘ</code>，可以把它代回到第一步下游市场的公式中，计算最终的产量和利润。</p>
+<p>现在我们得到了中间产品的均衡价格 <span class="arithmatex">\(Pᵘ\)</span>，可以把它代回到第一步下游市场的公式中，计算最终的产量和利润。</p>
 <p><strong>下游厂商的均衡产量</strong>：
 $$ \begin{aligned} q_1^D = q_2^D &amp;= \frac{A - P^u - c^D}{3B} \ &amp;= \frac{A - \frac{A - c^D + 2c^u}{3} - c^D}{3B} \ &amp;= \frac{\frac{3A - (A - c^D + 2c^u) - 3c^D}{3}}{3B} \ &amp;= \frac{3A - A + c^D - 2c^u - 3c^D}{9B} \ &amp;= \frac{2A - 2c^D - 2c^u}{9B} = \frac{2(A - c^u - c^D)}{9B} \end{aligned} $$
-我们可以看到，下游每家厂商的最终产量 <code>q₁ᴰ</code> 恰好等于上游每家厂商的产量 <code>Q₁ⁿ</code>。这符合逻辑，因为市场是对称的。</p>
+我们可以看到，下游每家厂商的最终产量 <span class="arithmatex">\(q₁ᴰ\)</span> 恰好等于上游每家厂商的产量 <span class="arithmatex">\(Q₁ⁿ\)</span>。这符合逻辑，因为市场是对称的。</p>
 <p><strong>下游厂商的均衡利润</strong>：
 $$ \begin{aligned} \pi_1^D = \pi_2^D &amp;= \frac{(A - P^u - c^D)^2}{9B} \ &amp;= \frac{\left(A - \frac{A - c^D + 2c^u}{3} - c^D\right)^2}{9B} \ &amp;= \frac{\left(\frac{2(A - c^u - c^D)}{3}\right)^2}{9B} \ &amp;= \frac{\frac{4(A - c^u - c^D)^2}{9}}{9B} \ &amp;= \frac{4(A - c^u - c^D)^2}{81B} \end{aligned} $$
-<em>（注：原文最后的利润公式 <code>4(...)²/9B</code> 有误，分母应为<code>81B</code>。这里提供了正确的推导结果。）</em></p>
+<em>（注：原文最后的利润公式 <span class="arithmatex">\(4(...)²/9B\)</span> 有误，分母应为<span class="arithmatex">\(81B\)</span>。这里提供了正确的推导结果。）</em></p>
 <p><strong>上游厂商的均衡利润</strong>：
 $$ \begin{aligned} \pi_1^u &amp;= (P^u - c^u) Q_1^n \ &amp;= \left(\frac{A - c^D + 2c^u}{3} - c^u\right) \cdot \frac{2(A - c^u - c^D)}{9B} \ &amp;= \left(\frac{A - c^D + 2c^u - 3c^u}{3}\right) \cdot \frac{2(A - c^u - c^D)}{9B} \ &amp;= \left(\frac{A - c^D - c^u}{3}\right) \cdot \frac{2(A - c^u - c^D)}{9B} \ &amp;= \frac{2(A - c^u - c^D)^2}{27B} \end{aligned} $$
-<em>（注：原文的利润公式<code>2(...)²/9B</code>同样有误，分母应为<code>27B</code>。这里提供了正确的推导结果。）</em></p>
+<em>（注：原文的利润公式<span class="arithmatex">\(2(...)²/9B\)</span>同样有误，分母应为<span class="arithmatex">\(27B\)</span>。这里提供了正确的推导结果。）</em></p>
 <hr />
 <h3 id="_4"><strong>例题</strong></h3>
 <p>假设一个行业结构如下：</p>
 <ul>
 <li><strong>最终产品市场 (下游)</strong>:<ul>
-<li>反需求函数为 <code>P = 200 - 2Q</code>，所以 <code>A = 200</code>, <code>B = 2</code>。</li>
+<li>反需求函数为 <span class="arithmatex">\(P = 200 - 2Q\)</span>，所以 <span class="arithmatex">\(A = 200\)</span>, <span class="arithmatex">\(B = 2\)</span>。</li>
 <li>有两家电脑制造商 D1 和 D2，进行古诺竞争。</li>
-<li>他们的自有加工边际成本 <code>cᴰ = 20</code>。</li>
+<li>他们的自有加工边际成本 <span class="arithmatex">\(cᴰ = 20\)</span>。</li>
 </ul>
 </li>
 <li><strong>中间产品市场 (上游)</strong>:<ul>
 <li>有两家芯片制造商 U1 和 U2，进行古诺竞争。</li>
-<li>他们的边际生产成本 <code>cᵘ = 10</code>。</li>
+<li>他们的边际生产成本 <span class="arithmatex">\(cᵘ = 10\)</span>。</li>
 </ul>
 </li>
 </ul>
 <p><strong>问题</strong>: 请计算在没有垂直整合的情况下，该市场的均衡结果：
-1.  中间产品（芯片）的均衡价格 <code>Pᵘ</code> 是多少？
-2.  每家芯片制造商的产量 <code>Q₁ⁿ</code> 和利润 <code>π₁ᵘ</code> 是多少？
-3.  每家电脑制造商的产量 <code>q₁ᴰ</code> 和利润 <code>π₁ᴰ</code> 是多少？
-4.  最终产品（电脑）的市场价格 <code>P</code> 是多少？</p>
+1.  中间产品（芯片）的均衡价格 <span class="arithmatex">\(Pᵘ\)</span> 是多少？
+2.  每家芯片制造商的产量 <span class="arithmatex">\(Q₁ⁿ\)</span> 和利润 <span class="arithmatex">\(π₁ᵘ\)</span> 是多少？
+3.  每家电脑制造商的产量 <span class="arithmatex">\(q₁ᴰ\)</span> 和利润 <span class="arithmatex">\(π₁ᴰ\)</span> 是多少？
+4.  最终产品（电脑）的市场价格 <span class="arithmatex">\(P\)</span> 是多少？</p>
 <p><strong>解答</strong>:</p>
 <p>我们可以直接套用上面推导出的公式。
-已知参数: <code>A = 200</code>, <code>B = 2</code>, <code>cᴰ = 20</code>, <code>cᵘ = 10</code>。</p>
-<p>首先计算一个常用项 <code>(A - cᵘ - cᴰ)</code>:
-<code>A - cᵘ - cᴰ = 200 - 10 - 20 = 170</code></p>
-<p><strong>1. 中间产品（芯片）的均衡价格 <code>Pᵘ</code></strong>
+已知参数: <span class="arithmatex">\(A = 200\)</span>, <span class="arithmatex">\(B = 2\)</span>, <span class="arithmatex">\(cᴰ = 20\)</span>, <span class="arithmatex">\(cᵘ = 10\)</span>。</p>
+<p>首先计算一个常用项 <span class="arithmatex">\((A - cᵘ - cᴰ)\)</span>:
+<span class="arithmatex">\(A - cᵘ - cᴰ = 200 - 10 - 20 = 170\)</span></p>
+<p><strong>1. 中间产品（芯片）的均衡价格 <span class="arithmatex">\(Pᵘ\)</span></strong>
 $$ P^u = \frac{A - c^D + 2c^u}{3} = \frac{200 - 20 + 2(10)}{3} = \frac{200}{3} \approx 66.67 $$</p>
-<p><strong>2. 每家芯片制造商的产量 <code>Q₁ⁿ</code> 和利润 <code>π₁ᵘ</code></strong>
+<p><strong>2. 每家芯片制造商的产量 <span class="arithmatex">\(Q₁ⁿ\)</span> 和利润 <span class="arithmatex">\(π₁ᵘ\)</span></strong>
 $$ Q_1^n = \frac{2(A - c^u - c^D)}{9B} = \frac{2 \cdot 170}{9 \cdot 2} = \frac{170}{9} \approx 18.89 $$
 $$ \pi_1^u = \frac{2(A - c^u - c^D)^2}{27B} = \frac{2 \cdot (170)^2}{27 \cdot 2} = \frac{28900}{27} \approx 1070.37 $$</p>
-<p><strong>3. 每家电脑制造商的产量 <code>q₁ᴰ</code> 和利润 <code>π₁ᴰ</code></strong>
+<p><strong>3. 每家电脑制造商的产量 <span class="arithmatex">\(q₁ᴰ\)</span> 和利润 <span class="arithmatex">\(π₁ᴰ\)</span></strong>
 $$ q_1^D = \frac{2(A - c^u - c^D)}{9B} = \frac{2 \cdot 170}{9 \cdot 2} = \frac{170}{9} \approx 18.89 $$
 $$ \pi_1^D = \frac{4(A - c^u - c^D)^2}{81B} = \frac{4 \cdot (170)^2}{81 \cdot 2} = \frac{2 \cdot 28900}{81} = \frac{57800}{81} \approx 713.58 $$</p>
-<p><strong>4. 最终产品（电脑）的市场价格 <code>P</code></strong>
-首先计算下游市场总产量 <code>Qᴰ</code>：
+<p><strong>4. 最终产品（电脑）的市场价格 <span class="arithmatex">\(P\)</span></strong>
+首先计算下游市场总产量 <span class="arithmatex">\(Qᴰ\)</span>：
 $$ Q^D = q_1^D + q_2^D = \frac{170}{9} + \frac{170}{9} = \frac{340}{9} $$
 然后代入反需求函数：
 $$ P = A - BQ^D = 200 - 2 \cdot \left(\frac{340}{9}\right) = 200 - \frac{680}{9} = \frac{1800 - 680}{9} = \frac{1120}{9} \approx 124.44 $$</p>

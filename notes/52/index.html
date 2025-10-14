@@ -2530,29 +2530,29 @@
 <p><strong>参与者:</strong></p>
 <ul>
 <li>2个授权商（Firm 1, Firm 2）。</li>
-<li><code>n_1</code> 是公司1的加盟商数量。</li>
-<li><code>n_2</code> 是公司2的加盟商数量。</li>
-<li>总共有 <code>N = n_1 + n_2</code> 个加盟商在市场上竞争。</li>
+<li><span class="arithmatex">\(n_1\)</span> 是公司1的加盟商数量。</li>
+<li><span class="arithmatex">\(n_2\)</span> 是公司2的加盟商数量。</li>
+<li>总共有 <span class="arithmatex">\(N = n_1 + n_2\)</span> 个加盟商在市场上竞争。</li>
 </ul>
 </li>
 <li>
 <p><strong>博弈顺序:</strong></p>
 <ol>
-<li><strong>第一阶段:</strong> 公司1和公司2同时决定各自要设立的加盟商数量 <code>n_1</code> 和 <code>n_2</code>。每设立一个加盟商，授权商需要支付一笔固定的沉没成本 <code>K</code>（例如，选址、培训、初始设备等费用）。</li>
-<li><strong>第二阶段:</strong> 总共 <code>n_1 + n_2</code> 个加盟商在市场上进行<strong>古诺竞争（Cournot game）</strong>，即它们同时选择自己的产量 <code>q</code> 来最大化各自的利润。</li>
+<li><strong>第一阶段:</strong> 公司1和公司2同时决定各自要设立的加盟商数量 <span class="arithmatex">\(n_1\)</span> 和 <span class="arithmatex">\(n_2\)</span>。每设立一个加盟商，授权商需要支付一笔固定的沉没成本 <span class="arithmatex">\(K\)</span>（例如，选址、培训、初始设备等费用）。</li>
+<li><strong>第二阶段:</strong> 总共 <span class="arithmatex">\(n_1 + n_2\)</span> 个加盟商在市场上进行<strong>古诺竞争（Cournot game）</strong>，即它们同时选择自己的产量 <span class="arithmatex">\(q\)</span> 来最大化各自的利润。</li>
 </ol>
 </li>
 <li>
 <p><strong>市场需求与成本:</strong></p>
 <ul>
 <li>市场反需求函数为线性形式: <span class="arithmatex">\(P = A - BQ\)</span><ul>
-<li><code>P</code> 是市场价格。</li>
-<li><code>A</code> 是市场的最高愿意支付价格（市场规模）。</li>
-<li><code>B</code> 是需求曲线的斜率的绝对值。</li>
-<li><code>Q</code> 是市场总产量，等于所有加盟商产量的总和: <span class="arithmatex">\(Q = \sum_{j=1}^{2} \sum_{i=1}^{n_j} q_{ij}\)</span>。</li>
+<li><span class="arithmatex">\(P\)</span> 是市场价格。</li>
+<li><span class="arithmatex">\(A\)</span> 是市场的最高愿意支付价格（市场规模）。</li>
+<li><span class="arithmatex">\(B\)</span> 是需求曲线的斜率的绝对值。</li>
+<li><span class="arithmatex">\(Q\)</span> 是市场总产量，等于所有加盟商产量的总和: <span class="arithmatex">\(Q = \sum_{j=1}^{2} \sum_{i=1}^{n_j} q_{ij}\)</span>。</li>
 </ul>
 </li>
-<li>所有加盟商的边际生产成本 <code>c</code> 都是相同的常数。</li>
+<li>所有加盟商的边际生产成本 <span class="arithmatex">\(c\)</span> 都是相同的常数。</li>
 </ul>
 </li>
 </ul>
@@ -2560,11 +2560,11 @@
 <h4 id="3">3. 模型求解（使用逆向归纳法）</h4>
 <p>我们从第二阶段开始分析。</p>
 <h5 id="_2"><strong>第二阶段：加盟商的古诺竞争</strong></h5>
-<p>在第二阶段，加盟商数量 <code>n_1</code> 和 <code>n_2</code> 已经确定。总共有 <code>N = n_1 + n_2</code> 个加盟商进行古诺竞争。</p>
-<p>我们考虑公司 <code>j</code> 的第 <code>i</code> 个加盟商（<code>ij</code>），它的利润函数是：
+<p>在第二阶段，加盟商数量 <span class="arithmatex">\(n_1\)</span> 和 <span class="arithmatex">\(n_2\)</span> 已经确定。总共有 <span class="arithmatex">\(N = n_1 + n_2\)</span> 个加盟商进行古诺竞争。</p>
+<p>我们考虑公司 <span class="arithmatex">\(j\)</span> 的第 <span class="arithmatex">\(i\)</span> 个加盟商（<span class="arithmatex">\(ij\)</span>），它的利润函数是：
 $ \pi_{ij} = (P - c) q_{ij} = [A - B(Q_{-ij} + q_{ij}) - c] q_{ij} $
 其中，<span class="arithmatex">\(q_{ij}\)</span> 是该加盟商的产量，<span class="arithmatex">\(Q_{-ij}\)</span> 是市场上所有其他加盟商产量的总和。</p>
-<p>为了最大化利润，该加盟商对自己的产量 <code>q_ij</code> 求一阶导数并令其等于0：
+<p>为了最大化利润，该加盟商对自己的产量 <span class="arithmatex">\(q_ij\)</span> 求一阶导数并令其等于0：
 $ \frac{\partial \pi_{ij}}{\partial q_{ij}} = A - B Q_{-ij} - 2B q_{ij} - c = 0 $</p>
 <p>由于所有加盟商都是对称的（成本相同），在均衡状态下，他们的产量也都相同，即 <span class="arithmatex">\(q_{ij} = q^*\)</span>。
 因此，<span class="arithmatex">\(Q_{-ij} = (N-1)q^* = (n_1 + n_2 - 1)q^*\)</span>。
@@ -2573,8 +2573,8 @@ $ A - B(n_1 + n_2 - 1)q^<em> - 2Bq^</em> - c = 0 $
 $ A - c = B(n_1 + n_2 + 1)q^* $</p>
 <p>解出每个加盟商的均衡产量：
 $ q^<em> = \frac{A - c}{B(n_1 + n_2 + 1)} $
-</em>(注：原文中给出的 <code>q* = A / (n_1 + n_2 + 1 / B)</code> 可能是笔误，缺少了成本 <code>c</code> 并且分母形式有误，这里使用了标准的古诺模型推导结果。)*</p>
-<p>有了单个加盟商的产量，我们可以计算出市场总产量 <code>Q</code> 和市场价格 <code>P</code>：
+</em>(注：原文中给出的 <span class="arithmatex">\(q* = A / (n_1 + n_2 + 1 / B)\)</span> 可能是笔误，缺少了成本 <span class="arithmatex">\(c\)</span> 并且分母形式有误，这里使用了标准的古诺模型推导结果。)*</p>
+<p>有了单个加盟商的产量，我们可以计算出市场总产量 <span class="arithmatex">\(Q\)</span> 和市场价格 <span class="arithmatex">\(P\)</span>：
 *   <strong>市场总产量 (Q):</strong>
     $ Q = (n_1 + n_2) q^<em> = \left( \frac{n_1 + n_2}{n_1 + n_2 + 1} \right) \left( \frac{A - c}{B} \right) $
 *   </em><em>市场均衡价格 (P):</em>*
@@ -2582,15 +2582,15 @@ $ q^<em> = \frac{A - c}{B(n_1 + n_2 + 1)} $
 <p>最后，我们可以计算出每个加盟商在古诺均衡下的利润：
 $ \pi_{ij} = (P - c) q^<em> = \left( \frac{A + (n_1 + n_2)c}{n_1 + n_2 + 1} - c \right) \left( \frac{A - c}{B(n_1 + n_2 + 1)} \right) $
 $ \pi_{ij} = \left( \frac{A - c}{n_1 + n_2 + 1} \right) \left( \frac{A - c}{B(n_1 + n_2 + 1)} \right) = \frac{(A-c)^2}{B(n_1 + n_2 + 1)^2} $
-</em>(注：原文中的 <code>π_ij = c / (B(n_1+n_2+1)^2)</code> 也是一个明显的笔误，分子应为 <code>(A-c)^2</code>。)*</p>
+</em>(注：原文中的 <span class="arithmatex">\(π_ij = c / (B(n_1+n_2+1)^2)\)</span> 也是一个明显的笔误，分子应为 <span class="arithmatex">\((A-c)^2\)</span>。)*</p>
 <h5 id="_3"><strong>第一阶段：授权商的最优加盟商数量决策</strong></h5>
-<p>现在我们回到第一阶段。授权商（例如公司1）的目标是选择自己的加盟商数量 <code>n_1</code> 来最大化其总利润 <code>Π_1</code>。</p>
+<p>现在我们回到第一阶段。授权商（例如公司1）的目标是选择自己的加盟商数量 <span class="arithmatex">\(n_1\)</span> 来最大化其总利润 <span class="arithmatex">\(Π_1\)</span>。</p>
 <p>模型的关键假设是：<strong>授权商可以通过特许经营费（franchise fee）的方式将加盟商的全部利润榨干。</strong> 因此，公司1的总利润等于其所有加盟商的利润总和，再减去开设这些加盟店的总沉没成本。</p>
 <p>公司1的利润函数为：
 $ \Pi_1(n_1, n_2) = \sum_{i=1}^{n_1} \pi_{i1} - K n_1 = n_1 \cdot \pi_{i1} - K n_1 $
 代入上面求出的加盟商利润 <span class="arithmatex">\(\pi_{ij}\)</span>：
 $ \Pi_1(n_1, n_2) = n_1 \frac{(A-c)^2}{B(n_1+n_2+1)^2} - K n_1 $</p>
-<p>公司1选择 <code>n_1</code> 来最大化这个利润函数。我们将 <code>Π_1</code> 对 <code>n_1</code> 求导，并令其等于0（将 <code>n_1</code> 暂时视为连续变量）：
+<p>公司1选择 <span class="arithmatex">\(n_1\)</span> 来最大化这个利润函数。我们将 <span class="arithmatex">\(Π_1\)</span> 对 <span class="arithmatex">\(n_1\)</span> 求导，并令其等于0（将 <span class="arithmatex">\(n_1\)</span> 暂时视为连续变量）：
 $ \frac{\partial \Pi_1}{\partial n_1} = \frac{(A-c)^2}{B(n_1+n_2+1)^2} + n_1 \frac{-2(A-c)^2}{B(n_1+n_2+1)^3} - K = 0 $</p>
 <p>整理后可得：
 $ \frac{(A-c)^2}{B(n_1+n_2+1)^2} \left( 1 - \frac{2n_1}{n_1+n_2+1} \right) - K = 0 $
@@ -2603,12 +2603,12 @@ $ \frac{(A-c)^2}{B(2n^</em>+1)^3} = K $
 $ (2n^<em>+1)^3 = \frac{(A-c)^2}{BK} $
 $ 2n^</em>+1 = \left( \frac{(A-c)^2}{BK} \right)^{1/3} $
 $ n^* = \frac{1}{2} \left[ \left( \frac{(A-c)^2}{BK} \right)^{1/3} - 1 \right] $</p>
-<p><em>(注：原文最后给出的 <code>n*</code> 的解 <span class="arithmatex">\(n^* = \frac{1}{2} [(\frac{(A-c)^2}{BK})^{\frac{1}{2}} - 1]\)</span> 是基于一个不同的 FOC（可能是在求导时分母的指数处理不同），正确的推导如上所示，指数应该是 1/3 而不是 1/2。但为了遵循“保留所有公式”的要求，我们在此指出原文的公式与标准推导的差异。)</em></p>
+<p><em>(注：原文最后给出的 <span class="arithmatex">\(n*\)</span> 的解 <span class="arithmatex">\(n^* = \frac{1}{2} [(\frac{(A-c)^2}{BK})^{\frac{1}{2}} - 1]\)</span> 是基于一个不同的 FOC（可能是在求导时分母的指数处理不同），正确的推导如上所示，指数应该是 1/3 而不是 1/2。但为了遵循“保留所有公式”的要求，我们在此指出原文的公式与标准推导的差异。)</em></p>
 <h4 id="4">4. 模型结论与经济学直觉</h4>
-<p>最终的最优加盟商数量 <code>n*</code> 取决于以下几个因素：
-*   <strong>市场潜力 (<code>A-c</code>):</strong> 市场规模 <code>A</code> 越大，或边际成本 <code>c</code> 越低，<code>A-c</code> 就越大。这会使得 <code>n*</code> 增加。直观上，市场利润空间越大，公司就越有动力开设更多的加盟店去占领市场。
-*   <strong>加盟店设立成本 (<code>K</code>):</strong> 沉没成本 <code>K</code> 越高，<code>n*</code> 越小。如果开设一家加盟店的成本非常高，公司自然会减少开店数量。
-*   <strong>市场竞争激烈程度 (<code>B</code>):</strong> <code>B</code> 越大，意味着需求曲线越陡峭，市场对产量的反应更敏感（少量增产就会导致价格大幅下跌），这会抑制加盟商的扩张，从而使得 <code>n*</code> 变小。</p>
+<p>最终的最优加盟商数量 <span class="arithmatex">\(n*\)</span> 取决于以下几个因素：
+*   <strong>市场潜力 (<span class="arithmatex">\(A-c\)</span>):</strong> 市场规模 <span class="arithmatex">\(A\)</span> 越大，或边际成本 <span class="arithmatex">\(c\)</span> 越低，<span class="arithmatex">\(A-c\)</span> 就越大。这会使得 <span class="arithmatex">\(n*\)</span> 增加。直观上，市场利润空间越大，公司就越有动力开设更多的加盟店去占领市场。
+*   <strong>加盟店设立成本 (<span class="arithmatex">\(K\)</span>):</strong> 沉没成本 <span class="arithmatex">\(K\)</span> 越高，<span class="arithmatex">\(n*\)</span> 越小。如果开设一家加盟店的成本非常高，公司自然会减少开店数量。
+*   <strong>市场竞争激烈程度 (<span class="arithmatex">\(B\)</span>):</strong> <span class="arithmatex">\(B\)</span> 越大，意味着需求曲线越陡峭，市场对产量的反应更敏感（少量增产就会导致价格大幅下跌），这会抑制加盟商的扩张，从而使得 <span class="arithmatex">\(n*\)</span> 变小。</p>
 <hr />
 <h3 id="_4">例题</h3>
 <p>假设有一个炸鸡市场，由两大品牌“肯德基”和“麦当劳”主导，它们通过特许经营模式进行竞争。</p>
@@ -2619,7 +2619,7 @@ $ n^* = \frac{1}{2} \left[ \left( \frac{(A-c)^2}{BK} \right)^{1/3} - 1 \right] $
 <p><strong>问题:</strong>
 在对称的纳什均衡下，每个品牌（肯德基或麦当劳）会选择开设多少家加盟店？</p>
 <p><strong>解答:</strong></p>
-<p>我们将使用上面推导出的均衡解公式来计算最优加盟商数量 <code>n*</code>。</p>
+<p>我们将使用上面推导出的均衡解公式来计算最优加盟商数量 <span class="arithmatex">\(n*\)</span>。</p>
 <p><strong>1. 列出已知参数:</strong>
 *   A = 200
 *   B = 1
@@ -2634,7 +2634,7 @@ $ n^* = \frac{1}{2} \left[ \left( \frac{(A-c)^2}{BK} \right)^{1/3} - 1 \right] $
 $ n^<em> = \frac{1}{2} \left[ \left( \frac{(A-c)^2}{BK} \right)^{1/3} - 1 \right] $
 $ n^</em> = \frac{1}{2} \left[ \left( \frac{32400}{54} \right)^{1/3} - 1 \right] $
 $ n^* = \frac{1}{2} \left[ (600)^{1/3} - 1 \right] $</p>
-<p>这里我们发现原文提供的公式可能经过了简化或有特定假设，因为 <code>600^(1/3)</code> 并不是一个整数。让我们检查一下原文提供的公式是否能得到一个更简洁的答案：
+<p>这里我们发现原文提供的公式可能经过了简化或有特定假设，因为 <span class="arithmatex">\(600^(1/3)\)</span> 并不是一个整数。让我们检查一下原文提供的公式是否能得到一个更简洁的答案：
 $ n^<em> = \frac{1}{2} [(\frac{(A-c)^2}{BK})^{\frac{1}{2}} - 1] $
 $ n^</em> = \frac{1}{2} [(\frac{32400}{54})^{\frac{1}{2}} - 1] = \frac{1}{2} [(600)^{\frac{1}{2}} - 1] = \frac{1}{2}[24.49 - 1] \approx 11.75 $
 这个结果也不是整数。</p>
@@ -2658,7 +2658,7 @@ $ n^* = \frac{1}{2} [(\frac{8100}{25})^{\frac{1}{2}} - 1] = \frac{1}{2} [(324)^{
 仍然不是整数。</p>
 <p>这通常意味着在教学模型中，原文的推导可能存在简化或错误。尽管如此，模型的经济学直觉是清晰的。</p>
 <p><strong>结论:</strong></p>
-<p>尽管公式推导的细节（指数是1/2还是1/3）在给定的笔记中存在不一致，但这个模型的核心思想是明确的：授权商在决定开设多少加盟店时，会权衡增加加盟店带来的市场份额和利润（通过榨取加盟商利润），与开设加盟店所需的高昂固定成本 <code>K</code>。同时，他们还必须考虑到竞争对手的扩张行为。最终的加盟商数量是一个战略博弈的结果。</p>
+<p>尽管公式推导的细节（指数是1/2还是1/3）在给定的笔记中存在不一致，但这个模型的核心思想是明确的：授权商在决定开设多少加盟店时，会权衡增加加盟店带来的市场份额和利润（通过榨取加盟商利润），与开设加盟店所需的高昂固定成本 <span class="arithmatex">\(K\)</span>。同时，他们还必须考虑到竞争对手的扩张行为。最终的加盟商数量是一个战略博弈的结果。</p>
 
 
 

@@ -2523,13 +2523,13 @@
 <div class="arithmatex">\[
 U_i = 2A_i(X - \alpha_X)^{\frac{1}{2}}(H - \alpha_H)^{\frac{1}{2}}
 \]</div>
-<p>这是描述一个居住在城市 <code>i</code> 的居民的效用（幸福感）函数。让我们来分解一下各个参数：</p>
+<p>这是描述一个居住在城市 <span class="arithmatex">\(i\)</span> 的居民的效用（幸福感）函数。让我们来分解一下各个参数：</p>
 <ul>
-<li><span class="arithmatex">\(U_i\)</span>：个体在城市 <code>i</code> 获得的效用水平。</li>
-<li><span class="arithmatex">\(A_i\)</span>：城市 <code>i</code> 的<strong>舒适度（Amenity）</strong>。这是一个综合性指标，可以代表任何让城市更有吸引力的非市场因素，比如气候、文化氛围、治安、风景、公共服务质量等。<span class="arithmatex">\(A_i\)</span> 越高，城市越有吸引力。在引用的论文标题 "Why do gay men live in San Francisco?" 中，<span class="arithmatex">\(A_i\)</span> 可能就代表了旧金山对同性恋群体的包容度和社区氛围。</li>
+<li><span class="arithmatex">\(U_i\)</span>：个体在城市 <span class="arithmatex">\(i\)</span> 获得的效用水平。</li>
+<li><span class="arithmatex">\(A_i\)</span>：城市 <span class="arithmatex">\(i\)</span> 的<strong>舒适度（Amenity）</strong>。这是一个综合性指标，可以代表任何让城市更有吸引力的非市场因素，比如气候、文化氛围、治安、风景、公共服务质量等。<span class="arithmatex">\(A_i\)</span> 越高，城市越有吸引力。在引用的论文标题 "Why do gay men live in San Francisco?" 中，<span class="arithmatex">\(A_i\)</span> 可能就代表了旧金山对同性恋群体的包容度和社区氛围。</li>
 <li><span class="arithmatex">\(X\)</span>：代表除住房外所有其他商品（或服务）的消费量，通常称为<strong>复合商品（Composite Good）</strong>。</li>
 <li><span class="arithmatex">\(H\)</span>：<strong>住房（Housing）</strong>的消费量，比如房屋面积。</li>
-<li><span class="arithmatex">\(\alpha_X\)</span> 和 <span class="arithmatex">\(\alpha_H\)</span>：这两个参数是模型的关键，它们代表了对复合商品和住房的<strong>最低需求量</strong>或<strong>基准偏好</strong>。这种形式的效用函数（<code>X - α</code>）被称为<strong>斯通-基里（Stone-Geary）效用函数</strong>。<ul>
+<li><span class="arithmatex">\(\alpha_X\)</span> 和 <span class="arithmatex">\(\alpha_H\)</span>：这两个参数是模型的关键，它们代表了对复合商品和住房的<strong>最低需求量</strong>或<strong>基准偏好</strong>。这种形式的效用函数（<span class="arithmatex">\(X - α\)</span>）被称为<strong>斯通-基里（Stone-Geary）效用函数</strong>。<ul>
 <li><span class="arithmatex">\(\alpha_X\)</span>：可以理解为维持生存所需的最基本商品消费。</li>
 <li><span class="arithmatex">\(\alpha_H\)</span>：可以理解为个体认为必须的最基本住房需求，或者更广泛地，代表<strong>个体对住房的偏好强度</strong>。<span class="arithmatex">\(\alpha_H\)</span> 较高的人，意味着他们非常看重住房消费（比如需要大房子的家庭）；<span class="arithmatex">\(\alpha_H\)</span> 较低的人，则对住房需求不那么强烈（比如单身人士）。<strong>这个参数的差异是导致不同人群选择不同城市的根本原因</strong>。</li>
 </ul>
@@ -2549,7 +2549,7 @@ U_i = 2A_i(X - \alpha_X)^{\frac{1}{2}}(H - \alpha_H)^{\frac{1}{2}}
 <div class="arithmatex">\[
 V_i = A_i r_i^{-\frac{1}{2}}(\omega_i - \alpha_X - r_i \alpha_H)
 \]</div>
-<p>这个公式是整个模型推导的核心。它被称为<strong>间接效用函数</strong>，代表的是一个个体在给定城市 <code>i</code> 的舒适度（<span class="arithmatex">\(A_i\)</span>）、房价（<span class="arithmatex">\(r_i\)</span>）和自身收入（<span class="arithmatex">\(\omega_i\)</span>）的情况下，通过最优地分配自己的收入（即最大化自己的效用 <span class="arithmatex">\(U_i\)</span>）后，所能达到的<strong>最大效用水平</strong>。</p>
+<p>这个公式是整个模型推导的核心。它被称为<strong>间接效用函数</strong>，代表的是一个个体在给定城市 <span class="arithmatex">\(i\)</span> 的舒适度（<span class="arithmatex">\(A_i\)</span>）、房价（<span class="arithmatex">\(r_i\)</span>）和自身收入（<span class="arithmatex">\(\omega_i\)</span>）的情况下，通过最优地分配自己的收入（即最大化自己的效用 <span class="arithmatex">\(U_i\)</span>）后，所能达到的<strong>最大效用水平</strong>。</p>
 <p>这个公式是通过求解上述带约束的效用最大化问题得到的。简单来说，就是将预算约束中的 <span class="arithmatex">\(X = \omega_i - r_i H\)</span> 代入效用函数，然后对 <span class="arithmatex">\(H\)</span> 求导，找到最优的住房消费量 <span class="arithmatex">\(H^*\)</span> 和商品消费量 <span class="arithmatex">\(X^*\)</span>，再将它们代回效用函数 <span class="arithmatex">\(U_i\)</span> 中，化简后就得到了 <span class="arithmatex">\(V_i\)</span>。</p>
 <p>这个函数非常直观地告诉我们：
 *   城市舒适度 <span class="arithmatex">\(A_i\)</span> 越高，你能获得的最大效用 <span class="arithmatex">\(V_i\)</span> 越高。
@@ -2560,18 +2560,18 @@ V_i = A_i r_i^{-\frac{1}{2}}(\omega_i - \alpha_X - r_i \alpha_H)
 <div class="arithmatex">\[
 A_a r_a^{-\frac{1}{2}}(\omega_a - \alpha_X - r_a \hat{\alpha}_H) = A_b r_b^{-\frac{1}{2}}(\omega_b - \alpha_X - r_b \hat{\alpha}_H)
 \]</div>
-<p>这是模型的均衡条件。假设有两个城市，城市 <code>a</code> 和城市 <code>b</code>。对于<strong>某一特定类型</strong>（由 <span class="arithmatex">\(\hat{\alpha}_H\)</span> 定义）的人来说，在均衡状态下，他们无论选择居住在城市 <code>a</code>还是城市 <code>b</code>，最终获得的效用应该是<strong>无差异的</strong>。</p>
+<p>这是模型的均衡条件。假设有两个城市，城市 <span class="arithmatex">\(a\)</span> 和城市 <span class="arithmatex">\(b\)</span>。对于<strong>某一特定类型</strong>（由 <span class="arithmatex">\(\hat{\alpha}_H\)</span> 定义）的人来说，在均衡状态下，他们无论选择居住在城市 <span class="arithmatex">\(a\)</span>还是城市 <span class="arithmatex">\(b\)</span>，最终获得的效用应该是<strong>无差异的</strong>。</p>
 <ul>
 <li><span class="arithmatex">\(V_a = V_b\)</span>：即在城市 a 的最大效用等于在城市 b 的最大效用。</li>
 <li><span class="arithmatex">\(\hat{\alpha}_H\)</span>：代表某个参照人群或“平均人群”的住房偏好。市场的房价（<span class="arithmatex">\(r_a, r_b\)</span>）正是由这类人的选择行为所决定的。</li>
 </ul>
-<p>如果 <span class="arithmatex">\(V_a &gt; V_b\)</span>，那么人们就会从城市 <code>b</code> 搬到城市 <code>a</code>。人口的涌入会推高城市 <code>a</code> 的房价 <span class="arithmatex">\(r_a\)</span>，从而降低 <span class="arithmatex">\(V_a\)</span>，直到 <span class="arithmatex">\(V_a = V_b\)</span> 为止，迁移停止，市场达到均衡。</p>
+<p>如果 <span class="arithmatex">\(V_a &gt; V_b\)</span>，那么人们就会从城市 <span class="arithmatex">\(b\)</span> 搬到城市 <span class="arithmatex">\(a\)</span>。人口的涌入会推高城市 <span class="arithmatex">\(a\)</span> 的房价 <span class="arithmatex">\(r_a\)</span>，从而降低 <span class="arithmatex">\(V_a\)</span>，直到 <span class="arithmatex">\(V_a = V_b\)</span> 为止，迁移停止，市场达到均衡。</p>
 <h4 id="5">5. 模型推论与人口筛选机制</h4>
 <p><strong>推论1：高舒适度对应高房价</strong></p>
 <div class="arithmatex">\[
 A_a &gt; A_b \Rightarrow r_a &gt; r_b
 \]</div>
-<p>这个推论非常直观。如果城市 <code>a</code> 比城市 <code>b</code> 更舒适（<span class="arithmatex">\(A_a &gt; A_b\)</span>），但房价 <span class="arithmatex">\(r_a\)</span> 却不比 <span class="arithmatex">\(r_b\)</span> 高，那么所有人都会涌向城市 <code>a</code>。为了维持均衡（<span class="arithmatex">\(V_a = V_b\)</span>），舒适度更高的城市<strong>必须</strong>有更高的房价，以抵消其舒适度带来的吸引力。</p>
+<p>这个推论非常直观。如果城市 <span class="arithmatex">\(a\)</span> 比城市 <span class="arithmatex">\(b\)</span> 更舒适（<span class="arithmatex">\(A_a &gt; A_b\)</span>），但房价 <span class="arithmatex">\(r_a\)</span> 却不比 <span class="arithmatex">\(r_b\)</span> 高，那么所有人都会涌向城市 <span class="arithmatex">\(a\)</span>。为了维持均衡（<span class="arithmatex">\(V_a = V_b\)</span>），舒适度更高的城市<strong>必须</strong>有更高的房价，以抵消其舒适度带来的吸引力。</p>
 <p><strong>推论2：人口筛选机制（Sorting）</strong></p>
 <blockquote>
 <p>Any one with higher <span class="arithmatex">\(\alpha_H\)</span>, will live in low amenity city, with lower <span class="arithmatex">\(\alpha_H\)</span>, will live in high amenity city.</p>
@@ -2584,8 +2584,8 @@ A_a &gt; A_b \Rightarrow r_a &gt; r_b
 <li>
 <p><strong>对于一个住房偏好很高的人（高 <span class="arithmatex">\(\alpha_H\)</span>）</strong>：</p>
 <ul>
-<li>在高舒适度、高房价的城市 <code>a</code>，这个效用成本是 <span class="arithmatex">\(-r_a \alpha_H\)</span>。因为 <span class="arithmatex">\(r_a\)</span> 很高，这个负向的惩罚项就非常大。</li>
-<li>在低舒适度、低房价的城市 <code>b</code>，效用成本是 <span class="arithmatex">\(-r_b \alpha_H\)</span>。因为 <span class="arithmatex">\(r_b\)</span> 较低，这个惩罚项就相对较小。</li>
+<li>在高舒适度、高房价的城市 <span class="arithmatex">\(a\)</span>，这个效用成本是 <span class="arithmatex">\(-r_a \alpha_H\)</span>。因为 <span class="arithmatex">\(r_a\)</span> 很高，这个负向的惩罚项就非常大。</li>
+<li>在低舒适度、低房价的城市 <span class="arithmatex">\(b\)</span>，效用成本是 <span class="arithmatex">\(-r_b \alpha_H\)</span>。因为 <span class="arithmatex">\(r_b\)</span> 较低，这个惩罚项就相对较小。</li>
 <li>因此，高房价对这类人的“伤害”更大。他们宁愿放弃高舒适度，选择一个房价更便宜的地方来满足他们对大房子的需求。</li>
 </ul>
 </li>

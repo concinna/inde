@@ -2419,26 +2419,26 @@
 <h4 id="double-marginalization"><strong>核心概念一：双重边际化 (Double Marginalization)</strong></h4>
 <p>这是垂直并购带来的最主要的效率提升。当产业链上下游（例如，制造商和零售商）都具有市场势力（即不是完全竞争者）并且相互独立时，它们会各自在自己的环节上加价以实现利润最大化。这种两次加价的行为导致最终产品价格过高，销量过低，并且上下游的总利润也低于一体化时的水平。</p>
 <p><strong>1. 并购前的情况 (分离结构)</strong></p>
-<p>我们假设一个上游垄断制造商（U）以批发价 <code>w</code> 将产品卖给一个下游垄断零售商（D）。
-*   上游制造商（U）的边际生产成本为 <code>c</code>。
-*   下游零售商（D）除了支付批发价 <code>w</code> 外，没有其他成本（为简化模型）。
-*   市场的逆需求函数为 <code>P(Q) = a - bQ</code>，其中 <code>P</code> 是最终零售价格，<code>Q</code> 是销量。</p>
+<p>我们假设一个上游垄断制造商（U）以批发价 <span class="arithmatex">\(w\)</span> 将产品卖给一个下游垄断零售商（D）。
+*   上游制造商（U）的边际生产成本为 <span class="arithmatex">\(c\)</span>。
+*   下游零售商（D）除了支付批发价 <span class="arithmatex">\(w\)</span> 外，没有其他成本（为简化模型）。
+*   市场的逆需求函数为 <span class="arithmatex">\(P(Q) = a - bQ\)</span>，其中 <span class="arithmatex">\(P\)</span> 是最终零售价格，<span class="arithmatex">\(Q\)</span> 是销量。</p>
 <p><strong>下游零售商 (D) 的决策：</strong>
-零售商将批发价 <code>w</code> 视为其边际成本，并选择最优的销量 <code>Q</code> 来最大化其自身利润 <code>π_D</code>。
+零售商将批发价 <span class="arithmatex">\(w\)</span> 视为其边际成本，并选择最优的销量 <span class="arithmatex">\(Q\)</span> 来最大化其自身利润 <span class="arithmatex">\(π_D\)</span>。
 $$ \pi_D = (P(Q) - w) \cdot Q = (a - bQ - w) \cdot Q $$
-为了实现利润最大化，我们对 <code>Q</code> 求一阶导数并令其为零：
+为了实现利润最大化，我们对 <span class="arithmatex">\(Q\)</span> 求一阶导数并令其为零：
 $$ \frac{d\pi_D}{dQ} = a - 2bQ - w = 0 $$
-由此，我们得到下游零售商对任意给定批发价 <code>w</code> 的最优反应（需求函数）：
+由此，我们得到下游零售商对任意给定批发价 <span class="arithmatex">\(w\)</span> 的最优反应（需求函数）：
 $$ Q(w) = \frac{a-w}{2b} $$</p>
 <p><strong>上游制造商 (U) 的决策：</strong>
-制造商知道下游零售商会如何根据 <code>w</code> 定价，所以它会选择最优的批发价 <code>w</code> 来最大化其自身利润 <code>π_U</code>。
+制造商知道下游零售商会如何根据 <span class="arithmatex">\(w\)</span> 定价，所以它会选择最优的批发价 <span class="arithmatex">\(w\)</span> 来最大化其自身利润 <span class="arithmatex">\(π_U\)</span>。
 $$ \pi_U = (w - c) \cdot Q(w) = (w - c) \cdot \frac{a-w}{2b} $$
-为了实现利润最大化，我们对 <code>w</code> 求一阶导数并令其为零：
+为了实现利润最大化，我们对 <span class="arithmatex">\(w\)</span> 求一阶导数并令其为零：
 $$ \frac{d\pi_U}{dw} = \frac{1}{2b}(a-w) + \frac{1}{2b}(w-c)(-1) = \frac{a - 2w + c}{2b} = 0 $$
-解得最优的批发价 <code>w*</code>：
+解得最优的批发价 <span class="arithmatex">\(w*\)</span>：
 $$ w^* = \frac{a+c}{2} $$</p>
 <p><strong>市场均衡结果 (并购前)：</strong>
-将 <code>w*</code> 代入 <code>Q(w)</code> 和 <code>P(Q)</code>，我们得到：
+将 <span class="arithmatex">\(w*\)</span> 代入 <span class="arithmatex">\(Q(w)\)</span> 和 <span class="arithmatex">\(P(Q)\)</span>，我们得到：
 *   <strong>均衡销量 (Q*)</strong>:
     $$ Q^<em> = \frac{a - w^</em>}{2b} = \frac{a - \frac{a+c}{2}}{2b} = \frac{a-c}{4b} $$
 *   <strong>均衡价格 (P*)</strong>:
@@ -2448,11 +2448,11 @@ $$ w^* = \frac{a+c}{2} $$</p>
     $$ \pi_D^</em> = (P^<em> - w^</em>)Q^<em> = \left(\frac{3a+c}{4} - \frac{a+c}{2}\right)\left(\frac{a-c}{4b}\right) = \frac{(a-c)^2}{16b} $$
     $$ \pi_{Total}^</em> = \pi_U^<em> + \pi_D^</em> = \frac{3(a-c)^2}{16b} $$</p>
 <p><strong>2. 并购后的情况 (一体化结构)</strong></p>
-<p>当上下游合并成一个垂直一体化公司（V）后，批发价 <code>w</code> 就不存在了。公司直接面对生产成本 <code>c</code> 和最终市场需求 <code>P(Q)</code>。它的目标是选择最优销量 <code>Q_V</code> 来最大化总利润 <code>π_V</code>。
+<p>当上下游合并成一个垂直一体化公司（V）后，批发价 <span class="arithmatex">\(w\)</span> 就不存在了。公司直接面对生产成本 <span class="arithmatex">\(c\)</span> 和最终市场需求 <span class="arithmatex">\(P(Q)\)</span>。它的目标是选择最优销量 <span class="arithmatex">\(Q_V\)</span> 来最大化总利润 <span class="arithmatex">\(π_V\)</span>。
 $$ \pi_V = (P(Q) - c) \cdot Q = (a - bQ - c) \cdot Q $$
-对 <code>Q</code> 求一阶导数并令其为零：
+对 <span class="arithmatex">\(Q\)</span> 求一阶导数并令其为零：
 $$ \frac{d\pi_V}{dQ} = a - 2bQ - c = 0 $$
-解得最优销量 <code>Q_V*</code>：
+解得最优销量 <span class="arithmatex">\(Q_V*\)</span>：
 $$ Q_V^* = \frac{a-c}{2b} $$</p>
 <p><strong>市场均衡结果 (并购后)：</strong>
 *   <strong>均衡销量 (Q_V*)</strong>:
@@ -2503,18 +2503,18 @@ $$ Q_V^* = \frac{a-c}{2b} $$</p>
 2.  <strong>客户封锁 (Customer Foreclosure)</strong>：M (即原来的 D1) 宣布只从内部的 U1 采购，不再向其他独立供应商（如 U2）采购。这会减少 U2 的市场需求，削弱其竞争力。</p>
 <p><strong>公式化表达（以投入品封锁为例）：</strong>
 假设下游是古诺（Cournot）双寡头竞争。
-*   合并后的公司 M 的边际成本是 <code>c</code>。
-*   其竞争对手 D2 的边际成本是 <code>w'</code>，这是 M 向它收取的新的、可能很高的批发价。
-*   市场总产量 <code>Q = q_M + q_{D2}</code>，价格 <code>P(Q) = a - b(q_M + q_{D2})</code>。</p>
-<p>公司 M 的利润 <code>π_M</code> 来自两部分：下游销售利润和向上游 D2 销售的利润。
+*   合并后的公司 M 的边际成本是 <span class="arithmatex">\(c\)</span>。
+*   其竞争对手 D2 的边际成本是 <span class="arithmatex">\(w'\)</span>，这是 M 向它收取的新的、可能很高的批发价。
+*   市场总产量 <span class="arithmatex">\(Q = q_M + q_{D2}\)</span>，价格 <span class="arithmatex">\(P(Q) = a - b(q_M + q_{D2})\)</span>。</p>
+<p>公司 M 的利润 <span class="arithmatex">\(π_M\)</span> 来自两部分：下游销售利润和向上游 D2 销售的利润。
 $$ \pi_M = (P(Q) - c) \cdot q_M + (w' - c) \cdot q_{D2} $$
-公司 D2 的利润 <code>π_{D2}</code> 为：
+公司 D2 的利润 <span class="arithmatex">\(π_{D2}\)</span> 为：
 $$ \pi_{D2} = (P(Q) - w') \cdot q_{D2} $$
-在这个模型中，如果 M 将 <code>w'</code> 设定得非常高，<code>q_{D2}</code> 就会下降，甚至变为0。虽然 M 因此失去了向上游销售的利润，但它在下游市场获得了更大的市场份额和更高的价格，总利润可能因此增加。</p>
+在这个模型中，如果 M 将 <span class="arithmatex">\(w'\)</span> 设定得非常高，<span class="arithmatex">\(q_{D2}\)</span> 就会下降，甚至变为0。虽然 M 因此失去了向上游销售的利润，但它在下游市场获得了更大的市场份额和更高的价格，总利润可能因此增加。</p>
 <p><strong>最终效果的权衡：</strong>
-*   <strong>效率效应</strong>：M 的内部成本从 <code>w</code>（旧的批发价）降到了 <code>c</code>，这会激励它增加产量 <code>q_M</code>。
-*   <strong>封锁效应</strong>：D2 的成本从 <code>w</code> 上升到 <code>w'</code>，这会迫使它减少产量 <code>q_{D2}</code>。</p>
-<p>最终市场总产量 <code>Q</code> 和价格 <code>P</code> 的变化，取决于 <code>q_M</code> 的增加量是否能抵消 <code>q_{D2}</code> 的减少量。如果封锁效应非常强（例如，D2 被完全挤出市场），那么合并后的 M 可能会利用其市场势力将价格提高到垄断水平，从而损害消费者利益。</p>
+*   <strong>效率效应</strong>：M 的内部成本从 <span class="arithmatex">\(w\)</span>（旧的批发价）降到了 <span class="arithmatex">\(c\)</span>，这会激励它增加产量 <span class="arithmatex">\(q_M\)</span>。
+*   <strong>封锁效应</strong>：D2 的成本从 <span class="arithmatex">\(w\)</span> 上升到 <span class="arithmatex">\(w'\)</span>，这会迫使它减少产量 <span class="arithmatex">\(q_{D2}\)</span>。</p>
+<p>最终市场总产量 <span class="arithmatex">\(Q\)</span> 和价格 <span class="arithmatex">\(P\)</span> 的变化，取决于 <span class="arithmatex">\(q_M\)</span> 的增加量是否能抵消 <span class="arithmatex">\(q_{D2}\)</span> 的减少量。如果封锁效应非常强（例如，D2 被完全挤出市场），那么合并后的 M 可能会利用其市场势力将价格提高到垄断水平，从而损害消费者利益。</p>
 <hr />
 <h3 id="_2"><strong>例题</strong></h3>
 <p><strong>背景：</strong>
@@ -2523,8 +2523,8 @@ $$ \pi_{D2} = (P(Q) - w') \cdot q_{D2} $$
 *   汽车组装厂的组装成本为每辆 <strong>k = 10</strong> (单位：千元)。
 *   最终汽车市场的逆需求函数为 <strong>P = 150 - Q</strong>，其中 P 是汽车价格，Q 是汽车数量。</p>
 <p><strong>问题：</strong>
-1.  在两家公司分离经营的情况下，计算均衡时的发动机批发价 <code>w</code>、汽车零售价 <code>P</code>、汽车销量 <code>Q</code> 以及两家公司的利润。
-2.  如果两家公司垂直合并，计算合并后公司的汽车零售价 <code>P</code>、销量 <code>Q</code> 和总利润。
+1.  在两家公司分离经营的情况下，计算均衡时的发动机批发价 <span class="arithmatex">\(w\)</span>、汽车零售价 <span class="arithmatex">\(P\)</span>、汽车销量 <span class="arithmatex">\(Q\)</span> 以及两家公司的利润。
+2.  如果两家公司垂直合并，计算合并后公司的汽车零售价 <span class="arithmatex">\(P\)</span>、销量 <span class="arithmatex">\(Q\)</span> 和总利润。
 3.  比较并购前后的结果，并说明在此例中，垂直并购对消费者和社会福利的影响。</p>
 <hr />
 <p><strong>解答：</strong></p>
@@ -2532,27 +2532,27 @@ $$ \pi_{D2} = (P(Q) - w') \cdot q_{D2} $$
 <ul>
 <li>
 <p><strong>下游组装厂 (D) 的决策：</strong>
-    组装厂的边际成本是 <code>w + k = w + 10</code>。
-    其利润 <code>π_D = (P - (w+10)) \cdot Q = (150 - Q - w - 10) \cdot Q = (140 - Q - w) \cdot Q</code>。
-    求一阶导数：<code>dπ_D/dQ = 140 - 2Q - w = 0</code>。
-    得到 <code>Q = (140 - w) / 2</code>。</p>
+    组装厂的边际成本是 <span class="arithmatex">\(w + k = w + 10\)</span>。
+    其利润 <span class="arithmatex">\(π_D = (P - (w+10)) \cdot Q = (150 - Q - w - 10) \cdot Q = (140 - Q - w) \cdot Q\)</span>。
+    求一阶导数：<span class="arithmatex">\(dπ_D/dQ = 140 - 2Q - w = 0\)</span>。
+    得到 <span class="arithmatex">\(Q = (140 - w) / 2\)</span>。</p>
 </li>
 <li>
 <p><strong>上游制造商 (U) 的决策：</strong>
-    制造商的利润 <code>π_U = (w - c) \cdot Q = (w - 20) \cdot (140 - w) / 2</code>。
-    求一阶导数：<code>dπ_U/dw = (1/2) * (140 - w) + (1/2) * (w - 20) * (-1) = 0</code>。
-    <code>140 - w - w + 20 = 0</code> =&gt; <code>160 = 2w</code>。
-    解得最优批发价 <strong><code>w* = 80</code></strong>。</p>
+    制造商的利润 <span class="arithmatex">\(π_U = (w - c) \cdot Q = (w - 20) \cdot (140 - w) / 2\)</span>。
+    求一阶导数：<span class="arithmatex">\(dπ_U/dw = (1/2) * (140 - w) + (1/2) * (w - 20) * (-1) = 0\)</span>。
+    <span class="arithmatex">\(140 - w - w + 20 = 0\)</span> =&gt; <span class="arithmatex">\(160 = 2w\)</span>。
+    解得最优批发价 <strong><span class="arithmatex">\(w* = 80\)</span></strong>。</p>
 </li>
 <li>
 <p><strong>市场均衡结果：</strong></p>
 <ul>
-<li><strong>销量 Q</strong>*：<code>Q* = (140 - 80) / 2 = 30</code>。</li>
-<li><strong>零售价 P</strong>*：<code>P* = 150 - Q* = 150 - 30 = 120</code>。</li>
+<li><strong>销量 Q</strong>*：<span class="arithmatex">\(Q* = (140 - 80) / 2 = 30\)</span>。</li>
+<li><strong>零售价 P</strong>*：<span class="arithmatex">\(P* = 150 - Q* = 150 - 30 = 120\)</span>。</li>
 <li><strong>利润 π</strong>*：<ul>
-<li><code>π_U* = (w* - c) \cdot Q* = (80 - 20) \cdot 30 = 60 \cdot 30 = 1800</code>。</li>
-<li><code>π_D* = (P* - w* - k) \cdot Q* = (120 - 80 - 10) \cdot 30 = 30 \cdot 30 = 900</code>。</li>
-<li><strong>总利润</strong> = <code>1800 + 900 = 2700</code>。</li>
+<li><span class="arithmatex">\(π_U* = (w* - c) \cdot Q* = (80 - 20) \cdot 30 = 60 \cdot 30 = 1800\)</span>。</li>
+<li><span class="arithmatex">\(π_D* = (P* - w* - k) \cdot Q* = (120 - 80 - 10) \cdot 30 = 30 \cdot 30 = 900\)</span>。</li>
+<li><strong>总利润</strong> = <span class="arithmatex">\(1800 + 900 = 2700\)</span>。</li>
 </ul>
 </li>
 </ul>
@@ -2562,17 +2562,17 @@ $$ \pi_{D2} = (P(Q) - w') \cdot q_{D2} $$
 <ul>
 <li>
 <p><strong>合并公司 (V) 的决策：</strong>
-    合并后的公司总边际成本为 <code>c + k = 20 + 10 = 30</code>。
-    其利润 <code>π_V = (P - (c+k)) \cdot Q = (150 - Q - 30) \cdot Q = (120 - Q) \cdot Q</code>。
-    求一阶导数：<code>dπ_V/dQ = 120 - 2Q = 0</code>。
-    解得最优销量 <strong><code>Q_V* = 60</code></strong>。</p>
+    合并后的公司总边际成本为 <span class="arithmatex">\(c + k = 20 + 10 = 30\)</span>。
+    其利润 <span class="arithmatex">\(π_V = (P - (c+k)) \cdot Q = (150 - Q - 30) \cdot Q = (120 - Q) \cdot Q\)</span>。
+    求一阶导数：<span class="arithmatex">\(dπ_V/dQ = 120 - 2Q = 0\)</span>。
+    解得最优销量 <strong><span class="arithmatex">\(Q_V* = 60\)</span></strong>。</p>
 </li>
 <li>
 <p><strong>市场均衡结果：</strong></p>
 <ul>
-<li><strong>销量 Q_V</strong>*：<code>60</code>。</li>
-<li><strong>零售价 P_V</strong>*：<code>P_V* = 150 - Q_V* = 150 - 60 = 90</code>。</li>
-<li><strong>总利润 π_V</strong>*：<code>π_V* = (P_V* - 30) \cdot Q_V* = (90 - 30) \cdot 60 = 60 \cdot 60 = 3600</code>。</li>
+<li><strong>销量 Q_V</strong>*：<span class="arithmatex">\(60\)</span>。</li>
+<li><strong>零售价 P_V</strong>*：<span class="arithmatex">\(P_V* = 150 - Q_V* = 150 - 60 = 90\)</span>。</li>
+<li><strong>总利润 π_V</strong>*：<span class="arithmatex">\(π_V* = (P_V* - 30) \cdot Q_V* = (90 - 30) \cdot 60 = 60 \cdot 60 = 3600\)</span>。</li>
 </ul>
 </li>
 </ul>

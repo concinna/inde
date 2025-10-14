@@ -2491,46 +2491,46 @@
 </ul>
 </li>
 <li><strong>生产成本</strong>：为简化模型，假设两种投入品的生产成本都为零。<ul>
-<li>固定投入品成本 <code>CF = 0</code>。</li>
-<li>可变投入品成本 <code>c = 0</code>。</li>
+<li>固定投入品成本 <span class="arithmatex">\(CF = 0\)</span>。</li>
+<li>可变投入品成本 <span class="arithmatex">\(c = 0\)</span>。</li>
 </ul>
 </li>
 <li><strong>消费者</strong>：市场上有两组消费者，但垄断者<strong>无法区分</strong>他们属于哪一组。<ul>
-<li>第一组有 <code>n₁</code> 人。</li>
-<li>第二组有 <code>n₂</code> 人。</li>
+<li>第一组有 <span class="arithmatex">\(n₁\)</span> 人。</li>
+<li>第二组有 <span class="arithmatex">\(n₂\)</span> 人。</li>
 </ul>
 </li>
-<li><strong>支付意愿 (Willingness to Pay - WTP)</strong>：两组消费者对服务有不同的总支付意愿函数 <code>V(q)</code>，其中 <code>q</code> 是服务的消费量（也等于可变投入品的消耗量）。<ul>
+<li><strong>支付意愿 (Willingness to Pay - WTP)</strong>：两组消费者对服务有不同的总支付意愿函数 <span class="arithmatex">\(V(q)\)</span>，其中 <span class="arithmatex">\(q\)</span> 是服务的消费量（也等于可变投入品的消耗量）。<ul>
 <li>第一组（低需求组）：
     $$ V ^ { 1 } ( q ) = A q - \frac { q ^ { 2 } } { 2 } $$</li>
 <li>第二组（高需求组）：
     $$ V ^ { 2 } ( q ) = \alpha A q - \frac { q ^ { 2 } } { 2 } \quad ( \text{其中 } \alpha &gt; 1 ) $$
-    这里的 <code>α &gt; 1</code> 表明，对于相同的消费量 <code>q</code>，第二组消费者的初始边际支付意愿 (<code>αA</code>) 高于第一组 (<code>A</code>)。</li>
+    这里的 <span class="arithmatex">\(α &gt; 1\)</span> 表明，对于相同的消费量 <span class="arithmatex">\(q\)</span>，第二组消费者的初始边际支付意愿 (<span class="arithmatex">\(αA\)</span>) 高于第一组 (<span class="arithmatex">\(A\)</span>)。</li>
 </ul>
 </li>
 <li><strong>价格</strong>：<ul>
-<li><code>F</code> 是固定投入品的价格（例如，打印机的价格）。</li>
-<li><code>p</code> 是每单位可变投入品的价格（例如，每个墨盒的价格）。</li>
+<li><span class="arithmatex">\(F\)</span> 是固定投入品的价格（例如，打印机的价格）。</li>
+<li><span class="arithmatex">\(p\)</span> 是每单位可变投入品的价格（例如，每个墨盒的价格）。</li>
 </ul>
 </li>
 </ol>
 <h4 id="2">2. 消费者决策</h4>
-<p>一个理性的消费者会选择最优的消费量 <code>q</code> 来最大化其<strong>净效用（消费者剩余）</strong>。净效用等于总支付意愿减去总花费。</p>
+<p>一个理性的消费者会选择最优的消费量 <span class="arithmatex">\(q\)</span> 来最大化其<strong>净效用（消费者剩余）</strong>。净效用等于总支付意愿减去总花费。</p>
 <p>消费者需要做两步决策：
-1.  给定 <code>F</code> 和 <code>p</code>，决定购买多少 <code>q</code>。
-2.  决定是否值得支付 <code>F</code> 来进入市场。</p>
+1.  给定 <span class="arithmatex">\(F\)</span> 和 <span class="arithmatex">\(p\)</span>，决定购买多少 <span class="arithmatex">\(q\)</span>。
+2.  决定是否值得支付 <span class="arithmatex">\(F\)</span> 来进入市场。</p>
 <p>对于任意一个消费者，其优化问题是：
 $$ \underset { q } { \operatorname* { m a x } } \ V(q) - F - pq $$</p>
 <p>以第一组消费者为例：
 $$ \underset { q } { \operatorname* { m a x } } \ A q - \frac { q ^ { 2 } } { 2 } - F - p q $$
-为了找到最优的 <code>q</code>，我们对 <code>q</code> 求一阶导数（First-Order Condition, FOC）并令其为零：
+为了找到最优的 <span class="arithmatex">\(q\)</span>，我们对 <span class="arithmatex">\(q\)</span> 求一阶导数（First-Order Condition, FOC）并令其为零：
 $$ \frac { d } { d q } ( A q - \frac { q ^ { 2 } } { 2 } - F - p q ) = A - q - p = 0 $$
-解得第一组消费者的最优消费量（需求函数）为：<code>q₁ = A - p</code>。</p>
+解得第一组消费者的最优消费量（需求函数）为：<span class="arithmatex">\(q₁ = A - p\)</span>。</p>
 <p>同理，对于第二组消费者：
 $$ \frac { d } { d q } ( \alpha A q - \frac { q ^ { 2 } } { 2 } - F - p q ) = \alpha A - q - p = 0 $$
-解得第二组消费者的最优消费量为：<code>q₂ = αA - p</code>。</p>
+解得第二组消费者的最优消费量为：<span class="arithmatex">\(q₂ = αA - p\)</span>。</p>
 <p>消费者只有在购买固定投入品后获得的净效用不为负时，才会决定购买。这个条件被称为<strong>参与约束（Participation Constraint）</strong>。
-对于第一组，必须满足：<code>V¹(q₁) - p*q₁ ≥ F</code>，即：
+对于第一组，必须满足：<span class="arithmatex">\(V¹(q₁) - p*q₁ ≥ F\)</span>，即：
 $$ \frac { ( A - p ) ^ { 2 } } { 2 } \geq F $$
 对于第二组，必须满足：
 $$ \frac { ( \alpha A - p ) ^ { 2 } } { 2 } \geq F $$</p>
@@ -2541,111 +2541,111 @@ $$ q _ { 2 } = \left{ \begin{array} { l l } { \alpha A - p } &amp; { \text{如�
 <h4 id="3">3. 情景分析</h4>
 <h5 id="_1">情景一：无搭售（基准情况）</h5>
 <p>在这种情况下，垄断者只销售固定投入品。可变投入品在竞争市场中销售，根据经济学原理，其价格将等于其边际成本。
-*   <code>p = c = 0</code></p>
-<p>将 <code>p = 0</code> 代入需求函数：
-*   <code>q₁ = A</code>
-*   <code>q₂ = αA</code></p>
+*   <span class="arithmatex">\(p = c = 0\)</span></p>
+<p>将 <span class="arithmatex">\(p = 0\)</span> 代入需求函数：
+*   <span class="arithmatex">\(q₁ = A\)</span>
+*   <span class="arithmatex">\(q₂ = αA\)</span></p>
 <p>此时，两组消费者的消费者剩余分别为：
-*   第一组的剩余：<code>V¹(A) - 0*A = A*A - A²/2 = A²/2</code>。
-*   第二组的剩余：<code>V²(αA) - 0*αA = αA*αA - (αA)²/2 = (αA)²/2</code>。</p>
-<p>垄断者需要设定固定投入品的价格 <code>F</code>。由于垄断者无法区分两组消费者，他只能设定一个统一的 <code>F</code>。如果他想把产品卖给<strong>所有</strong>消费者（通常这是利润最大化的选择），那么 <code>F</code> 的值不能超过<strong>支付意愿较低</strong>的那一组消费者（即第一组）所能获得的最大剩余。否则，第一组消费者将不会购买。</p>
-<p>因此，垄断者能设定的最高 <code>F</code> 为：
+*   第一组的剩余：<span class="arithmatex">\(V¹(A) - 0*A = A*A - A²/2 = A²/2\)</span>。
+*   第二组的剩余：<span class="arithmatex">\(V²(αA) - 0*αA = αA*αA - (αA)²/2 = (αA)²/2\)</span>。</p>
+<p>垄断者需要设定固定投入品的价格 <span class="arithmatex">\(F\)</span>。由于垄断者无法区分两组消费者，他只能设定一个统一的 <span class="arithmatex">\(F\)</span>。如果他想把产品卖给<strong>所有</strong>消费者（通常这是利润最大化的选择），那么 <span class="arithmatex">\(F\)</span> 的值不能超过<strong>支付意愿较低</strong>的那一组消费者（即第一组）所能获得的最大剩余。否则，第一组消费者将不会购买。</p>
+<p>因此，垄断者能设定的最高 <span class="arithmatex">\(F\)</span> 为：
 $$ F = \frac { A ^ { 2 } } { 2 } $$
-在这种情况下，第一组消费者刚好愿意购买（净效用为0），而第二组消费者获得了 <code>(αA)²/2 - A²/2</code> 的净效用。</p>
-<p>垄断者的总利润 <code>π₀</code>（基准利润）来自于销售固定投入品：
+在这种情况下，第一组消费者刚好愿意购买（净效用为0），而第二组消费者获得了 <span class="arithmatex">\((αA)²/2 - A²/2\)</span> 的净效用。</p>
+<p>垄断者的总利润 <span class="arithmatex">\(π₀\)</span>（基准利润）来自于销售固定投入品：
 $$ \pi_0 = n_1 F + n_2 F = (n_1 + n_2) F = (n_1 + n_2) \frac{A^2}{2} $$
-（在你的原文中，使用了 <code>Δ</code> 代表 <code>A</code>，<code>n</code> 代表 <code>n₁ + n₂</code>，所以利润为 <code>n * A²/2</code>）。</p>
+（在你的原文中，使用了 <span class="arithmatex">\(Δ\)</span> 代表 <span class="arithmatex">\(A\)</span>，<span class="arithmatex">\(n\)</span> 代表 <span class="arithmatex">\(n₁ + n₂\)</span>，所以利润为 <span class="arithmatex">\(n * A²/2\)</span>）。</p>
 <h5 id="_2">情景二：实施搭售</h5>
-<p>现在，垄断者决定自己也生产和销售可变投入品，并要求所有购买其固定投入品的消费者也必须从他这里购买可变投入品。这使得垄断者可以同时控制 <code>F</code> 和 <code>p</code>。</p>
-<p>垄断者的目标是最大化其总利润 <code>π</code>，总利润由两部分构成：
-1.  销售固定投入品的收入：<code>(n₁ + n₂)F</code>
-2.  销售可变投入品的收入：<code>n₁ * q₁ * p + n₂ * q₂ * p</code>（因为成本为0，所以收入即利润）</p>
-<p>同样，为了让两组消费者都购买产品，<code>F</code> 仍然受到第一组（低需求组）的参与约束的限制。但现在 <code>p</code> 不再是0。
+<p>现在，垄断者决定自己也生产和销售可变投入品，并要求所有购买其固定投入品的消费者也必须从他这里购买可变投入品。这使得垄断者可以同时控制 <span class="arithmatex">\(F\)</span> 和 <span class="arithmatex">\(p\)</span>。</p>
+<p>垄断者的目标是最大化其总利润 <span class="arithmatex">\(π\)</span>，总利润由两部分构成：
+1.  销售固定投入品的收入：<span class="arithmatex">\((n₁ + n₂)F\)</span>
+2.  销售可变投入品的收入：<span class="arithmatex">\(n₁ * q₁ * p + n₂ * q₂ * p\)</span>（因为成本为0，所以收入即利润）</p>
+<p>同样，为了让两组消费者都购买产品，<span class="arithmatex">\(F\)</span> 仍然受到第一组（低需求组）的参与约束的限制。但现在 <span class="arithmatex">\(p\)</span> 不再是0。
 $$ F = \frac { ( A - p ) ^ { 2 } } { 2 } $$</p>
-<p>我们将这个 <code>F</code> 的表达式代入总利润函数中，这样利润就只剩下 <code>p</code> 这一个决策变量：
+<p>我们将这个 <span class="arithmatex">\(F\)</span> 的表达式代入总利润函数中，这样利润就只剩下 <span class="arithmatex">\(p\)</span> 这一个决策变量：
 $$ \pi(p) = (n_1 + n_2) \left[ \frac{(A-p)^2}{2} \right] + n_1 (A-p)p + n_2 (\alpha A - p)p $$</p>
-<p>为了找到最优的 <code>p</code>，我们对 <code>π(p)</code> 求一阶导数并令其为零：
+<p>为了找到最优的 <span class="arithmatex">\(p\)</span>，我们对 <span class="arithmatex">\(π(p)\)</span> 求一阶导数并令其为零：
 $$ \frac{d\pi}{dp} = -(n_1+n_2)(A-p) + n_1(A-2p) + n_2(\alpha A - 2p) = 0 $$
 展开并整理：
 $$ -n_1 A + n_1 p - n_2 A + n_2 p + n_1 A - 2n_1 p + n_2 \alpha A - 2n_2 p = 0 $$
 $$ (-n_1 - n_2) p + n_2 (\alpha - 1) A = 0 $$
-解出最优的 <code>p</code>：
+解出最优的 <span class="arithmatex">\(p\)</span>：
 $$ p^* = \frac{n_2(\alpha - 1)A}{n_1 + n_2} $$</p>
-<p><strong>分析这个最优价格 <code>p*</code>：</strong>
-*   当 <code>α = 1</code> 时（两组消费者没有区别），<code>p* = 0</code>。这意味着如果消费者需求同质，搭售没有意义，垄断者会免费提供可变投入品（因为成本为0），这与竞争市场的结果一致。
-*   当 <code>α &gt; 1</code> 时，<code>p* &gt; 0</code>。需求差异越大（<code>α</code> 越大），或者高需求消费者占比越高（<code>n₂</code> 越大），垄断者设定的可变投入品价格 <code>p</code> 就越高。</p>
-<p>通过设定一个正的 <code>p</code>，垄断者实际上是在对消费量“征税”。由于高需求组（第二组）消费的 <code>q</code> 更多，他们支付的“税”也更多。这使得垄断者可以降低入门费 <code>F</code>（由 <code>F = (A-p)²/2</code> 可知，<code>p&gt;0</code> 时 <code>F</code> 下降），以留住低需求客户，同时从高需求客户那里通过可变投入品赚取高额利润。</p>
+<p><strong>分析这个最优价格 <span class="arithmatex">\(p*\)</span>：</strong>
+*   当 <span class="arithmatex">\(α = 1\)</span> 时（两组消费者没有区别），<span class="arithmatex">\(p* = 0\)</span>。这意味着如果消费者需求同质，搭售没有意义，垄断者会免费提供可变投入品（因为成本为0），这与竞争市场的结果一致。
+*   当 <span class="arithmatex">\(α &gt; 1\)</span> 时，<span class="arithmatex">\(p* &gt; 0\)</span>。需求差异越大（<span class="arithmatex">\(α\)</span> 越大），或者高需求消费者占比越高（<span class="arithmatex">\(n₂\)</span> 越大），垄断者设定的可变投入品价格 <span class="arithmatex">\(p\)</span> 就越高。</p>
+<p>通过设定一个正的 <span class="arithmatex">\(p\)</span>，垄断者实际上是在对消费量“征税”。由于高需求组（第二组）消费的 <span class="arithmatex">\(q\)</span> 更多，他们支付的“税”也更多。这使得垄断者可以降低入门费 <span class="arithmatex">\(F\)</span>（由 <span class="arithmatex">\(F = (A-p)²/2\)</span> 可知，<span class="arithmatex">\(p&gt;0\)</span> 时 <span class="arithmatex">\(F\)</span> 下降），以留住低需求客户，同时从高需求客户那里通过可变投入品赚取高额利润。</p>
 <p>原文中指出，实施搭售后的总利润为：
 $$ \pi = n \frac { A ^ { 2 } } { 2 } + n ( \frac { \alpha - 1 } { 2 } ) ^ { 2 } A ^ { 2 } $$
-（注：这个简化公式通常在假设 <code>n₁ = n₂</code> 时得出）。
-很明显，只要 <code>α &gt; 1</code>，第二项就大于零，因此：
+（注：这个简化公式通常在假设 <span class="arithmatex">\(n₁ = n₂\)</span> 时得出）。
+很明显，只要 <span class="arithmatex">\(α &gt; 1\)</span>，第二项就大于零，因此：
 $$ \pi &gt; \pi_0 = n \frac{A^2}{2} $$</p>
 <p><strong>结论</strong>：通过搭售，垄断者成功地将高需求消费者的一部分消费者剩余转化为了自己的利润，从而实现了比不搭售时更高的总利润。这是一种有效的价格歧视工具。</p>
 <hr />
 <h3 id="_3">例题</h3>
 <p>假设一家公司垄断了新款“咖啡机”的销售，而“咖啡胶囊”市场是完全竞争的。两种产品的生产成本都为0。</p>
-<p>市场上有两类消费者，每类100人 (<code>n₁ = 100</code>, <code>n₂ = 100</code>)。
-*   第一类（轻度用户）的总支付意愿为：<code>V¹(q) = 20q - q²/2</code>。
-*   第二类（重度用户）的总支付意愿为：<code>V²(q) = 30q - q²/2</code>。</p>
-<p><code>F</code> 是咖啡机的价格，<code>p</code> 是每颗咖啡胶囊的价格。</p>
+<p>市场上有两类消费者，每类100人 (<span class="arithmatex">\(n₁ = 100\)</span>, <span class="arithmatex">\(n₂ = 100\)</span>)。
+*   第一类（轻度用户）的总支付意愿为：<span class="arithmatex">\(V¹(q) = 20q - q²/2\)</span>。
+*   第二类（重度用户）的总支付意愿为：<span class="arithmatex">\(V²(q) = 30q - q²/2\)</span>。</p>
+<p><span class="arithmatex">\(F\)</span> 是咖啡机的价格，<span class="arithmatex">\(p\)</span> 是每颗咖啡胶囊的价格。</p>
 <p><strong>问题：</strong>
-1.  如果公司只卖咖啡机，不进入胶囊市场，它的最优定价 <code>F</code> 和总利润 <code>π₀</code> 是多少？
-2.  如果公司要求用户必须购买其生产的胶囊（搭售），它的最优胶囊价格 <code>p*</code>、咖啡机价格 <code>F</code> 和总利润 <code>π</code> 是多少？比较两种策略的利润。</p>
+1.  如果公司只卖咖啡机，不进入胶囊市场，它的最优定价 <span class="arithmatex">\(F\)</span> 和总利润 <span class="arithmatex">\(π₀\)</span> 是多少？
+2.  如果公司要求用户必须购买其生产的胶囊（搭售），它的最优胶囊价格 <span class="arithmatex">\(p*\)</span>、咖啡机价格 <span class="arithmatex">\(F\)</span> 和总利润 <span class="arithmatex">\(π\)</span> 是多少？比较两种策略的利润。</p>
 <hr />
 <p><strong>解答：</strong></p>
 <p>首先，确定模型参数：
-*   <code>n₁ = 100</code>, <code>n₂ = 100</code>
-*   从 <code>V¹(q)</code> 可知 <code>A = 20</code>
-*   从 <code>V²(q)</code> 可知 <code>αA = 30</code>，所以 <code>α = 30/20 = 1.5</code></p>
+*   <span class="arithmatex">\(n₁ = 100\)</span>, <span class="arithmatex">\(n₂ = 100\)</span>
+*   从 <span class="arithmatex">\(V¹(q)\)</span> 可知 <span class="arithmatex">\(A = 20\)</span>
+*   从 <span class="arithmatex">\(V²(q)\)</span> 可知 <span class="arithmatex">\(αA = 30\)</span>，所以 <span class="arithmatex">\(α = 30/20 = 1.5\)</span></p>
 <p><strong>1. 无搭售情况</strong></p>
 <ul>
-<li>胶囊市场是竞争的，成本为0，所以胶囊价格 <code>p = 0</code>。</li>
+<li>胶囊市场是竞争的，成本为0，所以胶囊价格 <span class="arithmatex">\(p = 0\)</span>。</li>
 <li>消费者最优消费量：<ul>
-<li>第一组：<code>q₁ = A - p = 20 - 0 = 20</code></li>
-<li>第二组：<code>q₂ = αA - p = 30 - 0 = 30</code></li>
+<li>第一组：<span class="arithmatex">\(q₁ = A - p = 20 - 0 = 20\)</span></li>
+<li>第二组：<span class="arithmatex">\(q₂ = αA - p = 30 - 0 = 30\)</span></li>
 </ul>
 </li>
 <li>消费者的剩余：<ul>
-<li>第一组：<code>A²/2 = 20²/2 = 200</code></li>
-<li>第二组：<code>(αA)²/2 = 30²/2 = 450</code></li>
+<li>第一组：<span class="arithmatex">\(A²/2 = 20²/2 = 200\)</span></li>
+<li>第二组：<span class="arithmatex">\((αA)²/2 = 30²/2 = 450\)</span></li>
 </ul>
 </li>
-<li>为了让两组都购买咖啡机，公司必须将咖啡机价格 <code>F</code> 定得不高于第一组的剩余。<ul>
-<li>最优 <code>F = 200</code></li>
+<li>为了让两组都购买咖啡机，公司必须将咖啡机价格 <span class="arithmatex">\(F\)</span> 定得不高于第一组的剩余。<ul>
+<li>最优 <span class="arithmatex">\(F = 200\)</span></li>
 </ul>
 </li>
-<li>计算总利润 <code>π₀</code>：<ul>
-<li><code>π₀ = (n₁ + n₂) * F = (100 + 100) * 200 = 40,000</code></li>
+<li>计算总利润 <span class="arithmatex">\(π₀\)</span>：<ul>
+<li><span class="arithmatex">\(π₀ = (n₁ + n₂) * F = (100 + 100) * 200 = 40,000\)</span></li>
 </ul>
 </li>
 </ul>
 <p><strong>所以，在无搭售的情况下，公司会将咖啡机定价为200元，总利润为40,000元。</strong></p>
 <p><strong>2. 搭售情况</strong></p>
 <ul>
-<li>公司现在同时设定咖啡机价格 <code>F</code> 和胶囊价格 <code>p</code>。</li>
-<li>首先，计算最优的胶囊价格 <code>p*</code>：
+<li>公司现在同时设定咖啡机价格 <span class="arithmatex">\(F\)</span> 和胶囊价格 <span class="arithmatex">\(p\)</span>。</li>
+<li>首先，计算最优的胶囊价格 <span class="arithmatex">\(p*\)</span>：
     $$ p^* = \frac{n_2(\alpha - 1)A}{n_1 + n_2} = \frac{100(1.5 - 1) \times 20}{100 + 100} = \frac{100 \times 0.5 \times 20}{200} = \frac{1000}{200} = 5 $$
     公司应该将每颗胶囊定价为5元。</li>
-<li>接下来，根据 <code>p*</code> 计算最优的咖啡机价格 <code>F</code>。<code>F</code> 仍然由第一组的参与约束决定：
+<li>接下来，根据 <span class="arithmatex">\(p*\)</span> 计算最优的咖啡机价格 <span class="arithmatex">\(F\)</span>。<span class="arithmatex">\(F\)</span> 仍然由第一组的参与约束决定：
     $$ F = \frac{(A-p^*)^2}{2} = \frac{(20-5)^2}{2} = \frac{15^2}{2} = \frac{225}{2} = 112.5 $$
     公司应该将咖啡机价格从200元下调至112.5元。</li>
 <li>计算两组消费者购买的胶囊数量：<ul>
-<li><code>q₁ = A - p* = 20 - 5 = 15</code></li>
-<li><code>q₂ = αA - p* = 30 - 5 = 25</code></li>
+<li><span class="arithmatex">\(q₁ = A - p* = 20 - 5 = 15\)</span></li>
+<li><span class="arithmatex">\(q₂ = αA - p* = 30 - 5 = 25\)</span></li>
 </ul>
 </li>
-<li>计算搭售策略下的总利润 <code>π</code>：<ul>
-<li>来自咖啡机的利润：<code>(n₁ + n₂) * F = (100 + 100) * 112.5 = 200 * 112.5 = 22,500</code></li>
-<li>来自胶囊的利润：<code>n₁*q₁*p* + n₂*q₂*p* = (100 * 15 * 5) + (100 * 25 * 5) = 7,500 + 12,500 = 20,000</code></li>
-<li>总利润 <code>π = 22,500 + 20,000 = 42,500</code></li>
+<li>计算搭售策略下的总利润 <span class="arithmatex">\(π\)</span>：<ul>
+<li>来自咖啡机的利润：<span class="arithmatex">\((n₁ + n₂) * F = (100 + 100) * 112.5 = 200 * 112.5 = 22,500\)</span></li>
+<li>来自胶囊的利润：<span class="arithmatex">\(n₁*q₁*p* + n₂*q₂*p* = (100 * 15 * 5) + (100 * 25 * 5) = 7,500 + 12,500 = 20,000\)</span></li>
+<li>总利润 <span class="arithmatex">\(π = 22,500 + 20,000 = 42,500\)</span></li>
 </ul>
 </li>
 </ul>
 <p><strong>比较与结论：</strong>
-*   无搭售利润 <code>π₀ = 40,000</code>
-*   搭售利润 <code>π = 42,500</code></p>
+*   无搭售利润 <span class="arithmatex">\(π₀ = 40,000\)</span>
+*   搭售利润 <span class="arithmatex">\(π = 42,500\)</span></p>
 <p>通过实施搭售策略，公司的总利润从40,000元增加到42,500元。</p>
-<p><strong>策略分析</strong>：公司通过降低“入门费”（咖啡机价格 <code>F</code> 从200降至112.5），吸引了所有消费者。然后，通过对“消耗品”（胶囊）收取高于成本的价格 (<code>p=5</code>)，它从消费量更大的重度用户身上赚取了更多的利润。这种“低入门费+高消耗品费”的模式，本质上就是一种二级价格歧视。</p>
+<p><strong>策略分析</strong>：公司通过降低“入门费”（咖啡机价格 <span class="arithmatex">\(F\)</span> 从200降至112.5），吸引了所有消费者。然后，通过对“消耗品”（胶囊）收取高于成本的价格 (<span class="arithmatex">\(p=5\)</span>)，它从消费量更大的重度用户身上赚取了更多的利润。这种“低入门费+高消耗品费”的模式，本质上就是一种二级价格歧视。</p>
 
 
 

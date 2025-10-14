@@ -2446,51 +2446,51 @@
 <p>这个模型的核心思想是量化“无谓损失”（Deadweight Loss），即由于垄断定价（价格高于边际成本）导致社会总效益未能最大化的那部分损失。</p>
 <h3 id="_1">模型详解</h3>
 <h4 id="1-welfare-loss-wl">1. 基本概念：福利损失 (Welfare Loss, wL)</h4>
-<p>模型从福利损失最根本的定义出发。福利损失是指，从垄断产量 <code>Q</code> 恢复到完全竞争下的有效产量 <code>Qc</code> 这一过程中，社会能够额外获得的总剩余。这个剩余由需求曲线 <code>P(Q)</code>（代表消费者愿意支付的最高价格）和边际成本曲线 <code>f(Q)</code>（代表生产额外一单位的成本）之间的面积来衡量。</p>
+<p>模型从福利损失最根本的定义出发。福利损失是指，从垄断产量 <span class="arithmatex">\(Q\)</span> 恢复到完全竞争下的有效产量 <span class="arithmatex">\(Qc\)</span> 这一过程中，社会能够额外获得的总剩余。这个剩余由需求曲线 <span class="arithmatex">\(P(Q)\)</span>（代表消费者愿意支付的最高价格）和边际成本曲线 <span class="arithmatex">\(f(Q)\)</span>（代表生产额外一单位的成本）之间的面积来衡量。</p>
 <p><strong>公式 1: 福利损失的积分形式</strong></p>
 <p><span class="arithmatex">\(wL = \int_{Q}^{Qc} [P(Q) - f(Q)] dQ\)</span></p>
 <ul>
-<li><code>wL</code>: Welfare Loss，福利损失或无谓损失。</li>
-<li><code>Q</code>: 垄断厂商在市场中实际观察到的产量 (observed output)。</li>
-<li><code>Qc</code>: 完全竞争下的产量，也被称为有效率的产量 (competitive or efficient output)。在这一点上，价格等于边际成本 <code>P = MC</code>。</li>
-<li><code>P(Q)</code>: 需求函数，表示在产量为Q时，市场愿意支付的价格。</li>
-<li><code>f(Q)</code>: 边际成本函数，这里用 <code>f(Q)</code> 表示，通常记为 <code>MC(Q)</code>。</li>
+<li><span class="arithmatex">\(wL\)</span>: Welfare Loss，福利损失或无谓损失。</li>
+<li><span class="arithmatex">\(Q\)</span>: 垄断厂商在市场中实际观察到的产量 (observed output)。</li>
+<li><span class="arithmatex">\(Qc\)</span>: 完全竞争下的产量，也被称为有效率的产量 (competitive or efficient output)。在这一点上，价格等于边际成本 <span class="arithmatex">\(P = MC\)</span>。</li>
+<li><span class="arithmatex">\(P(Q)\)</span>: 需求函数，表示在产量为Q时，市场愿意支付的价格。</li>
+<li><span class="arithmatex">\(f(Q)\)</span>: 边际成本函数，这里用 <span class="arithmatex">\(f(Q)\)</span> 表示，通常记为 <span class="arithmatex">\(MC(Q)\)</span>。</li>
 </ul>
-<p>这个积分公式计算的是需求曲线和边际成本曲线之间，从垄断产量 <code>Q</code> 到竞争产量 <code>Qc</code> 所围成的区域面积，这个区域就是著名的“哈伯格三角形”（Harberger Triangle）。</p>
+<p>这个积分公式计算的是需求曲线和边际成本曲线之间，从垄断产量 <span class="arithmatex">\(Q\)</span> 到竞争产量 <span class="arithmatex">\(Qc\)</span> 所围成的区域面积，这个区域就是著名的“哈伯格三角形”（Harberger Triangle）。</p>
 <hr />
 <h4 id="2-constant-marginal-cost">2. 核心假设：恒定边际成本 (Constant Marginal Cost)</h4>
 <p>为了让模型在实际应用中更易于计算，Cowling 和 Mueller 采用了一个常见的简化假设：<strong>边际成本（MC）是恒定的</strong>。</p>
-<p>在这个假设下，边际成本曲线是一条水平线。于是，之前那个复杂的积分图形就变成了一个标准的三角形。三角形的面积计算公式是 <code>1/2 * 底 * 高</code>。</p>
+<p>在这个假设下，边际成本曲线是一条水平线。于是，之前那个复杂的积分图形就变成了一个标准的三角形。三角形的面积计算公式是 <span class="arithmatex">\(1/2 * 底 * 高\)</span>。</p>
 <p><strong>公式 2: 三角形面积形式的福利损失</strong></p>
 <p><span class="arithmatex">\(wL = \frac{1}{2}(P - MC)(Qc - Q)\)</span></p>
 <ul>
-<li><code>(P - MC)</code>: 这是垄断价格 <code>P</code> 与边际成本 <code>MC</code> 之间的差距。在图形上，这代表了无谓损失三角形的“<strong>高</strong>”。</li>
-<li><code>(Qc - Q)</code>: 这是竞争产量与垄断产量之间的差距。在图形上，这代表了无谓损失三角形的“<strong>底</strong>”。</li>
+<li><span class="arithmatex">\((P - MC)\)</span>: 这是垄断价格 <span class="arithmatex">\(P\)</span> 与边际成本 <span class="arithmatex">\(MC\)</span> 之间的差距。在图形上，这代表了无谓损失三角形的“<strong>高</strong>”。</li>
+<li><span class="arithmatex">\((Qc - Q)\)</span>: 这是竞争产量与垄断产量之间的差距。在图形上，这代表了无谓损失三角形的“<strong>底</strong>”。</li>
 </ul>
 <hr />
 <h4 id="3">3. 模型的创新：将福利损失与可观测数据关联</h4>
-<p>公式2虽然简单，但在现实中我们很难知道 <code>Qc</code>（竞争产量）到底是多少。Cowling 和 Mueller 的主要贡献在于，他们通过引入两个经济学中常见的、可观测的指标——<strong>需求价格弹性 (ε)</strong> 和 <strong>勒纳指数 (LI)</strong>，将公式转化得更具实用性。</p>
-<p><strong>步骤 1: 定义相对福利损失 <code>wL'</code></strong></p>
-<p>为了在不同规模的行业间进行比较，他们计算了福利损失占总销售收入（PQ）的比例，记为 <code>wL'</code>。</p>
+<p>公式2虽然简单，但在现实中我们很难知道 <span class="arithmatex">\(Qc\)</span>（竞争产量）到底是多少。Cowling 和 Mueller 的主要贡献在于，他们通过引入两个经济学中常见的、可观测的指标——<strong>需求价格弹性 (ε)</strong> 和 <strong>勒纳指数 (LI)</strong>，将公式转化得更具实用性。</p>
+<p><strong>步骤 1: 定义相对福利损失 <span class="arithmatex">\(wL'\)</span></strong></p>
+<p>为了在不同规模的行业间进行比较，他们计算了福利损失占总销售收入（PQ）的比例，记为 <span class="arithmatex">\(wL'\)</span>。</p>
 <p><span class="arithmatex">\(wL' = \frac{wL}{PQ} = \frac{\frac{1}{2}(P - MC)(Qc - Q)}{PQ}\)</span></p>
 <p><strong>步骤 2: 引入需求价格弹性 (ε)</strong></p>
 <p>需求价格弹性衡量价格变化引起的需求量变化的敏感程度。其定义为：
 <span class="arithmatex">\(\varepsilon = -\frac{\Delta Q}{\Delta P} \cdot \frac{P}{Q}\)</span></p>
-<p>我们可以利用这个公式来表示 <code>(Qc - Q)</code>。
-*   产量的变化 <code>ΔQ</code> 可以近似为 <code>Qc - Q</code>。
-*   价格的变化 <code>ΔP</code> 可以近似为 <code>MC - P</code> （因为价格从 <code>P</code> 降到 <code>MC</code>）。</p>
+<p>我们可以利用这个公式来表示 <span class="arithmatex">\((Qc - Q)\)</span>。
+*   产量的变化 <span class="arithmatex">\(ΔQ\)</span> 可以近似为 <span class="arithmatex">\(Qc - Q\)</span>。
+*   价格的变化 <span class="arithmatex">\(ΔP\)</span> 可以近似为 <span class="arithmatex">\(MC - P\)</span> （因为价格从 <span class="arithmatex">\(P\)</span> 降到 <span class="arithmatex">\(MC\)</span>）。</p>
 <p>因此，<span class="arithmatex">\(\frac{\Delta Q}{\Delta P} \approx \frac{Qc - Q}{MC - P} = -\frac{Qc - Q}{P - MC}\)</span></p>
 <p>代入弹性公式：<span class="arithmatex">\(\varepsilon \approx -(-\frac{Qc - Q}{P - MC}) \cdot \frac{P}{Q} = \frac{Qc - Q}{P - MC} \cdot \frac{P}{Q}\)</span></p>
-<p>整理这个式子，我们可以解出 <code>(Qc - Q)</code>：
+<p>整理这个式子，我们可以解出 <span class="arithmatex">\((Qc - Q)\)</span>：
 <span class="arithmatex">\(Qc - Q = \varepsilon \cdot \frac{Q}{P} \cdot (P - MC)\)</span></p>
 <p><strong>步骤 3: 引入勒纳指数 (LI)</strong></p>
 <p>勒纳指数是衡量厂商市场势力（定价能力）的指标，定义为价格超出边际成本的部分占价格的比例。
 <span class="arithmatex">\(LI = \frac{P - MC}{P}\)</span></p>
 <p><strong>步骤 4: 推导最终公式</strong></p>
-<p>现在，我们将 <code>(Qc - Q)</code> 的表达式代入 <code>wL'</code> 的公式中：</p>
+<p>现在，我们将 <span class="arithmatex">\((Qc - Q)\)</span> 的表达式代入 <span class="arithmatex">\(wL'\)</span> 的公式中：</p>
 <p><span class="arithmatex">\(wL' = \frac{\frac{1}{2}(P - MC) \cdot [\varepsilon \cdot \frac{Q}{P} \cdot (P - MC)]}{PQ}\)</span></p>
 <p><span class="arithmatex">\(wL' = \frac{1}{2} \cdot \frac{(P - MC)^2 \cdot \varepsilon \cdot Q}{P^2 \cdot Q}\)</span></p>
-<p>整理后，<code>Q</code> 被消掉，我们得到：</p>
+<p>整理后，<span class="arithmatex">\(Q\)</span> 被消掉，我们得到：</p>
 <p><span class="arithmatex">\(wL' = \frac{1}{2} \varepsilon (\frac{P - MC}{P})^2\)</span></p>
 <p>因为 <span class="arithmatex">\(LI = \frac{P-MC}{P}\)</span>，所以最终的公式是：</p>
 <p><strong>公式 3: Cowling &amp; Mueller 的核心公式</strong></p>
@@ -2502,12 +2502,12 @@
 <p>即: <span class="arithmatex">\(wL \approx \frac{1}{2} \Pi\)</span> (其中 <span class="arithmatex">\(\Pi\)</span> 是垄断利润)</p>
 <ul>
 <li>垄断利润 <span class="arithmatex">\(\Pi = (P - AC) \cdot Q\)</span>。</li>
-<li>如果我们假设恒定边际成本，那么 <code>MC = AC</code> (平均成本)。</li>
+<li>如果我们假设恒定边际成本，那么 <span class="arithmatex">\(MC = AC\)</span> (平均成本)。</li>
 <li>所以 <span class="arithmatex">\(\Pi = (P - MC) \cdot Q\)</span>。</li>
 </ul>
-<p>现在我们来看 <code>wL'</code>：
+<p>现在我们来看 <span class="arithmatex">\(wL'\)</span>：
 <span class="arithmatex">\(wL' = \frac{wL}{PQ} \approx \frac{\frac{1}{2} \Pi}{PQ} = \frac{\frac{1}{2} (P - MC)Q}{PQ}\)</span></p>
-<p>消去 <code>Q</code>，我们得到：
+<p>消去 <span class="arithmatex">\(Q\)</span>，我们得到：
 <span class="arithmatex">\(wL' = \frac{1}{2} \frac{P - MC}{P}\)</span></p>
 <p>这导出了第二个简化公式：</p>
 <p><strong>公式 4: 线性需求假设下的简化公式</strong></p>
@@ -2538,7 +2538,7 @@
 <span class="arithmatex">\(wL' = 0.75 \times 0.444\)</span>
 <span class="arithmatex">\(wL' \approx 0.333\)</span></p>
 <p><strong>结论1:</strong> 社会福利损失约占“电能巨人”公司总销售收入的 <strong>33.3%</strong>。
-这与原文中提到的 <code>ε = 1.5 produces ⇒ 33% loss of revenue</code> 的例子完全吻合。</p>
+这与原文中提到的 <span class="arithmatex">\(ε = 1.5 produces ⇒ 33% loss of revenue\)</span> 的例子完全吻合。</p>
 <p><strong>第3步: 计算绝对福利损失 (wL)</strong></p>
 <p>我们已经知道了福利损失的相对比例，以及总销售收入，可以直接计算绝对损失金额。
 <span class="arithmatex">\(wL = wL' \times PQ\)</span>

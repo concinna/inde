@@ -2584,23 +2584,23 @@
 <p><strong>上游制造商 (Upstream Manufacturer)</strong>:</p>
 <ul>
 <li>是某种独特产品的唯一供应商。</li>
-<li>以不变的边际成本 <code>c</code> 进行生产。</li>
-<li>以批发价 <code>r</code> (wholesale price) 将产品卖给下游零售商。</li>
+<li>以不变的边际成本 <span class="arithmatex">\(c\)</span> 进行生产。</li>
+<li>以批发价 <span class="arithmatex">\(r\)</span> (wholesale price) 将产品卖给下游零售商。</li>
 </ul>
 </li>
 <li>
 <p><strong>下游零售商 (Downstream Retailer)</strong>:</p>
 <ul>
 <li>是该产品的唯一零售商。</li>
-<li>从上游制造商处购买产品，其边际成本就是批发价 <code>r</code>。</li>
+<li>从上游制造商处购买产品，其边际成本就是批发价 <span class="arithmatex">\(r\)</span>。</li>
 <li>面对最终市场的消费者。</li>
 </ul>
 </li>
 <li>
 <p><strong>市场需求 (Market Demand)</strong>:</p>
 <ul>
-<li>市场的逆需求函数为线性需求曲线：<code>P = A - BQ</code></li>
-<li>其中 <code>P</code> 是最终零售价格，<code>Q</code> 是销售数量，<code>A</code> 和 <code>B</code> 是正的需求参数。</li>
+<li>市场的逆需求函数为线性需求曲线：<span class="arithmatex">\(P = A - BQ\)</span></li>
+<li>其中 <span class="arithmatex">\(P\)</span> 是最终零售价格，<span class="arithmatex">\(Q\)</span> 是销售数量，<span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span> 是正的需求参数。</li>
 </ul>
 </li>
 </ol>
@@ -2608,51 +2608,51 @@
 <h3 id="-"><strong>第一部分：并购前（独立公司）- 双重边际化问题</strong></h3>
 <p>在这种情况下，制造商和零售商作为两个独立的公司，分别最大化自己的利润。我们采用<strong>逆向归纳法（Backward Induction）</strong>来分析，从下游零售商的决策开始。</p>
 <h4 id="1"><strong>步骤1：下游零售商的决策</strong></h4>
-<p>零售商将批发价 <code>r</code> 视为其购买产品的成本。它的目标是选择最优的销售量 <code>Q</code> 来最大化自己的利润 <code>π^D</code> (D for Downstream)。</p>
+<p>零售商将批发价 <span class="arithmatex">\(r\)</span> 视为其购买产品的成本。它的目标是选择最优的销售量 <span class="arithmatex">\(Q\)</span> 来最大化自己的利润 <span class="arithmatex">\(π^D\)</span> (D for Downstream)。</p>
 <p>零售商的利润函数为：
 $$
 \pi^D(Q, r) = (P - r)Q = (A - BQ - r)Q = AQ - BQ^2 - rQ
 $$
-为了实现利润最大化，零售商对其利润函数关于 <code>Q</code> 求一阶导数，并令其等于零：
+为了实现利润最大化，零售商对其利润函数关于 <span class="arithmatex">\(Q\)</span> 求一阶导数，并令其等于零：
 $$
 \frac{d\pi^D}{dQ} = A - 2BQ - r = 0
 $$
-由此，我们可以解出零售商的最优产量 <code>Q^D</code>，它是批发价 <code>r</code> 的函数：
+由此，我们可以解出零售商的最优产量 <span class="arithmatex">\(Q^D\)</span>，它是批发价 <span class="arithmatex">\(r\)</span> 的函数：
 $$
 Q^D = \frac{A - r}{2B}
 $$
-这个公式非常关键，它代表了<strong>下游零售商对上游制造商产品的需求曲线</strong>。它告诉制造商，给定一个批发价 <code>r</code>，零售商会选择销售多少数量的产品。</p>
+这个公式非常关键，它代表了<strong>下游零售商对上游制造商产品的需求曲线</strong>。它告诉制造商，给定一个批发价 <span class="arithmatex">\(r\)</span>，零售商会选择销售多少数量的产品。</p>
 <h4 id="2"><strong>步骤2：上游制造商的决策</strong></h4>
-<p>上游制造商了解下游零售商的决策行为。它知道零售商的需求曲线是 <code>Q = (A - r) / 2B</code>。制造商的目标是选择最优的批发价 <code>r</code> 来最大化自己的利润 <code>π^U</code> (U for Upstream)。</p>
-<p>为了方便求解，我们将零售商的需求函数进行反转，得到 <code>r</code> 关于 <code>Q</code> 的函数（即制造商面临的逆需求曲线）：
+<p>上游制造商了解下游零售商的决策行为。它知道零售商的需求曲线是 <span class="arithmatex">\(Q = (A - r) / 2B\)</span>。制造商的目标是选择最优的批发价 <span class="arithmatex">\(r\)</span> 来最大化自己的利润 <span class="arithmatex">\(π^U\)</span> (U for Upstream)。</p>
+<p>为了方便求解，我们将零售商的需求函数进行反转，得到 <span class="arithmatex">\(r\)</span> 关于 <span class="arithmatex">\(Q\)</span> 的函数（即制造商面临的逆需求曲线）：
 $$
 r = A - 2BQ
 $$
-现在，我们可以写出制造商的利润函数 <code>π^U</code>：
+现在，我们可以写出制造商的利润函数 <span class="arithmatex">\(π^U\)</span>：
 $$
 \pi^U = (r - c)Q = (A - 2BQ - c)Q = AQ - 2BQ^2 - cQ
 $$
-为了实现利润最大化，制造商对其利润函数关于 <code>Q</code> 求一阶导数，并令其等于零：
+为了实现利润最大化，制造商对其利润函数关于 <span class="arithmatex">\(Q\)</span> 求一阶导数，并令其等于零：
 $$
 \frac{d\pi^U}{dQ} = A - 4BQ - c = 0
 $$
-解出制造商的最优产量，这也是整个市场的均衡产量，我们称之为 <code>Q_{DM}</code> (DM for Double Marginalization)：
+解出制造商的最优产量，这也是整个市场的均衡产量，我们称之为 <span class="arithmatex">\(Q_{DM}\)</span> (DM for Double Marginalization)：
 $$
 Q_{DM} = \frac{A - c}{4B}
 $$</p>
 <h4 id="3"><strong>步骤3：计算均衡结果（并购前）</strong></h4>
-<p>有了均衡产量 <code>Q_{DM}</code>，我们就可以计算出其他所有的均衡值：</p>
+<p>有了均衡产量 <span class="arithmatex">\(Q_{DM}\)</span>，我们就可以计算出其他所有的均衡值：</p>
 <ol>
 <li>
 <p><strong>均衡批发价 (Equilibrium Wholesale Price, <span class="arithmatex">\(r_{DM}\)</span>)</strong>:
-    将 <code>Q_{DM}</code> 代入制造商面临的逆需求曲线 <code>r = A - 2BQ</code>：
+    将 <span class="arithmatex">\(Q_{DM}\)</span> 代入制造商面临的逆需求曲线 <span class="arithmatex">\(r = A - 2BQ\)</span>：
     $$
     r_{DM} = A - 2B \left( \frac{A - c}{4B} \right) = A - \frac{A - c}{2} = \frac{A + c}{2}
     $$</p>
 </li>
 <li>
 <p><strong>均衡零售价 (Equilibrium Retail Price, <span class="arithmatex">\(P_{DM}\)</span>)</strong>:
-    将 <code>Q_{DM}</code> 代入市场逆需求曲线 <code>P = A - BQ</code>：
+    将 <span class="arithmatex">\(Q_{DM}\)</span> 代入市场逆需求曲线 <span class="arithmatex">\(P = A - BQ\)</span>：
     $$
     P_{DM} = A - B \left( \frac{A - c}{4B} \right) = A - \frac{A - c}{4} = \frac{3A + c}{4}
     $$</p>
@@ -2660,36 +2660,36 @@ $$</p>
 <li>
 <p><strong>利润计算</strong>:</p>
 <ul>
-<li><strong>制造商利润</strong> (<code>π^U</code>):
+<li><strong>制造商利润</strong> (<span class="arithmatex">\(π^U\)</span>):
     $$
     \pi^U = (r_{DM} - c)Q_{DM} = \left( \frac{A + c}{2} - c \right) \left( \frac{A - c}{4B} \right) = \left( \frac{A - c}{2} \right) \left( \frac{A - c}{4B} \right) = \frac{(A - c)^2}{8B}
     $$</li>
-<li><strong>零售商利润</strong> (<code>π^D</code>):
+<li><strong>零售商利润</strong> (<span class="arithmatex">\(π^D\)</span>):
     $$
     \pi^D = (P_{DM} - r_{DM})Q_{DM} = \left( \frac{3A + c}{4} - \frac{A + c}{2} \right) \left( \frac{A - c}{4B} \right) = \left( \frac{A - c}{4} \right) \left( \frac{A - c}{4B} \right) = \frac{(A - c)^2}{16B}
     $$</li>
-<li><strong>行业总利润</strong> (<code>Π_{DM}</code>):
+<li><strong>行业总利润</strong> (<span class="arithmatex">\(Π_{DM}\)</span>):
     $$
     \Pi_{DM} = \pi^U + \pi^D = \frac{(A - c)^2}{8B} + \frac{(A - c)^2}{16B} = \frac{3(A - c)^2}{16B}
     $$</li>
 </ul>
 </li>
 </ol>
-<p><strong>核心问题解释</strong>：双重边际化之所以发生，是因为存在两次加价（Markup）。第一次是制造商在成本 <code>c</code> 之上加价，设定了批发价 <code>r</code>。第二次是零售商在批发价 <code>r</code> 之上再次加价，设定了最终零售价 <code>P</code>。每一次加价都导致产量减少，价格升高。</p>
+<p><strong>核心问题解释</strong>：双重边际化之所以发生，是因为存在两次加价（Markup）。第一次是制造商在成本 <span class="arithmatex">\(c\)</span> 之上加价，设定了批发价 <span class="arithmatex">\(r\)</span>。第二次是零售商在批发价 <span class="arithmatex">\(r\)</span> 之上再次加价，设定了最终零售价 <span class="arithmatex">\(P\)</span>。每一次加价都导致产量减少，价格升高。</p>
 <hr />
 <h3 id="_2"><strong>第二部分：并购后（垂直一体化）</strong></h3>
 <p>现在，假设两家公司合并成一个单一的垂直一体化公司。这个新公司同时控制生产和销售，其目标是最大化整个产业链的总利润。</p>
 <h4 id="1_1"><strong>步骤1：一体化公司的决策</strong></h4>
-<p>一体化公司直接面对最终消费者，其成本就是最初的生产成本 <code>c</code>。批发价 <code>r</code> 变成了内部转移价格，不再影响最终决策。</p>
-<p>一体化公司的利润函数 <code>π^I</code> (I for Integrated) 为：
+<p>一体化公司直接面对最终消费者，其成本就是最初的生产成本 <span class="arithmatex">\(c\)</span>。批发价 <span class="arithmatex">\(r\)</span> 变成了内部转移价格，不再影响最终决策。</p>
+<p>一体化公司的利润函数 <span class="arithmatex">\(π^I\)</span> (I for Integrated) 为：
 $$
 \pi^I = (P - c)Q = (A - BQ - c)Q = AQ - BQ^2 - cQ
 $$
-为了实现利润最大化，公司对利润函数关于 <code>Q</code> 求一阶导数，并令其等于零：
+为了实现利润最大化，公司对利润函数关于 <span class="arithmatex">\(Q\)</span> 求一阶导数，并令其等于零：
 $$
 \frac{d\pi^I}{dQ} = A - 2BQ - c = 0
 $$
-解出一体化公司的最优产量 <code>Q^I</code>：
+解出一体化公司的最优产量 <span class="arithmatex">\(Q^I\)</span>：
 $$
 Q^I = \frac{A - c}{2B}
 $$</p>
@@ -2697,7 +2697,7 @@ $$</p>
 <ol>
 <li>
 <p><strong>均衡零售价 (Equilibrium Retail Price, <span class="arithmatex">\(P^I\)</span>)</strong>:
-    将 <code>Q^I</code> 代入市场逆需求曲线 <code>P = A - BQ</code>：
+    将 <span class="arithmatex">\(Q^I\)</span> 代入市场逆需求曲线 <span class="arithmatex">\(P = A - BQ\)</span>：
     $$
     P^I = A - B \left( \frac{A - c}{2B} \right) = A - \frac{A - c}{2} = \frac{A + c}{2}
     $$</p>
@@ -2765,11 +2765,11 @@ $$</p>
 </ol>
 <hr />
 <h3 id="_5"><strong>例题</strong></h3>
-<p>假设一个市场中，对某种特定手机的需求函数为 <code>P = 200 - Q</code>。这款手机由唯一的制造商A生产，并通过唯一的零售商B销售。制造商A的生产成本为每部 <code>c = 40</code>。</p>
+<p>假设一个市场中，对某种特定手机的需求函数为 <span class="arithmatex">\(P = 200 - Q\)</span>。这款手机由唯一的制造商A生产，并通过唯一的零售商B销售。制造商A的生产成本为每部 <span class="arithmatex">\(c = 40\)</span>。</p>
 <p><strong>问题1：如果制造商A和零售商B是独立的公司，请求解市场的均衡产量、批发价、零售价以及两家公司的利润。</strong></p>
 <p><strong>解:</strong>
 根据双重边际化模型公式：
-*   <code>A = 200</code>, <code>B = 1</code>, <code>c = 40</code></p>
+*   <span class="arithmatex">\(A = 200\)</span>, <span class="arithmatex">\(B = 1\)</span>, <span class="arithmatex">\(c = 40\)</span></p>
 <ol>
 <li>
 <p><strong>均衡产量 (Q_DM)</strong>:
@@ -2792,15 +2792,15 @@ $$</p>
 <li>
 <p><strong>利润</strong>:</p>
 <ul>
-<li>制造商利润 (<code>π^U</code>):
+<li>制造商利润 (<span class="arithmatex">\(π^U\)</span>):
     $$
     \pi^U = \frac{(A - c)^2}{8B} = \frac{(200 - 40)^2}{8 \times 1} = \frac{160^2}{8} = \frac{25600}{8} = 3200 \text{ (元)}
     $$</li>
-<li>零售商利润 (<code>π^D</code>):
+<li>零售商利润 (<span class="arithmatex">\(π^D\)</span>):
     $$
     \pi^D = \frac{(A - c)^2}{16B} = \frac{(200 - 40)^2}{16 \times 1} = \frac{25600}{16} = 1600 \text{ (元)}
     $$</li>
-<li>总利润 (<code>Π_{DM}</code>):
+<li>总利润 (<span class="arithmatex">\(Π_{DM}\)</span>):
     $$
     \Pi_{DM} = 3200 + 1600 = 4800 \text{ (元)}
     $$</li>

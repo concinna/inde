@@ -2573,10 +2573,10 @@
 <p><strong>市场需求</strong>: 市场的反需求函数为线性形式：</p>
 <p><span class="arithmatex">\(P = A - BQ\)</span></p>
 <p>其中：
-*   <code>P</code> 是市场价格。
-*   <code>Q</code> 是市场总产量，即所有企业产量的总和。
-*   <code>A</code> 是市场的最高需求价格（当产量为0时的价格），代表了市场规模。
-*   <code>B</code> 是需求曲线的斜率的绝对值，代表了价格对产量的敏感程度。</p>
+*   <span class="arithmatex">\(P\)</span> 是市场价格。
+*   <span class="arithmatex">\(Q\)</span> 是市场总产量，即所有企业产量的总和。
+*   <span class="arithmatex">\(A\)</span> 是市场的最高需求价格（当产量为0时的价格），代表了市场规模。
+*   <span class="arithmatex">\(B\)</span> 是需求曲线的斜率的绝对值，代表了价格对产量的敏感程度。</p>
 </li>
 <li>
 <p><strong>企业行为</strong>: 企业进行古诺竞争，即每个企业同时选择自己的产量以最大化自身利润，并假定其他企业的产量不变。</p>
@@ -2601,7 +2601,7 @@
 <li><strong>成本节约</strong>: 并购的核心优势在于节约了固定成本。合并后的新公司的固定成本为 <span class="arithmatex">\(af\)</span>，其中 <span class="arithmatex">\(1 \le a \le 2\)</span>。<ul>
 <li>如果 <span class="arithmatex">\(a=2\)</span>，意味着没有节约任何固定成本（新公司的固定成本等于原来两家之和）。</li>
 <li>如果 <span class="arithmatex">\(a=1\)</span>，意味着节约了一整个工厂的固定成本。</li>
-<li><code>a</code> 越小，固定成本节约的效应越显著。</li>
+<li><span class="arithmatex">\(a\)</span> 越小，固定成本节约的效应越显著。</li>
 </ul>
 </li>
 <li>
@@ -2621,17 +2621,17 @@
 <h4 id="3">3. 并购的盈利条件</h4>
 <p>为了让并购对内部人企业有利可图，它们合并后的利润必须大于合并前的利润总和。因此，必须满足以下不等式：</p>
 <div class="arithmatex">\[ \frac{(A-C)^2}{9B} - af &gt; \frac{(A-C)^2}{8B} - 2f \]</div>
-<p>为了求解这个不等式，我们将与 <code>f</code> 相关的项移到一边，与利润相关的项移到另一边：</p>
+<p>为了求解这个不等式，我们将与 <span class="arithmatex">\(f\)</span> 相关的项移到一边，与利润相关的项移到另一边：</p>
 <div class="arithmatex">\[ 2f - af &gt; \frac{(A-C)^2}{8B} - \frac{(A-C)^2}{9B} \]</div>
 <div class="arithmatex">\[ f(2-a) &gt; \frac{9(A-C)^2 - 8(A-C)^2}{72B} \]</div>
 <div class="arithmatex">\[ f(2-a) &gt; \frac{(A-C)^2}{72B} \]</div>
 <div class="arithmatex">\[ 2-a &gt; \frac{(A-C)^2}{72Bf} \]</div>
 <div class="arithmatex">\[ a &lt; 2 - \frac{(A-C)^2}{72Bf} \]</div>
-<p><strong>(注意：你提供的原文公式 <code>a &lt; 2 - (A - C)² / (8B)</code> 似乎有误，缺少了分母中的 <code>9</code> 和 <code>f</code>。这里我给出了详细的推导过程，但最终结论的经济学含义是一致的。)</strong></p>
+<p><strong>(注意：你提供的原文公式 <span class="arithmatex">\(a &lt; 2 - (A - C)² / (8B)\)</span> 似乎有误，缺少了分母中的 <span class="arithmatex">\(9\)</span> 和 <span class="arithmatex">\(f\)</span>。这里我给出了详细的推导过程，但最终结论的经济学含义是一致的。)</strong></p>
 <ul>
 <li><strong>结论解读</strong>:<ol>
-<li>并购更有可能盈利，当 <code>a</code> 值很小的时候，即<strong>并购带来的固定成本节约非常显著</strong>时。</li>
-<li>并购也更有可能盈利，当 <code>f</code>（固定成本）相对较高时。因为固定成本越高，节约的绝对金额就越大。</li>
+<li>并购更有可能盈利，当 <span class="arithmatex">\(a\)</span> 值很小的时候，即<strong>并购带来的固定成本节约非常显著</strong>时。</li>
+<li>并购也更有可能盈利，当 <span class="arithmatex">\(f\)</span>（固定成本）相对较高时。因为固定成本越高，节约的绝对金额就越大。</li>
 </ol>
 </li>
 </ul>
@@ -2660,7 +2660,7 @@
 <p><strong>均衡产量</strong>:</p>
 <div class="arithmatex">\[ q_1 = q_2 = \frac{A - 2c + rc}{4B} \]</div>
 <div class="arithmatex">\[ q_3 = \frac{A - 3rc + 2c}{4B} \]</div>
-<p>为了保证高成本企业3的产量大于0，必须满足条件：<span class="arithmatex">\(A - 3rc + 2c &gt; 0\)</span>，即 <span class="arithmatex">\(r &lt; \frac{A+2c}{3c}\)</span>。(原文中 <code>r &lt; (A+2c)/3</code> 似乎假设了 c=1)。</p>
+<p>为了保证高成本企业3的产量大于0，必须满足条件：<span class="arithmatex">\(A - 3rc + 2c &gt; 0\)</span>，即 <span class="arithmatex">\(r &lt; \frac{A+2c}{3c}\)</span>。(原文中 <span class="arithmatex">\(r &lt; (A+2c)/3\)</span> 似乎假设了 c=1)。</p>
 </li>
 <li>
 <p><strong>均衡利润</strong>:</p>
@@ -2670,7 +2670,7 @@
 <li>
 <p><strong>市场价格</strong>:</p>
 <div class="arithmatex">\[ P = \frac{A + 2c + rc}{4} \]</div>
-<p>(原文中 <code>P = (A + 2c + rc) / 4B</code> 应该是 <span class="arithmatex">\(P = \frac{A+c_1+c_2+c_3}{n+1} = \frac{A+c+c+rc}{4} = \frac{A+2c+rc}{4}\)</span>，分母中没有B)。</p>
+<p>(原文中 <span class="arithmatex">\(P = (A + 2c + rc) / 4B\)</span> 应该是 <span class="arithmatex">\(P = \frac{A+c_1+c_2+c_3}{n+1} = \frac{A+c+c+rc}{4} = \frac{A+2c+rc}{4}\)</span>，分母中没有B)。</p>
 </li>
 </ul>
 </li>
@@ -2687,7 +2687,7 @@
 <li><strong>价格</strong>: 市场价格为 $ \frac{A+2c}{3} $。</li>
 <li><strong>利润</strong>: 每个企业的利润为 $ \pi = \frac{(A-c)^2}{9B} $。</li>
 </ul>
-<p><strong>(注意：你提供的原文中，并购后的产量、价格和利润公式 <code>(A-c)/4B</code>, <code>(A+2c)/4B</code>, <code>(A-c)²/4B</code> 与标准的双头古诺模型不符，这些公式似乎存在错误。标准的双头垄断均衡利润应为 <span class="arithmatex">\(\frac{(A-c)^2}{9B}\)</span>。)</strong></p>
+<p><strong>(注意：你提供的原文中，并购后的产量、价格和利润公式 <span class="arithmatex">\((A-c)/4B\)</span>, <span class="arithmatex">\((A+2c)/4B\)</span>, <span class="arithmatex">\((A-c)²/4B\)</span> 与标准的双头古诺模型不符，这些公式似乎存在错误。标准的双头垄断均衡利润应为 <span class="arithmatex">\(\frac{(A-c)^2}{9B}\)</span>。)</strong></p>
 </li>
 </ul>
 <h4 id="3_1">3. 并购的盈利条件</h4>
@@ -2698,10 +2698,10 @@
 <div class="arithmatex">\[ \frac{(A-c)^2}{9B} &gt; \frac{(A - 2c + rc)^2}{16B} + \frac{(A - 3rc + 2c)^2}{16B} \]</div>
 <p>经过一系列复杂的代数运算（原文简化并给出了一个最终形式，但该形式似乎也与其前面的公式不匹配），模型得出的<strong>结论性条件</strong>是：</p>
 <div class="arithmatex">\[ r &gt; \text{某个阈值} \]</div>
-<p>原文中给出了一个难以直接推导的形式，但其核心思想是，<strong>并购只有在高成本企业的成本劣势足够大（即 <code>r</code> 值足够大）时才是有利可图的</strong>。</p>
+<p>原文中给出了一个难以直接推导的形式，但其核心思想是，<strong>并购只有在高成本企业的成本劣势足够大（即 <span class="arithmatex">\(r\)</span> 值足够大）时才是有利可图的</strong>。</p>
 <ul>
 <li><strong>结论解读</strong>:<ol>
-<li>当高成本企业非常没有效率时（<code>r</code> 很大），将它的生产转移到低成本技术上所带来的效率提升（成本节约）才能足够大。</li>
+<li>当高成本企业非常没有效率时（<span class="arithmatex">\(r\)</span> 很大），将它的生产转移到低成本技术上所带来的效率提升（成本节约）才能足够大。</li>
 <li>这种巨大的成本节约需要足以弥补因市场集中度提高而带来的产量减少效应（合并后企业会主动减产以抬高价格，这与合并前两家企业的产量总和相比可能会减少）。</li>
 </ol>
 </li>
@@ -2728,8 +2728,8 @@
 <p>现在，其中两家企业（内部人）考虑合并。合并后，新公司的固定成本为 <span class="arithmatex">\(af\)</span>，其中 <span class="arithmatex">\(1 \le a \le 2\)</span>。</p>
 <p><strong>问题:</strong>
 1.  计算在并购前，这两家内部人企业的利润总和是多少？
-2.  计算并购后，新公司的利润表达式（用 <code>a</code> 表示）。
-3.  为了使这次并购对内部人企业有利可图，成本节约参数 <code>a</code> 必须满足什么条件？</p>
+2.  计算并购后，新公司的利润表达式（用 <span class="arithmatex">\(a\)</span> 表示）。
+3.  为了使这次并购对内部人企业有利可图，成本节约参数 <span class="arithmatex">\(a\)</span> 必须满足什么条件？</p>
 <p><strong>解答:</strong></p>
 <p>根据题目信息，我们有：
 *   A = 150
@@ -2752,17 +2752,17 @@
 <div class="arithmatex">\[ = \frac{14400}{9} - 200a \]</div>
 <div class="arithmatex">\[ = 1600 - 200a \]</div>
 <p><strong>答：并购后，新公司的利润为 <span class="arithmatex">\(1600 - 200a\)</span>。</strong></p>
-<p><strong>3. 求解 <code>a</code> 的条件</strong></p>
+<p><strong>3. 求解 <span class="arithmatex">\(a\)</span> 的条件</strong></p>
 <p>为了使并购有利可图，并购后的利润必须大于并购前的利润总和：</p>
 <div class="arithmatex">\[ \pi_{\text{post-merger}} &gt; \text{aggregate profit}_{\text{pre-merger}} \]</div>
 <div class="arithmatex">\[ 1600 - 200a &gt; 1400 \]</div>
-<p>现在，我们解这个关于 <code>a</code> 的不等式：</p>
+<p>现在，我们解这个关于 <span class="arithmatex">\(a\)</span> 的不等式：</p>
 <div class="arithmatex">\[ 1600 - 1400 &gt; 200a \]</div>
 <div class="arithmatex">\[ 200 &gt; 200a \]</div>
 <div class="arithmatex">\[ 1 &gt; a \]</div>
 <p>或者写成：</p>
 <div class="arithmatex">\[ a &lt; 1 \]</div>
-<p><strong>答：为了使这次并购有利可图，成本节约参数 <code>a</code> 必须小于 1。</strong></p>
+<p><strong>答：为了使这次并购有利可图，成本节约参数 <span class="arithmatex">\(a\)</span> 必须小于 1。</strong></p>
 <p><strong>结论分析</strong>:
 根据题目设定 <span class="arithmatex">\(1 \le a \le 2\)</span>，而我们的计算结果要求 <span class="arithmatex">\(a &lt; 1\)</span>。这意味着，<strong>在这个具体的数值设定下，即使实现了最大程度的固定成本节约（即 a=1，节约掉一个公司的全部固定成本），这次并购也无法盈利。</strong> 因为并购后利润（<span class="arithmatex">\(1600 - 200 \times 1 = 1400\)</span>）仅仅等于并购前的利润，并没有严格增加。这说明，因市场竞争者减少而导致的市场份额损失和可变利润下降，其负面影响超过了固定成本节约带来的正面影响。</p>
 

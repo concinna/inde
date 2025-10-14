@@ -2499,13 +2499,13 @@
 <p>我们用一个标准的双类型模型来展示。</p>
 <p><strong>假设:</strong>
 *   市场上有两类消费者：高需求型 (H) 和低需求型 (L)。
-*   他们的人数分别为 <code>N_H</code> 和 <code>N_L</code>。
-*   消费者从消费数量 <code>q</code> 中获得的效用为 <code>U = θV(q) - T</code>，其中 <code>T</code> 是支付的总价。
-    *   <code>θ</code> 是消费者类型参数，<code>θ_H &gt; θ_L</code>，表示高需求型从同等数量的商品中获得更高的边际效用。
-    *   <code>V(q)</code> 是价值函数，满足 <code>V'(q) &gt; 0</code> (边际效用为正) 和 <code>V''(q) &lt; 0</code> (边际效用递减)。
-*   垄断者的生产成本为 <code>C(q) = cq</code>，即边际成本为常数 <code>c</code>。</p>
-<p>垄断者需要设计两个套餐 <code>(q_L, T_L)</code> 和 <code>(q_H, T_H)</code>，来最大化总利润：
-<code>Π = N_L * (T_L - c*q_L) + N_H * (T_H - c*q_H)</code></p>
+*   他们的人数分别为 <span class="arithmatex">\(N_H\)</span> 和 <span class="arithmatex">\(N_L\)</span>。
+*   消费者从消费数量 <span class="arithmatex">\(q\)</span> 中获得的效用为 <span class="arithmatex">\(U = θV(q) - T\)</span>，其中 <span class="arithmatex">\(T\)</span> 是支付的总价。
+    *   <span class="arithmatex">\(θ\)</span> 是消费者类型参数，<span class="arithmatex">\(θ_H &gt; θ_L\)</span>，表示高需求型从同等数量的商品中获得更高的边际效用。
+    *   <span class="arithmatex">\(V(q)\)</span> 是价值函数，满足 <span class="arithmatex">\(V'(q) &gt; 0\)</span> (边际效用为正) 和 <span class="arithmatex">\(V''(q) &lt; 0\)</span> (边际效用递减)。
+*   垄断者的生产成本为 <span class="arithmatex">\(C(q) = cq\)</span>，即边际成本为常数 <span class="arithmatex">\(c\)</span>。</p>
+<p>垄断者需要设计两个套餐 <span class="arithmatex">\((q_L, T_L)\)</span> 和 <span class="arithmatex">\((q_H, T_H)\)</span>，来最大化总利润：
+<span class="arithmatex">\(Π = N_L * (T_L - c*q_L) + N_H * (T_H - c*q_H)\)</span></p>
 <p><strong>约束条件:</strong>
 垄断者的定价必须满足两类约束：</p>
 <ol>
@@ -2513,46 +2513,46 @@
 <p><strong>参与约束 (Participation Constraint, PC)</strong> 或 <strong>个体理性约束 (Individual Rationality, IR)</strong>：
     消费者购买套餐获得的效用不能低于不购买（效用为0）。</p>
 <ul>
-<li><code>(PC_L)</code>: <code>θ_L * V(q_L) - T_L ≥ 0</code></li>
-<li><code>(PC_H)</code>: <code>θ_H * V(q_H) - T_H ≥ 0</code></li>
+<li><span class="arithmatex">\((PC_L)\)</span>: <span class="arithmatex">\(θ_L * V(q_L) - T_L ≥ 0\)</span></li>
+<li><span class="arithmatex">\((PC_H)\)</span>: <span class="arithmatex">\(θ_H * V(q_H) - T_H ≥ 0\)</span></li>
 </ul>
 </li>
 <li>
 <p><strong>激励相容约束 (Incentive Compatibility Constraint, IC)</strong> 或 <strong>自我选择约束 (Self-Selection)</strong>：
     每种类型的消费者都选择为自己设计的套餐，而不是为另一类型设计的套餐。</p>
 <ul>
-<li><code>(IC_L)</code>: <code>θ_L * V(q_L) - T_L ≥ θ_L * V(q_H) - T_H</code> （L型不选H套餐）</li>
-<li><code>(IC_H)</code>: <code>θ_H * V(q_H) - T_H ≥ θ_H * V(q_L) - T_L</code> （H型不选L套餐）</li>
+<li><span class="arithmatex">\((IC_L)\)</span>: <span class="arithmatex">\(θ_L * V(q_L) - T_L ≥ θ_L * V(q_H) - T_H\)</span> （L型不选H套餐）</li>
+<li><span class="arithmatex">\((IC_H)\)</span>: <span class="arithmatex">\(θ_H * V(q_H) - T_H ≥ θ_H * V(q_L) - T_L\)</span> （H型不选L套餐）</li>
 </ul>
 </li>
 </ol>
 <p><strong>求解与结论:</strong>
 在利润最大化时：
 1.  低需求类型的<strong>参与约束</strong>会<strong>紧密绑定 (binding)</strong>，即取等号。
-    <code>(PC_L)</code>: <code>θ_L * V(q_L) - T_L = 0</code>  =&gt;  <code>T_L = θ_L * V(q_L)</code>
+    <span class="arithmatex">\((PC_L)\)</span>: <span class="arithmatex">\(θ_L * V(q_L) - T_L = 0\)</span>  =&gt;  <span class="arithmatex">\(T_L = θ_L * V(q_L)\)</span>
     *   <strong>解释</strong>: 垄断者会尽可能提高低需求类型的价格，直到其消费者剩余为0。这是<strong>结论1的前半部分：榨干最低需求类型的全部消费者剩余</strong>。</p>
 <ol>
 <li>
 <p>高需求类型的<strong>激励相容约束</strong>会<strong>紧密绑定 (binding)</strong>，即取等号。
-    <code>(IC_H)</code>: <code>θ_H * V(q_H) - T_H = θ_H * V(q_L) - T_L</code></p>
+    <span class="arithmatex">\((IC_H)\)</span>: <span class="arithmatex">\(θ_H * V(q_H) - T_H = θ_H * V(q_L) - T_L\)</span></p>
 <ul>
 <li><strong>解释</strong>: 这是核心约束。垄断者必须给高需求类型留下足够的“好处”（即消费者剩余），使得他们刚好不愿意去选择低需求套餐。这个“好处”被称为<strong>信息租金 (Information Rent)</strong>。</li>
-<li>将 <code>T_L</code> 代入，可得 <code>T_H = θ_H * V(q_H) - (θ_H - θ_L)V(q_L)</code>。</li>
-<li>高需求类型的消费者剩余为 <code>CS_H = θ_H * V(q_H) - T_H = (θ_H - θ_L)V(q_L) &gt; 0</code>。这印证了<strong>结论1的后半部分：为其他所有类型留下一些消费者剩余</strong>。</li>
+<li>将 <span class="arithmatex">\(T_L\)</span> 代入，可得 <span class="arithmatex">\(T_H = θ_H * V(q_H) - (θ_H - θ_L)V(q_L)\)</span>。</li>
+<li>高需求类型的消费者剩余为 <span class="arithmatex">\(CS_H = θ_H * V(q_H) - T_H = (θ_H - θ_L)V(q_L) &gt; 0\)</span>。这印证了<strong>结论1的后半部分：为其他所有类型留下一些消费者剩余</strong>。</li>
 </ul>
 </li>
 <li>
-<p>将 <code>T_L</code> 和 <code>T_H</code> 代入利润函数，然后对 <code>q_L</code> 和 <code>q_H</code> 求导，可以得到最优数量的条件：</p>
+<p>将 <span class="arithmatex">\(T_L\)</span> 和 <span class="arithmatex">\(T_H\)</span> 代入利润函数，然后对 <span class="arithmatex">\(q_L\)</span> 和 <span class="arithmatex">\(q_H\)</span> 求导，可以得到最优数量的条件：</p>
 <ul>
 <li>
-<p>对于高需求类型 <code>q_H</code>：
-    <code>θ_H * V'(q_H) = c</code>
+<p>对于高需求类型 <span class="arithmatex">\(q_H\)</span>：
+    <span class="arithmatex">\(θ_H * V'(q_H) = c\)</span>
     <strong>解释</strong>: 高需求类型的边际效用等于边际成本。这意味着<strong>提供给最高需求类型的数量是社会最优的</strong>，即“<strong>顶部无扭曲 (No Distortion at the Top)</strong>”。</p>
 </li>
 <li>
-<p>对于低需求类型 <code>q_L</code>：
-    <code>θ_L * V'(q_L) = c + (N_H / N_L) * (θ_H - θ_L) * V'(q_L)</code>
-    <strong>解释</strong>: 由于公式右边第二项 <code>(N_H / N_L) * (θ_H - θ_L) * V'(q_L)</code> 大于0，所以 <code>θ_L * V'(q_L) &gt; c</code>。因为边际效用递减，这意味着<strong>提供给低需求类型的数量 <code>q_L</code> 小于社会最优水平</strong>（社会最优水平在 <code>θ_L * V'(q) = c</code> 处）。这就是“<strong>向下的扭曲 (Downward Distortion)</strong>”。</p>
+<p>对于低需求类型 <span class="arithmatex">\(q_L\)</span>：
+    <span class="arithmatex">\(θ_L * V'(q_L) = c + (N_H / N_L) * (θ_H - θ_L) * V'(q_L)\)</span>
+    <strong>解释</strong>: 由于公式右边第二项 <span class="arithmatex">\((N_H / N_L) * (θ_H - θ_L) * V'(q_L)\)</span> 大于0，所以 <span class="arithmatex">\(θ_L * V'(q_L) &gt; c\)</span>。因为边际效用递减，这意味着<strong>提供给低需求类型的数量 <span class="arithmatex">\(q_L\)</span> 小于社会最优水平</strong>（社会最优水平在 <span class="arithmatex">\(θ_L * V'(q) = c\)</span> 处）。这就是“<strong>向下的扭曲 (Downward Distortion)</strong>”。</p>
 </li>
 </ul>
 </li>
@@ -2563,59 +2563,59 @@
 <p>假设一家软件公司销售一款数据分析软件，市场上有两类用户：专业公司（H型）和学生（L型）。</p>
 <ul>
 <li><strong>用户类型与效用</strong>:<ul>
-<li>专业公司 (H): <code>N_H = 100</code> 家, 效用函数 <code>U_H = 10√q - T</code> (即 <code>θ_H = 10</code>)</li>
-<li>学生 (L): <code>N_L = 120</code> 人, 效用函数 <code>U_L = 8√q - T</code> (即 <code>θ_L = 8</code>)</li>
-<li><code>V(q) = √q</code></li>
+<li>专业公司 (H): <span class="arithmatex">\(N_H = 100\)</span> 家, 效用函数 <span class="arithmatex">\(U_H = 10√q - T\)</span> (即 <span class="arithmatex">\(θ_H = 10\)</span>)</li>
+<li>学生 (L): <span class="arithmatex">\(N_L = 120\)</span> 人, 效用函数 <span class="arithmatex">\(U_L = 8√q - T\)</span> (即 <span class="arithmatex">\(θ_L = 8\)</span>)</li>
+<li><span class="arithmatex">\(V(q) = √q\)</span></li>
 </ul>
 </li>
-<li><strong>成本</strong>: 软件的边际成本为 <code>c = 2</code>。</li>
+<li><strong>成本</strong>: 软件的边际成本为 <span class="arithmatex">\(c = 2\)</span>。</li>
 </ul>
-<p><strong>问题</strong>: 该软件公司应该如何设计两个版本的软件套餐（专业版 <code>(q_H, T_H)</code> 和学生版 <code>(q_L, T_L)</code>) 来实现利润最大化？并计算此时的消费者剩余。</p>
+<p><strong>问题</strong>: 该软件公司应该如何设计两个版本的软件套餐（专业版 <span class="arithmatex">\((q_H, T_H)\)</span> 和学生版 <span class="arithmatex">\((q_L, T_L)\)</span>) 来实现利润最大化？并计算此时的消费者剩余。</p>
 <h4 id="_3"><strong>解答步骤</strong></h4>
 <p><strong>1. 确定社会最优数量（作为基准）</strong>
-社会最优数量满足 <code>边际效用 = 边际成本</code>。
-*   对H型: <code>θ_H * V'(q_H) = c</code> =&gt; <code>10 * (1 / (2√q_H)) = 2</code> =&gt; <code>5 / √q_H = 2</code> =&gt; <code>√q_H = 2.5</code> =&gt; <code>q_H* = 6.25</code>
-*   对L型: <code>θ_L * V'(q_L) = c</code> =&gt; <code>8 * (1 / (2√q_L)) = 2</code> =&gt; <code>4 / √q_L = 2</code> =&gt; <code>√q_L = 2</code> =&gt; <code>q_L* = 4</code></p>
+社会最优数量满足 <span class="arithmatex">\(边际效用 = 边际成本\)</span>。
+*   对H型: <span class="arithmatex">\(θ_H * V'(q_H) = c\)</span> =&gt; <span class="arithmatex">\(10 * (1 / (2√q_H)) = 2\)</span> =&gt; <span class="arithmatex">\(5 / √q_H = 2\)</span> =&gt; <span class="arithmatex">\(√q_H = 2.5\)</span> =&gt; <span class="arithmatex">\(q_H* = 6.25\)</span>
+*   对L型: <span class="arithmatex">\(θ_L * V'(q_L) = c\)</span> =&gt; <span class="arithmatex">\(8 * (1 / (2√q_L)) = 2\)</span> =&gt; <span class="arithmatex">\(4 / √q_L = 2\)</span> =&gt; <span class="arithmatex">\(√q_L = 2\)</span> =&gt; <span class="arithmatex">\(q_L* = 4\)</span></p>
 <p><strong>2. 确定垄断者的最优数量</strong>
 根据我们的理论结论：
 *   <strong>高需求类型 (H) 的数量无扭曲</strong>:
-    <code>q_H = q_H* = 6.25</code></p>
+    <span class="arithmatex">\(q_H = q_H* = 6.25\)</span></p>
 <ul>
 <li><strong>低需求类型 (L) 的数量被向下扭曲</strong>:
-    我们需要利用利润最大化的一阶条件来求解 <code>q_L</code>。
-    利润函数 <code>Π = N_L * (T_L - cq_L) + N_H * (T_H - cq_H)</code>
-    代入 <code>T_L = θ_L * V(q_L)</code> 和 <code>T_H = θ_H * V(q_H) - (θ_H - θ_L)V(q_L)</code>:
-    <code>Π = N_L(θ_L√q_L - cq_L) + N_H(θ_H√q_H - (θ_H - θ_L)√q_L - cq_H)</code>
-    将利润函数对 <code>q_L</code> 求导并令其为0:
-    <code>∂Π/∂q_L = N_L(θ_L/(2√q_L) - c) - N_H((θ_H - θ_L)/(2√q_L)) = 0</code>
-    <code>N_L*θ_L - 2c*N_L*√q_L - N_H*(θ_H - θ_L) = 0</code>
-    <code>√q_L = (N_L*θ_L - N_H*(θ_H - θ_L)) / (2c*N_L)</code>
+    我们需要利用利润最大化的一阶条件来求解 <span class="arithmatex">\(q_L\)</span>。
+    利润函数 <span class="arithmatex">\(Π = N_L * (T_L - cq_L) + N_H * (T_H - cq_H)\)</span>
+    代入 <span class="arithmatex">\(T_L = θ_L * V(q_L)\)</span> 和 <span class="arithmatex">\(T_H = θ_H * V(q_H) - (θ_H - θ_L)V(q_L)\)</span>:
+    <span class="arithmatex">\(Π = N_L(θ_L√q_L - cq_L) + N_H(θ_H√q_H - (θ_H - θ_L)√q_L - cq_H)\)</span>
+    将利润函数对 <span class="arithmatex">\(q_L\)</span> 求导并令其为0:
+    <span class="arithmatex">\(∂Π/∂q_L = N_L(θ_L/(2√q_L) - c) - N_H((θ_H - θ_L)/(2√q_L)) = 0\)</span>
+    <span class="arithmatex">\(N_L*θ_L - 2c*N_L*√q_L - N_H*(θ_H - θ_L) = 0\)</span>
+    <span class="arithmatex">\(√q_L = (N_L*θ_L - N_H*(θ_H - θ_L)) / (2c*N_L)\)</span>
     代入数值:
-    <code>√q_L = (120*8 - 100*(10 - 8)) / (2 * 2 * 120)</code>
-    <code>√q_L = (960 - 200) / 480</code>
-    <code>√q_L = 760 / 480 ≈ 1.583</code>
-    <code>q_L ≈ 2.507</code>
-    可以看到，<code>q_L ≈ 2.5</code> 远小于社会最优的 <code>q_L* = 4</code>，这正是“向下的扭曲”。</li>
+    <span class="arithmatex">\(√q_L = (120*8 - 100*(10 - 8)) / (2 * 2 * 120)\)</span>
+    <span class="arithmatex">\(√q_L = (960 - 200) / 480\)</span>
+    <span class="arithmatex">\(√q_L = 760 / 480 ≈ 1.583\)</span>
+    <span class="arithmatex">\(q_L ≈ 2.507\)</span>
+    可以看到，<span class="arithmatex">\(q_L ≈ 2.5\)</span> 远小于社会最优的 <span class="arithmatex">\(q_L* = 4\)</span>，这正是“向下的扭曲”。</li>
 </ul>
 <p><strong>3. 确定最优价格</strong>
 *   <strong>学生版价格 (T_L)</strong>:
-    <code>T_L = θ_L * V(q_L) = 8 * √q_L = 8 * 1.583 = 12.664</code></p>
+    <span class="arithmatex">\(T_L = θ_L * V(q_L) = 8 * √q_L = 8 * 1.583 = 12.664\)</span></p>
 <ul>
 <li><strong>专业版价格 (T_H)</strong>:
-    <code>T_H = θ_H*V(q_H) - (θ_H - θ_L)V(q_L) = 10√6.25 - (10-8)√2.507</code>
-    <code>T_H = 10 * 2.5 - 2 * 1.583 = 25 - 3.166 = 21.834</code></li>
+    <span class="arithmatex">\(T_H = θ_H*V(q_H) - (θ_H - θ_L)V(q_L) = 10√6.25 - (10-8)√2.507\)</span>
+    <span class="arithmatex">\(T_H = 10 * 2.5 - 2 * 1.583 = 25 - 3.166 = 21.834\)</span></li>
 </ul>
 <p><strong>4. 总结最终的套餐设计</strong>
-*   <strong>学生版</strong>: 提供 <code>q_L ≈ 2.5</code> 的功能/数量，定价 <code>T_L ≈ 12.66</code>。
-*   <strong>专业版</strong>: 提供 <code>q_H = 6.25</code> 的功能/数量，定价 <code>T_H ≈ 21.83</code>。</p>
+*   <strong>学生版</strong>: 提供 <span class="arithmatex">\(q_L ≈ 2.5\)</span> 的功能/数量，定价 <span class="arithmatex">\(T_L ≈ 12.66\)</span>。
+*   <strong>专业版</strong>: 提供 <span class="arithmatex">\(q_H = 6.25\)</span> 的功能/数量，定价 <span class="arithmatex">\(T_H ≈ 21.83\)</span>。</p>
 <p><strong>5. 分析消费者剩余 (CS)</strong>
 *   <strong>学生 (L型)</strong>:
-    <code>CS_L = θ_L√q_L - T_L = 8 * 1.583 - 12.664 = 12.664 - 12.664 = 0</code>
+    <span class="arithmatex">\(CS_L = θ_L√q_L - T_L = 8 * 1.583 - 12.664 = 12.664 - 12.664 = 0\)</span>
     学生的消费者剩余被全部榨干。</p>
 <ul>
 <li><strong>专业公司 (H型)</strong>:
-    <code>CS_H = θ_H√q_H - T_H = 10 * 2.5 - 21.834 = 25 - 21.834 = 3.166</code>
-    专业公司的消费者剩余为正，这部分就是为了激励他们不选择学生版而必须留给他们的<strong>信息租金</strong>。这个租金的大小等于 <code>(θ_H - θ_L)V(q_L) = (10-8) * 1.583 = 3.166</code>。</li>
+    <span class="arithmatex">\(CS_H = θ_H√q_H - T_H = 10 * 2.5 - 21.834 = 25 - 21.834 = 3.166\)</span>
+    专业公司的消费者剩余为正，这部分就是为了激励他们不选择学生版而必须留给他们的<strong>信息租金</strong>。这个租金的大小等于 <span class="arithmatex">\((θ_H - θ_L)V(q_L) = (10-8) * 1.583 = 3.166\)</span>。</li>
 </ul>
 <p>这个例题清晰地展示了二级价格歧视模型的所有核心结论。</p>
 

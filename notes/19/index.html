@@ -2442,44 +2442,44 @@
 <p>这部分探讨的是一个在空间上进行产品差异化的垄断者如何决策。想象一条很长的街道，消费者均匀分布在这条街上，一个垄断者可以在街上开设多家分店来服务这些消费者。</p>
 <p><strong>1. 背景与定价策略</strong></p>
 <ul>
-<li><strong>统一定价 (Uniform Delivered Pricing)</strong>：垄断者向所有消费者收取相同的价格<code>V</code>，并且自己承担将产品运送到消费者那里的运费。</li>
+<li><strong>统一定价 (Uniform Delivered Pricing)</strong>：垄断者向所有消费者收取相同的价格<span class="arithmatex">\(V\)</span>，并且自己承担将产品运送到消费者那里的运费。</li>
 <li><strong>价格歧视 (Price Discrimination)</strong>：这种策略被视为一种价格歧视。虽然所有消费者支付的价格相同，但服务他们的“净成本”是不同的。离商店近的消费者运输成本低，离得远的运输成本高。因此，扣除运输成本后，垄断者从不同位置的消费者那里获得的“净价格”是不同的。</li>
-<li><strong>前提条件</strong>: <code>V &gt; c + t / (2n)</code>。这个条件保证了即使是离商店最远的消费者，其支付的意愿<code>V</code>（保留价格）也高于生产成本<code>c</code>和运输成本<code>t / (2n)</code>之和，这意味着市场可以被完全覆盖。<ul>
-<li><code>V</code>: 消费者的最高支付意愿（保留价格）。</li>
-<li><code>c</code>: 产品的边际生产成本。</li>
-<li><code>t</code>: 单位距离的运输成本率。</li>
-<li><code>n</code>: 垄断者开设的商店数量。</li>
-<li><code>1 / (2n)</code>: 在一个线性市场上，如果开设<code>n</code>家店，每家店覆盖的市场范围是<code>1/n</code>，那么离商店最远的消费者距离为<code>1/(2n)</code>。</li>
+<li><strong>前提条件</strong>: <span class="arithmatex">\(V &gt; c + t / (2n)\)</span>。这个条件保证了即使是离商店最远的消费者，其支付的意愿<span class="arithmatex">\(V\)</span>（保留价格）也高于生产成本<span class="arithmatex">\(c\)</span>和运输成本<span class="arithmatex">\(t / (2n)\)</span>之和，这意味着市场可以被完全覆盖。<ul>
+<li><span class="arithmatex">\(V\)</span>: 消费者的最高支付意愿（保留价格）。</li>
+<li><span class="arithmatex">\(c\)</span>: 产品的边际生产成本。</li>
+<li><span class="arithmatex">\(t\)</span>: 单位距离的运输成本率。</li>
+<li><span class="arithmatex">\(n\)</span>: 垄断者开设的商店数量。</li>
+<li><span class="arithmatex">\(1 / (2n)\)</span>: 在一个线性市场上，如果开设<span class="arithmatex">\(n\)</span>家店，每家店覆盖的市场范围是<span class="arithmatex">\(1/n\)</span>，那么离商店最远的消费者距离为<span class="arithmatex">\(1/(2n)\)</span>。</li>
 </ul>
 </li>
 </ul>
 <p><strong>2. 垄断者的利润函数</strong></p>
-<p>垄断者设定价格为<code>V</code>，覆盖整个市场。</p>
+<p>垄断者设定价格为<span class="arithmatex">\(V\)</span>，覆盖整个市场。</p>
 <ul>
-<li><strong>总收益 (Total Revenue)</strong>: <code>NV</code><ul>
-<li><code>N</code>: 市场中的消费者总数。</li>
+<li><strong>总收益 (Total Revenue)</strong>: <span class="arithmatex">\(NV\)</span><ul>
+<li><span class="arithmatex">\(N\)</span>: 市场中的消费者总数。</li>
 </ul>
 </li>
-<li><strong>总可变生产成本 (Total Variable Cost)</strong>: <code>Nc</code></li>
-<li><strong>总运输成本 (Total Transport Cost)</strong>: <code>tN / (4n)</code><ul>
+<li><strong>总可变生产成本 (Total Variable Cost)</strong>: <span class="arithmatex">\(Nc\)</span></li>
+<li><strong>总运输成本 (Total Transport Cost)</strong>: <span class="arithmatex">\(tN / (4n)\)</span><ul>
 <li><strong>这个公式的推导过程</strong>：<ul>
-<li>假设市场是一条长度为1的线，消费者总数<code>N</code>均匀分布。</li>
-<li>垄断者开设<code>n</code>家商店，均匀分布。每家商店覆盖的市场区域长度为<code>1/n</code>。</li>
-<li>考虑其中一家商店，我们可以把它看作位于其覆盖区域的中心。它的服务范围是从中心点向左<code>1/(2n)</code>，向右<code>1/(2n)</code>。</li>
-<li>在该区域内，距离商店为<code>x</code>的消费者的运输成本是<code>tx</code>。</li>
-<li>为了计算这家商店的总运输成本，我们需要对所有消费者的运输成本进行积分。由于消费者密度是<code>N</code>，那么在<code>[0, 1/(2n)]</code>区间内的消费者总数是 <code>N * (1/(2n))</code>。更准确地说，我们应该对运输成本<code>tx</code>乘以消费者密度<code>N</code>进行积分。</li>
+<li>假设市场是一条长度为1的线，消费者总数<span class="arithmatex">\(N\)</span>均匀分布。</li>
+<li>垄断者开设<span class="arithmatex">\(n\)</span>家商店，均匀分布。每家商店覆盖的市场区域长度为<span class="arithmatex">\(1/n\)</span>。</li>
+<li>考虑其中一家商店，我们可以把它看作位于其覆盖区域的中心。它的服务范围是从中心点向左<span class="arithmatex">\(1/(2n)\)</span>，向右<span class="arithmatex">\(1/(2n)\)</span>。</li>
+<li>在该区域内，距离商店为<span class="arithmatex">\(x\)</span>的消费者的运输成本是<span class="arithmatex">\(tx\)</span>。</li>
+<li>为了计算这家商店的总运输成本，我们需要对所有消费者的运输成本进行积分。由于消费者密度是<span class="arithmatex">\(N\)</span>，那么在<span class="arithmatex">\([0, 1/(2n)]\)</span>区间内的消费者总数是 <span class="arithmatex">\(N * (1/(2n))\)</span>。更准确地说，我们应该对运输成本<span class="arithmatex">\(tx\)</span>乘以消费者密度<span class="arithmatex">\(N\)</span>进行积分。</li>
 <li>从商店中心到一端的总运输成本为：
     $$ \int_{0}^{\frac{1}{2n}} (tx) N dx = tN \left[ \frac{x^2}{2} \right]_{0}^{\frac{1}{2n}} = tN \frac{(1/2n)^2}{2} = tN \frac{1/4n^2}{2} = \frac{tN}{8n^2} $$</li>
-<li>由于商店要服务左右两个方向，所以总运输成本是上述结果的两倍：<code>2 * (tN / 8n^2) = tN / (4n^2)</code>。</li>
-<li>这是<strong>一家商店</strong>的总运输成本。因为总共有<code>n</code>家商店，所以整个市场的总运输成本是：
+<li>由于商店要服务左右两个方向，所以总运输成本是上述结果的两倍：<span class="arithmatex">\(2 * (tN / 8n^2) = tN / (4n^2)\)</span>。</li>
+<li>这是<strong>一家商店</strong>的总运输成本。因为总共有<span class="arithmatex">\(n\)</span>家商店，所以整个市场的总运输成本是：
     $$ n \times \left( \frac{tN}{4n^2} \right) = \frac{tN}{4n} $$</li>
-<li>（<em>注：原文笔记中的几何推导 <code>t^2 / 4n^2</code> 似乎有误，积分法是标准推导。</em>）</li>
+<li>（<em>注：原文笔记中的几何推导 <span class="arithmatex">\(t^2 / 4n^2\)</span> 似乎有误，积分法是标准推导。</em>）</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><strong>总固定成本 (Total Fixed Cost)</strong>: <code>nF</code><ul>
-<li><code>F</code>: 开设每家商店的固定成本。</li>
+<li><strong>总固定成本 (Total Fixed Cost)</strong>: <span class="arithmatex">\(nF\)</span><ul>
+<li><span class="arithmatex">\(F\)</span>: 开设每家商店的固定成本。</li>
 </ul>
 </li>
 </ul>
@@ -2487,29 +2487,29 @@
 <p>垄断者的总利润函数为：
 $$ \pi = \text{总收益} - \text{总生产成本} - \text{总运输成本} - \text{总固定成本} $$
 $$ \pi = NV - Nc - \frac{tN}{4n} - nF $$</p>
-<p>为了找到使利润最大化的商店数量<code>n</code>，我们对<code>n</code>求一阶导数并令其为0：
+<p>为了找到使利润最大化的商店数量<span class="arithmatex">\(n\)</span>，我们对<span class="arithmatex">\(n\)</span>求一阶导数并令其为0：
 $$ \frac{\partial \pi}{\partial n} = 0 - 0 - (-\frac{tN}{4n^2}) - F = 0 $$
 $$ \frac{tN}{4n^2} - F = 0 $$
 $$ n^2 = \frac{tN}{4F} $$
 $$ n^* = \sqrt{\frac{tN}{4F}} = \frac{1}{2} \sqrt{\frac{tN}{F}} $$
 这就是垄断者选择的最优商店数量。</p>
-<p>(<em>注意：原文中的 <code>n = sqrt(t^2 N / 4n)</code> 是一个笔误，应该是从上述一阶条件求解得到的。</em>)</p>
+<p>(<em>注意：原文中的 <span class="arithmatex">\(n = sqrt(t^2 N / 4n)\)</span> 是一个笔误，应该是从上述一阶条件求解得到的。</em>)</p>
 <p><strong>结论</strong>: 笔记中提到“discriminating monopolist choose to offer the socially efficient degree of variety”（实行歧视定价的垄断者会提供社会最优的多样性水平）。这是一个重要的结论。在特定假设下（如垄断者可以攫取全部消费者剩余），垄断者选择的商店数量（产品多样性）与社会计划者（旨在最大化社会总福利）选择的数量是一致的。</p>
 <hr />
 <h3 id="cournot"><strong>第二部分：古诺（Cournot）模型</strong></h3>
 <p>这部分转向了寡头市场中的数量竞争模型。假设市场中只有少数几家企业，它们同时决定自己的产量。</p>
 <p><strong>1. 模型设定（以双寡头为例）</strong></p>
 <ul>
-<li>市场逆需求函数 (Inverse Demand): <code>P = A - BQ</code>，其中 <code>Q = q₁ + q₂</code> 是市场总产量。</li>
-<li>企业成本: 假设两家企业有相同的边际成本 <code>c</code>，没有固定成本。</li>
+<li>市场逆需求函数 (Inverse Demand): <span class="arithmatex">\(P = A - BQ\)</span>，其中 <span class="arithmatex">\(Q = q₁ + q₂\)</span> 是市场总产量。</li>
+<li>企业成本: 假设两家企业有相同的边际成本 <span class="arithmatex">\(c\)</span>，没有固定成本。</li>
 </ul>
 <p><strong>2. 企业的利润函数与反应函数</strong></p>
 <ul>
-<li>企业1的利润 <code>π₁</code> 为：
+<li>企业1的利润 <span class="arithmatex">\(π₁\)</span> 为：
     $$ \pi_1(q_1, q_2) = (P - c)q_1 = [A - B(q_1 + q_2) - c]q_1 $$</li>
-<li>为了最大化利润，企业1对自己的产量<code>q₁</code>求导，并令其为0（假设企业2的产量<code>q₂</code>为给定值）：
+<li>为了最大化利润，企业1对自己的产量<span class="arithmatex">\(q₁\)</span>求导，并令其为0（假设企业2的产量<span class="arithmatex">\(q₂\)</span>为给定值）：
     $$ \frac{\partial \pi_1}{\partial q_1} = A - c - Bq_2 - 2Bq_1 = 0 $$</li>
-<li>解出<code>q₁</code>，得到企业1的<strong>反应函数 (Reaction Function)</strong>，它表示在给定<code>q₂</code>的情况下，企业1的最优产量：
+<li>解出<span class="arithmatex">\(q₁\)</span>，得到企业1的<strong>反应函数 (Reaction Function)</strong>，它表示在给定<span class="arithmatex">\(q₂\)</span>的情况下，企业1的最优产量：
     $$ q_1 = \frac{A - c}{2B} - \frac{q_2}{2} \quad (1) $$</li>
 <li>同理，企业2的反应函数为：
     $$ q_2 = \frac{A - c}{2B} - \frac{q_1}{2} \quad (2) $$</li>
@@ -2519,22 +2519,22 @@ $$ n^* = \sqrt{\frac{tN}{4F}} = \frac{1}{2} \sqrt{\frac{tN}{F}} $$
 将 (2) 代入 (1):
 $$ q_1 = \frac{A-c}{2B} - \frac{1}{2} \left( \frac{A-c}{2B} - \frac{q_1}{2} \right) = \frac{A-c}{2B} - \frac{A-c}{4B} + \frac{q_1}{4} $$
 $$ \frac{3}{4}q_1 = \frac{A-c}{4B} \implies q_1 = \frac{A-c}{3B} $$
-由于对称性，<code>q₂ = q₁</code>。因此均衡解为：
+由于对称性，<span class="arithmatex">\(q₂ = q₁\)</span>。因此均衡解为：
 $$ q_1^<em> = q_2^</em> = \frac{A-c}{3B} $$
 市场总产量和价格为：
 $$ Q^<em> = q_1^</em> + q_2^<em> = \frac{2(A-c)}{3B} $$
 $$ P^</em> = A - BQ^<em> = A - B\left(\frac{2(A-c)}{3B}\right) = \frac{3A - 2A + 2c}{3} = \frac{A+2c}{3} $$
-(</em>注：原文笔记中给出的 <code>Q</code> 和 <code>P</code> 的表达式有误，这里给出了标准的古诺双寡头模型解。*)</p>
+(</em>注：原文笔记中给出的 <span class="arithmatex">\(Q\)</span> 和 <span class="arithmatex">\(P\)</span> 的表达式有误，这里给出了标准的古诺双寡头模型解。*)</p>
 <hr />
 <h3 id="_2"><strong>第三部分：古诺模型扩展</strong></h3>
 <p><strong>1. N个企业的古诺模型</strong></p>
-<p>如果市场中有<code>N</code>个相同的企业，企业<code>i</code>的利润函数为：
+<p>如果市场中有<span class="arithmatex">\(N\)</span>个相同的企业，企业<span class="arithmatex">\(i\)</span>的利润函数为：
 $$ \pi_i = [A - B(q_i + Q_{-i}) - c]q_i $$
-其中 <code>Q_{-i}</code> 是除企业<code>i</code>之外其他所有企业的总产量。
+其中 <span class="arithmatex">\(Q_{-i}\)</span> 是除企业<span class="arithmatex">\(i\)</span>之外其他所有企业的总产量。
 一阶条件为：
 $$ \frac{\partial \pi_i}{\partial q_i} = A - c - BQ_{-i} - 2Bq_i = 0 $$
 $$ q_i = \frac{A-c}{2B} - \frac{Q_{-i}}{2} $$
-在对称均衡中，所有企业的产量都相等，即 <code>q₁ = q₂ = ... = qₙ = q</code>。因此 <code>Q_{-i} = (N-1)q</code>。
+在对称均衡中，所有企业的产量都相等，即 <span class="arithmatex">\(q₁ = q₂ = ... = qₙ = q\)</span>。因此 <span class="arithmatex">\(Q_{-i} = (N-1)q\)</span>。
 代入反应函数：
 $$ q = \frac{A-c}{2B} - \frac{(N-1)q}{2} $$
 $$ 2q = \frac{A-c}{B} - (N-1)q $$
@@ -2543,37 +2543,37 @@ $$ (N+1)q = \frac{A-c}{B} \implies q_i^<em> = \frac{1}{N+1} \left( \frac{A-c}{B}
 $$ Q^</em> = Nq_i^<em> = \frac{N}{N+1} \left( \frac{A-c}{B} \right) $$
 $$ P^</em> = A - BQ^* = A - \frac{N(A-c)}{N+1} = \frac{(N+1)A - NA + Nc}{N+1} = \frac{A+Nc}{N+1} $$
 这个结果非常重要：
-*   当 <code>N=1</code> (垄断)，<code>Q = (A-c)/2B</code>，<code>P = (A+c)/2</code>。
-*   当 <code>N=2</code> (双寡头)，<code>Q = 2(A-c)/3B</code>，<code>P = (A+2c)/3</code>。
-*   当 <code>N → ∞</code> (趋向完全竞争)，<code>Q → (A-c)/B</code>，<code>P → c</code>。这表明随着竞争者数量的增加，古诺模型的结果会趋向于完全竞争市场的结果（价格等于边际成本）。</p>
+*   当 <span class="arithmatex">\(N=1\)</span> (垄断)，<span class="arithmatex">\(Q = (A-c)/2B\)</span>，<span class="arithmatex">\(P = (A+c)/2\)</span>。
+*   当 <span class="arithmatex">\(N=2\)</span> (双寡头)，<span class="arithmatex">\(Q = 2(A-c)/3B\)</span>，<span class="arithmatex">\(P = (A+2c)/3\)</span>。
+*   当 <span class="arithmatex">\(N → ∞\)</span> (趋向完全竞争)，<span class="arithmatex">\(Q → (A-c)/B\)</span>，<span class="arithmatex">\(P → c\)</span>。这表明随着竞争者数量的增加，古诺模型的结果会趋向于完全竞争市场的结果（价格等于边际成本）。</p>
 <p>笔记中的产量比较：
-*   垄断: <code>q_{monopoly} = \frac{1}{2}\frac{A-c}{B}</code>
-*   古诺双寡头: <code>q_{cournot} = \frac{1}{3}\frac{A-c}{B}</code> (单个企业)
-*   合谋 (Collusion/Cartel): 两个企业像一个垄断者一样行动，总产量为垄断产量，每个企业生产一半，即 <code>q_{collusion} = \frac{1}{2} q_{monopoly} = \frac{1}{4}\frac{A-c}{B}</code>。</p>
+*   垄断: <span class="arithmatex">\(q_{monopoly} = \frac{1}{2}\frac{A-c}{B}\)</span>
+*   古诺双寡头: <span class="arithmatex">\(q_{cournot} = \frac{1}{3}\frac{A-c}{B}\)</span> (单个企业)
+*   合谋 (Collusion/Cartel): 两个企业像一个垄断者一样行动，总产量为垄断产量，每个企业生产一半，即 <span class="arithmatex">\(q_{collusion} = \frac{1}{2} q_{monopoly} = \frac{1}{4}\frac{A-c}{B}\)</span>。</p>
 <p><strong>2. 成本不同的N企业古诺模型</strong></p>
-<p>当企业<code>i</code>的边际成本为 <code>c_i</code> 时，其利润函数为：
+<p>当企业<span class="arithmatex">\(i\)</span>的边际成本为 <span class="arithmatex">\(c_i\)</span> 时，其利润函数为：
 $$ \pi_i = [P(Q) - c_i]q_i $$
 一阶条件为：
 $$ \frac{\partial \pi_i}{\partial q_i} = \frac{\partial P}{\partial Q} \frac{\partial Q}{\partial q_i} q_i + P(Q) - c_i = 0 $$
-因为 <code>Q = q_i + Q_{-i}</code>，所以 <code>∂Q/∂qᵢ = 1</code>。
+因为 <span class="arithmatex">\(Q = q_i + Q_{-i}\)</span>，所以 <span class="arithmatex">\(∂Q/∂qᵢ = 1\)</span>。
 $$ \frac{dP}{dQ} q_i + P - c_i = 0 \implies P - c_i = - \frac{dP}{dQ} q_i $$
-两边同除以<code>P</code>：
+两边同除以<span class="arithmatex">\(P\)</span>：
 $$ \frac{P - c_i}{P} = - \frac{dP}{dQ} \frac{q_i}{P} $$
-这个公式可以进一步变形。引入市场需求的价格弹性 <code>ε = - (dQ/dP) * (P/Q)</code> 和企业<code>i</code>的市场份额 <code>s_i = q_i / Q</code>。
+这个公式可以进一步变形。引入市场需求的价格弹性 <span class="arithmatex">\(ε = - (dQ/dP) * (P/Q)\)</span> 和企业<span class="arithmatex">\(i\)</span>的市场份额 <span class="arithmatex">\(s_i = q_i / Q\)</span>。
 $$ \frac{P - c_i}{P} = \left( - \frac{dP}{dQ} \frac{Q}{P} \right) \left( \frac{q_i}{Q} \right) = \frac{1}{\varepsilon} s_i $$
-公式 <code>(P - cᵢ) / P</code> 就是<strong>勒纳指数 (Lerner Index)</strong>，它衡量了企业的市场势力（定价能力）。这个公式表明，一个企业的市场势力取决于两个因素：
-1.  <strong>市场需求弹性 <code>ε</code></strong>: 整个市场的需求弹性越小（消费者对价格不敏感），企业的定价能力就越强。
-2.  <strong>市场份额 <code>s_i</code></strong>: 企业在市场中的份额越大，其定价能力也越强。</p>
+公式 <span class="arithmatex">\((P - cᵢ) / P\)</span> 就是<strong>勒纳指数 (Lerner Index)</strong>，它衡量了企业的市场势力（定价能力）。这个公式表明，一个企业的市场势力取决于两个因素：
+1.  <strong>市场需求弹性 <span class="arithmatex">\(ε\)</span></strong>: 整个市场的需求弹性越小（消费者对价格不敏感），企业的定价能力就越强。
+2.  <strong>市场份额 <span class="arithmatex">\(s_i\)</span></strong>: 企业在市场中的份额越大，其定价能力也越强。</p>
 <hr />
 <h3 id="structure-conduct-performance-scp"><strong>第四部分：市场结构、行为与绩效 (Structure-Conduct-Performance, SCP)</strong></h3>
 <p>最后一部分是对上述模型的总结，引出了产业组织理论中的经典SCP范式。
-*   <strong>结构 (Structure)</strong>: 指市场集中度、企业数量、成本结构等。在模型中体现为<code>N</code>（企业数量）和<code>s_i</code>（市场份额）。
+*   <strong>结构 (Structure)</strong>: 指市场集中度、企业数量、成本结构等。在模型中体现为<span class="arithmatex">\(N\)</span>（企业数量）和<span class="arithmatex">\(s_i\)</span>（市场份额）。
 *   <strong>行为 (Conduct)</strong>: 指企业的定价、产量、广告等竞争策略。模型中体现为古诺数量竞争。
-*   <strong>绩效 (Performance)</strong>: 指企业的盈利能力、效率等。模型中用勒纳指数 <code>(P-c)/P</code> 来衡量。</p>
-<p>公式 <code>(P - cᵢ) / P = sᵢ / ε</code> 完美地体现了SCP范式：市场结构（<code>sᵢ</code>）决定了企业的市场绩效（勒纳指数）。</p>
+*   <strong>绩效 (Performance)</strong>: 指企业的盈利能力、效率等。模型中用勒纳指数 <span class="arithmatex">\((P-c)/P\)</span> 来衡量。</p>
+<p>公式 <span class="arithmatex">\((P - cᵢ) / P = sᵢ / ε\)</span> 完美地体现了SCP范式：市场结构（<span class="arithmatex">\(sᵢ\)</span>）决定了企业的市场绩效（勒纳指数）。</p>
 <hr />
 <h3 id="_3"><strong>例题</strong></h3>
-<p>假设一个市场由两家公司（公司1和公司2）组成，它们进行古诺数量竞争。市场逆需求函数为 <code>P = 120 - Q</code>，其中 <code>Q = q₁ + q₂</code>。两家公司的边际成本相同，均为 <code>c₁ = c₂ = 30</code>。</p>
+<p>假设一个市场由两家公司（公司1和公司2）组成，它们进行古诺数量竞争。市场逆需求函数为 <span class="arithmatex">\(P = 120 - Q\)</span>，其中 <span class="arithmatex">\(Q = q₁ + q₂\)</span>。两家公司的边际成本相同，均为 <span class="arithmatex">\(c₁ = c₂ = 30\)</span>。</p>
 <p><strong>问题：</strong></p>
 <ol>
 <li>请写出公司1和公司2的反应函数。</li>
@@ -2587,7 +2587,7 @@ $$ \frac{P - c_i}{P} = \left( - \frac{dP}{dQ} \frac{Q}{P} \right) \left( \frac{q
 <ul>
 <li><strong>公司1的利润函数</strong>:
     $$ \pi_1 = (P - c_1)q_1 = (120 - (q_1 + q_2) - 30)q_1 = (90 - q_1 - q_2)q_1 $$</li>
-<li>对<code>q₁</code>求一阶导数并令其为0:
+<li>对<span class="arithmatex">\(q₁\)</span>求一阶导数并令其为0:
     $$ \frac{\partial \pi_1}{\partial q_1} = 90 - 2q_1 - q_2 = 0 $$</li>
 <li><strong>公司1的反应函数</strong>:
     $$ q_1 = 45 - \frac{1}{2}q_2 $$</li>
@@ -2599,11 +2599,11 @@ $$ \frac{P - c_i}{P} = \left( - \frac{dP}{dQ} \frac{Q}{P} \right) \left( \frac{q
 <li>将公司2的反应函数代入公司1的反应函数：
     $$ q_1 = 45 - \frac{1}{2}(45 - \frac{1}{2}q_1) = 45 - 22.5 + \frac{1}{4}q_1 $$
     $$ \frac{3}{4}q_1 = 22.5 \implies q_1 = 30 $$</li>
-<li>将<code>q₁=30</code>代回公司2的反应函数：
+<li>将<span class="arithmatex">\(q₁=30\)</span>代回公司2的反应函数：
     $$ q_2 = 45 - \frac{1}{2}(30) = 30 $$</li>
-<li><strong>均衡产量</strong>: <code>q₁* = 30</code>，<code>q₂* = 30</code>。</li>
-<li><strong>市场总产量</strong>: <code>Q* = q₁* + q₂* = 60</code>。</li>
-<li><strong>市场价格</strong>: <code>P* = 120 - Q* = 120 - 60 = 60</code>。</li>
+<li><strong>均衡产量</strong>: <span class="arithmatex">\(q₁* = 30\)</span>，<span class="arithmatex">\(q₂* = 30\)</span>。</li>
+<li><strong>市场总产量</strong>: <span class="arithmatex">\(Q* = q₁* + q₂* = 60\)</span>。</li>
+<li><strong>市场价格</strong>: <span class="arithmatex">\(P* = 120 - Q* = 120 - 60 = 60\)</span>。</li>
 </ul>
 <p><strong>3. 均衡利润</strong></p>
 <ul>
@@ -2611,21 +2611,21 @@ $$ \frac{P - c_i}{P} = \left( - \frac{dP}{dQ} \frac{Q}{P} \right) \left( \frac{q
     $$ \pi_1 = (P^<em> - c_1)q_1^</em> = (60 - 30) \times 30 = 900 $$</li>
 <li><strong>公司2的利润</strong>:
     $$ \pi_2 = (P^<em> - c_2)q_2^</em> = (60 - 30) \times 30 = 900 $$</li>
-<li>行业总利润为 <code>1800</code>。</li>
+<li>行业总利润为 <span class="arithmatex">\(1800\)</span>。</li>
 </ul>
 <p><strong>4. 垄断情况</strong></p>
 <ul>
 <li>如果两家公司合并，它们会像一个垄断者一样决策。垄断者的利润函数为：
     $$ \pi_M = (P - c)Q = (120 - Q - 30)Q = (90 - Q)Q $$</li>
-<li>对<code>Q</code>求一阶导数并令其为0:
+<li>对<span class="arithmatex">\(Q\)</span>求一阶导数并令其为0:
     $$ \frac{\partial \pi_M}{\partial Q} = 90 - 2Q = 0 \implies Q_M = 45 $$</li>
-<li><strong>垄断产量</strong>: <code>Q_M = 45</code>。</li>
-<li><strong>垄断价格</strong>: <code>P_M = 120 - 45 = 75</code>。</li>
-<li><strong>垄断利润</strong>: <code>π_M = (P_M - c)Q_M = (75 - 30) \times 45 = 45 \times 45 = 2025</code>。</li>
+<li><strong>垄断产量</strong>: <span class="arithmatex">\(Q_M = 45\)</span>。</li>
+<li><strong>垄断价格</strong>: <span class="arithmatex">\(P_M = 120 - 45 = 75\)</span>。</li>
+<li><strong>垄断利润</strong>: <span class="arithmatex">\(π_M = (P_M - c)Q_M = (75 - 30) \times 45 = 45 \times 45 = 2025\)</span>。</li>
 </ul>
 <p><strong>5. 社会福利比较</strong></p>
 <p>社会福利 (SW) = 消费者剩余 (CS) + 生产者剩余 (PS)。
-消费者剩余是需求曲线以下、价格线以上的部分，面积为 <code>0.5 * Q * (P_max - P)</code>，其中 <code>P_max = 120</code>。
+消费者剩余是需求曲线以下、价格线以上的部分，面积为 <span class="arithmatex">\(0.5 * Q * (P_max - P)\)</span>，其中 <span class="arithmatex">\(P_max = 120\)</span>。
 生产者剩余即总利润。</p>
 <ul>
 <li>
@@ -2645,7 +2645,7 @@ $$ \frac{P - c_i}{P} = \left( - \frac{dP}{dQ} \frac{Q}{P} \right) \left( \frac{q
 </ul>
 </li>
 </ul>
-<p><strong>结论</strong>: 与双寡头竞争相比，垄断导致产量更低、价格更高、生产者利润更高，但消费者剩余大幅减少，社会总福利也更低。从垄断到双寡头的转变中，社会福利损失（无谓损失，Deadweight Loss）减少了 <code>3600 - 3037.5 = 562.5</code>。</p>
+<p><strong>结论</strong>: 与双寡头竞争相比，垄断导致产量更低、价格更高、生产者利润更高，但消费者剩余大幅减少，社会总福利也更低。从垄断到双寡头的转变中，社会福利损失（无谓损失，Deadweight Loss）减少了 <span class="arithmatex">\(3600 - 3037.5 = 562.5\)</span>。</p>
 
 
 

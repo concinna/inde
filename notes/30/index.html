@@ -2512,8 +2512,8 @@
 <h3 id="_1">模型概述</h3>
 <p>斯塔克尔伯格模型是一种<strong>序贯博弈（Sequential Game）</strong>。与古诺模型（Cournot Model）中企业同时决策不同，斯塔克尔伯格模型的核心特征是决策有先后顺序：</p>
 <ol>
-<li><strong>领导者（Firm 1）</strong> 首先决定并公布自己的产量 <code>q₁</code>。</li>
-<li><strong>跟随者（Firm 2）</strong> 在观察到领导者的产量 <code>q₁</code> 后，再决定自己的最优产量 <code>q₂</code>。</li>
+<li><strong>领导者（Firm 1）</strong> 首先决定并公布自己的产量 <span class="arithmatex">\(q₁\)</span>。</li>
+<li><strong>跟随者（Firm 2）</strong> 在观察到领导者的产量 <span class="arithmatex">\(q₁\)</span> 后，再决定自己的最优产量 <span class="arithmatex">\(q₂\)</span>。</li>
 </ol>
 <p>由于领导者知道跟随者会如何根据自己的决策做出反应，因此领导者在做决策时，会把跟随者的反应考虑进去，从而选择一个对自己最有利的产量。</p>
 <hr />
@@ -2521,30 +2521,30 @@
 <p>我们来逐步解析你提供的文本和公式。</p>
 <h4 id="1">1. 基本设定</h4>
 <ul>
-<li>市场逆需求函数（Inverse Demand Function）：价格 <code>P</code> 是市场总产量 <code>Q</code> 的函数。
+<li>市场逆需求函数（Inverse Demand Function）：价格 <span class="arithmatex">\(P\)</span> 是市场总产量 <span class="arithmatex">\(Q\)</span> 的函数。
     $$ P = P(Q) = P(q_1 + q_2) $$
-    其中 <code>q₁</code> 是领导者（厂商1）的产量，<code>q₂</code> 是跟随者（厂商2）的产量。</li>
-<li>博弈顺序：厂商1先选择 <code>q₁</code>，厂商2观察到 <code>q₁</code> 后再选择 <code>q₂</code>。</li>
+    其中 <span class="arithmatex">\(q₁\)</span> 是领导者（厂商1）的产量，<span class="arithmatex">\(q₂\)</span> 是跟随者（厂商2）的产量。</li>
+<li>博弈顺序：厂商1先选择 <span class="arithmatex">\(q₁\)</span>，厂商2观察到 <span class="arithmatex">\(q₁\)</span> 后再选择 <span class="arithmatex">\(q₂\)</span>。</li>
 <li>求解方法：我们使用<strong>向后归纳法（Backward Induction）</strong>来求解这个模型的均衡。这意味着我们先从博弈的最后一步开始分析，即先分析跟随者的决策。</li>
 </ul>
 <h4 id="2-2">2. 第二阶段：跟随者（厂商2）的决策</h4>
-<p>跟随者（厂商2）的目标是在已知厂商1产量 <code>q₁</code> 的情况下，最大化自己的利润 <code>π₂</code>。此时，<code>q₁</code> 对于厂商2来说是一个已知的常数。</p>
+<p>跟随者（厂商2）的目标是在已知厂商1产量 <span class="arithmatex">\(q₁\)</span> 的情况下，最大化自己的利润 <span class="arithmatex">\(π₂\)</span>。此时，<span class="arithmatex">\(q₁\)</span> 对于厂商2来说是一个已知的常数。</p>
 <p>厂商2的利润函数为：
 $$ \pi_2(q_1, q_2) = P(q_1 + q_2) \cdot q_2 - c_2(q_2) $$
-其中 <code>c₂(q₂)</code> 是厂商2的成本函数。假设边际成本为常数 <code>c</code>。</p>
-<p>为了实现利润最大化，厂商2对 <code>q₂</code> 求导，并令其等于零（一阶条件 FOC）：
+其中 <span class="arithmatex">\(c₂(q₂)\)</span> 是厂商2的成本函数。假设边际成本为常数 <span class="arithmatex">\(c\)</span>。</p>
+<p>为了实现利润最大化，厂商2对 <span class="arithmatex">\(q₂\)</span> 求导，并令其等于零（一阶条件 FOC）：
 $$ \frac{\partial \pi_2}{\partial q_2} = \frac{\partial P}{\partial Q} \cdot q_2 + P(q_1 + q_2) - c = 0 $$
-通过求解这个方程，我们可以得到 <code>q₂</code> 与 <code>q₁</code> 的关系。这个关系被称为厂商2的<strong>反应函数（Reaction Function）</strong>，记为 <code>R₂(q₁)</code>。
+通过求解这个方程，我们可以得到 <span class="arithmatex">\(q₂\)</span> 与 <span class="arithmatex">\(q₁\)</span> 的关系。这个关系被称为厂商2的<strong>反应函数（Reaction Function）</strong>，记为 <span class="arithmatex">\(R₂(q₁)\)</span>。
 $$ q_2 = R_2(q_1) $$
-这个函数表示：对于领导者选择的任何产量 <code>q₁</code>，跟随者将会选择的最优产量是多少。</p>
+这个函数表示：对于领导者选择的任何产量 <span class="arithmatex">\(q₁\)</span>，跟随者将会选择的最优产量是多少。</p>
 <h4 id="3-1">3. 第一阶段：领导者（厂商1）的决策</h4>
-<p>领导者（厂商1）非常聪明，它完全知道跟随者的反应函数 <code>R₂(q₁)</code>。因此，当厂商1选择自己的产量 <code>q₁</code> 时，它已经预见到了厂商2将会生产 <code>q₂ = R₂(q₁)</code>。</p>
-<p>厂商1的目标是最大化自己的利润 <code>π₁</code>，它的利润函数可以写成：
+<p>领导者（厂商1）非常聪明，它完全知道跟随者的反应函数 <span class="arithmatex">\(R₂(q₁)\)</span>。因此，当厂商1选择自己的产量 <span class="arithmatex">\(q₁\)</span> 时，它已经预见到了厂商2将会生产 <span class="arithmatex">\(q₂ = R₂(q₁)\)</span>。</p>
+<p>厂商1的目标是最大化自己的利润 <span class="arithmatex">\(π₁\)</span>，它的利润函数可以写成：
 $$ \pi_1(q_1, R_2(q_1)) = P(q_1 + R_2(q_1)) \cdot q_1 - c_1(q_1) $$
-<em>注意：你提供的原文中，利润公式 <code>[ ( q _ { 1 } + R _ { 2 } ( q _ { 1 } ) ] q _ { 1 }</code> 缺少了价格函数 <code>P</code>，这里已经修正。</em></p>
-<p>现在，厂商1选择 <code>q₁</code> 来最大化这个利润函数。假设边际成本为常数 <code>c</code>。
+<em>注意：你提供的原文中，利润公式 <span class="arithmatex">\([ ( q _ { 1 } + R _ { 2 } ( q _ { 1 } ) ] q _ { 1 }\)</span> 缺少了价格函数 <span class="arithmatex">\(P\)</span>，这里已经修正。</em></p>
+<p>现在，厂商1选择 <span class="arithmatex">\(q₁\)</span> 来最大化这个利润函数。假设边际成本为常数 <span class="arithmatex">\(c\)</span>。
 $$ \max_{q_1} \pi_1 = P(q_1 + R_2(q_1)) \cdot q_1 - c \cdot q_1 $$
-为了求解 <code>q₁</code>，我们对 <code>π₁</code> 关于 <code>q₁</code> 求一阶导数（FOC），并令其等于零。这里需要使用链式法则和乘积法则：
+为了求解 <span class="arithmatex">\(q₁\)</span>，我们对 <span class="arithmatex">\(π₁\)</span> 关于 <span class="arithmatex">\(q₁\)</span> 求一阶导数（FOC），并令其等于零。这里需要使用链式法则和乘积法则：
 $$ \frac{d\pi_1}{dq_1} = \left[ \frac{dP}{dQ} \cdot \frac{d(q_1 + R_2(q_1))}{dq_1} \right] \cdot q_1 + P(q_1 + R_2(q_1)) \cdot 1 - c = 0 $$
 整理后得到：
 $$ P(q_1 + R_2(q_1)) + q_1 \left[ \frac{dP}{dQ} \right] \left[ 1 + \frac{dR_2(q_1)}{dq_1} \right] = c $$
@@ -2553,10 +2553,10 @@ $$ P(q_1 + R_2(q_1)) + q_1 \left[ \frac{dP}{dQ} \right] \left[ 1 + \frac{dR_2(q_
 <ul>
 <li><strong>策略替代品（Strategic Substitutes）</strong>: 在数量竞争中，产量通常是<strong>策略替代品</strong>。这意味着一个厂商增加产量，会促使另一个厂商减少产量。数学上表示为：
     $$ \frac{dR_2(q_1)}{dq_1} &lt; 0 $$
-    当领导者 <code>q₁</code> 增加时，市场价格下降，留给跟随者的市场空间变小，因此跟随者会减少自己的产量 <code>q₂</code>。</li>
+    当领导者 <span class="arithmatex">\(q₁\)</span> 增加时，市场价格下降，留给跟随者的市场空间变小，因此跟随者会减少自己的产量 <span class="arithmatex">\(q₂\)</span>。</li>
 <li><strong>与古诺模型的对比</strong>:<ul>
-<li>在古诺模型中，厂商1认为 <code>q₂</code> 是固定的，即它假设 <code>dq₂/dq₁ = 0</code>。</li>
-<li>在斯塔克尔伯格模型中，领导者知道 <code>q₂</code> 会随 <code>q₁</code> 变化，即 <code>dR₂(q₁)/dq₁ &lt; 0</code>。这个负值项意味着，当领导者增产 <code>q₁</code> 时，它知道跟随者会减产 <code>q₂</code> 来部分抵消价格下降的影响。这给了领导者<strong>更大的激励去扩张产量</strong>，因为它的一部分增产带来的价格下降压力被跟随者的减产所吸收了。</li>
+<li>在古诺模型中，厂商1认为 <span class="arithmatex">\(q₂\)</span> 是固定的，即它假设 <span class="arithmatex">\(dq₂/dq₁ = 0\)</span>。</li>
+<li>在斯塔克尔伯格模型中，领导者知道 <span class="arithmatex">\(q₂\)</span> 会随 <span class="arithmatex">\(q₁\)</span> 变化，即 <span class="arithmatex">\(dR₂(q₁)/dq₁ &lt; 0\)</span>。这个负值项意味着，当领导者增产 <span class="arithmatex">\(q₁\)</span> 时，它知道跟随者会减产 <span class="arithmatex">\(q₂\)</span> 来部分抵消价格下降的影响。这给了领导者<strong>更大的激励去扩张产量</strong>，因为它的一部分增产带来的价格下降压力被跟随者的减产所吸收了。</li>
 </ul>
 </li>
 <li><strong>先发优势（First-Mover Advantage）</strong>:<ul>
@@ -2572,48 +2572,48 @@ $$ P(q_1 + R_2(q_1)) + q_1 \left[ \frac{dP}{dQ} \right] \left[ 1 + \frac{dR_2(q_
 <li>
 <p><strong>设定</strong>:</p>
 <ul>
-<li>逆需求函数: <code>P = A - BQ = A - B(q₁ + q₂)</code></li>
-<li>成本: <code>c₁ = c₂ = c</code> (常数边际成本)</li>
+<li>逆需求函数: <span class="arithmatex">\(P = A - BQ = A - B(q₁ + q₂)\)</span></li>
+<li>成本: <span class="arithmatex">\(c₁ = c₂ = c\)</span> (常数边际成本)</li>
 </ul>
 </li>
 <li>
-<p><strong>求解跟随者的反应函数 <code>R₂(q₁)</code></strong>:
-    厂商2最大化利润 <code>π₂ = (A - Bq₁ - Bq₂)q₂ - cq₂</code>。
-    FOC (对 <code>q₂</code> 求导): <code>A - Bq₁ - 2Bq₂ - c = 0</code>。
-    解出 <code>q₂</code>，得到反应函数：
+<p><strong>求解跟随者的反应函数 <span class="arithmatex">\(R₂(q₁)\)</span></strong>:
+    厂商2最大化利润 <span class="arithmatex">\(π₂ = (A - Bq₁ - Bq₂)q₂ - cq₂\)</span>。
+    FOC (对 <span class="arithmatex">\(q₂\)</span> 求导): <span class="arithmatex">\(A - Bq₁ - 2Bq₂ - c = 0\)</span>。
+    解出 <span class="arithmatex">\(q₂\)</span>，得到反应函数：
     $$ q_2 = R_2(q_1) = \frac{A - c}{2B} - \frac{q_1}{2} $$
-    <em>注意：你提供的原文公式 <code>(A-c)/2BQ</code> 是错误的，分母中不应该有 <code>Q</code>。这里已修正为正确的形式。</em>
-    从这个式子可以看出 <code>dR₂/dq₁ = -1/2 &lt; 0</code>，验证了产量是策略替代品。</p>
+    <em>注意：你提供的原文公式 <span class="arithmatex">\((A-c)/2BQ\)</span> 是错误的，分母中不应该有 <span class="arithmatex">\(Q\)</span>。这里已修正为正确的形式。</em>
+    从这个式子可以看出 <span class="arithmatex">\(dR₂/dq₁ = -1/2 &lt; 0\)</span>，验证了产量是策略替代品。</p>
 </li>
 <li>
-<p><strong>求解领导者的最优产量 <code>q₁</code></strong>:
-    领导者将 <code>R₂(q₁)</code> 代入自己的利润函数中：
-    <code>π₁ = P(q₁ + R₂(q₁))q₁ - cq₁</code>
-    <code>π₁ = [A - B(q₁ + (\frac{A - c}{2B} - \frac{q_1}{2}))]q₁ - cq₁</code>
+<p><strong>求解领导者的最优产量 <span class="arithmatex">\(q₁\)</span></strong>:
+    领导者将 <span class="arithmatex">\(R₂(q₁)\)</span> 代入自己的利润函数中：
+    <span class="arithmatex">\(π₁ = P(q₁ + R₂(q₁))q₁ - cq₁\)</span>
+    <span class="arithmatex">\(π₁ = [A - B(q₁ + (\frac{A - c}{2B} - \frac{q_1}{2}))]q₁ - cq₁\)</span>
     化简括号内的部分：
-    <code>π₁ = [A - B(\frac{q_1}{2} + \frac{A - c}{2B})]q₁ - cq₁</code>
-    <code>π₁ = [A - \frac{Bq_1}{2} - \frac{A - c}{2}]q₁ - cq₁</code>
-    <code>π₁ = [\frac{A+c}{2} - \frac{Bq_1}{2}]q₁ - cq₁</code>
-    对 <code>q₁</code> 求导得到FOC：
-    <code>dπ₁/dq₁ = \frac{A+c}{2} - Bq₁ - c = 0</code>
-    <code>Bq₁ = \frac{A+c}{2} - c = \frac{A-c}{2}</code>
+    <span class="arithmatex">\(π₁ = [A - B(\frac{q_1}{2} + \frac{A - c}{2B})]q₁ - cq₁\)</span>
+    <span class="arithmatex">\(π₁ = [A - \frac{Bq_1}{2} - \frac{A - c}{2}]q₁ - cq₁\)</span>
+    <span class="arithmatex">\(π₁ = [\frac{A+c}{2} - \frac{Bq_1}{2}]q₁ - cq₁\)</span>
+    对 <span class="arithmatex">\(q₁\)</span> 求导得到FOC：
+    <span class="arithmatex">\(dπ₁/dq₁ = \frac{A+c}{2} - Bq₁ - c = 0\)</span>
+    <span class="arithmatex">\(Bq₁ = \frac{A+c}{2} - c = \frac{A-c}{2}\)</span>
     解出领导者的最优产量：
     $$ q_1^* = \frac{A - c}{2B} $$</p>
 </li>
 <li>
 <p><strong>求解跟随者的产量和市场结果</strong>:
-    将 <code>q₁*</code> 代入跟随者的反应函数：
-    <code>q₂* = (A - c)/(2B) - (1/2) * [(A - c)/(2B)]</code>
+    将 <span class="arithmatex">\(q₁*\)</span> 代入跟随者的反应函数：
+    <span class="arithmatex">\(q₂* = (A - c)/(2B) - (1/2) * [(A - c)/(2B)]\)</span>
     $$ q_2^<em> = \frac{A - c}{4B} $$
-    </em>你提供的原文中 <code>q₁</code> 和 <code>q₂</code> 的最终结果分母里都有 <code>Q</code>，这也是不正确的，这里已修正。*</p>
+    </em>你提供的原文中 <span class="arithmatex">\(q₁\)</span> 和 <span class="arithmatex">\(q₂\)</span> 的最终结果分母里都有 <span class="arithmatex">\(Q\)</span>，这也是不正确的，这里已修正。*</p>
 </li>
 <li>
 <p><strong>斯塔克尔伯格均衡结果</strong>:</p>
 <ul>
-<li>领导者产量: <code>q₁* = (A - c) / (2B)</code></li>
-<li>跟随者产量: <code>q₂* = (A - c) / (4B)</code></li>
-<li>市场总产量: <code>Q* = q₁* + q₂* = 3(A - c) / (4B)</code></li>
-<li>市场价格: <code>P* = A - B(Q*) = A - 3(A-c)/4 = (A + 3c) / 4</code></li>
+<li>领导者产量: <span class="arithmatex">\(q₁* = (A - c) / (2B)\)</span></li>
+<li>跟随者产量: <span class="arithmatex">\(q₂* = (A - c) / (4B)\)</span></li>
+<li>市场总产量: <span class="arithmatex">\(Q* = q₁* + q₂* = 3(A - c) / (4B)\)</span></li>
+<li>市场价格: <span class="arithmatex">\(P* = A - B(Q*) = A - 3(A-c)/4 = (A + 3c) / 4\)</span></li>
 </ul>
 </li>
 </ul>
@@ -2621,66 +2621,66 @@ $$ P(q_1 + R_2(q_1)) + q_1 \left[ \frac{dP}{dQ} \right] \left[ 1 + \frac{dR_2(q_
 <ol>
 <li>
 <p><strong>领导者产量与垄断产量的关系</strong>:
-    一个纯垄断厂商会选择产量 <code>Q_m</code> 来最大化 <code>π_m = (A - BQ)Q - cQ</code>。其FOC为 <code>A - 2BQ - c = 0</code>，解得垄断产量 <code>Q_m = (A - c) / (2B)</code>。
-    我们发现，<strong>斯塔克尔伯格领导者的产量 <code>q₁*</code> 与纯垄断厂商的产量完全相同</strong>。
+    一个纯垄断厂商会选择产量 <span class="arithmatex">\(Q_m\)</span> 来最大化 <span class="arithmatex">\(π_m = (A - BQ)Q - cQ\)</span>。其FOC为 <span class="arithmatex">\(A - 2BQ - c = 0\)</span>，解得垄断产量 <span class="arithmatex">\(Q_m = (A - c) / (2B)\)</span>。
+    我们发现，<strong>斯塔克尔伯格领导者的产量 <span class="arithmatex">\(q₁*\)</span> 与纯垄断厂商的产量完全相同</strong>。
     区别在于：</p>
 <ul>
-<li>在垄断市场，总产量就是 <code>Q_m</code>。</li>
-<li>在斯塔克尔伯格市场，领导者生产 <code>q₁*</code> 后，跟随者还会进入市场并生产 <code>q₂*</code>。这使得市场总产量更高，价格更低。</li>
+<li>在垄断市场，总产量就是 <span class="arithmatex">\(Q_m\)</span>。</li>
+<li>在斯塔克尔伯格市场，领导者生产 <span class="arithmatex">\(q₁*\)</span> 后，跟随者还会进入市场并生产 <span class="arithmatex">\(q₂*\)</span>。这使得市场总产量更高，价格更低。</li>
 </ul>
 </li>
 <li>
 <p><strong>与古诺均衡的比较</strong>:
     在相同的线性需求和成本下，古诺均衡的解为：</p>
 <ul>
-<li><code>q₁_cournot = q₂_cournot = (A - c) / (3B)</code></li>
-<li><code>Q_cournot = 2(A - c) / (3B)</code>
+<li><span class="arithmatex">\(q₁_cournot = q₂_cournot = (A - c) / (3B)\)</span></li>
+<li><span class="arithmatex">\(Q_cournot = 2(A - c) / (3B)\)</span>
 比较可知：</li>
-<li><code>q₁* (领导者) &gt; q₁_cournot</code> (领导者产量更高)</li>
-<li><code>q₂* (跟随者) &lt; q₂_cournot</code> (跟随者产量更低)</li>
-<li><code>Q_stackelberg &gt; Q_cournot</code> (总产量更高)</li>
-<li><code>P_stackelberg &lt; P_cournot</code> (价格更低)</li>
-<li>利润关系：<code>π₁* &gt; π_cournot &gt; π₂*</code> (领导者利润最高，古诺居中，跟随者最低)</li>
+<li><span class="arithmatex">\(q₁* (领导者) &gt; q₁_cournot\)</span> (领导者产量更高)</li>
+<li><span class="arithmatex">\(q₂* (跟随者) &lt; q₂_cournot\)</span> (跟随者产量更低)</li>
+<li><span class="arithmatex">\(Q_stackelberg &gt; Q_cournot\)</span> (总产量更高)</li>
+<li><span class="arithmatex">\(P_stackelberg &lt; P_cournot\)</span> (价格更低)</li>
+<li>利润关系：<span class="arithmatex">\(π₁* &gt; π_cournot &gt; π₂*\)</span> (领导者利润最高，古诺居中，跟随者最低)</li>
 </ul>
 </li>
 </ol>
 <hr />
 <h3 id="_4">例题</h3>
-<p>假设一个市场的逆需求函数为 <code>P = 120 - Q</code>，其中 <code>Q = q₁ + q₂</code>。市场中有两个厂商，他们的边际成本和固定成本都为零 (<code>c = 0</code>)。厂商1是斯塔克尔伯格领导者，厂商2是跟随者。请求解该市场的均衡产量、价格和各厂商的利润。</p>
+<p>假设一个市场的逆需求函数为 <span class="arithmatex">\(P = 120 - Q\)</span>，其中 <span class="arithmatex">\(Q = q₁ + q₂\)</span>。市场中有两个厂商，他们的边际成本和固定成本都为零 (<span class="arithmatex">\(c = 0\)</span>)。厂商1是斯塔克尔伯格领导者，厂商2是跟随者。请求解该市场的均衡产量、价格和各厂商的利润。</p>
 <p><strong>解题步骤</strong>:</p>
 <p><strong>1. 求解跟随者（厂商2）的反应函数</strong></p>
-<p>厂商2的目标是最大化利润 <code>π₂</code>：
-<code>π₂ = P \cdot q₂ = (120 - q₁ - q₂)q₂ = 120q₂ - q₁q₂ - q₂²</code></p>
-<p>对 <code>q₂</code> 求导，令其等于零：
-<code>∂π₂/∂q₂ = 120 - q₁ - 2q₂ = 0</code></p>
-<p>解出 <code>q₂</code>，得到厂商2的反应函数 <code>R₂(q₁)</code>：
-<code>2q₂ = 120 - q₁</code>
-<code>q₂ = 60 - q₁/2</code></p>
+<p>厂商2的目标是最大化利润 <span class="arithmatex">\(π₂\)</span>：
+<span class="arithmatex">\(π₂ = P \cdot q₂ = (120 - q₁ - q₂)q₂ = 120q₂ - q₁q₂ - q₂²\)</span></p>
+<p>对 <span class="arithmatex">\(q₂\)</span> 求导，令其等于零：
+<span class="arithmatex">\(∂π₂/∂q₂ = 120 - q₁ - 2q₂ = 0\)</span></p>
+<p>解出 <span class="arithmatex">\(q₂\)</span>，得到厂商2的反应函数 <span class="arithmatex">\(R₂(q₁)\)</span>：
+<span class="arithmatex">\(2q₂ = 120 - q₁\)</span>
+<span class="arithmatex">\(q₂ = 60 - q₁/2\)</span></p>
 <p><strong>2. 求解领导者（厂商1）的最优产量</strong></p>
-<p>厂商1知道厂商2会如何反应，所以它将 <code>q₂</code> 的反应函数代入自己的利润函数 <code>π₁</code>：
-<code>π₁ = P \cdot q₁ = (120 - q₁ - q₂)q₁</code>
-<code>π₁ = (120 - q₁ - (60 - q₁/2))q₁</code>
-<code>π₁ = (60 - q₁/2)q₁ = 60q₁ - (1/2)q₁²</code></p>
-<p>为了最大化 <code>π₁</code>，对 <code>q₁</code> 求导，令其等于零：
-<code>dπ₁/dq₁ = 60 - q₁ = 0</code></p>
+<p>厂商1知道厂商2会如何反应，所以它将 <span class="arithmatex">\(q₂\)</span> 的反应函数代入自己的利润函数 <span class="arithmatex">\(π₁\)</span>：
+<span class="arithmatex">\(π₁ = P \cdot q₁ = (120 - q₁ - q₂)q₁\)</span>
+<span class="arithmatex">\(π₁ = (120 - q₁ - (60 - q₁/2))q₁\)</span>
+<span class="arithmatex">\(π₁ = (60 - q₁/2)q₁ = 60q₁ - (1/2)q₁²\)</span></p>
+<p>为了最大化 <span class="arithmatex">\(π₁\)</span>，对 <span class="arithmatex">\(q₁\)</span> 求导，令其等于零：
+<span class="arithmatex">\(dπ₁/dq₁ = 60 - q₁ = 0\)</span></p>
 <p>解得领导者（厂商1）的最优产量：
-<code>q₁* = 60</code></p>
+<span class="arithmatex">\(q₁* = 60\)</span></p>
 <p><strong>3. 求解均衡结果</strong></p>
 <ul>
 <li>
 <p><strong>厂商2的产量</strong>:
-    将 <code>q₁* = 60</code> 代入厂商2的反应函数：
-    <code>q₂* = 60 - (60/2) = 30</code></p>
+    将 <span class="arithmatex">\(q₁* = 60\)</span> 代入厂商2的反应函数：
+    <span class="arithmatex">\(q₂* = 60 - (60/2) = 30\)</span></p>
 </li>
 <li>
 <p><strong>市场总产量和价格</strong>:
-    <code>Q* = q₁* + q₂* = 60 + 30 = 90</code>
-    <code>P* = 120 - Q* = 120 - 90 = 30</code></p>
+    <span class="arithmatex">\(Q* = q₁* + q₂* = 60 + 30 = 90\)</span>
+    <span class="arithmatex">\(P* = 120 - Q* = 120 - 90 = 30\)</span></p>
 </li>
 <li>
 <p><strong>各厂商的利润</strong>:
-    <code>π₁* = P* \cdot q₁* = 30 \cdot 60 = 1800</code>
-    <code>π₂* = P* \cdot q₂* = 30 \cdot 30 = 900</code></p>
+    <span class="arithmatex">\(π₁* = P* \cdot q₁* = 30 \cdot 60 = 1800\)</span>
+    <span class="arithmatex">\(π₂* = P* \cdot q₂* = 30 \cdot 30 = 900\)</span></p>
 </li>
 </ul>
 <p><strong>结论</strong>:

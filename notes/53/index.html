@@ -2524,8 +2524,8 @@
 <p><strong>核心问题：双重边际化 (Double Marginalization)</strong></p>
 <p>当供应链的上下游（例如，制造商和零售商）都拥有市场势力（即都是垄断者或拥有定价权）时，会产生双重边际化问题。</p>
 <ul>
-<li><strong>第一重边际化</strong>：制造商作为垄断者，会在其生产成本之上加一个利润边际，制定出批发价（<code>P_w</code>）。</li>
-<li><strong>第二重边际化</strong>：零售商将批发价<code>P_w</code>作为自己的“成本”，并在此基础上再加一重自己的利润边际，制定出最终的零售价（<code>P_f</code>）。</li>
+<li><strong>第一重边际化</strong>：制造商作为垄断者，会在其生产成本之上加一个利润边际，制定出批发价（<span class="arithmatex">\(P_w\)</span>）。</li>
+<li><strong>第二重边际化</strong>：零售商将批发价<span class="arithmatex">\(P_w\)</span>作为自己的“成本”，并在此基础上再加一重自己的利润边际，制定出最终的零售价（<span class="arithmatex">\(P_f\)</span>）。</li>
 </ul>
 <p>这种“加价再加价”的行为导致最终的零售价格过高，销量过低。这不仅损害了消费者利益，也损害了制造商和零售商的<strong>整体利润</strong>。如果二者合并为一个“纵向一体化”的垄断企业，它们会只加一次价，从而制定一个更低的最终价格，获得更高的总利润。</p>
 </li>
@@ -2561,16 +2561,16 @@
 </li>
 <li>
 <p><strong>解决方案与效果</strong></p>
-<p>制造商设定一个<strong>最低转售价格 <code>P₁</code></strong>，并继续以边际成本 <code>MC</code>（这里简化为制造商的出厂价）向所有零售商供货。</p>
+<p>制造商设定一个<strong>最低转售价格 <span class="arithmatex">\(P₁\)</span></strong>，并继续以边际成本 <span class="arithmatex">\(MC\)</span>（这里简化为制造商的出厂价）向所有零售商供货。</p>
 <ul>
 <li>
-<p><strong>表面上的非理性</strong>：从静态角度看，设定最低价<code>P₁</code>（高于<code>MC</code>）会导致价格上升，需求量从<code>q₀</code>下降到<code>q₁</code>，制造商的利润似乎会减少。</p>
+<p><strong>表面上的非理性</strong>：从静态角度看，设定最低价<span class="arithmatex">\(P₁\)</span>（高于<span class="arithmatex">\(MC\)</span>）会导致价格上升，需求量从<span class="arithmatex">\(q₀\)</span>下降到<span class="arithmatex">\(q₁\)</span>，制造商的利润似乎会减少。</p>
 </li>
 <li>
-<p><strong>深层逻辑</strong>：制造商强制执行的零售利润空间 <code>(P₁ - MC)</code>，并不是白白送给零售商的。制造商期望（甚至要求）零售商利用这部分利润来进行促销活动、提供高质量的售前服务。</p>
+<p><strong>深层逻辑</strong>：制造商强制执行的零售利润空间 <span class="arithmatex">\((P₁ - MC)\)</span>，并不是白白送给零售商的。制造商期望（甚至要求）零售商利用这部分利润来进行促销活动、提供高质量的售前服务。</p>
 </li>
-<li><strong>需求曲线移动</strong>：这些由利润空间支撑的服务和促销活动，会提升产品的吸引力，从而使<strong>整个需求曲线向右移动</strong>（从 <code>D</code> 移动到 <code>D'</code>）。</li>
-<li><strong>最终结果</strong>：尽管价格更高，但由于需求增加，最终的销售量可能反而增加到 <code>q'</code>，超过了没有RPM时的销量。</li>
+<li><strong>需求曲线移动</strong>：这些由利润空间支撑的服务和促销活动，会提升产品的吸引力，从而使<strong>整个需求曲线向右移动</strong>（从 <span class="arithmatex">\(D\)</span> 移动到 <span class="arithmatex">\(D'\)</span>）。</li>
+<li><strong>最终结果</strong>：尽管价格更高，但由于需求增加，最终的销售量可能反而增加到 <span class="arithmatex">\(q'\)</span>，超过了没有RPM时的销量。</li>
 </ul>
 <p>因此，最低转售价格维持（Minimum RPM）的效果是具有两面性的：
 *   <strong>效率提升（Efficiency Increasing）</strong>：如果需求曲线的移动幅度足够大，能够抵消价格上涨带来的负面影响，那么RPM就是有效率的，对供应商和消费者都有利。
@@ -2597,45 +2597,45 @@
 <ul>
 <li>
 <p><strong>基本效用函数</strong></p>
-<p>消费者 <code>i</code> 选择观看剧目 <code>j</code> 获得的效用 <code>u_ij</code> 由以下公式表示：</p>
+<p>消费者 <span class="arithmatex">\(i\)</span> 选择观看剧目 <span class="arithmatex">\(j\)</span> 获得的效用 <span class="arithmatex">\(u_ij\)</span> 由以下公式表示：</p>
 <div class="arithmatex">\[ u_{ij} = q_{ij} [ B(y_i) - P_j ]^\eta \]</div>
 <ul>
-<li><code>u_ij</code>: 消费者 <code>i</code> 从选项 <code>j</code> 中获得的效用。</li>
-<li><code>q_ij</code>: 代表消费者 <code>i</code> 对选项 <code>j</code> 的固有偏好或感知质量。</li>
-<li><code>B(y_i)</code>: 代表消费者的“娱乐预算”或支付意愿，它是消费者收入 <code>y_i</code> 的函数。消费者需要决定将多少收入用于娱乐。</li>
-<li><code>P_j</code>: 选项 <code>j</code> 的价格。</li>
-<li><code>[ B(y_i) - P_j ]</code>: 购买后剩余的“娱乐预算”，可以理解为消费后获得的净效用。</li>
-<li><code>η</code>: 一个参数，反映了消费者对价格（或剩余预算）的敏感程度。</li>
+<li><span class="arithmatex">\(u_ij\)</span>: 消费者 <span class="arithmatex">\(i\)</span> 从选项 <span class="arithmatex">\(j\)</span> 中获得的效用。</li>
+<li><span class="arithmatex">\(q_ij\)</span>: 代表消费者 <span class="arithmatex">\(i\)</span> 对选项 <span class="arithmatex">\(j\)</span> 的固有偏好或感知质量。</li>
+<li><span class="arithmatex">\(B(y_i)\)</span>: 代表消费者的“娱乐预算”或支付意愿，它是消费者收入 <span class="arithmatex">\(y_i\)</span> 的函数。消费者需要决定将多少收入用于娱乐。</li>
+<li><span class="arithmatex">\(P_j\)</span>: 选项 <span class="arithmatex">\(j\)</span> 的价格。</li>
+<li><span class="arithmatex">\([ B(y_i) - P_j ]\)</span>: 购买后剩余的“娱乐预算”，可以理解为消费后获得的净效用。</li>
+<li><span class="arithmatex">\(η\)</span>: 一个参数，反映了消费者对价格（或剩余预算）的敏感程度。</li>
 </ul>
 </li>
 <li>
 <p><strong>预算/支付意愿函数</strong></p>
 <div class="arithmatex">\[ B(y_i) = \delta_1 y_i^{\delta_2} \quad \text{其中 } \delta_1 &gt; 0, \delta_2 \in [0, 1] \]</div>
-<p>这个函数表明，一个人的娱乐预算随着收入 <code>y_i</code> 的增加而增加。参数 <code>δ₂</code> 介于0和1之间，意味着存在<strong>边际递减效应</strong>：收入越高的人，收入的增加对娱乐预算的提升作用越小。</p>
+<p>这个函数表明，一个人的娱乐预算随着收入 <span class="arithmatex">\(y_i\)</span> 的增加而增加。参数 <span class="arithmatex">\(δ₂\)</span> 介于0和1之间，意味着存在<strong>边际递减效应</strong>：收入越高的人，收入的增加对娱乐预算的提升作用越小。</p>
 </li>
 <li>
 <p><strong>不同选择下的具体效用</strong></p>
 <p>模型针对几种不同的购票情景定义了具体的效用函数：</p>
 <ol>
 <li>
-<p><strong>使用优惠券购买高质量票</strong>：消费者 <code>i</code> 获得一张高质量票的优惠券，价格为 <code>P_c &lt; P_h</code>。
+<p><strong>使用优惠券购买高质量票</strong>：消费者 <span class="arithmatex">\(i\)</span> 获得一张高质量票的优惠券，价格为 <span class="arithmatex">\(P_c &lt; P_h\)</span>。
     $$ u_{ic} = q_{ih} [ B(y_i) - P_c ]^\eta $$
-    这里的效用是基于优惠价 <code>P_c</code> 计算的。</p>
+    这里的效用是基于优惠价 <span class="arithmatex">\(P_c\)</span> 计算的。</p>
 </li>
 <li>
 <p><strong>购买售票亭的票（有时间成本）</strong>：
     $$ u_{ib} = q_{ib} [ B(y_i) - P_b - \tau(y_i) ]^\eta $$
-    这里的 <code>P_b</code> 是售票亭价格，<code>τ(y_i)</code> 代表<strong>时间成本</strong>，例如排队购票所花费的时间的价值。</p>
+    这里的 <span class="arithmatex">\(P_b\)</span> 是售票亭价格，<span class="arithmatex">\(τ(y_i)\)</span> 代表<strong>时间成本</strong>，例如排队购票所花费的时间的价值。</p>
 </li>
 <li>
 <p><strong>时间成本函数</strong>：
     $$ \tau(y_i) = \tau_1 y_i + \tau_2 \quad (\tau(y_i) \geq 0) $$
-    这个函数表明时间成本与收入相关，通常收入越高的人 (<code>y_i</code> 越大)，其时间的机会成本也越高 (<code>τ_1 &gt; 0</code>)。</p>
+    这个函数表明时间成本与收入相关，通常收入越高的人 (<span class="arithmatex">\(y_i\)</span> 越大)，其时间的机会成本也越高 (<span class="arithmatex">\(τ_1 &gt; 0\)</span>)。</p>
 </li>
 <li>
 <p><strong>外部选项的效用</strong> (不去看剧)：
     $$ u_{io} = \zeta_i^{-1} [ B(y_i) - P_j ]^{\eta_o} $$
-    这里的 <code>ζ_i</code> 是一个个人特定的参数，<code>η_o</code> 是外部选项的敏感度参数。</p>
+    这里的 <span class="arithmatex">\(ζ_i\)</span> 是一个个人特定的参数，<span class="arithmatex">\(η_o\)</span> 是外部选项的敏感度参数。</p>
 </li>
 </ol>
 </li>
@@ -2644,12 +2644,12 @@
 <p>为了将理论模型应用于真实数据，研究者通常会使用Logit或类似的计量模型。</p>
 <div class="arithmatex">\[ \xi_{ji} = \exp(X_t \beta) \]</div>
 <ul>
-<li><code>ξ_{ji}</code>: 代表了效用中可观测的部分（均值效用）。</li>
-<li><code>X_t</code>: 一系列可观测的变量，例如<strong>广告投入 (ads)</strong>、<strong>是否在颁奖季前 (dummy before Award)</strong>、<strong>一周中的具体某天 (various day of performance)</strong>、<strong>时间趋势 (time)</strong>等。</li>
-<li><code>β</code>: 待估计的系数，反映了这些变量对效用的影响程度。</li>
+<li><span class="arithmatex">\(ξ_{ji}\)</span>: 代表了效用中可观测的部分（均值效用）。</li>
+<li><span class="arithmatex">\(X_t\)</span>: 一系列可观测的变量，例如<strong>广告投入 (ads)</strong>、<strong>是否在颁奖季前 (dummy before Award)</strong>、<strong>一周中的具体某天 (various day of performance)</strong>、<strong>时间趋势 (time)</strong>等。</li>
+<li><span class="arithmatex">\(β\)</span>: 待估计的系数，反映了这些变量对效用的影响程度。</li>
 </ul>
 <div class="arithmatex">\[ S_{ji}(P_t, X_t, \Theta) = \int_{y \in Y, \xi \in \Xi} dF(y) dG(\xi | X\beta) \]</div>
-<p>这个公式是用来计算<strong>市场份额 (Market Share)</strong> <code>S_{ji}</code> 的。它表示，为了得到产品 <code>j</code> 的总市场份额，需要对所有不同类型的消费者（具有不同的收入 <code>y</code> 和不可观测的偏好 <code>ξ</code>）做出选择<code>j</code>的概率进行积分（加总）。<code>Θ</code> 代表模型中所有需要估计的参数（如 <code>β</code>, <code>δ</code>, <code>η</code> 等）。</p>
+<p>这个公式是用来计算<strong>市场份额 (Market Share)</strong> <span class="arithmatex">\(S_{ji}\)</span> 的。它表示，为了得到产品 <span class="arithmatex">\(j\)</span> 的总市场份额，需要对所有不同类型的消费者（具有不同的收入 <span class="arithmatex">\(y\)</span> 和不可观测的偏好 <span class="arithmatex">\(ξ\)</span>）做出选择<span class="arithmatex">\(j\)</span>的概率进行积分（加总）。<span class="arithmatex">\(Θ\)</span> 代表模型中所有需要估计的参数（如 <span class="arithmatex">\(β\)</span>, <span class="arithmatex">\(δ\)</span>, <span class="arithmatex">\(η\)</span> 等）。</p>
 </li>
 <li>
 <p><strong>模型总结</strong>：这个复杂的实证模型旨在通过真实世界的票价、广告、消费者收入分布等数据，精确地估计出需求曲线以及各种因素对消费者选择的影响。有了这个模型，研究者就可以进行<strong>反事实模拟</strong>：例如，如果剧院取消所有折扣（这类似于实施一种最低价格策略），消费者的购票行为会如何改变？剧院的收入和利润会增加还是减少？社会福利会如何变化？</p>
@@ -2663,7 +2663,7 @@
 *   为简化问题，假设零售商除了支付给制造商的批发价外，没有其他成本。</p>
 <p><strong>问题：</strong></p>
 <ol>
-<li><strong>场景一（双重边际化）</strong>：计算没有RPM时，制造商制定的批发价 <code>P_w</code>，零售商制定的最终零售价 <code>P</code>，市场销量 <code>Q</code>，以及二者的利润 <code>π_M</code>, <code>π_R</code> 和总利润 <code>Π_Total</code>。</li>
+<li><strong>场景一（双重边际化）</strong>：计算没有RPM时，制造商制定的批发价 <span class="arithmatex">\(P_w\)</span>，零售商制定的最终零售价 <span class="arithmatex">\(P\)</span>，市场销量 <span class="arithmatex">\(Q\)</span>，以及二者的利润 <span class="arithmatex">\(π_M\)</span>, <span class="arithmatex">\(π_R\)</span> 和总利润 <span class="arithmatex">\(Π_Total\)</span>。</li>
 <li><strong>场景二（纵向一体化）</strong>：如果制造商和零售商合并为一家公司，最优的零售价、销量和总利润是多少？</li>
 <li><strong>场景三（最高RPM）</strong>：制造商如何通过设定最高转售价格来解决双重边际化问题，并达到纵向一体化的效果？</li>
 </ol>
@@ -2674,41 +2674,41 @@
 <ul>
 <li>
 <p><strong>零售商 (R) 的决策</strong>：
-    零售商将批发价 <code>P_w</code> 视为其边际成本 <code>MC_R = P_w</code>。
-    其利润 <code>π_R = (P - P_w) * Q = ((100 - Q) - P_w) * Q = 100Q - Q² - P_w*Q</code>。
-    为了利润最大化，令边际收入等于边际成本：<code>MR_R = MC_R</code>。
-    <code>MR_R = d(π_R)/dQ = 100 - 2Q</code>。
-    所以，<code>100 - 2Q = P_w</code>  =&gt;  <code>2Q = 100 - P_w</code>  =&gt;  <strong><code>Q = 50 - 0.5 * P_w</code></strong>。
-    这是零售商面对给定批发价 <code>P_w</code> 时的最优产量决策，也是制造商面对的需求曲线。</p>
+    零售商将批发价 <span class="arithmatex">\(P_w\)</span> 视为其边际成本 <span class="arithmatex">\(MC_R = P_w\)</span>。
+    其利润 <span class="arithmatex">\(π_R = (P - P_w) * Q = ((100 - Q) - P_w) * Q = 100Q - Q² - P_w*Q\)</span>。
+    为了利润最大化，令边际收入等于边际成本：<span class="arithmatex">\(MR_R = MC_R\)</span>。
+    <span class="arithmatex">\(MR_R = d(π_R)/dQ = 100 - 2Q\)</span>。
+    所以，<span class="arithmatex">\(100 - 2Q = P_w\)</span>  =&gt;  <span class="arithmatex">\(2Q = 100 - P_w\)</span>  =&gt;  <strong><span class="arithmatex">\(Q = 50 - 0.5 * P_w\)</span></strong>。
+    这是零售商面对给定批发价 <span class="arithmatex">\(P_w\)</span> 时的最优产量决策，也是制造商面对的需求曲线。</p>
 </li>
 <li>
 <p><strong>制造商 (M) 的决策</strong>：
-    制造商知道零售商会如何反应，所以它将 <code>Q = 50 - 0.5 * P_w</code> 代入自己的利润函数。
-    首先，从零售商的需求反解出 <code>P_w</code>：<code>P_w = 100 - 2Q</code>。
-    制造商的利润 <code>π_M = (P_w - MC_M) * Q = ( (100 - 2Q) - 20 ) * Q = (80 - 2Q) * Q = 80Q - 2Q²</code>。
-    为了利润最大化，令边际收入等于边际成本：<code>MR_M = MC_M</code>。
-    <code>MR_M = d(π_M)/dQ = 80 - 4Q</code>。
-    由于制造商的生产成本是 <code>MC_M = 20</code>，但在这里我们已经将需求表示为 <code>Q</code> 的函数，所以此时制造商的“边际收入” <code>80 - 4Q</code> 应该等于其“边际成本” <code>20</code> 吗？不，这里的 <code>P_w = 100 - 2Q</code> 已经是制造商的（批发）价格，所以 <code>(80-2Q)</code> 是 <code>P_w - MC_M</code>。我们最大化 <code>π_M</code> 即可。
-    令 <code>d(π_M)/dQ = 80 - 4Q = 0</code> =&gt; <code>4Q = 80</code> =&gt; <strong><code>Q = 20</code></strong>。</p>
+    制造商知道零售商会如何反应，所以它将 <span class="arithmatex">\(Q = 50 - 0.5 * P_w\)</span> 代入自己的利润函数。
+    首先，从零售商的需求反解出 <span class="arithmatex">\(P_w\)</span>：<span class="arithmatex">\(P_w = 100 - 2Q\)</span>。
+    制造商的利润 <span class="arithmatex">\(π_M = (P_w - MC_M) * Q = ( (100 - 2Q) - 20 ) * Q = (80 - 2Q) * Q = 80Q - 2Q²\)</span>。
+    为了利润最大化，令边际收入等于边际成本：<span class="arithmatex">\(MR_M = MC_M\)</span>。
+    <span class="arithmatex">\(MR_M = d(π_M)/dQ = 80 - 4Q\)</span>。
+    由于制造商的生产成本是 <span class="arithmatex">\(MC_M = 20\)</span>，但在这里我们已经将需求表示为 <span class="arithmatex">\(Q\)</span> 的函数，所以此时制造商的“边际收入” <span class="arithmatex">\(80 - 4Q\)</span> 应该等于其“边际成本” <span class="arithmatex">\(20\)</span> 吗？不，这里的 <span class="arithmatex">\(P_w = 100 - 2Q\)</span> 已经是制造商的（批发）价格，所以 <span class="arithmatex">\((80-2Q)\)</span> 是 <span class="arithmatex">\(P_w - MC_M\)</span>。我们最大化 <span class="arithmatex">\(π_M\)</span> 即可。
+    令 <span class="arithmatex">\(d(π_M)/dQ = 80 - 4Q = 0\)</span> =&gt; <span class="arithmatex">\(4Q = 80\)</span> =&gt; <strong><span class="arithmatex">\(Q = 20\)</span></strong>。</p>
 </li>
 <li>
 <p><strong>计算最终结果</strong>：</p>
 <ul>
-<li>销量：<strong><code>Q = 20</code></strong></li>
-<li>批发价：<code>P_w = 100 - 2 * 20 = 100 - 40 =</code> <strong><code>60</code></strong></li>
-<li>最终零售价：<code>P = 100 - Q = 100 - 20 =</code> <strong><code>80</code></strong></li>
-<li>制造商利润：<code>π_M = (P_w - MC_M) * Q = (60 - 20) * 20 = 40 * 20 =</code> <strong><code>800</code></strong></li>
-<li>零售商利润：<code>π_R = (P - P_w) * Q = (80 - 60) * 20 = 20 * 20 =</code> <strong><code>400</code></strong></li>
-<li>供应链总利润：<code>Π_Total = π_M + π_R = 800 + 400 =</code> <strong><code>1200</code></strong></li>
+<li>销量：<strong><span class="arithmatex">\(Q = 20\)</span></strong></li>
+<li>批发价：<span class="arithmatex">\(P_w = 100 - 2 * 20 = 100 - 40 =\)</span> <strong><span class="arithmatex">\(60\)</span></strong></li>
+<li>最终零售价：<span class="arithmatex">\(P = 100 - Q = 100 - 20 =\)</span> <strong><span class="arithmatex">\(80\)</span></strong></li>
+<li>制造商利润：<span class="arithmatex">\(π_M = (P_w - MC_M) * Q = (60 - 20) * 20 = 40 * 20 =\)</span> <strong><span class="arithmatex">\(800\)</span></strong></li>
+<li>零售商利润：<span class="arithmatex">\(π_R = (P - P_w) * Q = (80 - 60) * 20 = 20 * 20 =\)</span> <strong><span class="arithmatex">\(400\)</span></strong></li>
+<li>供应链总利润：<span class="arithmatex">\(Π_Total = π_M + π_R = 800 + 400 =\)</span> <strong><span class="arithmatex">\(1200\)</span></strong></li>
 </ul>
 </li>
 </ul>
 <h4 id="2_1"><strong>2. 场景二：纵向一体化</strong></h4>
-<p>合并后的公司（V）直接面对最终消费者，其边际成本就是制造商的生产成本 <code>MC_V = 20</code>。
-*   利润 <code>π_V = (P - MC_V) * Q = ((100 - Q) - 20) * Q = 80Q - Q²</code>。
-*   利润最大化，令 <code>d(π_V)/dQ = 0</code>：<code>80 - 2Q = 0</code> =&gt; <code>2Q = 80</code> =&gt; <strong><code>Q_V = 40</code></strong>。
-*   最优价格：<code>P_V = 100 - 40 =</code> <strong><code>60</code></strong>。
-*   最大总利润：<code>Π_V = (60 - 20) * 40 = 40 * 40 =</code> <strong><code>1600</code></strong>。</p>
+<p>合并后的公司（V）直接面对最终消费者，其边际成本就是制造商的生产成本 <span class="arithmatex">\(MC_V = 20\)</span>。
+*   利润 <span class="arithmatex">\(π_V = (P - MC_V) * Q = ((100 - Q) - 20) * Q = 80Q - Q²\)</span>。
+*   利润最大化，令 <span class="arithmatex">\(d(π_V)/dQ = 0\)</span>：<span class="arithmatex">\(80 - 2Q = 0\)</span> =&gt; <span class="arithmatex">\(2Q = 80\)</span> =&gt; <strong><span class="arithmatex">\(Q_V = 40\)</span></strong>。
+*   最优价格：<span class="arithmatex">\(P_V = 100 - 40 =\)</span> <strong><span class="arithmatex">\(60\)</span></strong>。
+*   最大总利润：<span class="arithmatex">\(Π_V = (60 - 20) * 40 = 40 * 40 =\)</span> <strong><span class="arithmatex">\(1600\)</span></strong>。</p>
 <h4 id="3-rpm"><strong>3. 场景三：使用最高RPM</strong></h4>
 <p>比较场景一和场景二：
 | | 价格 (P) | 销量 (Q) | 总利润 (Π) |
@@ -2716,15 +2716,15 @@
 | 双重边际化 | 80 | 20 | 1200 |
 | 纵向一体化 | 60 | 40 | 1600 |</p>
 <p>双重边际化导致价格更高、销量更低、总利润更少。</p>
-<p>制造商可以通过设定<strong>最高转售价格 <code>P_max = 60</code></strong> 来解决这个问题。</p>
+<p>制造商可以通过设定<strong>最高转售价格 <span class="arithmatex">\(P_max = 60\)</span></strong> 来解决这个问题。</p>
 <ul>
 <li>当零售商被限制最高只能卖60元时，它为了最大化自己的销量和利润，只能选择将价格定在60元。</li>
-<li>此时，市场销量 <code>Q = 100 - P = 100 - 60 = 40</code>，这正是纵向一体化时的最优销量。</li>
-<li>现在，制造商需要设定一个批发价 <code>P_w</code>。制造商可以设定一个较高的批发价来攫取大部分利润，例如设定 <code>P_w = 59.99</code>，这样零售商仍然有微利，愿意继续销售，而制造商几乎获得了全部的渠道利润 <code>(59.99 - 20) * 40 ≈ 1600</code>。</li>
-<li>更常见的是，制造商会设定一个合理的 <code>P_w</code>，例如 <code>P_w = 40</code>，这样利润分配为：<ul>
-<li><code>π_M = (40 - 20) * 40 = 800</code></li>
-<li><code>π_R = (60 - 40) * 40 = 800</code></li>
-<li>总利润 <code>Π_Total = 800 + 800 = 1600</code>。</li>
+<li>此时，市场销量 <span class="arithmatex">\(Q = 100 - P = 100 - 60 = 40\)</span>，这正是纵向一体化时的最优销量。</li>
+<li>现在，制造商需要设定一个批发价 <span class="arithmatex">\(P_w\)</span>。制造商可以设定一个较高的批发价来攫取大部分利润，例如设定 <span class="arithmatex">\(P_w = 59.99\)</span>，这样零售商仍然有微利，愿意继续销售，而制造商几乎获得了全部的渠道利润 <span class="arithmatex">\((59.99 - 20) * 40 ≈ 1600\)</span>。</li>
+<li>更常见的是，制造商会设定一个合理的 <span class="arithmatex">\(P_w\)</span>，例如 <span class="arithmatex">\(P_w = 40\)</span>，这样利润分配为：<ul>
+<li><span class="arithmatex">\(π_M = (40 - 20) * 40 = 800\)</span></li>
+<li><span class="arithmatex">\(π_R = (60 - 40) * 40 = 800\)</span></li>
+<li>总利润 <span class="arithmatex">\(Π_Total = 800 + 800 = 1600\)</span>。</li>
 </ul>
 </li>
 </ul>

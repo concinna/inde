@@ -2459,31 +2459,31 @@
 <h3 id="_3"><strong>核心模型与公式推导</strong></h3>
 <p>假设一个厂商可以将它的市场分割成两个独立的子市场（市场1和市场2）。</p>
 <ul>
-<li>市场1的需求函数为 <code>P₁(q₁)</code>，销售量为 <code>q₁</code>。</li>
-<li>市场2的需求函数为 <code>P₂(q₂)</code>，销售量为 <code>q₂</code>。</li>
-<li>厂商的总产量 <code>Q = q₁ + q₂</code>。</li>
-<li>厂商的生产总成本函数为 <code>C(Q) = C(q₁ + q₂)</code>。</li>
+<li>市场1的需求函数为 <span class="arithmatex">\(P₁(q₁)\)</span>，销售量为 <span class="arithmatex">\(q₁\)</span>。</li>
+<li>市场2的需求函数为 <span class="arithmatex">\(P₂(q₂)\)</span>，销售量为 <span class="arithmatex">\(q₂\)</span>。</li>
+<li>厂商的总产量 <span class="arithmatex">\(Q = q₁ + q₂\)</span>。</li>
+<li>厂商的生产总成本函数为 $C(Q) = C(q₁ + q₂) $。</li>
 </ul>
-<p>厂商的目标是选择在两个市场的销售量 <code>q₁</code> 和 <code>q₂</code>，以实现<strong>总利润 (Π) 最大化</strong>。</p>
+<p>厂商的目标是选择在两个市场的销售量 <span class="arithmatex">\(q₁\)</span> 和 <span class="arithmatex">\(q₂\)</span>，以实现<strong>总利润 (Π) 最大化</strong>。</p>
 <p>总利润函数为：
 Π(q₁, q₂) = 总收益 (TR) - 总成本 (TC)
 Π(q₁, q₂) = [TR₁(q₁) + TR₂(q₂)] - C(q₁ + q₂)</p>
-<p>其中，<code>TR₁(q₁) = P₁(q₁) * q₁</code>，<code>TR₂(q₂) = P₂(q₂) * q₂</code>。</p>
+<p>其中，<span class="arithmatex">\(TR₁(q₁) = P₁(q₁) * q₁\)</span>，<span class="arithmatex">\(TR₂(q₂) = P₂(q₂) * q₂\)</span>。</p>
 <p>所以，利润函数展开为：
 $$ \Pi(q_1, q_2) = P_1(q_1) \cdot q_1 + P_2(q_2) \cdot q_2 - C(q_1 + q_2) $$</p>
-<p>为了实现利润最大化，我们需要对 <code>q₁</code> 和 <code>q₂</code> 分别求偏导数，并令其等于零：</p>
+<p>为了实现利润最大化，我们需要对 <span class="arithmatex">\(q₁\)</span> 和 <span class="arithmatex">\(q₂\)</span> 分别求偏导数，并令其等于零：</p>
 <ol>
 <li>
-<p>对 <code>q₁</code> 求偏导：
+<p>对 <span class="arithmatex">\(q₁\)</span> 求偏导：
     $$ \frac{\partial \Pi}{\partial q_1} = \frac{d(TR_1)}{dq_1} - \frac{dC}{dQ} \cdot \frac{\partial Q}{\partial q_1} = 0 $$
-    我们知道 <code>d(TR₁)/dq₁</code> 是市场1的<strong>边际收益 (Marginal Revenue, MR₁)</strong>，<code>dC/dQ</code> 是厂商的<strong>边际成本 (Marginal Cost, MC)</strong>。由于 <code>Q = q₁ + q₂</code>，<code>∂Q/∂q₁ = 1</code>。
+    我们知道 <span class="arithmatex">\(d(TR₁)/dq₁\)</span> 是市场1的<strong>边际收益 (Marginal Revenue, MR₁)</strong>，<span class="arithmatex">\(dC/dQ\)</span> 是厂商的<strong>边际成本 (Marginal Cost, MC)</strong>。由于 <span class="arithmatex">\(Q = q₁ + q₂\)</span>，<span class="arithmatex">\(∂Q/∂q₁ = 1\)</span>。
     所以，上式简化为：
     $$ MR_1(q_1) - MC(q_1 + q_2) = 0 \implies \mathbf{MR_1 = MC} $$</p>
 </li>
 <li>
-<p>对 <code>q₂</code> 求偏导：
+<p>对 <span class="arithmatex">\(q₂\)</span> 求偏导：
     $$ \frac{\partial \Pi}{\partial q_2} = \frac{d(TR_2)}{dq_2} - \frac{dC}{dQ} \cdot \frac{\partial Q}{\partial q_2} = 0 $$
-    同理，<code>d(TR₂)/dq₂</code> 是市场2的<strong>边际收益 (MR₂)</strong>，<code>∂Q/∂q₂ = 1</code>。
+    同理，<span class="arithmatex">\(d(TR₂)/dq₂\)</span> 是市场2的<strong>边际收益 (MR₂)</strong>，<span class="arithmatex">\(∂Q/∂q₂ = 1\)</span>。
     所以，上式简化为：
     $$ MR_2(q_2) - MC(q_1 + q_2) = 0 \implies \mathbf{MR_2 = MC} $$</p>
 </li>
@@ -2494,17 +2494,17 @@ $$ \mathbf{MR_1 = MR_2 = MC} $$
 <h4 id="_4"><strong>价格与需求弹性的关系</strong></h4>
 <p>这个法则更深层的含义在于价格如何设定。我们知道，边际收益(MR)和价格(P)以及需求价格弹性(Ed)之间存在一个重要关系：
 $$ MR = P \left( 1 + \frac{1}{E_d} \right) $$
-由于需求价格弹性 <code>Ed</code> 通常为负数，为了方便理解，我们使用其绝对值 <code>|Ed|</code>：
+由于需求价格弹性 <span class="arithmatex">\(Ed\)</span> 通常为负数，为了方便理解，我们使用其绝对值 <span class="arithmatex">\(|Ed|\)</span>：
 $$ MR = P \left( 1 - \frac{1}{|E_d|} \right) $$</p>
-<p>将这个关系代入我们的黄金法则 <code>MR₁ = MR₂</code>：
+<p>将这个关系代入我们的黄金法则 <span class="arithmatex">\(MR₁ = MR₂\)</span>：
 $$ P_1 \left( 1 - \frac{1}{|E_1|} \right) = P_2 \left( 1 - \frac{1}{|E_2|} \right) $$</p>
 <p>通过这个公式，我们可以推导出两个市场的定价关系：
 $$ \frac{P_1}{P_2} = \frac{1 - \frac{1}{|E_2|}}{1 - \frac{1}{|E_1|}} $$</p>
 <p><strong>结论与解读：</strong></p>
 <ul>
-<li>如果市场1的需求<strong>弹性较小</strong>（即需求更<strong>缺乏弹性</strong>，<code>|E₁|</code> 较小），而市场2的需求<strong>弹性较大</strong>（<code>|E₂|</code> 较大），那么 <code>|E₁| &lt; |E₂|</code>。</li>
-<li>这意味着 <code>1/|E₁| &gt; 1/|E₂|</code>，所以 <code>(1 - 1/|E₁|) &lt; (1 - 1/|E₂|)</code>。</li>
-<li>为了维持等式 <code>P₁/P₂ = ...</code> 成立，必然要求 <strong><code>P₁ &gt; P₂</code></strong>。</li>
+<li>如果市场1的需求<strong>弹性较小</strong>（即需求更<strong>缺乏弹性</strong>，<span class="arithmatex">\(|E₁|\)</span> 较小），而市场2的需求<strong>弹性较大</strong>（<span class="arithmatex">\(|E₂|\)</span> 较大），那么 <span class="arithmatex">\(|E₁| &lt; |E₂|\)</span>。</li>
+<li>这意味着 <span class="arithmatex">\(1/|E₁| &gt; 1/|E₂|\)</span>，所以 <span class="arithmatex">\((1 - 1/|E₁|) &lt; (1 - 1/|E₂|)\)</span>。</li>
+<li>为了维持等式 <span class="arithmatex">\(P₁/P₂ = ...\)</span> 成立，必然要求 <strong><span class="arithmatex">\(P₁ &gt; P₂\)</span></strong>。</li>
 </ul>
 <p><strong>核心结论：厂商应该在需求弹性较小（消费者对价格不敏感）的市场上收取更高的价格，而在需求弹性较大（消费者对价格敏感）的市场上收取更低的价格。</strong></p>
 <p>这完美地解释了您提到的所有例子：
@@ -2515,55 +2515,55 @@ $$ \frac{P_1}{P_2} = \frac{1 - \frac{1}{|E_2|}}{1 - \frac{1}{|E_1|}} $$</p>
 <h3 id="_5"><strong>例题与求解</strong></h3>
 <p><strong>题目：</strong>
 假设某电影院是其所在镇的唯一一家影院，它将顾客分为两个市场：成人市场（市场1）和学生市场（市场2）。
-*   成人市场的需求曲线为：<code>P₁ = 12 - q₁</code>
-*   学生市场的需求曲线为：<code>P₂ = 8 - q₂</code>
-*   电影院的边际成本是恒定的，<code>MC = 2</code>（即每多服务一位顾客，成本增加2元）。</p>
+*   成人市场的需求曲线为：<span class="arithmatex">\(P₁ = 12 - q₁\)</span>
+*   学生市场的需求曲线为：<span class="arithmatex">\(P₂ = 8 - q₂\)</span>
+*   电影院的边际成本是恒定的，<span class="arithmatex">\(MC = 2\)</span>（即每多服务一位顾客，成本增加2元）。</p>
 <p><strong>问题：</strong>
 为了实现利润最大化，电影院应该对成人和学生分别收取多少票价？各自的观影人数是多少？</p>
 <p><strong>求解步骤：</strong></p>
 <p><strong>第一步：计算两个市场的边际收益 (MR)</strong></p>
-<p>对于线性需求曲线 <code>P = a - bq</code>，其边际收益曲线为 <code>MR = a - 2bq</code>。
+<p>对于线性需求曲线 <span class="arithmatex">\(P = a - bq\)</span>，其边际收益曲线为 <span class="arithmatex">\(MR = a - 2bq\)</span>。
 *   <strong>成人市场 (市场1):</strong>
-    *   需求曲线: <code>P₁ = 12 - q₁</code>
-    *   总收益: <code>TR₁ = P₁ * q₁ = (12 - q₁)q₁ = 12q₁ - q₁²</code>
-    *   边际收益: <code>MR₁ = d(TR₁)/dq₁ = 12 - 2q₁</code></p>
+    *   需求曲线: <span class="arithmatex">\(P₁ = 12 - q₁\)</span>
+    *   总收益: <span class="arithmatex">\(TR₁ = P₁ * q₁ = (12 - q₁)q₁ = 12q₁ - q₁²\)</span>
+    *   边际收益: <span class="arithmatex">\(MR₁ = d(TR₁)/dq₁ = 12 - 2q₁\)</span></p>
 <ul>
 <li><strong>学生市场 (市场2):</strong><ul>
-<li>需求曲线: <code>P₂ = 8 - q₂</code></li>
-<li>总收益: <code>TR₂ = P₂ * q₂ = (8 - q₂)q₂ = 8q₂ - q₂²</code></li>
-<li>边际收益: <code>MR₂ = d(TR₂)/dq₂ = 8 - 2q₂</code></li>
+<li>需求曲线: <span class="arithmatex">\(P₂ = 8 - q₂\)</span></li>
+<li>总收益: <span class="arithmatex">\(TR₂ = P₂ * q₂ = (8 - q₂)q₂ = 8q₂ - q₂²\)</span></li>
+<li>边际收益: <span class="arithmatex">\(MR₂ = d(TR₂)/dq₂ = 8 - 2q₂\)</span></li>
 </ul>
 </li>
 </ul>
-<p><strong>第二步：应用利润最大化法则 <code>MR₁ = MC</code> 和 <code>MR₂ = MC</code></strong></p>
+<p><strong>第二步：应用利润最大化法则 <span class="arithmatex">\(MR₁ = MC\)</span> 和 <span class="arithmatex">\(MR₂ = MC\)</span></strong></p>
 <ul>
 <li>
 <p><strong>成人市场:</strong></p>
 <ul>
-<li><code>MR₁ = MC</code></li>
-<li><code>12 - 2q₁ = 2</code></li>
-<li><code>2q₁ = 10</code></li>
-<li><code>q₁ = 5</code> （成人市场的观影人数为5人）</li>
+<li><span class="arithmatex">\(MR₁ = MC\)</span></li>
+<li><span class="arithmatex">\(12 - 2q₁ = 2\)</span></li>
+<li><span class="arithmatex">\(2q₁ = 10\)</span></li>
+<li><span class="arithmatex">\(q₁ = 5\)</span> （成人市场的观影人数为5人）</li>
 </ul>
 </li>
 <li>
 <p><strong>学生市场:</strong></p>
 <ul>
-<li><code>MR₂ = MC</code></li>
-<li><code>8 - 2q₂ = 2</code></li>
-<li><code>2q₂ = 6</code></li>
-<li><code>q₂ = 3</code> （学生市场的观影人数为3人）</li>
+<li><span class="arithmatex">\(MR₂ = MC\)</span></li>
+<li><span class="arithmatex">\(8 - 2q₂ = 2\)</span></li>
+<li><span class="arithmatex">\(2q₂ = 6\)</span></li>
+<li><span class="arithmatex">\(q₂ = 3\)</span> （学生市场的观影人数为3人）</li>
 </ul>
 </li>
 </ul>
 <p><strong>第三步：根据求出的数量，计算各自市场的价格</strong></p>
-<p>将 <code>q₁</code> 和 <code>q₂</code> 的值代入各自的需求曲线：
+<p>将 <span class="arithmatex">\(q₁\)</span> 和 <span class="arithmatex">\(q₂\)</span> 的值代入各自的需求曲线：
 *   <strong>成人票价 (P₁):</strong>
-    *   <code>P₁ = 12 - q₁ = 12 - 5 = 7</code>
+    *   <span class="arithmatex">\(P₁ = 12 - q₁ = 12 - 5 = 7\)</span>
     *   成人票价应为 <strong>7元</strong>。</p>
 <ul>
 <li><strong>学生票价 (P₂):</strong><ul>
-<li><code>P₂ = 8 - q₂ = 8 - 3 = 5</code></li>
+<li><span class="arithmatex">\(P₂ = 8 - q₂ = 8 - 3 = 5\)</span></li>
 <li>学生票价应为 <strong>5元</strong>。</li>
 </ul>
 </li>
@@ -2571,9 +2571,9 @@ $$ \frac{P_1}{P_2} = \frac{1 - \frac{1}{|E_2|}}{1 - \frac{1}{|E_1|}} $$</p>
 <p><strong>结论：</strong>
 为了实现利润最大化，该电影院应该向5位成人观众每人收取7元的票价，并向3位学生观众每人收取5元的票价。</p>
 <p><strong>验证（可选）：</strong> 我们可以验证价格与弹性的关系。
-*   在 <code>P₁=7, q₁=5</code> 这一点，成人市场的需求弹性 <code>|E₁| = |(dq₁/dP₁) * (P₁/q₁)| = |-1 * (7/5)| = 1.4</code>。
-*   在 <code>P₂=5, q₂=3</code> 这一点，学生市场的需求弹性 <code>|E₂| = |(dq₂/dP₂) * (P₂/q₂)| = |-1 * (5/3)| ≈ 1.67</code>。
-*   由于成人市场的需求弹性 <code>(1.4)</code> 小于学生市场的需求弹性 <code>(1.67)</code>，所以电影院对成人收取了更高的价格 <code>(7 &gt; 5)</code>。这与我们的理论完全吻合。</p>
+*   在 <span class="arithmatex">\(P₁=7, q₁=5\)</span> 这一点，成人市场的需求弹性 <span class="arithmatex">\(|E₁| = |(dq₁/dP₁) * (P₁/q₁)| = |-1 * (7/5)| = 1.4\)</span>。
+*   在 <span class="arithmatex">\(P₂=5, q₂=3\)</span> 这一点，学生市场的需求弹性 <span class="arithmatex">\(|E₂| = |(dq₂/dP₂) * (P₂/q₂)| = |-1 * (5/3)| ≈ 1.67\)</span>。
+*   由于成人市场的需求弹性 <span class="arithmatex">\((1.4)\)</span> 小于学生市场的需求弹性 <span class="arithmatex">\((1.67)\)</span>，所以电影院对成人收取了更高的价格 <span class="arithmatex">\((7 &gt; 5)\)</span>。这与我们的理论完全吻合。</p>
 
 
 
