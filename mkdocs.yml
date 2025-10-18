@@ -1,0 +1,126 @@
+site_name: Industrial Organization
+# site_url: https://concinna.github.io/inde/
+use_directory_urls: true
+copyright: Atheris hispida
+theme:
+  name: material
+  favicon: assets/favicon.png
+  logo: assets/logo.png
+  features:
+  - navigation.tracking
+  - navigation.footer
+  - navigation.expand
+  - search.highlight
+  - search.suggest
+  - content.code.copy
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.arithmatex:
+        generic: true
+
+extra_css:
+  - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/marked/marked.min.js
+  - https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+nav:
+  - 'Slide':
+    - '01 Intro': 'index.md'
+    - '02 China Antitrust Law': '02 China Antitrust Law.md'
+    - '02 Merger Coke Huiyuan Case': '03 Merger Coke Huiyuan Case.md'
+    - '03 Market Structure and Market Power': '03 Market Structure and Market Power.md'
+    - '04 Price discrimination': '04 Price discrimination.md'
+  - 'Transcript':
+    - 'inde-01-1': 'inde-01-1.md'
+    - 'inde-01-2': 'inde-01-2.md'
+    - 'inde-02-1': 'inde-02-1.md'
+    - 'inde-02-2': 'inde-02-2.md'
+    - 'inde-03-1': 'inde-03-1.md'
+    - 'inde-03-2': 'inde-03-2.md'
+    - 'inde-04-1': 'inde-04-1-fixed.md'
+    - 'inde-04-2': 'inde-04-2-fixed.md'
+    - 'inde-05-1': 'inde-05-1-fixed.md'
+    - 'inde-05-2': 'inde-05-2.md'
+    - 'inde-06-1': 'inde-06-1.md'
+    - 'inde-06-2': 'inde-06-2.md'
+    - 'inde-07-1': 'inde-07-1-fixed.md'
+    - 'inde-07-2': 'inde-07-2-fixed.md'
+    - 'inde-09-1': 'inde-09-1-fix.md'
+    - 'inde-09-2': 'inde-09-2-fix.md'
+    - 'inde-10-1': 'inde-10-1-fix.md'
+    - 'inde-10-2': 'inde-10-2-fix.md'
+
+  - 'Papers':
+    - '01 中国反垄断': 'Zhu & Gu 2024 CER.md'
+    - '02 教科书': 'Are Durable Goods Consumers Forward-Looking. Evidence from College Textbooks.md'
+  - 'Notes':
+    - '00 完全竞争': 'notes/0.md'
+    - '01': 'notes/1.md'
+    - '02 CRn & HHI (06)': 'notes/2.md'
+    - '03 Endogeneity of Market Structure Model (07)': 'notes/3.md'
+    - '04 Lerner Index (07)': 'notes/4.md'
+    - '05 Deadweight Loss & Lerner (07)': 'notes/5.md'
+    - '06 Expected Utility': 'notes/6.md'
+    - '07 Simultaneous Equations': 'notes/7.md'
+    - '08': 'notes/8.md'
+    - '09': 'notes/9.md'
+    - '10 Two-part Pricing (08)': 'notes/10.md'
+    - '11': 'notes/11.md'
+    - '12 Two-part compared with uniform (10)': 'notes/12.md'
+    - '13': 'notes/13.md'
+    - '14': 'notes/14.md'
+    - '15': 'notes/15.md'
+    - '16 Non-linear Second-degree (11)': 'notes/16.md'
+    - '16 Note': 'notes/16-note.md'
+    - '17': 'notes/17.md'
+    - '18': 'notes/18.md'
+    - '19': 'notes/19.md'
+    - '20': 'notes/20.md'
+    - '21': 'notes/21.md'
+    - '22': 'notes/22.md'
+    - '23': 'notes/23.md'
+    - '24': 'notes/24.md'
+    - '25': 'notes/25.md'
+    - '26': 'notes/26.md'
+    - '27': 'notes/27.md'
+    - '28': 'notes/28.md'
+    - '29': 'notes/29.md'
+    - '30': 'notes/30.md'
+    - '31': 'notes/31.md'
+    - '32': 'notes/32.md'
+    - '33': 'notes/33.md'
+    - '34': 'notes/34.md'
+    - '35': 'notes/35.md'
+    - '36': 'notes/36.md'
+    - '37': 'notes/37.md'
+    - '38': 'notes/38.md'
+    - '39': 'notes/39.md'
+    - '40': 'notes/40.md'
+    - '41': 'notes/41.md'
+    - '42': 'notes/42.md'
+    - '43': 'notes/43.md'
+    - '44': 'notes/44.md'
+    - '45': 'notes/45.md'
+    - '46': 'notes/46.md'
+    - '47': 'notes/47.md'
+    - '48': 'notes/48.md'
+    - '49': 'notes/49.md'
+    - '50': 'notes/50.md'
+    - '51': 'notes/51.md'
+    - '52': 'notes/52.md'
+    - '53': 'notes/53.md'
+    - '54': 'notes/54.md'

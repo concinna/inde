@@ -1,0 +1,26 @@
+:root  > * {
+    --md-primary-fg-color: #306998;
+    --md-primary-fg-color--light: #306998;
+    --md-primary-fg-color--dark:  #5a9fd4;
+
+    --md-typeset-a-color: #306998;
+    --md-accent-fg-color: #5a9fd4;
+
+    --md-accent-fg-color--transparent: #5a9fd41a;
+  }
+
+.md-overlay {
+  backdrop-filter: blur(10px);
+}
+
+.md-search {
+  padding: .2rem .1rem;
+}
+
+.md-search__form{
+  border-radius: 5px;
+}
+
+.md-typeset pre code {
+  white-space: pre-wrap;
+}
