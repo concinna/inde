@@ -1567,7 +1567,7 @@
   
   
   <span class="md-ellipsis">
-    18
+    18 variety & quality (13)
     
   </span>
   
@@ -2643,11 +2643,13 @@
 <p><strong>激励相容约束（IC）</strong>
    每种类型的人要“老老实实地选自己的套餐”，而不去冒充另一种类型：
    $$
-   U_1(Q_1) - R_1 \ge U_1(Q_2) - R_2 \quad (\text{高类型不伪装}) \
-   U_2(Q_2) - R_2 \ge U_2(Q_1) - R_1 \quad (\text{低类型不伪装})
+   U_1(Q_1) - R_1 \ge U_1(Q_2) - R_2 \quad (\text{高类型不伪装})
    $$</p>
 </li>
 </ol>
+<p>$$
+   U_2(Q_2) - R_2 \ge U_2(Q_1) - R_1 \quad (\text{低类型不伪装})
+   $$</p>
 <p>如果这些约束被打破，筛选机制就会崩溃。</p>
 <hr />
 <h2 id="_4">🧠 四、模型的核心推理步骤</h2>
@@ -2679,11 +2681,11 @@ $$
 $$
 R_2 = U_2(Q_2)
 $$</p>
-<p>代入利润：
-$$
-\Pi(Q_1, Q_2) = <span class="arithmatex">\(<span class="arithmatex">\(U_1(Q_1) - U_1(Q_2) + U_2(Q_2)\)</span>\)</span> + U_2(Q_2) - c(Q_1 + Q_2)
-$$</p>
-<p>然后分别对 ( Q_1, Q_2 ) 求导。</p>
+<p>代入利润：</p>
+<div class="arithmatex">\[
+\Pi(Q_1, Q_2) = $$U_1(Q_1) - U_1(Q_2) + U_2(Q_2)$$ + U_2(Q_2) - c(Q_1 + Q_2)
+\]</div>
+<p>然后分别对$ ( Q_1, Q_2 ) $求导。</p>
 <hr />
 <h3 id="3"><strong>3️⃣ 推导结果与经济解释</strong></h3>
 <h4 id="1-q_1">（1）对 ( Q_1 )：</h4>
@@ -2700,9 +2702,9 @@ U_1'(Q_1) = c
 <h4 id="2-q_2">（2）对 ( Q_2 )：</h4>
 <div class="arithmatex">\[
 2U_2'(Q_2) - U_1'(Q_2) = c
-$$
-因为 ( U_1'(Q) &gt; U_2'(Q) )，可得：
-$$
+\]</div>
+<p>因为 ( U_1'(Q) &gt; U_2'(Q) )，可得：</p>
+<div class="arithmatex">\[
 U_2'(Q_2) &gt; c
 \]</div>
 <p>➡️ <strong>低需求者拿到的数量偏低（存在扭曲）</strong></p>
