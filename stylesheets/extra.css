@@ -24,3 +24,11 @@
 .md-typeset pre code {
   white-space: pre-wrap;
 }
+
+@media (max-width: 768px) {
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}
