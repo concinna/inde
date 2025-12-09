@@ -2476,8 +2476,9 @@ $$ P - c = \frac{A_M - c}{n_M + 1} $$
 将 <span class="arithmatex">\(A_M\)</span> 代回：
 $$ P - c = \frac{a - bQ_{pre} - c}{n_M + 1} = \frac{a - c}{n_M + 1} - \frac{b}{n_M + 1}Q_{pre} $$</p>
 <p><strong>关键发现</strong>：
-请注意上面这个方程。对于<strong>第 <span class="arithmatex">\(M-1\)</span> 阶段</strong>的企业来说，这就是他们面对的<strong>“有效反需求函数”</strong>。
-$$ P(Q_{pre}) = \underbrace{\left( c + \frac{a-c}{n_M+1} \right)}<em>{\text{新截距 } a'} - \underbrace{\left( \frac{b}{n_M+1} \right)}</em>{\text{新斜率 } b'} Q_{pre} $$</p>
+请注意上面这个方程。对于<strong>第 <span class="arithmatex">\(M-1\)</span> 阶段</strong>的企业来说，这就是他们面对的<strong>“有效反需求函数”</strong>。</p>
+<div class="arithmatex">\[ P(Q_{pre}) = \underbrace{\left( c + \frac{a-c}{n_M+1} \right)}_{\text{新截距 } a'} - \underbrace{\left( \frac{b}{n_M+1} \right)}_{\text{新斜率 } b'} Q_{pre} \]</div>
+<div class="arithmatex">\[Q_{pre} = Q_{pre-1} + Q_{M-1}\]</div>
 <p>这意味着，第 <span class="arithmatex">\(M\)</span> 阶段的反应，把第 <span class="arithmatex">\(M-1\)</span> 阶段面临的市场结构进行了线性变换：
 1.  <strong>斜率变平了</strong>：<span class="arithmatex">\(b' = \frac{b}{n_M+1}\)</span>。
 2.  <strong>潜在剩余缩水了</strong>：新截距与成本的差 <span class="arithmatex">\(a' - c = \frac{a-c}{n_M+1}\)</span>。</p>
